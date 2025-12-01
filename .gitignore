@@ -8,3 +8,19 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Environment files
+.env
+
+# Runtime data files
+data/user_embeddings.npy
+data/user_memories.json
+
+# Logs
+logs/*.log
+streamlit.log
+nohup.out
+
+# IDE
+.vscode/
+.idea/
