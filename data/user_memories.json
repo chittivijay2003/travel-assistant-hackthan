@@ -1,0 +1,280 @@
+{
+  "test-user-pref": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-11-30T23:47:37.233498",
+      "id": "test-user-pref_0"
+    }
+  ],
+  "user-embed-test": [
+    {
+      "memory": "I love trekking in mountains",
+      "content": "I love trekking in mountains",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-11-30T23:51:23.638945",
+      "id": "user-embed-test_0"
+    },
+    {
+      "memory": "I prefer vegetarian food",
+      "content": "I prefer vegetarian food",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-11-30T23:51:24.410215",
+      "id": "user-embed-test_1"
+    },
+    {
+      "memory": "I enjoy beach destinations",
+      "content": "I enjoy beach destinations",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-11-30T23:51:24.927610",
+      "id": "user-embed-test_2"
+    }
+  ],
+  "5a345902-1071-4c44-8e64-1d9cfa539148": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-11-30T23:58:57.436882",
+      "id": "5a345902-1071-4c44-8e64-1d9cfa539148_0"
+    },
+    {
+      "memory": "I love having vegetarian food with a tea in the mountains",
+      "content": "I love having vegetarian food with a tea in the mountains",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T00:01:08.199399",
+      "id": "5a345902-1071-4c44-8e64-1d9cfa539148_1"
+    }
+  ],
+  "final-test": [
+    {
+      "memory": "Selected itinerary: Here's your 2-day Tokyo itinerary:\n\nDay 1: Traditional Tokyo\n- Morning: Senso-ji Temple in Asakusa  \n- Afternoon: Tokyo Skytree\n- Evening: Shibuya Crossing\n\nDay 2: Modern Tokyo\n- Morning: Harajuku shopping\n- Afternoon: Meiji Shrine\n- Evening: Tokyo Tower",
+      "content": "Selected itinerary: Here's your 2-day Tokyo itinerary:\n\nDay 1: Traditional Tokyo\n- Morning: Senso-ji Temple in Asakusa  \n- Afternoon: Tokyo Skytree\n- Evening: Shibuya Crossing\n\nDay 2: Modern Tokyo\n- Morning: Harajuku shopping\n- Afternoon: Meiji Shrine\n- Evening: Tokyo Tower",
+      "metadata": {
+        "type": "selection"
+      },
+      "timestamp": "2025-12-01T00:15:21.696433",
+      "id": "final-test_0"
+    }
+  ],
+  "de639ce9-183e-4642-b4c8-97028efbbb0d": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T00:18:14.169848",
+      "id": "de639ce9-183e-4642-b4c8-97028efbbb0d_0"
+    },
+    {
+      "memory": "I love having vegetarian food with a tea in the mountains",
+      "content": "I love having vegetarian food with a tea in the mountains",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T00:19:28.458848",
+      "id": "de639ce9-183e-4642-b4c8-97028efbbb0d_1"
+    }
+  ],
+  "preference-update-test": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T00:23:18.108156",
+      "id": "preference-update-test_0"
+    },
+    {
+      "memory": "I love having vegetarian food with a tea in the mountains",
+      "content": "I love having vegetarian food with a tea in the mountains",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T00:23:46.933612",
+      "id": "preference-update-test_1"
+    }
+  ],
+  "7cf40dc0-6aad-4fef-a7f4-63e80a6080f3": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T00:56:12.495265",
+      "id": "7cf40dc0-6aad-4fef-a7f4-63e80a6080f3_0"
+    },
+    {
+      "memory": "I love having vegetarian food with a tea in the mountains",
+      "content": "I love having vegetarian food with a tea in the mountains",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T00:56:58.682232",
+      "id": "7cf40dc0-6aad-4fef-a7f4-63e80a6080f3_1"
+    }
+  ],
+  "complete-policy-test": [
+    {
+      "memory": "Requested travel plan: Plan a complete 5-day trip to London:\n- Departure: New York, January 15, 2026, morning (8 AM)\n- Return: January 20, 2026\n- Travelers: 1 person (me)\n- Budget: Company travel policy compliant\n- Need: Flights, hotel, and daily cab transportation\n",
+      "content": "Requested travel plan: Plan a complete 5-day trip to London:\n- Departure: New York, January 15, 2026, morning (8 AM)\n- Return: January 20, 2026\n- Travelers: 1 person (me)\n- Budget: Company travel policy compliant\n- Need: Flights, hotel, and daily cab transportation\n",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-01T01:08:58.550291",
+      "id": "complete-policy-test_0"
+    }
+  ],
+  "1943c68f-09a1-4976-8f8c-72ba65521116": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T01:09:49.186503",
+      "id": "1943c68f-09a1-4976-8f8c-72ba65521116_0"
+    },
+    {
+      "memory": "I love having vegetarian food with a tea in the mountains",
+      "content": "I love having vegetarian food with a tea in the mountains",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T01:10:25.113795",
+      "id": "1943c68f-09a1-4976-8f8c-72ba65521116_1"
+    },
+    {
+      "memory": "jan 5th to 8th, morning, hyderabad,3 and $2000",
+      "content": "jan 5th to 8th, morning, hyderabad,3 and $2000",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T01:14:53.336498",
+      "id": "1943c68f-09a1-4976-8f8c-72ba65521116_2"
+    }
+  ],
+  "final-test-user": [
+    {
+      "memory": "Requested travel plan: jan 5th to 8th, morning, hyderabad, 3 travelers and $2000 budget",
+      "content": "Requested travel plan: jan 5th to 8th, morning, hyderabad, 3 travelers and $2000 budget",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-01T01:22:04.144952",
+      "id": "final-test-user_0"
+    }
+  ],
+  "3ffdf420-0cda-45e7-bc2f-bb2987913fb0": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T01:24:28.731747",
+      "id": "3ffdf420-0cda-45e7-bc2f-bb2987913fb0_0"
+    }
+  ],
+  "31ddad5e-3f48-4c97-a72c-7c6ab326b333": [
+    {
+      "memory": "I love having vegetarian food with a tea in the mountains",
+      "content": "I love having vegetarian food with a tea in the mountains",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T01:25:28.420016",
+      "id": "31ddad5e-3f48-4c97-a72c-7c6ab326b333_0"
+    }
+  ],
+  "6cefe2c2-a360-4978-aa66-17eaa1d42803": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T01:28:12.214256",
+      "id": "6cefe2c2-a360-4978-aa66-17eaa1d42803_0"
+    },
+    {
+      "memory": "I love having vegetarian food with a tea in the mountains",
+      "content": "I love having vegetarian food with a tea in the mountains",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-01T01:28:58.609128",
+      "id": "6cefe2c2-a360-4978-aa66-17eaa1d42803_1"
+    },
+    {
+      "memory": "Requested travel plan: morning",
+      "content": "Requested travel plan: morning",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-01T01:31:22.915975",
+      "id": "6cefe2c2-a360-4978-aa66-17eaa1d42803_2"
+    },
+    {
+      "memory": "Support query: Support in-trip queries\na. Suggest lounge facilities at the start airport/destination airport\nb. Suggest food places for day 1\nc. Suggest travel accessories for the upcoming 3-day trip",
+      "content": "Support query: Support in-trip queries\na. Suggest lounge facilities at the start airport/destination airport\nb. Suggest food places for day 1\nc. Suggest travel accessories for the upcoming 3-day trip",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-01T01:32:33.642527",
+      "id": "6cefe2c2-a360-4978-aa66-17eaa1d42803_3"
+    },
+    {
+      "memory": "Requested travel plan: option 1 in flights",
+      "content": "Requested travel plan: option 1 in flights",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-01T01:34:54.061030",
+      "id": "6cefe2c2-a360-4978-aa66-17eaa1d42803_4"
+    },
+    {
+      "memory": "Requested travel plan: give the samething from mumbai to goa on jan 14th to 17th",
+      "content": "Requested travel plan: give the samething from mumbai to goa on jan 14th to 17th",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-01T01:37:10.861916",
+      "id": "6cefe2c2-a360-4978-aa66-17eaa1d42803_5"
+    },
+    {
+      "memory": "Requested travel plan: give flight details first, i will select option so that you will give remaining",
+      "content": "Requested travel plan: give flight details first, i will select option so that you will give remaining",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-01T01:41:36.643470",
+      "id": "6cefe2c2-a360-4978-aa66-17eaa1d42803_6"
+    },
+    {
+      "memory": "Requested travel plan: option1",
+      "content": "Requested travel plan: option1",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-01T01:42:46.343372",
+      "id": "6cefe2c2-a360-4978-aa66-17eaa1d42803_7"
+    }
+  ]
+}

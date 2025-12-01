@@ -1,0 +1,27 @@
+# Core LangChain and LangGraph
+langchain>=0.3.0
+langchain-google-genai>=2.0.0
+langchain-community>=0.3.0
+langgraph>=0.2.0
+
+# LLM Provider
+google-generativeai>=0.3.0
+
+# Memory and Storage
+mem0ai>=0.1.0
+redis>=5.0.0
+qdrant-client>=1.7.0
+langchain-qdrant>=0.1.0
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.0
+
+# Document Processing
+pypdf>=4.0.0
+reportlab>=4.0.0
+
+# UI
+streamlit>=1.39.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0

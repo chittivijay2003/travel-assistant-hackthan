@@ -1,0 +1,252 @@
+2025-11-30 23:37:35,287 - workflow - INFO - Processing message for user test-user-123: Hello, I need help planning a trip
+2025-11-30 23:37:39,613 - workflow - INFO - Routing to node based on intent: unknown
+2025-11-30 23:37:39,614 - workflow - ERROR - Error in graph execution: Intent classification error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-30 23:40:08,987 - workflow - INFO - Processing message for user f2e60100-94e4-4054-9eea-a37a46620920: I love trekking in the monsoon season
+2025-11-30 23:40:13,381 - workflow - INFO - Routing to node based on intent: unknown
+2025-11-30 23:40:13,382 - workflow - ERROR - Error in graph execution: Intent classification error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp
+Please retry in 46.54674418s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2025-11-30 23:40:27,770 - workflow - INFO - Processing message for user f2e60100-94e4-4054-9eea-a37a46620920: I love having vegetarian food with a tea in the mountains
+2025-11-30 23:40:30,223 - workflow - INFO - Routing to node based on intent: unknown
+2025-11-30 23:40:30,224 - workflow - ERROR - Error in graph execution: Intent classification error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp
+Please retry in 29.70314394s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 29
+}
+]
+2025-11-30 23:40:39,980 - workflow - INFO - Processing message for user f2e60100-94e4-4054-9eea-a37a46620920: Suggest a 3-day itinerary in Japan
+2025-11-30 23:40:42,300 - workflow - INFO - Routing to node based on intent: unknown
+2025-11-30 23:40:42,301 - workflow - ERROR - Error in graph execution: Intent classification error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp
+Please retry in 17.631529618s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 17
+}
+]
+2025-11-30 23:42:07,082 - workflow - INFO - Processing message for user test-123: Hello
+2025-11-30 23:42:13,446 - workflow - INFO - Routing to node based on intent: unknown
+2025-11-30 23:42:13,447 - workflow - ERROR - Error in graph execution: Intent classification error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-30 23:44:53,929 - workflow - INFO - Processing message for user user-001: I want to plan a trip to Paris
+2025-11-30 23:44:56,669 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-11-30 23:45:36,341 - workflow - INFO - Processing message for user d1097860-0bf3-4638-a671-9ae71f7edb23: I love trekking in the monsoon season
+2025-11-30 23:45:39,039 - workflow - INFO - Routing to node based on intent: information
+2025-11-30 23:45:40,224 - workflow - ERROR - Error in graph execution: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0\n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0\n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0\n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerDayPerProjectPerModel-FreeTier'}, {'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier'}, {'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier'}, {'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerProjectPerModel-FreeTier'}]}]}}
+2025-11-30 23:47:34,535 - workflow - INFO - Processing message for user test-user-pref: I love trekking in the monsoon season
+2025-11-30 23:47:37,232 - workflow - INFO - Routing to node based on intent: information
+2025-11-30 23:51:20,822 - workflow - INFO - Processing message for user user-embed-test: I love trekking in mountains
+2025-11-30 23:51:23,341 - workflow - INFO - Routing to node based on intent: information
+2025-11-30 23:51:23,640 - workflow - INFO - Processing message for user user-embed-test: I prefer vegetarian food
+2025-11-30 23:51:24,161 - workflow - INFO - Routing to node based on intent: information
+2025-11-30 23:51:24,412 - workflow - INFO - Processing message for user user-embed-test: I enjoy beach destinations
+2025-11-30 23:51:24,912 - workflow - INFO - Routing to node based on intent: information
+2025-11-30 23:58:54,478 - workflow - INFO - Processing message for user 5a345902-1071-4c44-8e64-1d9cfa539148: I love trekking in the monsoon season
+2025-11-30 23:58:57,132 - workflow - INFO - Routing to node based on intent: information
+2025-11-30 23:59:18,807 - workflow - INFO - Processing message for user 5a345902-1071-4c44-8e64-1d9cfa539148:  Suggest a 3-day itinerary in Japan
+2025-11-30 23:59:19,695 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-01 00:00:35,737 - workflow - INFO - Processing message for user 5a345902-1071-4c44-8e64-1d9cfa539148: yes i want this plan
+2025-12-01 00:00:41,156 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 00:01:07,325 - workflow - INFO - Processing message for user 5a345902-1071-4c44-8e64-1d9cfa539148: I love having vegetarian food with a tea in the mountains
+2025-12-01 00:01:07,822 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 00:11:39,221 - workflow - INFO - Processing message for user test-conversation-user: Suggest a 3-day itinerary in Japan
+2025-12-01 00:11:42,054 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-01 00:12:00,119 - workflow - INFO - Processing message for user test-conversation-user: yes i want this plan
+2025-12-01 00:12:01,837 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 00:13:00,957 - workflow - INFO - Processing message for user test-selection-save: Suggest a 2-day itinerary in Tokyo
+2025-12-01 00:13:03,854 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-01 00:13:23,520 - workflow - INFO - Processing message for user test-selection-save: yes i want this plan
+2025-12-01 00:13:25,553 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 00:14:27,461 - workflow - INFO - Processing message for user debug-test: yes i want this plan
+2025-12-01 00:14:31,303 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 00:15:17,937 - workflow - INFO - Processing message for user final-test: yes i want this plan
+2025-12-01 00:15:21,015 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 00:18:11,274 - workflow - INFO - Processing message for user de639ce9-183e-4642-b4c8-97028efbbb0d: I love trekking in the monsoon season
+2025-12-01 00:18:14,168 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 00:18:21,322 - workflow - INFO - Processing message for user de639ce9-183e-4642-b4c8-97028efbbb0d: Suggest a 3-day itinerary in Japan
+2025-12-01 00:18:22,173 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-01 00:19:25,783 - workflow - INFO - Processing message for user de639ce9-183e-4642-b4c8-97028efbbb0d: I love having vegetarian food with a tea in the mountains
+2025-12-01 00:19:28,456 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 00:23:14,254 - workflow - INFO - Processing message for user preference-update-test: I love trekking in the monsoon season
+2025-12-01 00:23:18,107 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 00:23:18,109 - workflow - INFO - Processing message for user preference-update-test: Suggest a 3-day itinerary in Japan
+2025-12-01 00:23:20,212 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-01 00:23:45,923 - workflow - INFO - Processing message for user preference-update-test: I love having vegetarian food with a tea in the mountains
+2025-12-01 00:23:46,932 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 00:56:09,604 - workflow - INFO - Processing message for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3: I love trekking in the monsoon season
+2025-12-01 00:56:12,494 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 00:56:26,572 - workflow - INFO - Processing message for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3: Suggest a 3-day itinerary in Japan
+2025-12-01 00:56:29,030 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-01 00:56:57,989 - workflow - INFO - Processing message for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3: I love having vegetarian food with a tea in the mountains
+2025-12-01 00:56:58,681 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 00:57:45,572 - workflow - INFO - Processing message for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3: Suggest a travel plan with options for cabs and flights
+2025-12-01 00:57:46,112 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:06:58,038 - workflow - INFO - Ingesting policy documents
+2025-12-01 01:07:00,047 - workflow - INFO - Policy ingestion complete
+2025-12-01 01:07:48,714 - workflow - INFO - Processing message for user policy-test-user: Plan a 5-day trip to London with flights and cabs. I need to fly from New York on January 15, 2026. I'm traveling alone with a budget preference of staying within company policy.
+2025-12-01 01:07:51,718 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:08:21,336 - workflow - INFO - Processing message for user complete-policy-test: Plan a complete 5-day trip to London:
+- Departure: New York, January 15, 2026, morning (8 AM)
+- Return: January 20, 2026
+- Travelers: 1 person (me)
+- Budget: Company travel policy compliant
+- Need: Flights, hotel, and daily cab transportation
+
+2025-12-01 01:08:24,300 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:09:44,120 - workflow - INFO - Processing message for user 1943c68f-09a1-4976-8f8c-72ba65521116: I love trekking in the monsoon season
+2025-12-01 01:09:49,183 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 01:09:55,870 - workflow - INFO - Processing message for user 1943c68f-09a1-4976-8f8c-72ba65521116: Suggest a 3-day itinerary in Japan
+2025-12-01 01:09:56,550 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-01 01:10:24,415 - workflow - INFO - Processing message for user 1943c68f-09a1-4976-8f8c-72ba65521116: I love having vegetarian food with a tea in the mountains
+2025-12-01 01:10:25,112 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 01:10:55,745 - workflow - INFO - Processing message for user 1943c68f-09a1-4976-8f8c-72ba65521116: Suggest a travel plan with options for cabs and flights
+2025-12-01 01:10:56,337 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:11:55,295 - workflow - INFO - Processing message for user 1943c68f-09a1-4976-8f8c-72ba65521116: Suggest a 3-day itinerary in India
+2025-12-01 01:11:55,964 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-01 01:13:21,776 - workflow - INFO - Processing message for user 1943c68f-09a1-4976-8f8c-72ba65521116: Suggest a travel plan with options for cabs and flights
+2025-12-01 01:13:22,870 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:14:51,435 - workflow - INFO - Processing message for user 1943c68f-09a1-4976-8f8c-72ba65521116: jan 5th to 8th, morning, hyderabad,3 and $2000
+2025-12-01 01:14:52,648 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 01:16:54,453 - workflow - INFO - Processing message for user trip-details-test: Plan a trip to Tokyo with flights and cabs
+2025-12-01 01:16:57,709 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:17:00,869 - workflow - INFO - Processing message for user trip-details-test: jan 5th to 8th, morning, hyderabad, 3 and $2000
+2025-12-01 01:17:01,698 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:19:54,137 - workflow - INFO - Processing message for user complete-flow-test: Plan a trip to Tokyo with flights and cabs
+2025-12-01 01:19:57,094 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:20:00,518 - workflow - INFO - Processing message for user complete-flow-test: jan 5th to 8th, morning, hyderabad, 3 travelers and $2000 budget
+2025-12-01 01:20:01,469 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:21:03,738 - workflow - INFO - Processing message for user final-test-user: Plan a trip to Tokyo with flights and cabs
+2025-12-01 01:21:08,594 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:21:11,733 - workflow - INFO - Processing message for user final-test-user: jan 5th to 8th, morning, hyderabad, 3 travelers and $2000 budget
+2025-12-01 01:21:12,580 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:22:32,938 - workflow - INFO - Processing message for user context-test: Plan a trip to Tokyo with flights and cabs
+2025-12-01 01:22:36,062 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:23:48,822 - workflow - INFO - Processing message for user tokyo-trip-test: Plan a trip to Tokyo with flights and cabs
+2025-12-01 01:23:51,918 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:23:55,039 - workflow - INFO - Processing message for user tokyo-trip-test: jan 5th to 8th, morning, hyderabad, 3 travelers and $2000 budget
+2025-12-01 01:23:56,012 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:24:25,626 - workflow - INFO - Processing message for user 3ffdf420-0cda-45e7-bc2f-bb2987913fb0: I love trekking in the monsoon season
+2025-12-01 01:24:28,729 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 01:24:39,395 - workflow - INFO - Processing message for user 3ffdf420-0cda-45e7-bc2f-bb2987913fb0: Suggest a 3-day itinerary in India
+2025-12-01 01:24:40,625 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-01 01:25:25,471 - workflow - INFO - Processing message for user 31ddad5e-3f48-4c97-a72c-7c6ab326b333: I love having vegetarian food with a tea in the mountains
+2025-12-01 01:25:28,419 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 01:25:38,089 - workflow - INFO - Processing message for user 31ddad5e-3f48-4c97-a72c-7c6ab326b333: Suggest a 3-day itinerary in India
+2025-12-01 01:25:39,170 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-01 01:26:53,100 - workflow - INFO - Processing message for user 31ddad5e-3f48-4c97-a72c-7c6ab326b333: I love trekking in the monsoon season
+2025-12-01 01:28:09,101 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: I love trekking in the monsoon season
+2025-12-01 01:28:12,213 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 01:28:22,147 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: Suggest a 3-day itinerary in India
+2025-12-01 01:28:22,877 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-01 01:28:57,819 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: I love having vegetarian food with a tea in the mountains
+2025-12-01 01:28:58,607 - workflow - INFO - Routing to node based on intent: information
+2025-12-01 01:29:36,957 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: Suggest a travel plan with options for cabs and flights
+2025-12-01 01:29:37,524 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:30:15,432 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: jan 10th to 13th, hyderbad to mumbai, 3, Rs.10000
+2025-12-01 01:30:16,510 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:30:30,632 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: morning
+2025-12-01 01:30:31,923 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:32:18,876 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: Support in-trip queries
+a. Suggest lounge facilities at the start airport/destination airport
+b. Suggest food places for day 1
+c. Suggest travel accessories for the upcoming 3-day trip
+2025-12-01 01:32:20,747 - workflow - INFO - Routing to node based on intent: support_trip
+2025-12-01 01:34:10,163 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: option 1 in flights
+2025-12-01 01:34:15,138 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:36:15,239 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: give the samething from mumbai to goa on jan 14th to 17th
+2025-12-01 01:36:16,609 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:41:19,363 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: give flight details first, i will select option so that you will give remaining
+2025-12-01 01:41:23,750 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:41:46,625 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: option2
+2025-12-01 01:41:49,674 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:42:06,571 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: option1
+2025-12-01 01:42:08,086 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-01 01:43:13,606 - workflow - INFO - Processing message for user 6cefe2c2-a360-4978-aa66-17eaa1d42803: hi
+2025-12-01 01:43:24,610 - workflow - INFO - Routing to node based on intent: travel_plan

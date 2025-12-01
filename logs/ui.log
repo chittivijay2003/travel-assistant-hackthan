@@ -1,0 +1,49 @@
+2025-11-30 23:31:09,193 - ui - INFO - New session started: 38b6181a-ade0-49de-a9d7-ad905773d31a
+2025-11-30 23:31:09,373 - ui - ERROR - Error initializing graph: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-11-30 23:32:44,032 - ui - INFO - New session started: 17b5ab76-7fd4-4d54-8346-9a99e4a4d3f6
+2025-11-30 23:32:44,032 - ui - ERROR - Error initializing graph: 2 validation errors for MemoryConfig
+llm.config
+  Value error, Unsupported LLM provider: google [type=value_error, input_value={'model': 'gemini-1.5-fla...lG5liBM0Q7GM5mrXozZ2Q0'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+embedder.config
+  Value error, Unsupported embedding provider: google [type=value_error, input_value={'model': 'models/embeddi...lG5liBM0Q7GM5mrXozZ2Q0'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-30 23:32:58,257 - ui - INFO - New session started: f7031fa9-769c-4c67-8bc0-904db9814a1f
+2025-11-30 23:32:58,258 - ui - ERROR - Error initializing graph: 2 validation errors for MemoryConfig
+llm.config
+  Value error, Unsupported LLM provider: google [type=value_error, input_value={'model': 'gemini-1.5-fla...lG5liBM0Q7GM5mrXozZ2Q0'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+embedder.config
+  Value error, Unsupported embedding provider: google [type=value_error, input_value={'model': 'models/embeddi...lG5liBM0Q7GM5mrXozZ2Q0'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-30 23:39:36,527 - ui - INFO - New session started: f2e60100-94e4-4054-9eea-a37a46620920
+2025-11-30 23:39:36,941 - ui - INFO - Travel Assistant Graph initialized
+2025-11-30 23:45:30,614 - ui - INFO - New session started: d1097860-0bf3-4638-a671-9ae71f7edb23
+2025-11-30 23:45:31,035 - ui - INFO - Travel Assistant Graph initialized
+2025-11-30 23:58:46,256 - ui - INFO - New session started: 5a345902-1071-4c44-8e64-1d9cfa539148
+2025-11-30 23:58:48,105 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 00:11:13,018 - ui - INFO - New session started: e3de2b24-aba1-4a45-8915-3694f190089c
+2025-12-01 00:11:15,517 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 00:15:54,366 - ui - INFO - New session started: df5b8775-8732-4153-92a4-7c9cc6c9a4e0
+2025-12-01 00:15:56,998 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 00:17:55,535 - ui - INFO - New session started: de639ce9-183e-4642-b4c8-97028efbbb0d
+2025-12-01 00:17:57,421 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 00:22:51,759 - ui - INFO - New session started: a711f631-b49a-4bba-bf26-30013189feeb
+2025-12-01 00:22:53,957 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 00:55:49,150 - ui - INFO - New session started: 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
+2025-12-01 00:55:51,806 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 01:09:09,254 - ui - INFO - New session started: 9af1b133-89d6-4d55-bcef-506376964b2f
+2025-12-01 01:09:19,829 - ui - INFO - New session started: 1943c68f-09a1-4976-8f8c-72ba65521116
+2025-12-01 01:09:19,829 - ui - INFO - New session started: e8ce5e9f-de68-474e-8cb9-9275479ed62b
+2025-12-01 01:09:22,986 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 01:09:22,990 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 01:24:15,852 - ui - INFO - New session started: 3ffdf420-0cda-45e7-bc2f-bb2987913fb0
+2025-12-01 01:24:18,897 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 01:25:06,859 - ui - INFO - New session started: 31ddad5e-3f48-4c97-a72c-7c6ab326b333
+2025-12-01 01:25:10,145 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 01:27:12,867 - ui - INFO - New session started: 76c2ab4f-10dd-42c2-aeae-a9380bbae9f9
+2025-12-01 01:27:12,867 - ui - INFO - New session started: 27bb8406-3c5f-483b-9f30-c5db540d4eb0
+2025-12-01 01:27:17,206 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 01:27:17,207 - ui - INFO - Travel Assistant Graph initialized
+2025-12-01 01:28:00,364 - ui - INFO - New session started: 6cefe2c2-a360-4978-aa66-17eaa1d42803
+2025-12-01 01:28:03,473 - ui - INFO - Travel Assistant Graph initialized
