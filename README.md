@@ -1,15 +1,16 @@
 # ✈️ AI Travel Assistant with LangGraph
 
-An intelligent travel assistant powered by LangGraph, LangChain, Mem0, and RAG that helps users plan trips, manage itineraries, and get in-trip support while ensuring compliance with company travel policies.
+An intelligent travel assistant powered by **LangGraph**, **Google Gemini**, **Local Embeddings**, and **RAG** that helps users plan trips, manage itineraries, and get in-trip support while ensuring compliance with company travel policies.
 
 ## 🌟 Features
 
 ### 🎯 Intent-Based Routing
-The system intelligently classifies user queries into four categories:
+The system intelligently classifies user queries into four categories using Google Gemini:
 
 1. **Information Node** 📝
    - Saves user preferences and travel information
-   - Examples: "I love trekking in monsoon", "I prefer vegetarian food"
+   - Smart itinerary regeneration when new preferences are added
+   - Examples: "I love mountains", "I prefer vegetarian food"
 
 2. **Itinerary Node** 🗺️
    - Generates personalized travel itineraries
@@ -17,58 +18,64 @@ The system intelligently classifies user queries into four categories:
    - Examples: "Suggest a 3-day itinerary in Japan"
 
 3. **Travel Plan Node** 🛫
-   - Creates complete travel plans with flights and cabs
+   - Creates complete travel plans with flights, hotels, and cabs
    - Validates against company policy using RAG
-   - Gathers missing information before planning
-   - Examples: "Plan a trip to London with flights and cabs"
+   - Policy-compliant cost breakdowns
+   - Conversation-aware (remembers context across messages)
+   - Examples: "Plan a 5-day trip to Tokyo with flights"
 
-4. **Support Trip Ancillaries Node** 🆘
-   - Provides in-trip support and recommendations
-   - Examples: "Suggest lounges at Tokyo airport", "Food places for day 1"
+4. **Support Trip Node** 🆘
+   - Provides trip modifications and support
+   - Policy-compliant suggestions
+   - Examples: "Change my hotel", "Add cab service for day 3"
 
 ## 🏗️ Architecture
 
 ```
-User Input → Intent Classification (LLM) → Route to Appropriate Node
-                                          ↓
-         ┌──────────────────────────────────────────────────┐
-         │                                                  │
-    Information    Itinerary    Travel Plan    Support Trip
-    Node           Node         Node           Node
-         │                                                  │
-         └──────────────────────────────────────────────────┘
-                              ↓
-                    Response Generation
-                              ↓
-                    Save to User History (Mem0)
+User Input → Load History → Intent Classification (Gemini) → Route to Node
+                                                             ↓
+                  ┌──────────────────────────────────────────────────┐
+                  │                                                  │
+            Information    Itinerary    Travel Plan    Support Trip
+            Node           Node         Node           Node
+                  │                                                  │
+                  └──────────────────────────────────────────────────┘
+                                        ↓
+                          Response + Save to History
 ```
 
-### Technology Stack
+### 🔑 Technology Stack
 - **LangGraph**: Workflow orchestration with state management
-- **LangChain**: LLM interaction and prompt engineering
-- **Mem0**: User history and preference management
-- **RAG (FAISS)**: Policy document retrieval for compliance
-- **OpenAI GPT**: Intelligent response generation
+- **LangChain**: LLM interaction and prompt engineering  
+- **Google Gemini**: Language model (models/gemini-2.5-flash)
+- **all-MiniLM-L6-v2**: Local embeddings for user history and policies
+- **FAISS**: Vector store for policy document retrieval (no Docker needed)
 - **Streamlit**: Interactive chat UI
-- **Redis**: Vector storage support
+- **JSON + NumPy**: User history storage (Mem0 alternative)
+
+### ✅ Key Benefits
+- 🚀 **100% Local Embeddings** - No API calls for embeddings, zero quota issues
+- 💾 **Simple Storage** - JSON files + FAISS (no external databases)
+- 🔄 **Conversation Context** - Remembers full conversation history
+- 📋 **Policy Compliance** - RAG ensures all plans follow company rules
+- ⚡ **Fast & Efficient** - Local embeddings + Gemini Flash
 
 ## 📋 Prerequisites
 
-- Python 3.13+
+- Python 3.10+
 - Google API key (for Gemini)
-- Qdrant instance (local or cloud)
-- Mem0 (uses local mode by default)
 
-## 🚀 Installation
+## 🚀 Quick Start
 
 1. **Clone the repository**
    ```bash
+   git clone https://github.com/chittivijay2003/travel-assistant-hackthan.git
    cd travel-assistant-hackthan
    ```
 
 2. **Install dependencies**
    ```bash
-   pip install -e .
+   pip3 install -r requirements.txt
    ```
 
 3. **Set up environment variables**
@@ -76,68 +83,58 @@ User Input → Intent Classification (LLM) → Route to Appropriate Node
    cp .env.example .env
    ```
    
-   Edit `.env` and add your API keys:
-   ```
+   Edit `.env` and add your Google API key:
+   ```env
    GOOGLE_API_KEY=your_google_api_key_here
-   GEMINI_MODEL=gemini-1.5-flash  # or gemini-1.5-pro
-   QDRANT_URL=http://localhost:6333
+   GEMINI_MODEL=models/gemini-2.5-flash
    ```
 
-4. **Start Qdrant (if running locally)**
+4. **Create and ingest policy document**
    ```bash
-   # Using Docker (recommended)
-   docker run -p 6333:6333 qdrant/qdrant
-   
-   # Or install Qdrant locally
-   # See: https://qdrant.tech/documentation/quick-start/
+   python3 create_policy.py
    ```
+   This creates a company travel policy PDF and ingests it into FAISS vector store.
 
-5. **Create sample policy document**
+5. **Run the application**
    ```bash
-   python create_policy.py
+   streamlit run app.py
    ```
-   This creates a sample company travel policy PDF in `data/policies/`
-
-5. **Ingest policy documents**
-   ```bash
-   python setup.py
-   ```
-   This processes the policy PDF and creates the vector store for RAG
-
-6. **Run the Streamlit UI**
-
-```bash
-streamlit run app.py
-```
 
 The app will open in your browser at `http://localhost:8501`
 
-### Example Interactions
+## 💬 Example Interactions
 
 **1. Share Preferences (Information Node)**
 ```
-User: I love trekking in the monsoon season
-Assistant: Thank you for sharing! I've noted that: I love trekking in the monsoon season
-          This information will help me provide better recommendations...
+User: I love trekking in the mountains
+Assistant: Thank you for sharing! I've noted that: I love trekking in the mountains
 ```
 
 **2. Request Itinerary (Itinerary Node)**
 ```
-User: Suggest a 3-day itinerary in Japan
-Assistant: [Generates detailed 3-day itinerary based on user preferences]
+User: Suggest a 3-day itinerary in Tokyo
+Assistant: [Generates detailed 3-day Tokyo itinerary based on your preferences]
 ```
 
-**3. Plan Complete Trip (Travel Plan Node)**
+**3. Update Itinerary with New Preference**
 ```
-User: Suggest a travel plan with flights and cabs to Tokyo
-Assistant: [May ask for missing information like dates, start time]
-          [Then generates complete plan with flights, cabs within policy budget]
+User: I also love vegetarian food
+Assistant: [Automatically regenerates Tokyo itinerary with vegetarian restaurants]
 ```
 
-**4. Get Trip Support (Support Trip Node)**
+**4. Plan Complete Trip (Travel Plan Node)**
 ```
-User: Suggest lounge facilities at Tokyo Narita airport
-Assistant: [Provides lounge recommendations based on travel history]
+User: Plan a trip to London with flights and cabs
+Assistant: I need: Travel dates, Origin, Number of travelers, Budget
+
+User: Jan 15-20, from NYC, 1 person, $5000
+Assistant: [Generates complete plan with flights, hotel, cabs - all policy compliant]
+```
+
+**5. Get Trip Support (Support Trip Node)**
+```
+User: Change my hotel to a cheaper option
+Assistant: [Provides cheaper hotel options within company policy]
 ```
 
 ## 📁 Project Structure
@@ -148,160 +145,244 @@ travel-assistant-hackthan/
 │   ├── nodes/
 │   │   ├── __init__.py
 │   │   ├── state.py                 # GraphState definition
-│   │   ├── intent_classification.py # LLM-based intent classifier
-│   │   ├── information.py           # User preference storage
-│   │   ├── itinerary.py             # Itinerary generation
-│   │   ├── travel_plan.py           # Complete travel planning
-│   │   ├── support_trip.py          # In-trip support
-│   │   └── user_selection.py        # User selection handling
+│   │   ├── user_input.py            # Load user history from database
+│   │   ├── intent_classification.py # Gemini-based intent classifier
+│   │   ├── information.py           # Save preferences + smart updates
+│   │   ├── itinerary.py             # Generate creative itineraries
+│   │   ├── travel_plan.py           # Policy-compliant travel plans
+│   │   └── support_trip.py          # Trip modifications & support
 │   ├── utils/
 │   │   ├── __init__.py
-│   │   ├── logger.py                # Logging utility
-│   │   ├── mem0_manager.py          # Mem0 integration
-│   │   └── rag_manager.py           # RAG system with FAISS
-│   ├── config.py                    # Configuration
-│   └── workflow.py                  # LangGraph workflow
+│   │   ├── logger.py                # Logging configuration
+│   │   ├── mem0_manager.py          # User history (JSON + all-MiniLM-L6-v2)
+│   │   └── rag_manager.py           # Policy RAG (FAISS + all-MiniLM-L6-v2)
+│   ├── config.py                    # Environment configuration
+│   └── workflow.py                  # LangGraph workflow orchestration
 ├── data/
+│   ├── user_memories.json           # User history database
+│   ├── user_embeddings.npy          # Cached embeddings
 │   ├── policies/                    # Policy PDF documents
+│   │   └── company_travel_policy.pdf
 │   └── vector_store/                # FAISS vector store
+│       └── faiss_index/
 ├── logs/                            # Application logs
+├── .env                             # Environment variables (not in git)
+├── .env.example                     # Environment template
 ├── app.py                           # Streamlit UI
-├── setup.py                         # Policy ingestion script
-├── create_policy.py                 # Sample policy generator
-├── pyproject.toml                   # Dependencies
+├── create_policy.py                 # Policy generator & ingestion
+├── requirements.txt                 # Python dependencies
+├── ARCHITECTURE_GUIDE.md            # Detailed implementation guide
 └── README.md                        # This file
 ```
 
 ## 🔧 Configuration
 
 ### Environment Variables
-Edit `.env` file to configure:
+Edit `.env` file:
 
-- `GOOGLE_API_KEY`: Your Google API key (required)
-- `GEMINI_MODEL`: Model to use (default: gemini-1.5-flash, or use gemini-1.5-pro)
-- `TEMPERATURE`: LLM temperature (default: 0.7)
-- `QDRANT_URL`: Qdrant server URL (default: http://localhost:6333)
-- `QDRANT_API_KEY`: Qdrant API key (optional, for cloud)
-- `MEM0_API_KEY`: Mem0 API key (optional, uses local mode if not set)
-- `LOG_LEVEL`: Logging level (default: INFO)
+```env
+# Required
+GOOGLE_API_KEY=your_google_api_key_here
+
+# Optional (defaults provided)
+GEMINI_MODEL=models/gemini-2.5-flash
+TEMPERATURE=0.7
+```
+
+### Get Google API Key
+1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Create a new API key
+3. Add to `.env` file
 
 ### Policy Documents
-Place your company travel policy PDFs in `data/policies/` and run:
-```bash
-python setup.py
-```
+- Default policy is auto-created by `create_policy.py`
+- Add custom policies to `data/policies/` directory
+- Policies are automatically ingested into FAISS
 
 ## 🔍 How It Works
 
-### 1. Intent Classification
-Uses LLM to classify user intent with low temperature (0.3) for consistent categorization.
+### 1. User Input Node
+- **File**: `src/nodes/user_input.py`
+- Loads last 20 user memories from JSON database
+- Formats as readable history for context
 
-### 2. User History (Mem0)
-- Stores user preferences, selections, and travel history
-- Retrieved contextually for personalized responses
-- Tagged with metadata (preference, selection, travel_plan_request, etc.)
+### 2. Intent Classification (Gemini)
+- **File**: `src/nodes/intent_classification.py`
+- Uses Google Gemini (temperature=0.3 for accuracy)
+- Analyzes input + conversation history
+- Routes to: information | itinerary | travel_plan | support_trip
 
-### 3. RAG for Policy Compliance
-- PDF policies chunked and embedded using OpenAI embeddings
-- Stored in FAISS vector store
-- Retrieved contextually during travel planning
-- Ensures recommendations comply with company budgets
+### 3. Node Processing
 
-### 4. LangGraph Workflow
-- State-based execution with conditional routing
-- Each node processes state and returns updated state
-- Parallel-safe design with immutable state updates
+**Information Node** (`src/nodes/information.py`)
+- Saves preferences with all-MiniLM-L6-v2 embeddings
+- Smart feature: Auto-regenerates itineraries when new preferences added
+- Storage: `data/user_memories.json` + `data/user_embeddings.npy`
+
+**Itinerary Node** (`src/nodes/itinerary.py`)
+- Gemini generates creative day-by-day plans (temperature=0.8)
+- Uses user preferences for personalization
+
+**Travel Plan Node** (`src/nodes/travel_plan.py`)
+- Validates required info (dates, origin, travelers, budget)
+- Queries RAG for policy compliance
+- Gemini generates complete plan (temperature=0.7)
+- Includes flights, hotels, cabs with cost breakdown
+
+**Support Trip Node** (`src/nodes/support_trip.py`)
+- Retrieves current trip from history
+- Queries RAG for policy compliance
+- Suggests modifications within budget
+
+### 4. User History (Mem0 Alternative)
+- **File**: `src/utils/mem0_manager.py`
+- **Storage**: JSON file + NumPy embeddings
+- **Embeddings**: all-MiniLM-L6-v2 (384 dimensions)
+- **Benefits**: Local, fast, no API calls
+
+**Metadata Types**:
+- `preference` - User likes/dislikes
+- `selection` - Confirmed itinerary choice
+- `travel_plan_request` - Trip booking
+- `trip_modification` - Changes to trip
+
+### 5. RAG for Policy Compliance
+- **File**: `src/utils/rag_manager.py`
+- **Vector Store**: FAISS (local, no Docker)
+- **Embeddings**: all-MiniLM-L6-v2 (same as Mem0)
+- **Chunking**: 1000 chars with 200 char overlap
+
+**Policy Content**:
+- Flight budgets: $500 domestic, $2,500 international
+- Hotel budgets: $200-300/night
+- Cab allowances: $100/day
+- Total trip budgets by duration
+
+### 6. Conversation Context
+- Full conversation history passed through all nodes
+- Enables multi-turn interactions
+- Remembers previous itineraries, confirmations, etc.
 
 ## 🧪 Testing
 
 Test different scenarios:
 
 ```python
-# Test intent classification
-"I prefer window seats"  # → Information Node
-"Plan a 5-day trip to Paris"  # → Itinerary Node
-"Book flights and cabs to London"  # → Travel Plan Node
-"Food recommendations for day 2"  # → Support Trip Node
+# Information Node
+"I love mountains and trekking"
+
+# Itinerary Node  
+"Suggest a 5-day itinerary in Switzerland"
+
+# Smart Update (after itinerary shown)
+"I also prefer vegetarian food"  # Auto-regenerates with veggie options
+
+# Travel Plan Node
+"Plan a trip to Tokyo"
+# System asks for: dates, origin, travelers, budget
+"Jan 5-8, from Hyderabad, 3 travelers, $2000"
+# Generates complete plan
+
+# Support Trip Node
+"Change my hotel to a cheaper option"
 ```
 
 ## 📊 Logging
 
-Logs are stored in `logs/` directory:
-- `ui.log` - Streamlit UI logs
-- `workflow.log` - Graph execution logs
-- `intent_classification.log` - Intent classification logs
-- `rag_manager.log` - RAG system logs
-- `mem0_manager.log` - Mem0 operations logs
-- And more...
+Logs in `logs/` directory:
+- `workflow.log` - Graph execution
+- `intent_classification.log` - Intent decisions
+- `travel_plan.log` - Travel planning
+- `rag_manager.log` - Policy queries
+- `mem0_manager.log` - User history operations
+- `ui.log` - Streamlit UI
 
 ## 🛠️ Troubleshooting
 
 ### Common Issues
 
-1. **Import errors for langchain packages**
+1. **Google API key errors**
    ```bash
-   pip install --upgrade langchain langchain-google-genai langchain-community langchain-qdrant
+   # Verify your key is set
+   python3 -c "from src.config import Config; Config.validate()"
    ```
 
-2. **Qdrant connection issues**
-   - Make sure Qdrant is running: `docker ps` (if using Docker)
-   - Check `QDRANT_URL` in `.env` file
-   - For local development: `docker run -p 6333:6333 qdrant/qdrant`
-
-3. **Google API key issues**
-   - Get your API key from: https://makersuite.google.com/app/apikey
-   - Make sure it's correctly set in `.env` file
-
-4. **Mem0 connection issues**
-   - Mem0 will use local mode if API key is not provided
-   - For production, sign up at mem0.ai
-
-5. **Policy documents not found**
+2. **Import errors**
    ```bash
-   python create_policy.py  # Create sample policy
-   python setup.py          # Ingest into RAG system
+   pip3 install -r requirements.txt
    ```
+
+3. **FAISS index not found**
+   ```bash
+   python3 create_policy.py  # Creates policy and FAISS index
+   ```
+
+4. **Slow first run**
+   - First run downloads all-MiniLM-L6-v2 model (~90MB)
+   - Subsequent runs are fast (model cached)
+
+## 📖 Documentation
+
+- **ARCHITECTURE_GUIDE.md** - Complete implementation details
+  - File structure and logic placement
+  - Technology choices explained
+  - Code examples for each component
+  - Data flow diagrams
 
 ## 🚀 Deployment
 
-### Production Considerations
+### Local Development
+```bash
+streamlit run app.py
+```
 
-1. **Environment Setup**
-   - Use production Google API key
-   - Configure Qdrant cloud instance or self-hosted server
-   - Configure Mem0 cloud instance
-   - Use environment-specific .env files
+### Production Deployment
 
-2. **Scaling**
-   - Deploy Streamlit on cloud (Streamlit Cloud, AWS, Azure)
-   - Use Qdrant Cloud for managed vector DB
-   - Implement request queuing for high traffic
+**Streamlit Cloud** (Easiest):
+1. Push to GitHub
+2. Connect at [streamlit.io/cloud](https://streamlit.io/cloud)
+3. Add `GOOGLE_API_KEY` in secrets
+4. Deploy!
 
-3. **Security**
-   - Never commit .env file
-   - Use secrets management (AWS Secrets Manager, Azure Key Vault)
-   - Implement user authentication
-   - Add rate limiting
+**Docker**:
+```dockerfile
+FROM python:3.10-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["streamlit", "run", "app.py"]
+```
+
+**Environment Variables for Production**:
+- Store `GOOGLE_API_KEY` in secrets manager
+- Never commit `.env` to git
+- Use `.env.example` as template
+
+## 🔐 Security
+
+- ✅ `.env` is in `.gitignore`
+- ✅ API keys stored in environment variables
+- ✅ No hardcoded credentials
+- ✅ All data stored locally
 
 ## 📝 License
 
-This project is for educational purposes.
+Educational project - MIT License
 
 ## 🤝 Contributing
 
-Contributions welcome! Please follow these steps:
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+2. Create feature branch: `git checkout -b feature-name`
+3. Commit changes: `git commit -m 'Add feature'`
+4. Push: `git push origin feature-name`
+5. Open pull request
 
-## 📧 Support
+## 📧 Contact
 
-For issues or questions:
-- Check the logs in `logs/` directory
-- Review the troubleshooting section
-- Open an issue on GitHub
+- **GitHub**: [@chittivijay2003](https://github.com/chittivijay2003)
+- **Repository**: [travel-assistant-hackthan](https://github.com/chittivijay2003/travel-assistant-hackthan)
 
 ---
 
-Built with ❤️ using LangGraph, Google Gemini, Mem0, Qdrant, and Streamlit
+Built with ❤️ using **LangGraph** • **Google Gemini** • **FAISS** • **all-MiniLM-L6-v2** • **Streamlit**

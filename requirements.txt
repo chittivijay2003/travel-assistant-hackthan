@@ -7,11 +7,7 @@ langgraph>=0.2.0
 # LLM Provider
 google-generativeai>=0.3.0
 
-# Memory and Storage
-mem0ai>=0.1.0
-redis>=5.0.0
-qdrant-client>=1.7.0
-langchain-qdrant>=0.1.0
+# Vector Store and Embeddings
 faiss-cpu>=1.7.4
 sentence-transformers>=2.2.0
 
@@ -25,3 +21,4 @@ streamlit>=1.39.0
 # Utilities
 python-dotenv>=1.0.0
 pydantic>=2.0.0
+numpy>=1.24.0
