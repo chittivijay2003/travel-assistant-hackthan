@@ -23,6 +23,13 @@ class Config:
     GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
     TEMPERATURE = float(os.getenv("TEMPERATURE", "0.7"))
 
+    # Redis
+    REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
+    REDIS_PORT = int(os.getenv("REDIS_PORT", "6379"))
+    REDIS_DB = int(os.getenv("REDIS_DB", "0"))
+    REDIS_PASSWORD = os.getenv("REDIS_PASSWORD", None)
+    USE_REDIS = os.getenv("USE_REDIS", "false").lower() == "true"
+
     # Qdrant
     QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
     QDRANT_API_KEY = os.getenv("QDRANT_API_KEY", None)
@@ -65,7 +72,7 @@ Config.ensure_directories()
 try:
     Config.validate()
 except ValueError as e:
-    import sys
+    import sys  # noqa: F401 - used for error messaging
 
     print(f"\n❌ Configuration Error: {e}\n")
     if "GOOGLE_API_KEY" in str(e):

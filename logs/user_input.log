@@ -1,210 +1,99 @@
-2025-11-30 23:37:35,288 - user_input - INFO - Loading user history for user test-user-123
-2025-11-30 23:37:35,290 - user_input - INFO - Loaded 0 history items for user test-user-123
-2025-11-30 23:37:35,290 - user_input - INFO - User input: Hello, I need help planning a trip
-2025-11-30 23:40:08,994 - user_input - INFO - Loading user history for user f2e60100-94e4-4054-9eea-a37a46620920
-2025-11-30 23:40:09,005 - user_input - INFO - Loaded 0 history items for user f2e60100-94e4-4054-9eea-a37a46620920
-2025-11-30 23:40:09,005 - user_input - INFO - User input: I love trekking in the monsoon season
-2025-11-30 23:40:27,787 - user_input - INFO - Loading user history for user f2e60100-94e4-4054-9eea-a37a46620920
-2025-11-30 23:40:27,799 - user_input - INFO - Loaded 0 history items for user f2e60100-94e4-4054-9eea-a37a46620920
-2025-11-30 23:40:27,799 - user_input - INFO - User input: I love having vegetarian food with a tea in the mountains
-2025-11-30 23:40:39,982 - user_input - INFO - Loading user history for user f2e60100-94e4-4054-9eea-a37a46620920
-2025-11-30 23:40:39,984 - user_input - INFO - Loaded 0 history items for user f2e60100-94e4-4054-9eea-a37a46620920
-2025-11-30 23:40:39,984 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
-2025-11-30 23:42:07,084 - user_input - INFO - Loading user history for user test-123
-2025-11-30 23:42:07,085 - user_input - INFO - Loaded 0 history items for user test-123
-2025-11-30 23:42:07,085 - user_input - INFO - User input: Hello
-2025-11-30 23:44:53,930 - user_input - INFO - Loading user history for user user-001
-2025-11-30 23:44:53,931 - user_input - INFO - Loaded 0 history items for user user-001
-2025-11-30 23:44:53,931 - user_input - INFO - User input: I want to plan a trip to Paris
-2025-11-30 23:45:36,343 - user_input - INFO - Loading user history for user d1097860-0bf3-4638-a671-9ae71f7edb23
-2025-11-30 23:45:36,344 - user_input - INFO - Loaded 0 history items for user d1097860-0bf3-4638-a671-9ae71f7edb23
-2025-11-30 23:45:36,344 - user_input - INFO - User input: I love trekking in the monsoon season
-2025-11-30 23:47:34,536 - user_input - INFO - Loading user history for user test-user-pref
-2025-11-30 23:47:34,536 - user_input - INFO - Loaded 0 history items for user test-user-pref
-2025-11-30 23:47:34,536 - user_input - INFO - User input: I love trekking in the monsoon season
-2025-11-30 23:51:20,823 - user_input - INFO - Loading user history for user user-embed-test
-2025-11-30 23:51:20,824 - user_input - INFO - Loaded 0 history items for user user-embed-test
-2025-11-30 23:51:20,824 - user_input - INFO - User input: I love trekking in mountains
-2025-11-30 23:51:23,641 - user_input - INFO - Loading user history for user user-embed-test
-2025-11-30 23:51:23,641 - user_input - INFO - Loaded 1 history items for user user-embed-test
-2025-11-30 23:51:23,641 - user_input - INFO - User input: I prefer vegetarian food
-2025-11-30 23:51:24,413 - user_input - INFO - Loading user history for user user-embed-test
-2025-11-30 23:51:24,413 - user_input - INFO - Loaded 2 history items for user user-embed-test
-2025-11-30 23:51:24,413 - user_input - INFO - User input: I enjoy beach destinations
-2025-11-30 23:58:54,480 - user_input - INFO - Loading user history for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-11-30 23:58:54,481 - user_input - INFO - Loaded 0 history items for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-11-30 23:58:54,481 - user_input - INFO - User input: I love trekking in the monsoon season
-2025-11-30 23:59:18,811 - user_input - INFO - Loading user history for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-11-30 23:59:18,812 - user_input - INFO - Loaded 1 history items for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-11-30 23:59:18,812 - user_input - INFO - User input:  Suggest a 3-day itinerary in Japan
-2025-12-01 00:00:35,740 - user_input - INFO - Loading user history for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-12-01 00:00:35,740 - user_input - INFO - Loaded 1 history items for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-12-01 00:00:35,740 - user_input - INFO - User input: yes i want this plan
-2025-12-01 00:01:07,328 - user_input - INFO - Loading user history for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-12-01 00:01:07,329 - user_input - INFO - Loaded 1 history items for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-12-01 00:01:07,330 - user_input - INFO - User input: I love having vegetarian food with a tea in the mountains
-2025-12-01 00:11:39,222 - user_input - INFO - Loading user history for user test-conversation-user
-2025-12-01 00:11:39,222 - user_input - INFO - Loaded 0 history items for user test-conversation-user
-2025-12-01 00:11:39,222 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
-2025-12-01 00:12:00,123 - user_input - INFO - Loading user history for user test-conversation-user
-2025-12-01 00:12:00,124 - user_input - INFO - Loaded 0 history items for user test-conversation-user
-2025-12-01 00:12:00,124 - user_input - INFO - User input: yes i want this plan
-2025-12-01 00:13:00,959 - user_input - INFO - Loading user history for user test-selection-save
-2025-12-01 00:13:00,960 - user_input - INFO - Loaded 0 history items for user test-selection-save
-2025-12-01 00:13:00,960 - user_input - INFO - User input: Suggest a 2-day itinerary in Tokyo
-2025-12-01 00:13:23,522 - user_input - INFO - Loading user history for user test-selection-save
-2025-12-01 00:13:23,522 - user_input - INFO - Loaded 0 history items for user test-selection-save
-2025-12-01 00:13:23,523 - user_input - INFO - User input: yes i want this plan
-2025-12-01 00:14:27,462 - user_input - INFO - Loading user history for user debug-test
-2025-12-01 00:14:27,463 - user_input - INFO - Loaded 0 history items for user debug-test
-2025-12-01 00:14:27,463 - user_input - INFO - User input: yes i want this plan
-2025-12-01 00:15:17,939 - user_input - INFO - Loading user history for user final-test
-2025-12-01 00:15:17,939 - user_input - INFO - Loaded 0 history items for user final-test
-2025-12-01 00:15:17,939 - user_input - INFO - User input: yes i want this plan
-2025-12-01 00:18:11,277 - user_input - INFO - Loading user history for user de639ce9-183e-4642-b4c8-97028efbbb0d
-2025-12-01 00:18:11,278 - user_input - INFO - Loaded 0 history items for user de639ce9-183e-4642-b4c8-97028efbbb0d
-2025-12-01 00:18:11,278 - user_input - INFO - User input: I love trekking in the monsoon season
-2025-12-01 00:18:21,323 - user_input - INFO - Loading user history for user de639ce9-183e-4642-b4c8-97028efbbb0d
-2025-12-01 00:18:21,324 - user_input - INFO - Loaded 1 history items for user de639ce9-183e-4642-b4c8-97028efbbb0d
-2025-12-01 00:18:21,324 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
-2025-12-01 00:19:25,786 - user_input - INFO - Loading user history for user de639ce9-183e-4642-b4c8-97028efbbb0d
-2025-12-01 00:19:25,787 - user_input - INFO - Loaded 1 history items for user de639ce9-183e-4642-b4c8-97028efbbb0d
-2025-12-01 00:19:25,787 - user_input - INFO - User input: I love having vegetarian food with a tea in the mountains
-2025-12-01 00:23:14,255 - user_input - INFO - Loading user history for user preference-update-test
-2025-12-01 00:23:14,256 - user_input - INFO - Loaded 0 history items for user preference-update-test
-2025-12-01 00:23:14,256 - user_input - INFO - User input: I love trekking in the monsoon season
-2025-12-01 00:23:18,110 - user_input - INFO - Loading user history for user preference-update-test
-2025-12-01 00:23:18,110 - user_input - INFO - Loaded 1 history items for user preference-update-test
-2025-12-01 00:23:18,110 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
-2025-12-01 00:23:45,926 - user_input - INFO - Loading user history for user preference-update-test
-2025-12-01 00:23:45,927 - user_input - INFO - Loaded 1 history items for user preference-update-test
-2025-12-01 00:23:45,927 - user_input - INFO - User input: I love having vegetarian food with a tea in the mountains
-2025-12-01 00:56:09,608 - user_input - INFO - Loading user history for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:56:09,609 - user_input - INFO - Loaded 0 history items for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:56:09,609 - user_input - INFO - User input: I love trekking in the monsoon season
-2025-12-01 00:56:26,577 - user_input - INFO - Loading user history for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:56:26,578 - user_input - INFO - Loaded 1 history items for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:56:26,578 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
-2025-12-01 00:56:57,991 - user_input - INFO - Loading user history for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:56:57,991 - user_input - INFO - Loaded 1 history items for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:56:57,991 - user_input - INFO - User input: I love having vegetarian food with a tea in the mountains
-2025-12-01 00:57:45,580 - user_input - INFO - Loading user history for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:57:45,580 - user_input - INFO - Loaded 2 history items for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:57:45,581 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
-2025-12-01 01:07:48,715 - user_input - INFO - Loading user history for user policy-test-user
-2025-12-01 01:07:48,715 - user_input - INFO - Loaded 0 history items for user policy-test-user
-2025-12-01 01:07:48,715 - user_input - INFO - User input: Plan a 5-day trip to London with flights and cabs. I need to fly from New York on January 15, 2026. I'm traveling alone with a budget preference of staying within company policy.
-2025-12-01 01:08:21,338 - user_input - INFO - Loading user history for user complete-policy-test
-2025-12-01 01:08:21,338 - user_input - INFO - Loaded 0 history items for user complete-policy-test
-2025-12-01 01:08:21,338 - user_input - INFO - User input: Plan a complete 5-day trip to London:
-- Departure: New York, January 15, 2026, morning (8 AM)
-- Return: January 20, 2026
-- Travelers: 1 person (me)
-- Budget: Company travel policy compliant
-- Need: Flights, hotel, and daily cab transportation
-
-2025-12-01 01:09:44,123 - user_input - INFO - Loading user history for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:09:44,123 - user_input - INFO - Loaded 0 history items for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:09:44,124 - user_input - INFO - User input: I love trekking in the monsoon season
-2025-12-01 01:09:55,872 - user_input - INFO - Loading user history for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:09:55,872 - user_input - INFO - Loaded 1 history items for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:09:55,872 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
-2025-12-01 01:10:24,417 - user_input - INFO - Loading user history for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:10:24,417 - user_input - INFO - Loaded 1 history items for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:10:24,417 - user_input - INFO - User input: I love having vegetarian food with a tea in the mountains
-2025-12-01 01:10:55,747 - user_input - INFO - Loading user history for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:10:55,748 - user_input - INFO - Loaded 2 history items for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:10:55,748 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
-2025-12-01 01:11:55,298 - user_input - INFO - Loading user history for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:11:55,299 - user_input - INFO - Loaded 2 history items for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:11:55,299 - user_input - INFO - User input: Suggest a 3-day itinerary in India
-2025-12-01 01:13:21,779 - user_input - INFO - Loading user history for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:13:21,780 - user_input - INFO - Loaded 2 history items for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:13:21,780 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
-2025-12-01 01:14:51,438 - user_input - INFO - Loading user history for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:14:51,440 - user_input - INFO - Loaded 2 history items for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:14:51,440 - user_input - INFO - User input: jan 5th to 8th, morning, hyderabad,3 and $2000
-2025-12-01 01:16:54,453 - user_input - INFO - Loading user history for user trip-details-test
-2025-12-01 01:16:54,454 - user_input - INFO - Loaded 0 history items for user trip-details-test
-2025-12-01 01:16:54,454 - user_input - INFO - User input: Plan a trip to Tokyo with flights and cabs
-2025-12-01 01:17:00,871 - user_input - INFO - Loading user history for user trip-details-test
-2025-12-01 01:17:00,872 - user_input - INFO - Loaded 0 history items for user trip-details-test
-2025-12-01 01:17:00,872 - user_input - INFO - User input: jan 5th to 8th, morning, hyderabad, 3 and $2000
-2025-12-01 01:19:54,138 - user_input - INFO - Loading user history for user complete-flow-test
-2025-12-01 01:19:54,138 - user_input - INFO - Loaded 0 history items for user complete-flow-test
-2025-12-01 01:19:54,138 - user_input - INFO - User input: Plan a trip to Tokyo with flights and cabs
-2025-12-01 01:20:00,519 - user_input - INFO - Loading user history for user complete-flow-test
-2025-12-01 01:20:00,520 - user_input - INFO - Loaded 0 history items for user complete-flow-test
-2025-12-01 01:20:00,520 - user_input - INFO - User input: jan 5th to 8th, morning, hyderabad, 3 travelers and $2000 budget
-2025-12-01 01:21:03,740 - user_input - INFO - Loading user history for user final-test-user
-2025-12-01 01:21:03,740 - user_input - INFO - Loaded 0 history items for user final-test-user
-2025-12-01 01:21:03,740 - user_input - INFO - User input: Plan a trip to Tokyo with flights and cabs
-2025-12-01 01:21:11,734 - user_input - INFO - Loading user history for user final-test-user
-2025-12-01 01:21:11,735 - user_input - INFO - Loaded 0 history items for user final-test-user
-2025-12-01 01:21:11,735 - user_input - INFO - User input: jan 5th to 8th, morning, hyderabad, 3 travelers and $2000 budget
-2025-12-01 01:22:32,939 - user_input - INFO - Loading user history for user context-test
-2025-12-01 01:22:32,939 - user_input - INFO - Loaded 0 history items for user context-test
-2025-12-01 01:22:32,939 - user_input - INFO - User input: Plan a trip to Tokyo with flights and cabs
-2025-12-01 01:23:48,824 - user_input - INFO - Loading user history for user tokyo-trip-test
-2025-12-01 01:23:48,825 - user_input - INFO - Loaded 0 history items for user tokyo-trip-test
-2025-12-01 01:23:48,825 - user_input - INFO - User input: Plan a trip to Tokyo with flights and cabs
-2025-12-01 01:23:55,041 - user_input - INFO - Loading user history for user tokyo-trip-test
-2025-12-01 01:23:55,042 - user_input - INFO - Loaded 0 history items for user tokyo-trip-test
-2025-12-01 01:23:55,042 - user_input - INFO - User input: jan 5th to 8th, morning, hyderabad, 3 travelers and $2000 budget
-2025-12-01 01:24:25,629 - user_input - INFO - Loading user history for user 3ffdf420-0cda-45e7-bc2f-bb2987913fb0
-2025-12-01 01:24:25,630 - user_input - INFO - Loaded 0 history items for user 3ffdf420-0cda-45e7-bc2f-bb2987913fb0
-2025-12-01 01:24:25,630 - user_input - INFO - User input: I love trekking in the monsoon season
-2025-12-01 01:24:39,396 - user_input - INFO - Loading user history for user 3ffdf420-0cda-45e7-bc2f-bb2987913fb0
-2025-12-01 01:24:39,397 - user_input - INFO - Loaded 1 history items for user 3ffdf420-0cda-45e7-bc2f-bb2987913fb0
-2025-12-01 01:24:39,397 - user_input - INFO - User input: Suggest a 3-day itinerary in India
-2025-12-01 01:25:25,474 - user_input - INFO - Loading user history for user 31ddad5e-3f48-4c97-a72c-7c6ab326b333
-2025-12-01 01:25:25,474 - user_input - INFO - Loaded 0 history items for user 31ddad5e-3f48-4c97-a72c-7c6ab326b333
-2025-12-01 01:25:25,474 - user_input - INFO - User input: I love having vegetarian food with a tea in the mountains
-2025-12-01 01:25:38,091 - user_input - INFO - Loading user history for user 31ddad5e-3f48-4c97-a72c-7c6ab326b333
-2025-12-01 01:25:38,091 - user_input - INFO - Loaded 1 history items for user 31ddad5e-3f48-4c97-a72c-7c6ab326b333
-2025-12-01 01:25:38,091 - user_input - INFO - User input: Suggest a 3-day itinerary in India
-2025-12-01 01:26:53,101 - user_input - INFO - Loading user history for user 31ddad5e-3f48-4c97-a72c-7c6ab326b333
-2025-12-01 01:26:53,101 - user_input - INFO - Loaded 1 history items for user 31ddad5e-3f48-4c97-a72c-7c6ab326b333
-2025-12-01 01:26:53,101 - user_input - INFO - User input: I love trekking in the monsoon season
-2025-12-01 01:28:09,103 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:28:09,104 - user_input - INFO - Loaded 0 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:28:09,104 - user_input - INFO - User input: I love trekking in the monsoon season
-2025-12-01 01:28:22,150 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:28:22,151 - user_input - INFO - Loaded 1 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:28:22,151 - user_input - INFO - User input: Suggest a 3-day itinerary in India
-2025-12-01 01:28:57,825 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:28:57,826 - user_input - INFO - Loaded 1 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:28:57,826 - user_input - INFO - User input: I love having vegetarian food with a tea in the mountains
-2025-12-01 01:29:36,962 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:29:36,963 - user_input - INFO - Loaded 2 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:29:36,963 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
-2025-12-01 01:30:15,435 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:30:15,436 - user_input - INFO - Loaded 2 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:30:15,436 - user_input - INFO - User input: jan 10th to 13th, hyderbad to mumbai, 3, Rs.10000
-2025-12-01 01:30:30,633 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:30:30,633 - user_input - INFO - Loaded 2 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:30:30,633 - user_input - INFO - User input: morning
-2025-12-01 01:32:18,881 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:32:18,881 - user_input - INFO - Loaded 3 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:32:18,882 - user_input - INFO - User input: Support in-trip queries
-a. Suggest lounge facilities at the start airport/destination airport
-b. Suggest food places for day 1
-c. Suggest travel accessories for the upcoming 3-day trip
-2025-12-01 01:34:10,167 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:34:10,168 - user_input - INFO - Loaded 4 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:34:10,168 - user_input - INFO - User input: option 1 in flights
-2025-12-01 01:36:15,242 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:36:15,243 - user_input - INFO - Loaded 5 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:36:15,243 - user_input - INFO - User input: give the samething from mumbai to goa on jan 14th to 17th
-2025-12-01 01:41:19,369 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:41:19,370 - user_input - INFO - Loaded 6 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:41:19,370 - user_input - INFO - User input: give flight details first, i will select option so that you will give remaining
-2025-12-01 01:41:46,627 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:41:46,628 - user_input - INFO - Loaded 7 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:41:46,628 - user_input - INFO - User input: option2
-2025-12-01 01:42:06,572 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:42:06,573 - user_input - INFO - Loaded 7 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:42:06,573 - user_input - INFO - User input: option1
-2025-12-01 01:43:13,616 - user_input - INFO - Loading user history for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:43:13,617 - user_input - INFO - Loaded 8 history items for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:43:13,617 - user_input - INFO - User input: hi
+2025-12-07 01:26:00,904 - user_input - INFO - Loading user history for user 2808b1a5-c829-4c3d-aa7b-780e6c55b585
+2025-12-07 01:26:00,905 - user_input - INFO - Loaded 0 history items for user 2808b1a5-c829-4c3d-aa7b-780e6c55b585
+2025-12-07 01:26:00,905 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-07 01:26:25,722 - user_input - INFO - Loading user history for user 2808b1a5-c829-4c3d-aa7b-780e6c55b585
+2025-12-07 01:26:25,722 - user_input - INFO - Loaded 0 history items for user 2808b1a5-c829-4c3d-aa7b-780e6c55b585
+2025-12-07 01:26:25,723 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-07 01:27:53,094 - user_input - INFO - Loading user history for user 3724840e-500e-407e-bd85-f4295a447d66
+2025-12-07 01:27:53,095 - user_input - INFO - Loaded 0 history items for user 3724840e-500e-407e-bd85-f4295a447d66
+2025-12-07 01:27:53,095 - user_input - INFO - User input:  love trekking in the monsoon season
+2025-12-07 01:29:14,947 - user_input - INFO - Loading user history for user de049c6c-c48f-4c3f-98c3-9358f3e8c49e
+2025-12-07 01:29:14,947 - user_input - INFO - Loaded 0 history items for user de049c6c-c48f-4c3f-98c3-9358f3e8c49e
+2025-12-07 01:29:14,947 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-07 01:32:03,286 - user_input - INFO - Loading user history for user c13c204c-a9f1-408d-be81-2eb88a978375
+2025-12-07 01:32:03,286 - user_input - INFO - Loaded 0 history items for user c13c204c-a9f1-408d-be81-2eb88a978375
+2025-12-07 01:32:03,286 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-07 01:33:13,736 - user_input - INFO - Loading user history for user 308d5428-add2-472e-b869-628efee75e47
+2025-12-07 01:33:13,737 - user_input - INFO - Loaded 0 history items for user 308d5428-add2-472e-b869-628efee75e47
+2025-12-07 01:33:13,737 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-07 01:33:35,294 - user_input - INFO - Loading user history for user 308d5428-add2-472e-b869-628efee75e47
+2025-12-07 01:33:35,294 - user_input - INFO - Loaded 0 history items for user 308d5428-add2-472e-b869-628efee75e47
+2025-12-07 01:33:35,294 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-07 01:33:59,239 - user_input - INFO - Loading user history for user 308d5428-add2-472e-b869-628efee75e47
+2025-12-07 01:33:59,239 - user_input - INFO - Loaded 0 history items for user 308d5428-add2-472e-b869-628efee75e47
+2025-12-07 01:33:59,240 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-07 01:35:32,885 - user_input - INFO - Loading user history for user ca159568-c8dc-4d01-aef1-b2949b0e4faf
+2025-12-07 01:35:32,886 - user_input - INFO - Loaded 0 history items for user ca159568-c8dc-4d01-aef1-b2949b0e4faf
+2025-12-07 01:35:32,886 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-07 01:38:24,702 - user_input - INFO - Loading user history for user f389045c-861a-4695-bea3-698b724910ba
+2025-12-07 01:38:24,702 - user_input - INFO - Loaded 0 history items for user f389045c-861a-4695-bea3-698b724910ba
+2025-12-07 01:38:24,703 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-07 01:38:40,638 - user_input - INFO - Loading user history for user f389045c-861a-4695-bea3-698b724910ba
+2025-12-07 01:38:40,638 - user_input - INFO - Loaded 0 history items for user f389045c-861a-4695-bea3-698b724910ba
+2025-12-07 01:38:40,638 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-07 01:40:50,181 - user_input - INFO - Loading user history for user 9207736f-12a6-4cb8-92dc-7a732267a80a
+2025-12-07 01:40:50,181 - user_input - INFO - Loaded 0 history items for user 9207736f-12a6-4cb8-92dc-7a732267a80a
+2025-12-07 01:40:50,182 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-07 01:41:13,303 - user_input - INFO - Loading user history for user 9207736f-12a6-4cb8-92dc-7a732267a80a
+2025-12-07 01:41:13,304 - user_input - INFO - Loaded 1 history items for user 9207736f-12a6-4cb8-92dc-7a732267a80a
+2025-12-07 01:41:13,304 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-07 01:45:44,234 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:45:44,235 - user_input - INFO - Loaded 0 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:45:44,235 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-07 01:45:53,246 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:45:53,246 - user_input - INFO - Loaded 1 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:45:53,246 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-07 01:48:51,925 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:48:51,926 - user_input - INFO - Loaded 1 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:48:51,926 - user_input - INFO - User input: I love having vegetarian food with a tea in the mountains
+2025-12-07 01:52:35,587 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:52:35,588 - user_input - INFO - Loaded 2 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:52:35,588 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-07 01:53:11,509 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:53:11,510 - user_input - INFO - Loaded 2 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:53:11,510 - user_input - INFO - User input: feb 10 to 13
+2025-12-07 01:53:48,433 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:53:48,433 - user_input - INFO - Loaded 2 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:53:48,434 - user_input - INFO - User input: morning aus to sfo 4 $2000
+2025-12-07 01:56:19,573 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:56:19,574 - user_input - INFO - Loaded 3 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:56:19,574 - user_input - INFO - User input: Option 1 in flights, Option 3 in hotel
+2025-12-07 01:57:34,928 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:57:34,929 - user_input - INFO - Loaded 4 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:57:34,929 - user_input - INFO - User input: Suggest lounge facilities at the start airport/destination airport
+2025-12-07 01:58:40,989 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:58:40,990 - user_input - INFO - Loaded 5 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:58:40,990 - user_input - INFO - User input: Suggest food places for day 1
+2025-12-07 01:59:46,128 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:59:46,130 - user_input - INFO - Loaded 6 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:59:46,130 - user_input - INFO - User input: Suggest travel accessories for the upcoming 3-day trip
+2025-12-07 02:00:33,023 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:00:33,024 - user_input - INFO - Loaded 7 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:00:33,024 - user_input - INFO - User input: I love having vegetarian food with a tea
+2025-12-07 02:01:35,772 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:01:35,774 - user_input - INFO - Loaded 8 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:01:35,774 - user_input - INFO - User input: Suggest food places for day 1
+2025-12-07 02:08:15,882 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:08:15,884 - user_input - INFO - Loaded 9 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:08:15,884 - user_input - INFO - User input: i want same trip from dallas to bufellow
+2025-12-07 02:08:35,660 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:08:35,660 - user_input - INFO - Loaded 9 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:08:35,660 - user_input - INFO - User input: same travel dates
+2025-12-07 02:09:10,062 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:09:10,063 - user_input - INFO - Loaded 9 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:09:10,063 - user_input - INFO - User input: same travel dates which i haved used for austin to sfo trip
+2025-12-07 02:10:25,193 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:10:25,193 - user_input - INFO - Loaded 9 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:10:25,193 - user_input - INFO - User input: feb 5th to 8th evening, 4, $5000
+2025-12-07 02:10:52,864 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:10:52,864 - user_input - INFO - Loaded 9 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:10:52,864 - user_input - INFO - User input: buffelow
+2025-12-07 02:11:16,684 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:11:16,685 - user_input - INFO - Loaded 9 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:11:16,686 - user_input - INFO - User input: evening and dallas
+2025-12-07 02:12:45,431 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:12:45,431 - user_input - INFO - Loaded 10 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:12:45,432 - user_input - INFO - User input: Option 2 in flights and Option 3 in hotel
+2025-12-07 02:19:10,566 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:19:10,567 - user_input - INFO - Loaded 11 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:19:10,567 - user_input - INFO - User input: what is my confirmed flight

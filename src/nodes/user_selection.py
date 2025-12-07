@@ -19,34 +19,87 @@ class UserSelectionNode:
         """
         self.mem0_manager = mem0_manager
 
-    def save_selection(self, user_id: str, selection: str) -> str:
+    def __call__(self, state: GraphState) -> GraphState:
         """
-        Save user selection to history
+        Process user selection from itinerary
 
         Args:
-            user_id: User identifier
-            selection: User's selection
+            state: Current graph state
 
         Returns:
-            Confirmation message
+            Updated state with selection saved
         """
         try:
-            logger.info(f"Saving selection for user {user_id}")
+            user_id = state["user_id"]
+            user_input = state["user_input"]
 
-            # Save to Mem0
-            self.mem0_manager.add_memory(
-                user_id=user_id, message=selection, metadata={"type": "selection"}
+            # Get conversation history
+            conversation_history = state.get("conversation_history", [])
+
+            # Find the last assistant message (should be the itinerary)
+            last_itinerary = None
+            if conversation_history:
+                for msg in reversed(conversation_history):
+                    if msg["role"] == "assistant":
+                        last_itinerary = msg["content"]
+                        break
+
+            # Check if user is making a selection
+            confirmation_words = [
+                "yes",
+                "sure",
+                "okay",
+                "go ahead",
+                "proceed",
+                "i want this",
+                "sounds good",
+                "perfect",
+                "i'll take",
+            ]
+
+            is_confirmation = any(
+                word in user_input.lower() for word in confirmation_words
             )
 
-            response = (
-                f"Great choice! I've saved your selection: {selection}\n\n"
-                "This will be used for your future travel planning. "
-                "Would you like to proceed with booking or make any changes?"
-            )
+            if is_confirmation and last_itinerary:
+                # Save the selection
+                logger.info(f"Saving itinerary selection for user {user_id}")
+                self.mem0_manager.add_memory(
+                    user_id=user_id,
+                    message=f"Selected itinerary: {last_itinerary[:500]}",
+                    metadata={"type": "selection", "source": "itinerary"},
+                )
 
-            logger.info(f"Successfully saved selection for user {user_id}")
-            return response
+                # Mark that user made a selection
+                state["user_selections"] = last_itinerary[:500]
+
+                response = (
+                    "✅ Great! I've saved your itinerary selection.\n\n"
+                    "What would you like to do next?\n\n"
+                    "**Option 1:** Create a detailed travel plan with flights and cabs\n"
+                    "**Option 2:** Get in-trip support (lounges, food, accessories)\n"
+                    "**Option 3:** Modify the itinerary\n\n"
+                    "Just tell me what you'd like!"
+                )
+            else:
+                # User might be asking a question or making a comment
+                response = (
+                    "I've noted your feedback. Would you like to:\n"
+                    "- Proceed with this itinerary?\n"
+                    "- Request changes to the itinerary?\n"
+                    "- Create a complete travel plan?"
+                )
+
+            state["response"] = response
+            state["error"] = None
+
+            logger.info(f"User selection processed for user {user_id}")
 
         except Exception as e:
-            logger.error(f"Error saving selection: {e}")
-            return "I encountered an error saving your selection. Please try again."
+            logger.error(f"Error in user selection node: {e}")
+            state[
+                "response"
+            ] = "I encountered an error saving your selection. Please try again."
+            state["error"] = str(e)
+
+        return state

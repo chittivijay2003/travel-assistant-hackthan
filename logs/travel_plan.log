@@ -1,139 +1,91 @@
-2025-11-30 23:44:56,670 - travel_plan - INFO - Generating travel plan for user user-001
-2025-12-01 00:00:41,157 - travel_plan - INFO - Generating travel plan for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-12-01 00:12:01,839 - travel_plan - INFO - Generating travel plan for user test-conversation-user
-2025-12-01 00:13:25,554 - travel_plan - INFO - Generating travel plan for user test-selection-save
-2025-12-01 00:14:31,304 - travel_plan - INFO - Generating travel plan for user debug-test
-2025-12-01 00:14:31,305 - travel_plan - INFO - Conversation history length: 0
-2025-12-01 00:14:31,305 - travel_plan - INFO - Not enough conversation history
-2025-12-01 00:15:21,016 - travel_plan - INFO - Generating travel plan for user final-test
-2025-12-01 00:15:21,016 - travel_plan - INFO - Conversation history length: 2
-2025-12-01 00:15:21,017 - travel_plan - INFO - Last assistant message preview: Here's your 2-day Tokyo itinerary:
-
-Day 1: Traditional Tokyo
-- Morning: Senso-ji Temple in Asakusa  ...
-2025-12-01 00:15:21,017 - travel_plan - INFO - Detected itinerary in conversation history
-2025-12-01 00:15:21,017 - travel_plan - INFO - User confirmed previous itinerary, saving selection
-2025-12-01 00:15:21,698 - travel_plan - INFO - Selection saved successfully
-2025-12-01 00:57:46,112 - travel_plan - INFO - Generating travel plan for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:57:46,113 - travel_plan - INFO - Conversation history length: 7
-2025-12-01 00:57:46,113 - travel_plan - INFO - Last assistant message preview: Great! I've noted your preference: I love having vegetarian food with a tea in the mountains
+2025-12-07 01:52:41,766 - travel_plan - INFO - Generating travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:52:41,766 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-07 01:52:41,766 - travel_plan - INFO - Prepared travel request: {'user_id': '31ef65f5-3cf2-4070-a46c-d927649b7201', 'current_input': 'Suggest a travel plan with options for cabs and flights', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-07 01:52:41,767 - travel_plan - INFO - Conversation history length: 7
+2025-12-07 01:52:41,767 - travel_plan - INFO - Last assistant message preview: Great! I've noted your preference: I love having vegetarian food with a tea in the mountains
 
 Here's...
-2025-12-01 00:57:46,113 - travel_plan - INFO - Detected itinerary in conversation history
-2025-12-01 00:57:46,113 - travel_plan - INFO - No confirmation word found in: Suggest a travel plan with options for cabs and flights
-2025-12-01 01:07:51,718 - travel_plan - INFO - Generating travel plan for user policy-test-user
-2025-12-01 01:07:51,718 - travel_plan - INFO - Conversation history length: 0
-2025-12-01 01:07:51,719 - travel_plan - INFO - Not enough conversation history
-2025-12-01 01:08:24,300 - travel_plan - INFO - Generating travel plan for user complete-policy-test
-2025-12-01 01:08:24,301 - travel_plan - INFO - Conversation history length: 0
-2025-12-01 01:08:24,301 - travel_plan - INFO - Not enough conversation history
-2025-12-01 01:08:58,559 - travel_plan - INFO - Successfully generated travel plan for user complete-policy-test
-2025-12-01 01:10:56,338 - travel_plan - INFO - Generating travel plan for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:10:56,339 - travel_plan - INFO - Conversation history length: 7
-2025-12-01 01:10:56,339 - travel_plan - INFO - Last assistant message preview: Great! I've noted your preference: I love having vegetarian food with a tea in the mountains
-
-Here's...
-2025-12-01 01:10:56,339 - travel_plan - INFO - Detected itinerary in conversation history
-2025-12-01 01:10:56,339 - travel_plan - INFO - No confirmation word found in: Suggest a travel plan with options for cabs and flights
-2025-12-01 01:13:22,871 - travel_plan - INFO - Generating travel plan for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:13:22,871 - travel_plan - INFO - Conversation history length: 11
-2025-12-01 01:13:22,871 - travel_plan - INFO - Last assistant message preview: Here's a detailed 3-day itinerary for a monsoon trekking adventure in India, specifically tailored t...
-2025-12-01 01:13:22,872 - travel_plan - INFO - Detected itinerary in conversation history
-2025-12-01 01:13:22,873 - travel_plan - INFO - No confirmation word found in: Suggest a travel plan with options for cabs and flights
-2025-12-01 01:16:57,710 - travel_plan - INFO - Generating travel plan for user trip-details-test
-2025-12-01 01:16:57,710 - travel_plan - INFO - Conversation history length: 0
-2025-12-01 01:16:57,710 - travel_plan - INFO - Not enough conversation history
-2025-12-01 01:17:01,699 - travel_plan - INFO - Generating travel plan for user trip-details-test
-2025-12-01 01:17:01,699 - travel_plan - INFO - Conversation history length: 2
-2025-12-01 01:17:01,700 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+2025-12-07 01:52:41,767 - travel_plan - INFO - Detected itinerary in conversation history
+2025-12-07 01:52:41,767 - travel_plan - INFO - No confirmation word found in: Suggest a travel plan with options for cabs and flights
+2025-12-07 01:53:15,992 - travel_plan - INFO - Generating travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:53:15,993 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-07 01:53:15,993 - travel_plan - INFO - Prepared travel request: {'user_id': '31ef65f5-3cf2-4070-a46c-d927649b7201', 'current_input': 'feb 10 to 13', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-07 01:53:15,993 - travel_plan - INFO - Conversation history length: 9
+2025-12-07 01:53:15,993 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
 
 - Travel dates (start a...
-2025-12-01 01:17:01,700 - travel_plan - INFO - No itinerary detected in last assistant message
-2025-12-01 01:19:57,095 - travel_plan - INFO - Generating travel plan for user complete-flow-test
-2025-12-01 01:19:57,096 - travel_plan - INFO - Conversation history length: 0
-2025-12-01 01:19:57,096 - travel_plan - INFO - Not enough conversation history
-2025-12-01 01:20:01,470 - travel_plan - INFO - Generating travel plan for user complete-flow-test
-2025-12-01 01:20:01,470 - travel_plan - INFO - Conversation history length: 2
-2025-12-01 01:20:01,470 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+2025-12-07 01:53:15,993 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-07 01:53:53,133 - travel_plan - INFO - Generating travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:53:53,134 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-07 01:53:53,135 - travel_plan - INFO - Prepared travel request: {'user_id': '31ef65f5-3cf2-4070-a46c-d927649b7201', 'current_input': 'morning aus to sfo 4 $2000', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-07 01:53:53,135 - travel_plan - INFO - Conversation history length: 11
+2025-12-07 01:53:53,135 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+
+- Start time of the day...
+2025-12-07 01:53:53,135 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-07 01:54:36,569 - travel_plan - INFO - Successfully generated travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:56:25,063 - travel_plan - INFO - Generating travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:56:25,064 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-07 01:56:25,065 - travel_plan - INFO - Prepared travel request: {'user_id': '31ef65f5-3cf2-4070-a46c-d927649b7201', 'current_input': 'Option 1 in flights, Option 3 in hotel', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-07 01:56:25,065 - travel_plan - INFO - Conversation history length: 13
+2025-12-07 01:56:25,065 - travel_plan - INFO - Last assistant message preview: Of course. Based on the complete conversation history, I will create a comprehensive travel plan for...
+2025-12-07 01:56:25,065 - travel_plan - INFO - Detected itinerary in conversation history
+2025-12-07 01:56:25,065 - travel_plan - INFO - No confirmation word found in: Option 1 in flights, Option 3 in hotel
+2025-12-07 01:56:54,280 - travel_plan - INFO - Successfully generated travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:08:21,489 - travel_plan - INFO - Generating travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:08:21,489 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-07 02:08:21,490 - travel_plan - INFO - Prepared travel request: {'user_id': '31ef65f5-3cf2-4070-a46c-d927649b7201', 'current_input': 'i want same trip from dallas to bufellow', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-07 02:08:21,490 - travel_plan - INFO - Conversation history length: 25
+2025-12-07 02:08:21,490 - travel_plan - INFO - Last assistant message preview: Of course! Based on your travel from Austin to San Francisco, you'll likely be arriving in the late ...
+2025-12-07 02:08:21,491 - travel_plan - INFO - Detected itinerary in conversation history
+2025-12-07 02:08:21,491 - travel_plan - INFO - No confirmation word found in: i want same trip from dallas to bufellow
+2025-12-07 02:08:40,472 - travel_plan - INFO - Generating travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:08:40,473 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-07 02:08:40,473 - travel_plan - INFO - Prepared travel request: {'user_id': '31ef65f5-3cf2-4070-a46c-d927649b7201', 'current_input': 'same travel dates', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-07 02:08:40,473 - travel_plan - INFO - Conversation history length: 27
+2025-12-07 02:08:40,473 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
 
 - Travel dates (start a...
-2025-12-01 01:20:01,470 - travel_plan - INFO - No itinerary detected in last assistant message
-2025-12-01 01:21:08,595 - travel_plan - INFO - Generating travel plan for user final-test-user
-2025-12-01 01:21:08,596 - travel_plan - INFO - Conversation history length: 0
-2025-12-01 01:21:08,596 - travel_plan - INFO - Not enough conversation history
-2025-12-01 01:21:12,581 - travel_plan - INFO - Generating travel plan for user final-test-user
-2025-12-01 01:21:12,581 - travel_plan - INFO - Conversation history length: 2
-2025-12-01 01:21:12,581 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+2025-12-07 02:08:40,473 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-07 02:09:15,826 - travel_plan - INFO - Generating travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:09:15,827 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-07 02:09:15,827 - travel_plan - INFO - Prepared travel request: {'user_id': '31ef65f5-3cf2-4070-a46c-d927649b7201', 'current_input': 'same travel dates which i haved used for austin to sfo trip', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-07 02:09:15,827 - travel_plan - INFO - Conversation history length: 29
+2025-12-07 02:09:15,827 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
 
 - Travel dates (start a...
-2025-12-01 01:21:12,582 - travel_plan - INFO - No itinerary detected in last assistant message
-2025-12-01 01:22:04,152 - travel_plan - INFO - Successfully generated travel plan for user final-test-user
-2025-12-01 01:22:36,063 - travel_plan - INFO - Generating travel plan for user context-test
-2025-12-01 01:22:36,064 - travel_plan - INFO - Conversation history length: 0
-2025-12-01 01:22:36,064 - travel_plan - INFO - Not enough conversation history
-2025-12-01 01:23:51,921 - travel_plan - INFO - Generating travel plan for user tokyo-trip-test
-2025-12-01 01:23:51,921 - travel_plan - INFO - Conversation history length: 0
-2025-12-01 01:23:51,921 - travel_plan - INFO - Not enough conversation history
-2025-12-01 01:23:56,013 - travel_plan - INFO - Generating travel plan for user tokyo-trip-test
-2025-12-01 01:23:56,013 - travel_plan - INFO - Conversation history length: 2
-2025-12-01 01:23:56,013 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+2025-12-07 02:09:15,827 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-07 02:10:30,259 - travel_plan - INFO - Generating travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:10:30,260 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-07 02:10:30,260 - travel_plan - INFO - Prepared travel request: {'user_id': '31ef65f5-3cf2-4070-a46c-d927649b7201', 'current_input': 'feb 5th to 8th evening, 4, $5000', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-07 02:10:30,260 - travel_plan - INFO - Conversation history length: 31
+2025-12-07 02:10:30,261 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
 
-Travel dates (start and...
-2025-12-01 01:23:56,013 - travel_plan - INFO - No itinerary detected in last assistant message
-2025-12-01 01:24:27,085 - travel_plan - INFO - Successfully generated travel plan for user tokyo-trip-test
-2025-12-01 01:29:37,525 - travel_plan - INFO - Generating travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:29:37,526 - travel_plan - INFO - Conversation history length: 7
-2025-12-01 01:29:37,526 - travel_plan - INFO - Last assistant message preview: Great! I've noted your preference: I love having vegetarian food with a tea in the mountains
+- Travel dates (start a...
+2025-12-07 02:10:30,261 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-07 02:10:58,566 - travel_plan - INFO - Generating travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:10:58,566 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-07 02:10:58,567 - travel_plan - INFO - Prepared travel request: {'user_id': '31ef65f5-3cf2-4070-a46c-d927649b7201', 'current_input': 'buffelow', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-07 02:10:58,567 - travel_plan - INFO - Conversation history length: 33
+2025-12-07 02:10:58,567 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
 
-Here's...
-2025-12-01 01:29:37,526 - travel_plan - INFO - Detected itinerary in conversation history
-2025-12-01 01:29:37,526 - travel_plan - INFO - No confirmation word found in: Suggest a travel plan with options for cabs and flights
-2025-12-01 01:30:16,511 - travel_plan - INFO - Generating travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:30:16,511 - travel_plan - INFO - Conversation history length: 9
-2025-12-01 01:30:16,511 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+- Destination
+- Start t...
+2025-12-07 02:10:58,567 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-07 02:11:23,866 - travel_plan - INFO - Generating travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:11:23,867 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-07 02:11:23,867 - travel_plan - INFO - Prepared travel request: {'user_id': '31ef65f5-3cf2-4070-a46c-d927649b7201', 'current_input': 'evening and dallas', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-07 02:11:23,867 - travel_plan - INFO - Conversation history length: 35
+2025-12-07 02:11:23,867 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
 
-- Specific travel dates...
-2025-12-01 01:30:16,511 - travel_plan - INFO - No itinerary detected in last assistant message
-2025-12-01 01:30:31,924 - travel_plan - INFO - Generating travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:30:31,925 - travel_plan - INFO - Conversation history length: 11
-2025-12-01 01:30:31,925 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
-
-Start time of the day
-
-...
-2025-12-01 01:30:31,925 - travel_plan - INFO - No itinerary detected in last assistant message
-2025-12-01 01:31:22,920 - travel_plan - INFO - Successfully generated travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:34:15,139 - travel_plan - INFO - Generating travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:34:15,140 - travel_plan - INFO - Conversation history length: 15
-2025-12-01 01:34:15,140 - travel_plan - INFO - Last assistant message preview: Hello! I'm here to help with your in-trip queries and ensure you have a smooth and enjoyable 3-day t...
-2025-12-01 01:34:15,141 - travel_plan - INFO - Detected itinerary in conversation history
-2025-12-01 01:34:15,141 - travel_plan - INFO - No confirmation word found in: option 1 in flights
-2025-12-01 01:34:54,066 - travel_plan - INFO - Successfully generated travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:36:16,610 - travel_plan - INFO - Generating travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:36:16,611 - travel_plan - INFO - Conversation history length: 17
-2025-12-01 01:36:16,611 - travel_plan - INFO - Last assistant message preview: Here is your comprehensive 3-day travel plan for your trip to Lonavala, meticulously crafted to inco...
-2025-12-01 01:36:16,611 - travel_plan - INFO - Detected itinerary in conversation history
-2025-12-01 01:36:16,611 - travel_plan - INFO - No confirmation word found in: give the samething from mumbai to goa on jan 14th to 17th
-2025-12-01 01:37:10,864 - travel_plan - INFO - Successfully generated travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:41:23,751 - travel_plan - INFO - Generating travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:41:23,752 - travel_plan - INFO - Conversation history length: 19
-2025-12-01 01:41:23,753 - travel_plan - INFO - Last assistant message preview: Here is your comprehensive 3-day travel plan for your trip to Goa, meticulously crafted to incorpora...
-2025-12-01 01:41:23,754 - travel_plan - INFO - Detected itinerary in conversation history
-2025-12-01 01:41:23,754 - travel_plan - INFO - No confirmation word found in: give flight details first, i will select option so that you will give remaining
-2025-12-01 01:41:36,647 - travel_plan - INFO - Successfully generated travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:41:49,675 - travel_plan - INFO - Generating travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:41:49,677 - travel_plan - INFO - Conversation history length: 21
-2025-12-01 01:41:49,677 - travel_plan - INFO - Last assistant message preview: Okay, I understand. You'd like to see the flight details first for your Mumbai to Goa trip, and then...
-2025-12-01 01:41:49,677 - travel_plan - INFO - No itinerary detected in last assistant message
-2025-12-01 01:42:08,087 - travel_plan - INFO - Generating travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:42:08,089 - travel_plan - INFO - Conversation history length: 23
-2025-12-01 01:42:08,089 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
-
-Return flight selection...
-2025-12-01 01:42:08,089 - travel_plan - INFO - No itinerary detected in last assistant message
-2025-12-01 01:42:46,349 - travel_plan - INFO - Successfully generated travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:43:24,611 - travel_plan - INFO - Generating travel plan for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:43:24,612 - travel_plan - INFO - Conversation history length: 25
-2025-12-01 01:43:24,612 - travel_plan - INFO - Last assistant message preview: Here is your comprehensive 4-day travel plan for your trip to Goa, meticulously crafted to incorpora...
-2025-12-01 01:43:24,612 - travel_plan - INFO - Detected itinerary in conversation history
-2025-12-01 01:43:24,612 - travel_plan - INFO - No confirmation word found in: hi
+- Start time of the day...
+2025-12-07 02:11:23,867 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-07 02:12:10,949 - travel_plan - INFO - Successfully generated travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:12:52,103 - travel_plan - INFO - Generating travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:12:52,104 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-07 02:12:52,104 - travel_plan - INFO - Prepared travel request: {'user_id': '31ef65f5-3cf2-4070-a46c-d927649b7201', 'current_input': 'Option 2 in flights and Option 3 in hotel', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-07 02:12:52,104 - travel_plan - INFO - Conversation history length: 37
+2025-12-07 02:12:52,104 - travel_plan - INFO - Last assistant message preview: Of course. Based on the complete conversation history, I will create a comprehensive travel plan for...
+2025-12-07 02:12:52,104 - travel_plan - INFO - Detected itinerary in conversation history
+2025-12-07 02:12:52,104 - travel_plan - INFO - No confirmation word found in: Option 2 in flights and Option 3 in hotel
+2025-12-07 02:13:24,224 - travel_plan - INFO - Successfully generated travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201

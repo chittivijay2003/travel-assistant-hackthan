@@ -1,13 +1,21 @@
-"""User history management with all-MiniLM-L6-v2 embeddings"""
+"""User history management with all-MiniLM-L6-v2 embeddings and optional Redis support"""
 
 from typing import List, Dict, Any, Optional
 from collections import defaultdict
 from datetime import datetime
 from sentence_transformers import SentenceTransformer
 import numpy as np
+import json
+
+try:
+    import redis
+
+    REDIS_AVAILABLE = True
+except ImportError:
+    REDIS_AVAILABLE = False
+
 from src.config import Config
 from src.utils.logger import setup_logger
-import json
 
 logger = setup_logger("mem0_manager")
 
@@ -16,10 +24,44 @@ class Mem0Manager:
     """Manager for user history with semantic search using all-MiniLM-L6-v2"""
 
     def __init__(self):
-        """Initialize memory storage with embeddings"""
+        """Initialize memory storage with embeddings and optional Redis"""
         try:
             self.storage_file = Config.DATA_DIR / "user_memories.json"
             self.embeddings_file = Config.DATA_DIR / "user_embeddings.npy"
+
+            # Initialize Redis if enabled and available
+            self.redis_client = None
+            self.use_redis = Config.USE_REDIS and REDIS_AVAILABLE
+
+            if self.use_redis:
+                try:
+                    logger.info("Attempting to connect to Redis...")
+                    self.redis_client = redis.Redis(
+                        host=Config.REDIS_HOST,
+                        port=Config.REDIS_PORT,
+                        db=Config.REDIS_DB,
+                        password=Config.REDIS_PASSWORD,
+                        decode_responses=True,
+                        socket_connect_timeout=2,
+                    )
+                    # Test connection
+                    self.redis_client.ping()
+                    logger.info(
+                        f"Redis connected successfully at {Config.REDIS_HOST}:{Config.REDIS_PORT}"
+                    )
+                except Exception as e:
+                    logger.warning(
+                        f"Redis connection failed: {e}. Falling back to file storage."
+                    )
+                    self.redis_client = None
+                    self.use_redis = False
+            else:
+                if Config.USE_REDIS and not REDIS_AVAILABLE:
+                    logger.warning(
+                        "Redis enabled in config but 'redis' package not installed. Using file storage."
+                    )
+                    logger.warning("Install with: pip install redis")
+
             self.memories = self._load_memories()
 
             # Load the all-MiniLM-L6-v2 model for embeddings
@@ -31,20 +73,40 @@ class Mem0Manager:
             # Load or initialize embeddings cache
             self.embeddings_cache = self._load_embeddings()
 
-            logger.info("Memory manager initialized with all-MiniLM-L6-v2 embeddings")
+            storage_type = "Redis" if self.use_redis else "JSON file"
+            logger.info(
+                f"Memory manager initialized with all-MiniLM-L6-v2 embeddings ({storage_type} storage)"
+            )
         except Exception as e:
             logger.error(f"Failed to initialize memory manager: {e}")
             self.memories = defaultdict(list)
             self.embeddings_cache = {}
+            self.redis_client = None
+            self.use_redis = False
 
     def _load_memories(self) -> Dict[str, List[Dict[str, Any]]]:
-        """Load memories from file"""
+        """Load memories from Redis or file"""
+        if self.use_redis and self.redis_client:
+            try:
+                # Load all user memories from Redis
+                memories = defaultdict(list)
+                for key in self.redis_client.scan_iter("mem0:*"):
+                    user_id = key.split(":", 1)[1]
+                    data = self.redis_client.get(key)
+                    if data:
+                        memories[user_id] = json.loads(data)
+                logger.info(f"Loaded memories for {len(memories)} users from Redis")
+                return memories
+            except Exception as e:
+                logger.warning(f"Could not load memories from Redis: {e}")
+
+        # Fallback to file storage
         if self.storage_file.exists():
             try:
                 with open(self.storage_file, "r") as f:
                     return defaultdict(list, json.load(f))
             except Exception as e:
-                logger.warning(f"Could not load memories: {e}")
+                logger.warning(f"Could not load memories from file: {e}")
         return defaultdict(list)
 
     def _load_embeddings(self) -> Dict[str, np.ndarray]:
@@ -61,10 +123,23 @@ class Mem0Manager:
         return {}
 
     def _save_memories(self) -> None:
-        """Save memories to file"""
+        """Save memories to Redis or file"""
         try:
-            with open(self.storage_file, "w") as f:
-                json.dump(dict(self.memories), f, indent=2)
+            if self.use_redis and self.redis_client:
+                # Save to Redis with expiry (24 hours)
+                for user_id, user_memories in self.memories.items():
+                    key = f"mem0:{user_id}"
+                    self.redis_client.setex(
+                        key,
+                        86400,  # 24 hours TTL
+                        json.dumps(user_memories),
+                    )
+                logger.debug(f"Saved memories to Redis for {len(self.memories)} users")
+            else:
+                # Save to file
+                with open(self.storage_file, "w") as f:
+                    json.dump(dict(self.memories), f, indent=2)
+                logger.debug("Saved memories to file")
         except Exception as e:
             logger.error(f"Error saving memories: {e}")
 
@@ -103,8 +178,8 @@ class Mem0Manager:
             metadata: Additional metadata
         """
         try:
-            # Generate embedding for the message
-            embedding = self._get_embedding(message)
+            # Generate embedding for the message (stored in cache)
+            self._get_embedding(message)
 
             memory_entry = {
                 "memory": message,

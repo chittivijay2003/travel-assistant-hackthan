@@ -109,6 +109,78 @@ Make sure you understand the complete trip details from the ENTIRE conversation 
             ]
         )
 
+    def _prepare_travel_request(self, state: GraphState) -> dict:
+        """
+        Prepare travel request with user selections and all required information
+
+        Args:
+            state: Current graph state
+
+        Returns:
+            Prepared request dictionary
+        """
+        user_id = state["user_id"]
+        user_input = state["user_input"]
+
+        # Extract information from conversation and history
+        request = {
+            "user_id": user_id,
+            "current_input": user_input,
+            "destination": None,
+            "origin": None,
+            "dates": None,
+            "start_time": None,
+            "travelers": None,
+            "budget": None,
+            "user_selections": state.get("user_selections"),
+        }
+
+        # Get user memories for selections and preferences
+        memories = self.mem0_manager.get_memories(user_id, limit=20)
+        for mem in memories:
+            content = mem.get("memory", mem.get("content", "")).lower()
+            metadata = mem.get("metadata", {})
+
+            # Extract selected itinerary
+            if "selected itinerary" in content or metadata.get("type") == "selection":
+                request["user_selections"] = content
+
+        logger.info(f"Prepared travel request: {request}")
+        return request
+
+    def _validate_travel_request(self, request: dict) -> tuple[bool, str]:
+        """
+        Validate travel request has all required information
+
+        Args:
+            request: Prepared request dictionary
+
+        Returns:
+            Tuple of (is_valid, missing_info_message)
+        """
+        required_fields = {
+            "destination": "destination",
+            "dates": "travel dates",
+            "start_time": "start time of the day",
+            "origin": "origin/departure city",
+            "travelers": "number of travelers",
+            "budget": "budget",
+        }
+
+        missing = []
+        for field, display_name in required_fields.items():
+            if not request.get(field):
+                missing.append(display_name)
+
+        if missing:
+            missing_msg = "To create a complete travel plan, I need:\n" + "\n".join(
+                [f"- {item}" for item in missing]
+            )
+            return False, missing_msg
+
+        logger.info("Travel request validation passed")
+        return True, ""
+
     def __call__(self, state: GraphState) -> GraphState:
         """
         Generate complete travel plan
@@ -124,9 +196,13 @@ Make sure you understand the complete trip details from the ENTIRE conversation 
 
             user_id = state["user_id"]
             user_input = state["user_input"]
+            conversation_history = state.get("conversation_history", [])
+
+            # Step 1: Prepare request with user selections and all information
+            logger.info("Step 1: Preparing travel request...")
+            self._prepare_travel_request(state)  # Logs prepared request details
 
             # Check if user is confirming a previous itinerary
-            conversation_history = state.get("conversation_history", [])
             logger.info(f"Conversation history length: {len(conversation_history)}")
 
             if conversation_history and len(conversation_history) >= 2:
@@ -304,9 +380,9 @@ Make sure you understand the complete trip details from the ENTIRE conversation 
 
         except Exception as e:
             logger.error(f"Error in travel plan node: {e}")
-            state["response"] = (
-                "I encountered an error creating the travel plan. Please try again."
-            )
+            state[
+                "response"
+            ] = "I encountered an error creating the travel plan. Please try again."
             state["error"] = str(e)
 
         return state

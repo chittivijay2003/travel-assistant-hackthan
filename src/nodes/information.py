@@ -148,9 +148,9 @@ Format the response in a clear, day-by-day structure.""",
 
         except Exception as e:
             logger.error(f"Error in information node: {e}")
-            state["response"] = (
-                "I encountered an error saving your information. Please try again."
-            )
+            state[
+                "response"
+            ] = "I encountered an error saving your information. Please try again."
             state["error"] = str(e)
 
         return state

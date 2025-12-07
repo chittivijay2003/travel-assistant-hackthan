@@ -1,2 +1,15 @@
-2025-12-01 01:32:20,748 - support_trip - INFO - Processing support query for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:32:33,644 - support_trip - INFO - Successfully handled support query for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
+2025-12-07 01:57:40,162 - support_trip - INFO - Processing support query for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:57:40,162 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-07 01:58:09,844 - support_trip - INFO - Successfully handled support query for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:58:45,527 - support_trip - INFO - Processing support query for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:58:45,528 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-07 01:59:11,323 - support_trip - INFO - Successfully handled support query for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:59:50,550 - support_trip - INFO - Processing support query for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:59:50,551 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-07 02:00:16,426 - support_trip - INFO - Successfully handled support query for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:01:40,877 - support_trip - INFO - Processing support query for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:01:40,878 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-07 02:02:07,001 - support_trip - INFO - Successfully handled support query for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:19:16,066 - support_trip - INFO - Processing support query for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:19:16,066 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-07 02:19:31,742 - support_trip - INFO - Successfully handled support query for user 31ef65f5-3cf2-4070-a46c-d927649b7201

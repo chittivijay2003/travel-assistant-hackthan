@@ -1,26 +1,154 @@
-# Python-generated files
+# =============================================================================
+# PYTHON
+# =============================================================================
 __pycache__/
-*.py[oc]
-build/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.Python
 dist/
+build/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
 wheels/
-*.egg-info
+pip-wheel-metadata/
+*.manifest
+*.spec
 
-# Virtual environments
-.venv
+# =============================================================================
+# VIRTUAL ENVIRONMENTS
+# =============================================================================
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
 
-# Environment files
+# =============================================================================
+# IDE & EDITORS
+# =============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# =============================================================================
+# ENVIRONMENT & SECRETS
+# =============================================================================
 .env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets/
 
-# Runtime data files
+# =============================================================================
+# LOGS
+# =============================================================================
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =============================================================================
+# PROJECT-SPECIFIC DATA
+# =============================================================================
+# User history and embeddings (regenerated at runtime)
 data/user_embeddings.npy
 data/user_memories.json
 
-# Logs
-logs/*.log
-streamlit.log
-nohup.out
+# Vector store (regenerated from policies)
+data/vector_store/
+data/faiss_index/
 
-# IDE
-.vscode/
-.idea/
+# Temporary files
+data/temp/
+data/cache/
+
+# Keep policy PDFs but ignore other docs
+# data/policies/*.pdf are intentionally tracked
+
+# =============================================================================
+# OS FILES
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+
+# Linux
+.directory
+.Trash-*
+
+# =============================================================================
+# TESTING & COVERAGE
+# =============================================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# =============================================================================
+# JUPYTER NOTEBOOKS
+# =============================================================================
+.ipynb_checkpoints/
+*.ipynb
+
+# =============================================================================
+# PACKAGE MANAGERS
+# =============================================================================
+# UV (keep uv.lock for reproducibility)
+# uv.lock
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Poetry
+poetry.lock
+
+# =============================================================================
+# STREAMLIT
+# =============================================================================
+.streamlit/secrets.toml
+.streamlit/config.toml

@@ -47,7 +47,7 @@ User Input → Load History → Intent Classification (Gemini) → Route to Node
 ### 🔑 Technology Stack
 - **LangGraph**: Workflow orchestration with state management
 - **LangChain**: LLM interaction and prompt engineering  
-- **Google Gemini**: Language model (models/gemini-2.5-flash)
+- **Google Gemini**: Language model (models/gemini-pro-latest)
 - **all-MiniLM-L6-v2**: Local embeddings for user history and policies
 - **FAISS**: Vector store for policy document retrieval (no Docker needed)
 - **Streamlit**: Interactive chat UI
@@ -86,7 +86,7 @@ User Input → Load History → Intent Classification (Gemini) → Route to Node
    Edit `.env` and add your Google API key:
    ```env
    GOOGLE_API_KEY=your_google_api_key_here
-   GEMINI_MODEL=models/gemini-2.5-flash
+   GEMINI_MODEL=models/gemini-pro-latest
    ```
 
 4. **Create and ingest policy document**
@@ -114,15 +114,12 @@ Assistant: Thank you for sharing! I've noted that: I love trekking in the mounta
 ```
 User: Suggest a 3-day itinerary in Tokyo
 Assistant: [Generates detailed 3-day Tokyo itinerary based on your preferences]
+
+User: yes, proceed with this
+Assistant: [Moves to travel plan creation]
 ```
 
-**3. Update Itinerary with New Preference**
-```
-User: I also love vegetarian food
-Assistant: [Automatically regenerates Tokyo itinerary with vegetarian restaurants]
-```
-
-**4. Plan Complete Trip (Travel Plan Node)**
+**3. Plan Complete Trip (Travel Plan Node)**
 ```
 User: Plan a trip to London with flights and cabs
 Assistant: I need: Travel dates, Origin, Number of travelers, Budget
@@ -131,7 +128,7 @@ User: Jan 15-20, from NYC, 1 person, $5000
 Assistant: [Generates complete plan with flights, hotel, cabs - all policy compliant]
 ```
 
-**5. Get Trip Support (Support Trip Node)**
+**4. Get Trip Support (Support Trip Node)**
 ```
 User: Change my hotel to a cheaper option
 Assistant: [Provides cheaper hotel options within company policy]
@@ -185,8 +182,10 @@ Edit `.env` file:
 GOOGLE_API_KEY=your_google_api_key_here
 
 # Optional (defaults provided)
-GEMINI_MODEL=models/gemini-2.5-flash
+GEMINI_MODEL=models/gemini-pro-latest
 TEMPERATURE=0.7
+LOG_LEVEL=INFO
+USE_REDIS=false
 ```
 
 ### Get Google API Key
@@ -274,8 +273,9 @@ Test different scenarios:
 # Itinerary Node  
 "Suggest a 5-day itinerary in Switzerland"
 
-# Smart Update (after itinerary shown)
-"I also prefer vegetarian food"  # Auto-regenerates with veggie options
+# Confirm itinerary and move to travel plan
+"yes, I want this plan"
+"proceed with this itinerary"
 
 # Travel Plan Node
 "Plan a trip to Tokyo"
@@ -386,3 +386,5 @@ Educational project - MIT License
 ---
 
 Built with ❤️ using **LangGraph** • **Google Gemini** • **FAISS** • **all-MiniLM-L6-v2** • **Streamlit**
+
+**Note**: This project uses `models/gemini-pro-latest` which works with the current Google Generative AI API. If you encounter model errors, verify your API key has access to the Gemini models.

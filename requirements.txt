@@ -1,24 +1,63 @@
-# Core LangChain and LangGraph
-langchain>=0.3.0
-langchain-google-genai>=2.0.0
-langchain-community>=0.3.0
-langgraph>=0.2.0
+# =============================================================================
+# TRAVEL ASSISTANT - CORE DEPENDENCIES
+# =============================================================================
 
+# -----------------------------------------------------------------------------
+# LangChain Ecosystem
+# -----------------------------------------------------------------------------
+langchain>=0.3.0,<0.4.0
+langchain-google-genai>=2.0.0,<3.0.0
+langchain-community>=0.3.0,<0.4.0
+langgraph>=0.2.0,<0.3.0
+
+# -----------------------------------------------------------------------------
 # LLM Provider
-google-generativeai>=0.3.0
+# -----------------------------------------------------------------------------
+google-generativeai>=0.3.0,<1.0.0
 
-# Vector Store and Embeddings
-faiss-cpu>=1.7.4
-sentence-transformers>=2.2.0
+# -----------------------------------------------------------------------------
+# Vector Store & Embeddings
+# -----------------------------------------------------------------------------
+# FAISS for vector similarity search
+faiss-cpu>=1.7.4,<2.0.0
 
+# Sentence transformers for all-MiniLM-L6-v2 embeddings
+sentence-transformers>=2.2.0,<3.0.0
+
+# -----------------------------------------------------------------------------
 # Document Processing
-pypdf>=4.0.0
-reportlab>=4.0.0
+# -----------------------------------------------------------------------------
+# PDF loading for policy documents
+pypdf>=4.0.0,<5.0.0
 
-# UI
-streamlit>=1.39.0
+# PDF generation (optional, for reports)
+reportlab>=4.0.0,<5.0.0
 
-# Utilities
-python-dotenv>=1.0.0
-pydantic>=2.0.0
-numpy>=1.24.0
+# -----------------------------------------------------------------------------
+# User Interface
+# -----------------------------------------------------------------------------
+streamlit>=1.39.0,<2.0.0
+
+# -----------------------------------------------------------------------------
+# Data Storage & Caching
+# -----------------------------------------------------------------------------
+# Redis client (optional - for faster user history storage)
+redis>=5.0.0,<6.0.0
+
+# -----------------------------------------------------------------------------
+# Core Utilities
+# -----------------------------------------------------------------------------
+# Environment variable management
+python-dotenv>=1.0.0,<2.0.0
+
+# Data validation
+pydantic>=2.0.0,<3.0.0
+
+# Numerical computing
+numpy>=1.24.0,<2.0.0
+
+# -----------------------------------------------------------------------------
+# Python Version Requirement
+# -----------------------------------------------------------------------------
+# Requires Python 3.10 or higher
+# Install with: pip install -r requirements.txt

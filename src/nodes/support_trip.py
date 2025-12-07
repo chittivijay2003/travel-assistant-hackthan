@@ -4,6 +4,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
 from src.nodes.state import GraphState
 from src.utils.mem0_manager import Mem0Manager
+from src.utils.rag_manager import RAGManager
 from src.config import Config
 from src.utils.logger import setup_logger
 
@@ -13,14 +14,16 @@ logger = setup_logger("support_trip")
 class SupportTripNode:
     """Node for handling in-trip support queries"""
 
-    def __init__(self, mem0_manager: Mem0Manager):
+    def __init__(self, mem0_manager: Mem0Manager, rag_manager: RAGManager):
         """
         Initialize support trip node
 
         Args:
             mem0_manager: Mem0 manager instance
+            rag_manager: RAG manager instance for policy compliance
         """
         self.mem0_manager = mem0_manager
+        self.rag_manager = rag_manager
         self.llm = ChatGoogleGenerativeAI(
             model=Config.GEMINI_MODEL,
             temperature=Config.TEMPERATURE,
@@ -33,6 +36,9 @@ class SupportTripNode:
                     "system",
                     """You are a helpful travel support assistant. Provide in-trip support and recommendations.
 
+Company Travel Policy (for compliance):
+{policy_context}
+
 User's Travel History:
 {user_travel_history}
 
@@ -40,13 +46,14 @@ User's Selected Plans:
 {user_selections}
 
 Based on the user's query, provide detailed recommendations for:
-- Airport lounge facilities
-- Food places and restaurants
-- Travel accessories
+- Airport lounge facilities (check policy for lounge access entitlements)
+- Food places and restaurants (consider meal allowances from policy)
+- Travel accessories (within company guidelines)
 - Local attractions
 - Emergency contacts
 - Any other travel-related support
 
+IMPORTANT: Ensure all recommendations comply with the company travel policy.
 Be specific, practical, and consider the user's preferences and current travel plans.""",
                 ),
                 ("user", "{user_query}"),
@@ -68,6 +75,23 @@ Be specific, practical, and consider the user's preferences and current travel p
 
             user_id = state["user_id"]
             user_input = state["user_input"]
+
+            # Get policy context from RAG for compliance
+            policy_context = ""
+            try:
+                policy_docs = self.rag_manager.query(user_input, top_k=3)
+                if policy_docs:
+                    policy_context = "\n\n".join(
+                        [doc.page_content for doc in policy_docs]
+                    )
+                    logger.info(
+                        f"Retrieved {len(policy_docs)} policy documents for support query"
+                    )
+                else:
+                    policy_context = "No specific policy guidelines available."
+            except Exception as e:
+                logger.warning(f"Could not retrieve policy context: {e}")
+                policy_context = "No specific policy guidelines available."
 
             # Get user's travel history and selections
             memories = self.mem0_manager.get_memories(user_id, limit=20)
@@ -111,6 +135,7 @@ Be specific, practical, and consider the user's preferences and current travel p
             chain = self.prompt | self.llm
             result = chain.invoke(
                 {
+                    "policy_context": policy_context,
                     "user_travel_history": user_travel_history,
                     "user_selections": user_selections,
                     "user_query": user_input,
@@ -133,9 +158,9 @@ Be specific, practical, and consider the user's preferences and current travel p
 
         except Exception as e:
             logger.error(f"Error in support trip node: {e}")
-            state["response"] = (
-                "I encountered an error processing your support request. Please try again."
-            )
+            state[
+                "response"
+            ] = "I encountered an error processing your support request. Please try again."
             state["error"] = str(e)
 
         return state

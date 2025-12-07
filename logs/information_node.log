@@ -1,44 +1,9 @@
-2025-11-30 23:45:39,039 - information_node - INFO - Processing information for user d1097860-0bf3-4638-a671-9ae71f7edb23
-2025-11-30 23:45:40,224 - information_node - ERROR - Error in information node: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0\n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0\n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0\n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerDayPerProjectPerModel-FreeTier'}, {'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier'}, {'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier'}, {'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerProjectPerModel-FreeTier'}]}]}}
-2025-11-30 23:47:37,233 - information_node - INFO - Processing information for user test-user-pref
-2025-11-30 23:47:37,233 - information_node - INFO - Successfully saved preference for user test-user-pref
-2025-11-30 23:51:23,342 - information_node - INFO - Processing information for user user-embed-test
-2025-11-30 23:51:23,640 - information_node - INFO - Successfully saved preference for user user-embed-test
-2025-11-30 23:51:24,163 - information_node - INFO - Processing information for user user-embed-test
-2025-11-30 23:51:24,412 - information_node - INFO - Successfully saved preference for user user-embed-test
-2025-11-30 23:51:24,913 - information_node - INFO - Processing information for user user-embed-test
-2025-11-30 23:51:24,928 - information_node - INFO - Successfully saved preference for user user-embed-test
-2025-11-30 23:58:57,133 - information_node - INFO - Processing information for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-11-30 23:58:57,438 - information_node - INFO - Successfully saved preference for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-12-01 00:01:07,824 - information_node - INFO - Processing information for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-12-01 00:01:08,206 - information_node - INFO - Successfully saved preference for user 5a345902-1071-4c44-8e64-1d9cfa539148
-2025-12-01 00:18:14,169 - information_node - INFO - Processing information for user de639ce9-183e-4642-b4c8-97028efbbb0d
-2025-12-01 00:18:14,172 - information_node - INFO - Successfully saved preference for user de639ce9-183e-4642-b4c8-97028efbbb0d
-2025-12-01 00:19:28,457 - information_node - INFO - Processing information for user de639ce9-183e-4642-b4c8-97028efbbb0d
-2025-12-01 00:19:28,462 - information_node - INFO - Successfully saved preference for user de639ce9-183e-4642-b4c8-97028efbbb0d
-2025-12-01 00:23:18,107 - information_node - INFO - Processing information for user preference-update-test
-2025-12-01 00:23:18,109 - information_node - INFO - Successfully saved preference for user preference-update-test
-2025-12-01 00:23:46,933 - information_node - INFO - Processing information for user preference-update-test
-2025-12-01 00:23:46,935 - information_node - INFO - Detected previous itinerary, will update with new preferences
-2025-12-01 00:24:11,114 - information_node - INFO - Successfully saved preference for user preference-update-test
-2025-12-01 00:56:12,494 - information_node - INFO - Processing information for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:56:12,499 - information_node - INFO - Successfully saved preference for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:56:58,681 - information_node - INFO - Processing information for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 00:56:58,683 - information_node - INFO - Detected previous itinerary, will update with new preferences
-2025-12-01 00:57:24,566 - information_node - INFO - Successfully saved preference for user 7cf40dc0-6aad-4fef-a7f4-63e80a6080f3
-2025-12-01 01:09:49,184 - information_node - INFO - Processing information for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:09:49,188 - information_node - INFO - Successfully saved preference for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:10:25,112 - information_node - INFO - Processing information for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:10:25,115 - information_node - INFO - Detected previous itinerary, will update with new preferences
-2025-12-01 01:10:45,747 - information_node - INFO - Successfully saved preference for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:14:52,648 - information_node - INFO - Processing information for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:14:53,348 - information_node - INFO - Successfully saved preference for user 1943c68f-09a1-4976-8f8c-72ba65521116
-2025-12-01 01:24:28,730 - information_node - INFO - Processing information for user 3ffdf420-0cda-45e7-bc2f-bb2987913fb0
-2025-12-01 01:24:28,733 - information_node - INFO - Successfully saved preference for user 3ffdf420-0cda-45e7-bc2f-bb2987913fb0
-2025-12-01 01:25:28,419 - information_node - INFO - Processing information for user 31ddad5e-3f48-4c97-a72c-7c6ab326b333
-2025-12-01 01:25:28,422 - information_node - INFO - Successfully saved preference for user 31ddad5e-3f48-4c97-a72c-7c6ab326b333
-2025-12-01 01:28:12,213 - information_node - INFO - Processing information for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:28:12,217 - information_node - INFO - Successfully saved preference for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:28:58,608 - information_node - INFO - Processing information for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
-2025-12-01 01:28:58,615 - information_node - INFO - Detected previous itinerary, will update with new preferences
-2025-12-01 01:29:18,247 - information_node - INFO - Successfully saved preference for user 6cefe2c2-a360-4978-aa66-17eaa1d42803
+2025-12-07 01:40:56,403 - information_node - INFO - Processing information for user 9207736f-12a6-4cb8-92dc-7a732267a80a
+2025-12-07 01:40:56,406 - information_node - INFO - Successfully saved preference for user 9207736f-12a6-4cb8-92dc-7a732267a80a
+2025-12-07 01:45:50,653 - information_node - INFO - Processing information for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:45:50,655 - information_node - INFO - Successfully saved preference for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:48:57,292 - information_node - INFO - Processing information for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 01:48:57,297 - information_node - INFO - Detected previous itinerary, will update with new preferences
+2025-12-07 01:49:29,955 - information_node - INFO - Successfully saved preference for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:00:37,600 - information_node - INFO - Processing information for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-07 02:00:37,983 - information_node - INFO - Successfully saved preference for user 31ef65f5-3cf2-4070-a46c-d927649b7201

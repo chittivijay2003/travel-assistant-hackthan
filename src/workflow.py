@@ -9,6 +9,7 @@ from src.nodes.information import InformationNode
 from src.nodes.itinerary import ItineraryNode
 from src.nodes.travel_plan import TravelPlanNode
 from src.nodes.support_trip import SupportTripNode
+from src.nodes.user_selection import UserSelectionNode
 from src.utils.mem0_manager import Mem0Manager
 from src.utils.rag_manager import RAGManager
 from src.utils.logger import setup_logger
@@ -30,8 +31,9 @@ class TravelAssistantGraph:
         self.intent_node = IntentClassificationNode()
         self.information_node = InformationNode(self.mem0_manager)
         self.itinerary_node = ItineraryNode(self.mem0_manager)
+        self.user_selection_node = UserSelectionNode(self.mem0_manager)
         self.travel_plan_node = TravelPlanNode(self.mem0_manager, self.rag_manager)
-        self.support_trip_node = SupportTripNode(self.mem0_manager)
+        self.support_trip_node = SupportTripNode(self.mem0_manager, self.rag_manager)
 
         # Build graph
         self.graph = self._build_graph()
@@ -61,6 +63,44 @@ class TravelAssistantGraph:
 
         return routing_map.get(intent, "end")
 
+    def _route_after_selection(
+        self, state: GraphState
+    ) -> Literal["travel_plan", "end"]:
+        """
+        Route after user selection - check if user wants travel plan
+
+        Args:
+            state: Current graph state
+
+        Returns:
+            Next node name
+        """
+        user_input = state.get("user_input", "").lower()
+
+        # Check if user wants to proceed with travel plan
+        travel_plan_keywords = [
+            "travel plan",
+            "complete plan",
+            "flights",
+            "cabs",
+            "book",
+            "transportation",
+            "detailed plan",
+        ]
+
+        wants_travel_plan = any(
+            keyword in user_input for keyword in travel_plan_keywords
+        )
+
+        if wants_travel_plan:
+            logger.info("Routing from user_selection to travel_plan")
+            # Update intent for travel plan processing
+            state["intent"] = IntentType.TRAVEL_PLAN.value
+            return "travel_plan"
+
+        logger.info("Routing from user_selection to END")
+        return "end"
+
     def _build_graph(self) -> StateGraph:
         """
         Build the LangGraph workflow
@@ -76,6 +116,7 @@ class TravelAssistantGraph:
         workflow.add_node("intent_classification", self.intent_node)
         workflow.add_node("information", self.information_node)
         workflow.add_node("itinerary", self.itinerary_node)
+        workflow.add_node("user_selection", self.user_selection_node)
         workflow.add_node("travel_plan", self.travel_plan_node)
         workflow.add_node("support_trip", self.support_trip_node)
 
@@ -98,11 +139,25 @@ class TravelAssistantGraph:
             },
         )
 
-        # All nodes end after execution
+        # Information and support_trip nodes end directly
         workflow.add_edge("information", END)
-        workflow.add_edge("itinerary", END)
-        workflow.add_edge("travel_plan", END)
         workflow.add_edge("support_trip", END)
+
+        # Itinerary ends directly (user can respond with new message for selection)
+        workflow.add_edge("itinerary", END)
+
+        # User selection can route to travel_plan if user wants complete plan, otherwise END
+        workflow.add_conditional_edges(
+            "user_selection",
+            self._route_after_selection,
+            {
+                "travel_plan": "travel_plan",
+                "end": END,
+            },
+        )
+
+        # Travel plan ends after execution
+        workflow.add_edge("travel_plan", END)
 
         # Compile graph
         return workflow.compile()
