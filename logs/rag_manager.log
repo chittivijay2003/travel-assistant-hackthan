@@ -173,3 +173,8 @@
 2025-12-12 23:03:12,081 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
 2025-12-12 23:03:12,081 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
 2025-12-12 23:03:12,125 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-12 23:11:29,083 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-12 23:11:30,147 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-12 23:11:30,147 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-12 23:11:30,147 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-12 23:11:30,186 - rag_manager - INFO - FAISS index loaded successfully

@@ -249,3 +249,13 @@
 2025-12-12 23:06:00,027 - user_input - INFO - Loading user history for user e1227c14-91d1-415e-889b-f541144785c2
 2025-12-12 23:06:00,028 - user_input - INFO - Loaded 1 history items for user e1227c14-91d1-415e-889b-f541144785c2
 2025-12-12 23:06:00,028 - user_input - INFO - User input: I want to plan a 4-day trip
+2025-12-12 23:11:50,904 - user_input - INFO - Validating user input for user a1c8fd2e-9099-4374-a07c-7a18d2fd64fd
+2025-12-12 23:12:01,575 - user_input - INFO - User input validated successfully for user a1c8fd2e-9099-4374-a07c-7a18d2fd64fd
+2025-12-12 23:12:01,576 - user_input - INFO - Loading user history for user a1c8fd2e-9099-4374-a07c-7a18d2fd64fd
+2025-12-12 23:12:01,576 - user_input - INFO - Loaded 0 history items for user a1c8fd2e-9099-4374-a07c-7a18d2fd64fd
+2025-12-12 23:12:01,576 - user_input - INFO - User input: I want to plan a 3-day trip to Paris
+2025-12-12 23:13:04,971 - user_input - INFO - Validating user input for user a1c8fd2e-9099-4374-a07c-7a18d2fd64fd
+2025-12-12 23:13:05,025 - user_input - INFO - User input validated successfully for user a1c8fd2e-9099-4374-a07c-7a18d2fd64fd
+2025-12-12 23:13:05,025 - user_input - INFO - Loading user history for user a1c8fd2e-9099-4374-a07c-7a18d2fd64fd
+2025-12-12 23:13:05,025 - user_input - INFO - Loaded 0 history items for user a1c8fd2e-9099-4374-a07c-7a18d2fd64fd
+2025-12-12 23:13:05,025 - user_input - INFO - User input: I want to plan a 4-day trip

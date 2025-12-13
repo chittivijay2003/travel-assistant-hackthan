@@ -240,3 +240,11 @@
 2025-12-12 23:06:00,001 - workflow - INFO - Processing message for user e1227c14-91d1-415e-889b-f541144785c2: I want to plan a 4-day trip
 2025-12-12 23:06:00,028 - workflow - INFO - Input validation passed - routing to intent_classification
 2025-12-12 23:06:07,685 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:11:50,899 - workflow - INFO - [AUDIT] Transaction ID: txn_2356dfc25ed84435 - User: a1c8fd2e-9099-4374-a07c-7a18d2fd64fd
+2025-12-12 23:11:50,901 - workflow - INFO - Processing message for user a1c8fd2e-9099-4374-a07c-7a18d2fd64fd: I want to plan a 3-day trip to Paris
+2025-12-12 23:12:01,577 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:12:11,318 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:13:04,964 - workflow - INFO - [AUDIT] Transaction ID: txn_de91cee4637b4c3b - User: a1c8fd2e-9099-4374-a07c-7a18d2fd64fd
+2025-12-12 23:13:04,967 - workflow - INFO - Processing message for user a1c8fd2e-9099-4374-a07c-7a18d2fd64fd: I want to plan a 4-day trip
+2025-12-12 23:13:05,026 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:13:13,841 - workflow - INFO - Routing to node based on intent: itinerary

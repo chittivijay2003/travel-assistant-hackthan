@@ -35,6 +35,8 @@ Classify the user's input into ONE of these categories:
    
 2. **itinerary**: User asking for travel itinerary suggestions
    - Examples: "Suggest a 3-day itinerary in Japan", "Plan my trip to Paris"
+   - CONTEXT-AWARE: If user previously asked for a 3-day trip and now says "I want a 4-day trip", it's still itinerary (they're modifying duration)
+   - Key indicator: Mentions of day count/duration with or without destination
    
 3. **travel_plan**: User asking for complete travel plan OR providing trip details OR confirming a previous itinerary
    - Examples: "Suggest travel plan with cabs and flights", "Book my trip to London"
@@ -50,7 +52,11 @@ Classify the user's input into ONE of these categories:
 Conversation History:
 {conversation_history}
 
-IMPORTANT: Check if the last assistant message was asking for trip information. If yes, classify current user input as travel_plan.
+IMPORTANT RULES:
+1. Check conversation history to understand if user is MODIFYING a previous request
+2. If last message was about Paris and user says "4-day trip", they mean Paris for 4 days → itinerary
+3. If assistant asked for details and user provides them → travel_plan
+4. Context matters more than keywords alone
 
 Respond with ONLY the category name: information, itinerary, travel_plan, or support_trip""",
                 ),

@@ -37,6 +37,12 @@ class SupportTripNode:
                     "system",
                     """You are a helpful travel support assistant. Provide in-trip support and recommendations.
 
+CRITICAL CONTEXT RULES:
+1. Check the conversation history for trip details (destination, dates, etc.)
+2. If user asks about "Day 2" or specific days, reference their current travel plan
+3. Use conversation context to understand which trip they're referring to
+4. If user mentions a destination earlier, assume queries are about that destination
+
 Company Travel Policy (for compliance):
 {policy_context}
 
@@ -45,6 +51,9 @@ User's Travel History:
 
 User's Selected Plans:
 {user_selections}
+
+Recent Conversation Context:
+{conversation_context}
 
 Based on the user's query, provide detailed recommendations for:
 - Airport lounge facilities (check policy for lounge access entitlements)
@@ -88,6 +97,21 @@ Be specific, practical, and consider the user's preferences and current travel p
 
                 user_id = state["user_id"]
                 user_input = state["user_input"]
+                conversation_history = state.get("conversation_history", [])
+
+                # Build conversation context
+                conversation_context_str = ""
+                if conversation_history:
+                    conversation_context_str = "Recent Conversation (for trip context):\n"
+                    for msg in conversation_history[-6:]:  # Last 3 exchanges
+                        role = "User" if msg["role"] == "user" else "Assistant"
+                        conversation_context_str += (
+                            f"{role}: {msg['content'][:300]}...\n\n"
+                            if len(msg["content"]) > 300
+                            else f"{role}: {msg['content']}\n\n"
+                        )
+                else:
+                    conversation_context_str = "No previous conversation."
 
                 # Get policy context from RAG for compliance
                 policy_context = ""
@@ -151,6 +175,7 @@ Be specific, practical, and consider the user's preferences and current travel p
                         "policy_context": policy_context,
                         "user_travel_history": user_travel_history,
                         "user_selections": user_selections,
+                        "conversation_context": conversation_context_str,
                         "user_query": user_input,
                     }
                 )
