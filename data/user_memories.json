@@ -483,5 +483,63 @@
       "timestamp": "2025-12-12T23:04:49.938182",
       "id": "e1227c14-91d1-415e-889b-f541144785c2_0"
     }
+  ],
+  "4f9aa905-f5c6-4eb0-8765-5931a043546c": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-12T23:22:26.805481",
+      "id": "4f9aa905-f5c6-4eb0-8765-5931a043546c_0"
+    },
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-12T23:24:01.246280",
+      "id": "4f9aa905-f5c6-4eb0-8765-5931a043546c_1"
+    }
+  ],
+  "e49ef129-9916-4fce-8c63-ef0c535b5306": [
+    {
+      "memory": "Requested travel plan: Le Marais to Saint-Germain-des-Pr\u00e9s feb 10th to 12th 2 morning $1500",
+      "content": "Requested travel plan: Le Marais to Saint-Germain-des-Pr\u00e9s feb 10th to 12th 2 morning $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T00:37:36.287606",
+      "id": "e49ef129-9916-4fce-8c63-ef0c535b5306_0"
+    },
+    {
+      "memory": "Requested travel plan: hotel Option 1 ",
+      "content": "Requested travel plan: hotel Option 1 ",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T00:39:04.501669",
+      "id": "e49ef129-9916-4fce-8c63-ef0c535b5306_1"
+    },
+    {
+      "memory": "Support query: Support in-trip queries",
+      "content": "Support query: Support in-trip queries",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T00:40:05.619308",
+      "id": "e49ef129-9916-4fce-8c63-ef0c535b5306_2"
+    },
+    {
+      "memory": "Support query: Suggest food places for day 1",
+      "content": "Support query: Suggest food places for day 1",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T00:40:35.731857",
+      "id": "e49ef129-9916-4fce-8c63-ef0c535b5306_3"
+    }
   ]
 }

@@ -248,3 +248,203 @@
 2025-12-12 23:13:04,967 - workflow - INFO - Processing message for user a1c8fd2e-9099-4374-a07c-7a18d2fd64fd: I want to plan a 4-day trip
 2025-12-12 23:13:05,026 - workflow - INFO - Input validation passed - routing to intent_classification
 2025-12-12 23:13:13,841 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:19:38,449 - workflow - INFO - [AUDIT] Transaction ID: txn_615e77e15b4e4b30 - User: 4f9aa905-f5c6-4eb0-8765-5931a043546c
+2025-12-12 23:19:38,451 - workflow - INFO - Processing message for user 4f9aa905-f5c6-4eb0-8765-5931a043546c: 41111111111111111
+2025-12-12 23:19:43,450 - workflow - WARNING - Input validation failed - routing to END
+2025-12-12 23:19:43,451 - workflow - ERROR - Error in graph execution: Input validation failed: Blocked by AI safety check
+2025-12-12 23:19:50,060 - workflow - INFO - [AUDIT] Transaction ID: txn_dcedd59d535341c7 - User: 4f9aa905-f5c6-4eb0-8765-5931a043546c
+2025-12-12 23:19:50,062 - workflow - INFO - Processing message for user 4f9aa905-f5c6-4eb0-8765-5931a043546c: I want to plan a 3-day trip to Paris
+2025-12-12 23:19:50,095 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:19:58,223 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:20:34,878 - workflow - INFO - [AUDIT] Transaction ID: txn_51598305e4b440ae - User: 4f9aa905-f5c6-4eb0-8765-5931a043546c
+2025-12-12 23:20:34,879 - workflow - INFO - Processing message for user 4f9aa905-f5c6-4eb0-8765-5931a043546c: I want to plan a 2-day
+2025-12-12 23:20:34,893 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:20:40,786 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:22:22,299 - workflow - INFO - [AUDIT] Transaction ID: txn_0a66a054ff5344cd - User: 4f9aa905-f5c6-4eb0-8765-5931a043546c
+2025-12-12 23:22:22,300 - workflow - INFO - Processing message for user 4f9aa905-f5c6-4eb0-8765-5931a043546c: I love trekking in the monsoon season
+2025-12-12 23:22:22,329 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:22:26,803 - workflow - INFO - Routing to node based on intent: information
+2025-12-12 23:23:55,905 - workflow - INFO - [AUDIT] Transaction ID: txn_7037f7655a294ee8 - User: 4f9aa905-f5c6-4eb0-8765-5931a043546c
+2025-12-12 23:23:55,907 - workflow - INFO - Processing message for user 4f9aa905-f5c6-4eb0-8765-5931a043546c: I love trekking in the monsoon season
+2025-12-12 23:23:55,929 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:24:01,240 - workflow - INFO - Routing to node based on intent: information
+2025-12-12 23:32:11,092 - workflow - INFO - [AUDIT] Transaction ID: txn_d8e4ea61b5824f0f - User: 861acd3f-5ed9-413c-b4b7-0108d81dc145
+2025-12-12 23:32:11,094 - workflow - INFO - Processing message for user 861acd3f-5ed9-413c-b4b7-0108d81dc145: I want to plan a 3-day trip to Pariso Paris
+2025-12-12 23:32:21,693 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:32:28,792 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:34:44,266 - workflow - INFO - [AUDIT] Transaction ID: txn_b6986aca0f60404c - User: fa376725-c202-4be3-a36b-3e66adf27e18
+2025-12-12 23:34:44,270 - workflow - INFO - Processing message for user fa376725-c202-4be3-a36b-3e66adf27e18: I want to plan a 3-day trip to Paris
+2025-12-12 23:34:57,052 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:35:03,129 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:35:40,188 - workflow - INFO - [AUDIT] Transaction ID: txn_f639fd3597304e09 - User: fa376725-c202-4be3-a36b-3e66adf27e18
+2025-12-12 23:35:40,190 - workflow - INFO - Processing message for user fa376725-c202-4be3-a36b-3e66adf27e18: I want to plan a 2-day trip
+2025-12-12 23:35:40,248 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:35:44,996 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:36:30,595 - workflow - INFO - [AUDIT] Transaction ID: txn_79697d12a3814619 - User: fa376725-c202-4be3-a36b-3e66adf27e18
+2025-12-12 23:36:30,598 - workflow - INFO - Processing message for user fa376725-c202-4be3-a36b-3e66adf27e18: I love trekking in the monsoon season
+2025-12-12 23:36:30,646 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:36:36,371 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:42:52,340 - workflow - INFO - [AUDIT] Transaction ID: txn_23790e4a47474d7d - User: fe1c7d32-fbf3-4283-ad78-e32a43927dff
+2025-12-12 23:42:52,348 - workflow - INFO - Processing message for user fe1c7d32-fbf3-4283-ad78-e32a43927dff: I want a 3-day trip to Paris
+2025-12-12 23:43:02,274 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:43:09,018 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:43:38,719 - workflow - INFO - [AUDIT] Transaction ID: txn_e2d6d0b2e0044895 - User: fe1c7d32-fbf3-4283-ad78-e32a43927dff
+2025-12-12 23:43:38,720 - workflow - INFO - Processing message for user fe1c7d32-fbf3-4283-ad78-e32a43927dff: I want a 2-day trip
+2025-12-12 23:43:38,744 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:43:43,315 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:44:19,081 - workflow - INFO - [AUDIT] Transaction ID: txn_0dc1da9c06f24732 - User: fe1c7d32-fbf3-4283-ad78-e32a43927dff
+2025-12-12 23:44:19,082 - workflow - INFO - Processing message for user fe1c7d32-fbf3-4283-ad78-e32a43927dff: I love trekking in monsoon
+2025-12-12 23:44:19,118 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:44:24,255 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:45:19,300 - workflow - INFO - [AUDIT] Transaction ID: txn_d0de5dbf804e44e4 - User: fe1c7d32-fbf3-4283-ad78-e32a43927dff
+2025-12-12 23:45:19,301 - workflow - INFO - Processing message for user fe1c7d32-fbf3-4283-ad78-e32a43927dff: Suggest a 3-day itinerary in Japan
+2025-12-12 23:45:19,352 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:45:25,520 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:46:20,158 - workflow - INFO - [AUDIT] Transaction ID: txn_626bc2a3148d409c - User: fe1c7d32-fbf3-4283-ad78-e32a43927dff
+2025-12-12 23:46:20,160 - workflow - INFO - Processing message for user fe1c7d32-fbf3-4283-ad78-e32a43927dff: Suggest a travel plan with options for cabs and flights
+2025-12-12 23:46:20,230 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:46:25,725 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 23:47:43,443 - workflow - INFO - [AUDIT] Transaction ID: txn_924e3d4677d74fac - User: fe1c7d32-fbf3-4283-ad78-e32a43927dff
+2025-12-12 23:47:43,445 - workflow - INFO - Processing message for user fe1c7d32-fbf3-4283-ad78-e32a43927dff: 10th feb and 12feb, morning, anywhere city,2 $1500
+2025-12-12 23:47:43,499 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:47:49,085 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 23:48:08,954 - workflow - INFO - [AUDIT] Transaction ID: txn_9a1fedd198d84e5a - User: fe1c7d32-fbf3-4283-ad78-e32a43927dff
+2025-12-12 23:48:08,956 - workflow - INFO - Processing message for user fe1c7d32-fbf3-4283-ad78-e32a43927dff: give some cities names
+2025-12-12 23:48:09,084 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:48:15,097 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:48:51,460 - workflow - INFO - [AUDIT] Transaction ID: txn_f6a9113960074d1b - User: fe1c7d32-fbf3-4283-ad78-e32a43927dff
+2025-12-12 23:48:51,461 - workflow - INFO - Processing message for user fe1c7d32-fbf3-4283-ad78-e32a43927dff: tokyo to osaka
+2025-12-12 23:48:51,475 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:48:58,577 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:54:26,606 - workflow - INFO - [AUDIT] Transaction ID: txn_b8df9ee89547400f - User: 0da3081e-e712-494e-afbd-6178a0573667
+2025-12-12 23:54:26,609 - workflow - INFO - Processing message for user 0da3081e-e712-494e-afbd-6178a0573667: I want to plan a 3-day trip to Paris
+2025-12-12 23:54:33,060 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:54:39,520 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:55:02,666 - workflow - INFO - [AUDIT] Transaction ID: txn_f9c9d39723554a7c - User: 0da3081e-e712-494e-afbd-6178a0573667
+2025-12-12 23:55:02,668 - workflow - INFO - Processing message for user 0da3081e-e712-494e-afbd-6178a0573667: I want to plan a 2-day trip
+2025-12-12 23:55:02,738 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:55:08,387 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:55:45,699 - workflow - INFO - [AUDIT] Transaction ID: txn_ea507ea569b3453d - User: 0da3081e-e712-494e-afbd-6178a0573667
+2025-12-12 23:55:45,702 - workflow - INFO - Processing message for user 0da3081e-e712-494e-afbd-6178a0573667: I love trekking in the monsoon season
+2025-12-12 23:55:45,764 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:55:51,363 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 23:56:59,663 - workflow - INFO - [AUDIT] Transaction ID: txn_fc3396def4e34d01 - User: 0da3081e-e712-494e-afbd-6178a0573667
+2025-12-12 23:56:59,665 - workflow - INFO - Processing message for user 0da3081e-e712-494e-afbd-6178a0573667: Suggest a travel plan with options for cabs and flights
+2025-12-12 23:56:59,687 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:57:01,264 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 23:57:49,608 - workflow - INFO - [AUDIT] Transaction ID: txn_7b40531a79c24962 - User: 0da3081e-e712-494e-afbd-6178a0573667
+2025-12-12 23:57:49,610 - workflow - INFO - Processing message for user 0da3081e-e712-494e-afbd-6178a0573667: feb 10th to 12th morning 
+2025-12-12 23:57:49,661 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:57:54,154 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 23:58:14,097 - workflow - INFO - [AUDIT] Transaction ID: txn_f3895a751a9947cf - User: 0da3081e-e712-494e-afbd-6178a0573667
+2025-12-12 23:58:14,098 - workflow - INFO - Processing message for user 0da3081e-e712-494e-afbd-6178a0573667: morning 2 $1500
+2025-12-12 23:58:14,194 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:58:19,496 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 23:58:31,081 - workflow - INFO - [AUDIT] Transaction ID: txn_1d07f041e3f94bad - User: 0da3081e-e712-494e-afbd-6178a0573667
+2025-12-12 23:58:31,082 - workflow - INFO - Processing message for user 0da3081e-e712-494e-afbd-6178a0573667: give city names
+2025-12-12 23:58:31,115 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:58:37,236 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 23:59:06,889 - workflow - INFO - [AUDIT] Transaction ID: txn_6a5e57a4f9854700 - User: 0da3081e-e712-494e-afbd-6178a0573667
+2025-12-12 23:59:06,891 - workflow - INFO - Processing message for user 0da3081e-e712-494e-afbd-6178a0573667: give city names i will select
+2025-12-12 23:59:06,966 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-12 23:59:12,414 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:04:16,750 - workflow - INFO - [AUDIT] Transaction ID: txn_b6f830b302d0497a - User: 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52
+2025-12-13 00:04:16,751 - workflow - INFO - Processing message for user 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52: I want to plan a 3-day trip to Paris
+2025-12-13 00:04:22,746 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:04:29,327 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:05:40,893 - workflow - INFO - [AUDIT] Transaction ID: txn_1510f74c3d5f4ff4 - User: 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52
+2025-12-13 00:05:40,895 - workflow - INFO - Processing message for user 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52: I want to plan a 2-day trip
+2025-12-13 00:05:40,931 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:05:43,446 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:06:16,542 - workflow - INFO - [AUDIT] Transaction ID: txn_67d2dd86939a4a85 - User: 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52
+2025-12-13 00:06:16,543 - workflow - INFO - Processing message for user 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52: I love trekking in the monsoon season
+2025-12-13 00:06:16,552 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:06:21,852 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:07:00,518 - workflow - INFO - [AUDIT] Transaction ID: txn_4efdbdb8ed5e417d - User: 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52
+2025-12-13 00:07:00,519 - workflow - INFO - Processing message for user 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52: Suggest a travel plan with options for cabs and flights
+2025-12-13 00:07:00,531 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:07:02,233 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-13 00:07:19,192 - workflow - INFO - [AUDIT] Transaction ID: txn_52fbf74c33c04ae0 - User: 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52
+2025-12-13 00:07:19,193 - workflow - INFO - Processing message for user 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52: 10th feb to 12th feb morning 2 $1500
+2025-12-13 00:07:19,205 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:07:24,466 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-13 00:07:39,967 - workflow - INFO - [AUDIT] Transaction ID: txn_862f9fb85b1640d5 - User: 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52
+2025-12-13 00:07:39,968 - workflow - INFO - Processing message for user 1b83dbb6-14dc-4fe8-b4c9-454508dfdf52: give city names
+2025-12-13 00:07:39,992 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:07:46,178 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:11:45,699 - workflow - INFO - [AUDIT] Transaction ID: txn_9fff61197e474da6 - User: 999c7e77-007d-487f-afcb-d4509846df5a
+2025-12-13 00:11:45,705 - workflow - INFO - Processing message for user 999c7e77-007d-487f-afcb-d4509846df5a: I want to plan a 3-day trip to Paris
+2025-12-13 00:11:57,922 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:12:05,596 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:12:42,244 - workflow - INFO - [AUDIT] Transaction ID: txn_f5eaf1d9f9504a49 - User: 999c7e77-007d-487f-afcb-d4509846df5a
+2025-12-13 00:12:42,245 - workflow - INFO - Processing message for user 999c7e77-007d-487f-afcb-d4509846df5a: I love trekking in the monsoon season
+2025-12-13 00:12:42,302 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:12:48,597 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:13:44,874 - workflow - INFO - [AUDIT] Transaction ID: txn_7847be8367eb42db - User: 999c7e77-007d-487f-afcb-d4509846df5a
+2025-12-13 00:13:44,875 - workflow - INFO - Processing message for user 999c7e77-007d-487f-afcb-d4509846df5a: Suggest a travel plan with options for cabs and flights
+2025-12-13 00:13:44,905 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:13:46,493 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-13 00:14:14,958 - workflow - INFO - [AUDIT] Transaction ID: txn_a148708d2c1a4feb - User: 999c7e77-007d-487f-afcb-d4509846df5a
+2025-12-13 00:14:14,959 - workflow - INFO - Processing message for user 999c7e77-007d-487f-afcb-d4509846df5a: 10th feb to 12th feb morning 2 $1500
+2025-12-13 00:14:14,989 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:14:20,296 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-13 00:14:38,822 - workflow - INFO - [AUDIT] Transaction ID: txn_e3f649118794454b - User: 999c7e77-007d-487f-afcb-d4509846df5a
+2025-12-13 00:14:38,824 - workflow - INFO - Processing message for user 999c7e77-007d-487f-afcb-d4509846df5a: give city names
+2025-12-13 00:14:38,840 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:14:46,921 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:16:58,529 - workflow - INFO - [AUDIT] Transaction ID: txn_0b5b911779464a19 - User: 999c7e77-007d-487f-afcb-d4509846df5a
+2025-12-13 00:16:58,531 - workflow - INFO - Processing message for user 999c7e77-007d-487f-afcb-d4509846df5a: ory
+2025-12-13 00:16:58,560 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:17:06,574 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:22:28,009 - workflow - INFO - [AUDIT] Transaction ID: txn_b6349e7b363a4f55 - User: 536dcccb-e2cf-4bd3-90e2-0acda0c818c3
+2025-12-13 00:22:28,011 - workflow - INFO - Processing message for user 536dcccb-e2cf-4bd3-90e2-0acda0c818c3: I want to plan a 3-day trip to Paris
+2025-12-13 00:22:42,388 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:22:49,230 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:23:28,700 - workflow - INFO - [AUDIT] Transaction ID: txn_3129f02475d44746 - User: 536dcccb-e2cf-4bd3-90e2-0acda0c818c3
+2025-12-13 00:23:28,701 - workflow - INFO - Processing message for user 536dcccb-e2cf-4bd3-90e2-0acda0c818c3: I love trekking in the monsoon season
+2025-12-13 00:23:28,738 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:23:34,796 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:24:50,837 - workflow - INFO - [AUDIT] Transaction ID: txn_b30cb51b28f54103 - User: 536dcccb-e2cf-4bd3-90e2-0acda0c818c3
+2025-12-13 00:24:50,840 - workflow - INFO - Processing message for user 536dcccb-e2cf-4bd3-90e2-0acda0c818c3: Suggest a travel plan with options for cabs and flights
+2025-12-13 00:24:50,892 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:24:55,194 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-13 00:25:18,578 - workflow - INFO - [AUDIT] Transaction ID: txn_d5caf57a341b4b1e - User: 536dcccb-e2cf-4bd3-90e2-0acda0c818c3
+2025-12-13 00:25:18,581 - workflow - INFO - Processing message for user 536dcccb-e2cf-4bd3-90e2-0acda0c818c3: 10th feb to 12th feb morning 2 $1500
+2025-12-13 00:25:18,625 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:25:24,680 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-13 00:25:39,997 - workflow - INFO - [AUDIT] Transaction ID: txn_2c81dd7d8bad4da9 - User: 536dcccb-e2cf-4bd3-90e2-0acda0c818c3
+2025-12-13 00:25:39,998 - workflow - INFO - Processing message for user 536dcccb-e2cf-4bd3-90e2-0acda0c818c3: give city names
+2025-12-13 00:25:40,037 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:25:47,235 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:33:55,664 - workflow - INFO - [AUDIT] Transaction ID: txn_e601d50adc9848f4 - User: e49ef129-9916-4fce-8c63-ef0c535b5306
+2025-12-13 00:33:55,665 - workflow - INFO - Processing message for user e49ef129-9916-4fce-8c63-ef0c535b5306: I want to plan a 3-day trip to Paris
+2025-12-13 00:34:04,216 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:34:10,650 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:34:37,241 - workflow - INFO - [AUDIT] Transaction ID: txn_0e098f54048c4eec - User: e49ef129-9916-4fce-8c63-ef0c535b5306
+2025-12-13 00:34:37,242 - workflow - INFO - Processing message for user e49ef129-9916-4fce-8c63-ef0c535b5306: I love trekking in the monsoon season
+2025-12-13 00:34:37,275 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:34:43,040 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-13 00:35:24,014 - workflow - INFO - [AUDIT] Transaction ID: txn_e1ae2f00e5554d09 - User: e49ef129-9916-4fce-8c63-ef0c535b5306
+2025-12-13 00:35:24,015 - workflow - INFO - Processing message for user e49ef129-9916-4fce-8c63-ef0c535b5306: Suggest a travel plan with options for cabs and flights
+2025-12-13 00:35:24,025 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:35:29,601 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-13 00:35:50,187 - workflow - INFO - [AUDIT] Transaction ID: txn_cfce89324e254334 - User: e49ef129-9916-4fce-8c63-ef0c535b5306
+2025-12-13 00:35:50,188 - workflow - INFO - Processing message for user e49ef129-9916-4fce-8c63-ef0c535b5306: give city names
+2025-12-13 00:35:50,200 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:35:58,271 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-13 00:36:47,927 - workflow - INFO - [AUDIT] Transaction ID: txn_acfd63a3e4e94adb - User: e49ef129-9916-4fce-8c63-ef0c535b5306
+2025-12-13 00:36:47,928 - workflow - INFO - Processing message for user e49ef129-9916-4fce-8c63-ef0c535b5306: Le Marais to Saint-Germain-des-Prés feb 10th to 12th 2 morning $1500
+2025-12-13 00:36:47,960 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:36:53,701 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-13 00:38:28,532 - workflow - INFO - [AUDIT] Transaction ID: txn_c4d95d50f9544ee4 - User: e49ef129-9916-4fce-8c63-ef0c535b5306
+2025-12-13 00:38:28,533 - workflow - INFO - Processing message for user e49ef129-9916-4fce-8c63-ef0c535b5306: hotel Option 1 
+2025-12-13 00:38:28,566 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:38:33,118 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-13 00:39:33,083 - workflow - INFO - [AUDIT] Transaction ID: txn_99c2db489c6446f8 - User: e49ef129-9916-4fce-8c63-ef0c535b5306
+2025-12-13 00:39:33,084 - workflow - INFO - Processing message for user e49ef129-9916-4fce-8c63-ef0c535b5306: Support in-trip queries
+2025-12-13 00:39:33,101 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:39:34,402 - workflow - INFO - Routing to node based on intent: support_trip
+2025-12-13 00:40:05,201 - workflow - INFO - [AUDIT] Transaction ID: txn_a0ba185257f644e8 - User: e49ef129-9916-4fce-8c63-ef0c535b5306
+2025-12-13 00:40:05,204 - workflow - INFO - Processing message for user e49ef129-9916-4fce-8c63-ef0c535b5306: Suggest food places for day 1
+2025-12-13 00:40:05,267 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-13 00:40:09,095 - workflow - INFO - Routing to node based on intent: support_trip

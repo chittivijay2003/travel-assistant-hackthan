@@ -25,3 +25,9 @@
 2025-12-12 23:04:36,457 - support_trip - INFO - Processing support query for user e1227c14-91d1-415e-889b-f541144785c2
 2025-12-12 23:04:36,458 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
 2025-12-12 23:04:49,946 - support_trip - INFO - Successfully handled support query for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-13 00:39:34,403 - support_trip - INFO - Processing support query for user e49ef129-9916-4fce-8c63-ef0c535b5306
+2025-12-13 00:39:34,403 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-13 00:40:05,626 - support_trip - INFO - Successfully handled support query for user e49ef129-9916-4fce-8c63-ef0c535b5306
+2025-12-13 00:40:09,096 - support_trip - INFO - Processing support query for user e49ef129-9916-4fce-8c63-ef0c535b5306
+2025-12-13 00:40:09,096 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-13 00:40:35,735 - support_trip - INFO - Successfully handled support query for user e49ef129-9916-4fce-8c63-ef0c535b5306

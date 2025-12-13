@@ -100,7 +100,10 @@ Format the response in a clear, day-by-day structure.""",
                         if msg["role"] == "assistant":
                             last_msg = msg["content"]
                             # Check if it's an itinerary (contains day-by-day info)
-                            if "day 1" in last_msg.lower() or "day 2" in last_msg.lower():
+                            if (
+                                "day 1" in last_msg.lower()
+                                or "day 2" in last_msg.lower()
+                            ):
                                 should_update_itinerary = True
                                 previous_itinerary = last_msg
                                 logger.info(

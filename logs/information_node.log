@@ -15,3 +15,7 @@
 2025-12-12 22:20:28,159 - information_node - INFO - Successfully saved preference for user b175b8ab-e6ce-4fdb-98a1-95eb7b8d8b27
 2025-12-12 22:53:53,862 - information_node - INFO - Processing information for user 304baa87-1308-450b-afb9-15c1113388eb
 2025-12-12 22:53:54,847 - information_node - INFO - Successfully saved preference for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 23:22:26,803 - information_node - INFO - Processing information for user 4f9aa905-f5c6-4eb0-8765-5931a043546c
+2025-12-12 23:22:26,808 - information_node - INFO - Detected previous itinerary, will update with new preferences
+2025-12-12 23:24:01,245 - information_node - INFO - Processing information for user 4f9aa905-f5c6-4eb0-8765-5931a043546c
+2025-12-12 23:24:01,253 - information_node - INFO - Successfully saved preference for user 4f9aa905-f5c6-4eb0-8765-5931a043546c
