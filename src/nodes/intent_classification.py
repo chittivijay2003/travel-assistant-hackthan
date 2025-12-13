@@ -5,6 +5,7 @@ from langchain.prompts import ChatPromptTemplate
 from src.nodes.state import GraphState, IntentType
 from src.config import Config
 from src.utils.logger import setup_logger
+from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
 
 logger = setup_logger("intent_classification")
 
@@ -67,54 +68,80 @@ Respond with ONLY the category name: information, itinerary, travel_plan, or sup
         Returns:
             Updated state with intent
         """
-        try:
-            logger.info(f"Classifying intent for user {state['user_id']}")
+        # Start LangFuse tracing for intent classification
+        with LangFuseTracer(
+            name="intent_classification",
+            trace_type="trace",
+            metadata={
+                "node": "intent_classification",
+                "model": Config.GEMINI_MODEL,
+                "temperature": 0.3,
+            },
+            user_id=state.get("user_id"),
+            session_id=state.get("user_id"),
+        ) as tracer:
+            try:
+                logger.info(f"Classifying intent for user {state['user_id']}")
 
-            # Build conversation history context
-            conversation_history = state.get("conversation_history", [])
-            history_text = (
-                "\n".join(
-                    [
-                        f"{msg['role']}: {msg['content'][:200]}..."
-                        if len(msg["content"]) > 200
-                        else f"{msg['role']}: {msg['content']}"
-                        for msg in conversation_history[-4:]  # Last 2 exchanges
-                    ]
+                # Build conversation history context
+                conversation_history = state.get("conversation_history", [])
+                history_text = (
+                    "\n".join(
+                        [
+                            f"{msg['role']}: {msg['content'][:200]}..."
+                            if len(msg["content"]) > 200
+                            else f"{msg['role']}: {msg['content']}"
+                            for msg in conversation_history[-4:]  # Last 2 exchanges
+                        ]
+                    )
+                    if conversation_history
+                    else "No previous conversation."
                 )
-                if conversation_history
-                else "No previous conversation."
-            )
 
-            # Get classification from LLM
-            chain = self.prompt | self.llm
-            result = chain.invoke(
-                {
-                    "user_input": state["user_input"],
-                    "conversation_history": history_text,
+                # Add input to trace metadata
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["user_input"] = state["user_input"][:200]
+                    tracer.metadata["history_length"] = len(conversation_history)
+
+                # Get classification from LLM
+                chain = self.prompt | self.llm
+                result = chain.invoke(
+                    {
+                        "user_input": state["user_input"],
+                        "conversation_history": history_text,
+                    }
+                )
+
+                # Extract intent from response
+                intent_text = result.content.strip().lower()
+
+                # Map to IntentType
+                intent_mapping = {
+                    "information": IntentType.INFORMATION,
+                    "itinerary": IntentType.ITINERARY,
+                    "travel_plan": IntentType.TRAVEL_PLAN,
+                    "support_trip": IntentType.SUPPORT_TRIP,
                 }
-            )
 
-            # Extract intent from response
-            intent_text = result.content.strip().lower()
+                intent = intent_mapping.get(intent_text, IntentType.UNKNOWN)
 
-            # Map to IntentType
-            intent_mapping = {
-                "information": IntentType.INFORMATION,
-                "itinerary": IntentType.ITINERARY,
-                "travel_plan": IntentType.TRAVEL_PLAN,
-                "support_trip": IntentType.SUPPORT_TRIP,
-            }
+                logger.info(f"Classified intent: {intent.value}")
 
-            intent = intent_mapping.get(intent_text, IntentType.UNKNOWN)
+                # Add result to trace metadata
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["classified_intent"] = intent.value
+                    tracer.metadata["raw_response"] = intent_text
 
-            logger.info(f"Classified intent: {intent.value}")
+                state["intent"] = intent.value
+                state["error"] = None
 
-            state["intent"] = intent.value
-            state["error"] = None
+            except Exception as e:
+                logger.error(f"Error in intent classification: {e}")
+                state["intent"] = IntentType.UNKNOWN.value
+                state["error"] = f"Intent classification error: {str(e)}"
 
-        except Exception as e:
-            logger.error(f"Error in intent classification: {e}")
-            state["intent"] = IntentType.UNKNOWN.value
-            state["error"] = f"Intent classification error: {str(e)}"
+                # Add error to trace metadata
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["error"] = str(e)
 
         return state

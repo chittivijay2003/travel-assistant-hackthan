@@ -7,6 +7,7 @@ from src.utils.mem0_manager import Mem0Manager
 from src.utils.rag_manager import RAGManager
 from src.config import Config
 from src.utils.logger import setup_logger
+from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
 
 logger = setup_logger("travel_plan")
 
@@ -191,198 +192,208 @@ Make sure you understand the complete trip details from the ENTIRE conversation 
         Returns:
             Updated state with travel plan
         """
-        try:
-            logger.info(f"Generating travel plan for user {state['user_id']}")
-
-            user_id = state["user_id"]
-            user_input = state["user_input"]
-            conversation_history = state.get("conversation_history", [])
-
-            # Step 1: Prepare request with user selections and all information
-            logger.info("Step 1: Preparing travel request...")
-            self._prepare_travel_request(state)  # Logs prepared request details
-
-            # Check if user is confirming a previous itinerary
-            logger.info(f"Conversation history length: {len(conversation_history)}")
-
-            if conversation_history and len(conversation_history) >= 2:
-                last_assistant_msg = None
-                for msg in reversed(conversation_history):
-                    if msg["role"] == "assistant":
-                        last_assistant_msg = msg["content"]
-                        break
-
-                logger.info(
-                    f"Last assistant message preview: {last_assistant_msg[:100] if last_assistant_msg else 'None'}..."
-                )
-
-                # If last message looks like an itinerary and user is confirming
-                if last_assistant_msg and (
-                    "day 1" in last_assistant_msg.lower()
-                    or "itinerary" in last_assistant_msg.lower()
-                ):
-                    logger.info("Detected itinerary in conversation history")
-                    # Check if current input is a confirmation
-                    confirmation_words = [
-                        "yes",
-                        "sure",
-                        "okay",
-                        "go ahead",
-                        "proceed",
-                        "i want this",
-                        "sounds good",
-                    ]
-                    if any(word in user_input.lower() for word in confirmation_words):
-                        # Save the selected itinerary
-                        logger.info(
-                            "User confirmed previous itinerary, saving selection"
-                        )
-                        self.mem0_manager.add_memory(
-                            user_id=user_id,
-                            message=f"Selected itinerary: {last_assistant_msg[:500]}",
-                            metadata={"type": "selection"},
-                        )
-                        logger.info("Selection saved successfully")
-                    else:
-                        logger.info(f"No confirmation word found in: {user_input}")
-                else:
-                    logger.info("No itinerary detected in last assistant message")
-            else:
-                logger.info("Not enough conversation history")
-
-            # Get user history
-            memories = self.mem0_manager.get_memories(user_id, limit=15)
-            user_history = (
-                "\n".join(
-                    [
-                        f"- {mem.get('memory', mem.get('content', ''))}"
-                        for mem in memories
-                    ]
-                )
-                if memories
-                else "No history available."
-            )
-
-            # Build complete context including conversation history
-            context_parts = [user_history]
-
-            # Add recent conversation context
-            if conversation_history:
-                conversation_text = "\n\nRecent Conversation:\n"
-                for msg in conversation_history[-6:]:  # Last 3 exchanges
-                    role = "User" if msg["role"] == "user" else "Assistant"
-                    conversation_text += f"{role}: {msg['content']}\n"
-                context_parts.append(conversation_text)
-
-            full_context = "\n".join(context_parts)
-
-            # Check for missing information
-            info_chain = self.info_gathering_prompt | self.llm
-            info_result = info_chain.invoke(
-                {"user_request": user_input, "user_history": full_context}
-            )
-
-            missing_info = info_result.content.strip()
-
-            if missing_info != "COMPLETE" and "COMPLETE" not in missing_info:
-                # Request missing information
-                state["response"] = (
-                    f"To create the best travel plan for you, I need some additional information:\n\n"
-                    f"{missing_info}\n\n"
-                    "Please provide these details so I can help you better."
-                )
-                state["error"] = None
-                return state
-
-            # Get policy context using RAG
-            policy_query = f"travel budget cab flight policy {user_input}"
+        # Start LangFuse tracing
+        with LangFuseTracer(
+            name="travel_plan_generation",
+            trace_type="trace",
+            metadata={"node": "travel_plan", "model": Config.GEMINI_MODEL},
+            user_id=state.get("user_id"),
+            session_id=state.get("user_id"),
+        ) as tracer:
             try:
-                policy_context = self.rag_manager.get_policy_context(policy_query)
-            except Exception as e:
-                logger.warning(f"RAG not available: {e}")
-                policy_context = "Note: Policy compliance system is currently unavailable. Using general best practices."
+                logger.info(f"Generating travel plan for user {state['user_id']}")
 
-            # Get user preferences
-            preference_memories = [
-                mem
-                for mem in memories
-                if mem.get("metadata", {}).get("type") == "preference"
-            ]
-            user_preferences = (
-                "\n".join(
-                    [
-                        f"- {mem.get('memory', mem.get('content', ''))}"
-                        for mem in preference_memories
-                    ]
+                user_id = state["user_id"]
+                user_input = state["user_input"]
+                conversation_history = state.get("conversation_history", [])
+
+                # Step 1: Prepare request with user selections and all information
+                logger.info("Step 1: Preparing travel request...")
+                self._prepare_travel_request(state)  # Logs prepared request details
+
+                # Check if user is confirming a previous itinerary
+                logger.info(f"Conversation history length: {len(conversation_history)}")
+
+                if conversation_history and len(conversation_history) >= 2:
+                    last_assistant_msg = None
+                    for msg in reversed(conversation_history):
+                        if msg["role"] == "assistant":
+                            last_assistant_msg = msg["content"]
+                            break
+
+                    logger.info(
+                        f"Last assistant message preview: {last_assistant_msg[:100] if last_assistant_msg else 'None'}..."
+                    )
+
+                    # If last message looks like an itinerary and user is confirming
+                    if last_assistant_msg and (
+                        "day 1" in last_assistant_msg.lower()
+                        or "itinerary" in last_assistant_msg.lower()
+                    ):
+                        logger.info("Detected itinerary in conversation history")
+                        # Check if current input is a confirmation
+                        confirmation_words = [
+                            "yes",
+                            "sure",
+                            "okay",
+                            "go ahead",
+                            "proceed",
+                            "i want this",
+                            "sounds good",
+                        ]
+                        if any(
+                            word in user_input.lower() for word in confirmation_words
+                        ):
+                            # Save the selected itinerary
+                            logger.info(
+                                "User confirmed previous itinerary, saving selection"
+                            )
+                            self.mem0_manager.add_memory(
+                                user_id=user_id,
+                                message=f"Selected itinerary: {last_assistant_msg[:500]}",
+                                metadata={"type": "selection"},
+                            )
+                            logger.info("Selection saved successfully")
+                        else:
+                            logger.info(f"No confirmation word found in: {user_input}")
+                    else:
+                        logger.info("No itinerary detected in last assistant message")
+                else:
+                    logger.info("Not enough conversation history")
+
+                # Get user history
+                memories = self.mem0_manager.get_memories(user_id, limit=15)
+                user_history = (
+                    "\n".join(
+                        [
+                            f"- {mem.get('memory', mem.get('content', ''))}"
+                            for mem in memories
+                        ]
+                    )
+                    if memories
+                    else "No history available."
                 )
-                if preference_memories
-                else "No specific preferences."
-            )
 
-            # Get user selections
-            selection_memories = [
-                mem
-                for mem in memories
-                if mem.get("metadata", {}).get("type") == "selection"
-            ]
-            user_selections = (
-                "\n".join(
-                    [
-                        f"- {mem.get('memory', mem.get('content', ''))}"
-                        for mem in selection_memories
-                    ]
+                # Build complete context including conversation history
+                context_parts = [user_history]
+
+                # Add recent conversation context
+                if conversation_history:
+                    conversation_text = "\n\nRecent Conversation:\n"
+                    for msg in conversation_history[-6:]:  # Last 3 exchanges
+                        role = "User" if msg["role"] == "user" else "Assistant"
+                        conversation_text += f"{role}: {msg['content']}\n"
+                    context_parts.append(conversation_text)
+
+                full_context = "\n".join(context_parts)
+
+                # Check for missing information
+                info_chain = self.info_gathering_prompt | self.llm
+                info_result = info_chain.invoke(
+                    {"user_request": user_input, "user_history": full_context}
                 )
-                if selection_memories
-                else "No previous selections."
-            )
 
-            # Build conversation context string
-            conversation_context_str = ""
-            if conversation_history:
-                conversation_context_str = "Recent Conversation:\n"
-                for msg in conversation_history:
-                    role = "User" if msg["role"] == "user" else "Assistant"
-                    conversation_context_str += f"{role}: {msg['content']}\n\n"
-            else:
-                conversation_context_str = "No previous conversation."
+                missing_info = info_result.content.strip()
 
-            # Generate travel plan
-            plan_chain = self.travel_plan_prompt | self.llm
-            plan_result = plan_chain.invoke(
-                {
-                    "policy_context": policy_context,
-                    "user_preferences": user_preferences,
-                    "user_selections": user_selections,
-                    "conversation_context": conversation_context_str,
-                    "user_request": user_input,
+                if missing_info != "COMPLETE" and "COMPLETE" not in missing_info:
+                    # Request missing information
+                    state["response"] = (
+                        f"To create the best travel plan for you, I need some additional information:\n\n"
+                        f"{missing_info}\n\n"
+                        "Please provide these details so I can help you better."
+                    )
+                    state["error"] = None
+                    return state
+
+                # Get policy context using RAG
+                policy_query = f"travel budget cab flight policy {user_input}"
+                try:
+                    policy_context = self.rag_manager.get_policy_context(policy_query)
+                except Exception as e:
+                    logger.warning(f"RAG not available: {e}")
+                    policy_context = "Note: Policy compliance system is currently unavailable. Using general best practices."
+
+                # Get user preferences
+                preference_memories = [
+                    mem
+                    for mem in memories
+                    if mem.get("metadata", {}).get("type") == "preference"
+                ]
+                user_preferences = (
+                    "\n".join(
+                        [
+                            f"- {mem.get('memory', mem.get('content', ''))}"
+                            for mem in preference_memories
+                        ]
+                    )
+                    if preference_memories
+                    else "No specific preferences."
+                )
+
+                # Get user selections
+                selection_memories = [
+                    mem
+                    for mem in memories
+                    if mem.get("metadata", {}).get("type") == "selection"
+                ]
+                user_selections = (
+                    "\n".join(
+                        [
+                            f"- {mem.get('memory', mem.get('content', ''))}"
+                            for mem in selection_memories
+                        ]
+                    )
+                    if selection_memories
+                    else "No previous selections."
+                )
+
+                # Build conversation context string
+                conversation_context_str = ""
+                if conversation_history:
+                    conversation_context_str = "Recent Conversation:\n"
+                    for msg in conversation_history:
+                        role = "User" if msg["role"] == "user" else "Assistant"
+                        conversation_context_str += f"{role}: {msg['content']}\n\n"
+                else:
+                    conversation_context_str = "No previous conversation."
+
+                # Generate travel plan
+                plan_chain = self.travel_plan_prompt | self.llm
+                plan_result = plan_chain.invoke(
+                    {
+                        "policy_context": policy_context,
+                        "user_preferences": user_preferences,
+                        "user_selections": user_selections,
+                        "conversation_context": conversation_context_str,
+                        "user_request": user_input,
+                    }
+                )
+
+                travel_plan = plan_result.content
+
+                state["response"] = travel_plan
+                state["travel_plan_data"] = {
+                    "request": user_input,
+                    "plan": travel_plan,
+                    "policy_compliant": True,
                 }
-            )
+                state["policy_context"] = policy_context
+                state["error"] = None
 
-            travel_plan = plan_result.content
+                # Save the travel plan request to history
+                self.mem0_manager.add_memory(
+                    user_id=user_id,
+                    message=f"Requested travel plan: {user_input}",
+                    metadata={"type": "travel_plan_request"},
+                )
 
-            state["response"] = travel_plan
-            state["travel_plan_data"] = {
-                "request": user_input,
-                "plan": travel_plan,
-                "policy_compliant": True,
-            }
-            state["policy_context"] = policy_context
-            state["error"] = None
+                logger.info(f"Successfully generated travel plan for user {user_id}")
 
-            # Save the travel plan request to history
-            self.mem0_manager.add_memory(
-                user_id=user_id,
-                message=f"Requested travel plan: {user_input}",
-                metadata={"type": "travel_plan_request"},
-            )
-
-            logger.info(f"Successfully generated travel plan for user {user_id}")
-
-        except Exception as e:
-            logger.error(f"Error in travel plan node: {e}")
-            state[
-                "response"
-            ] = "I encountered an error creating the travel plan. Please try again."
-            state["error"] = str(e)
+            except Exception as e:
+                logger.error(f"Error in travel plan node: {e}")
+                state[
+                    "response"
+                ] = "I encountered an error creating the travel plan. Please try again."
+                state["error"] = str(e)
 
         return state

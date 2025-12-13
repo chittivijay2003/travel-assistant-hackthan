@@ -16,6 +16,7 @@ except ImportError:
 
 from src.config import Config
 from src.utils.logger import setup_logger
+from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
 
 logger = setup_logger("mem0_manager")
 
@@ -177,24 +178,45 @@ class Mem0Manager:
             message: Message to store
             metadata: Additional metadata
         """
-        try:
-            # Generate embedding for the message (stored in cache)
-            self._get_embedding(message)
+        # Start LangFuse tracing
+        with LangFuseTracer(
+            name="add_memory",
+            trace_type="trace",
+            metadata={
+                "operation": "memory_add",
+                "user_id": user_id,
+                "memory_type": metadata.get("type") if metadata else None,
+            },
+            user_id=user_id,
+            session_id=user_id,
+        ) as tracer:
+            try:
+                # Generate embedding for the message (stored in cache)
+                self._get_embedding(message)
 
-            memory_entry = {
-                "memory": message,
-                "content": message,
-                "metadata": metadata or {},
-                "timestamp": datetime.now().isoformat(),
-                "id": f"{user_id}_{len(self.memories[user_id])}",
-            }
-            self.memories[user_id].append(memory_entry)
-            self._save_memories()
-            self._save_embeddings()
-            logger.info(f"Added memory for user {user_id} with embedding")
-        except Exception as e:
-            logger.error(f"Error adding memory for user {user_id}: {e}")
-            # Don't raise - just log the error so the app continues working
+                memory_entry = {
+                    "memory": message,
+                    "content": message,
+                    "metadata": metadata or {},
+                    "timestamp": datetime.now().isoformat(),
+                    "id": f"{user_id}_{len(self.memories[user_id])}",
+                }
+                self.memories[user_id].append(memory_entry)
+                self._save_memories()
+                self._save_embeddings()
+                logger.info(f"Added memory for user {user_id} with embedding")
+
+                # Add success to trace
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["success"] = True
+                    tracer.metadata["memory_preview"] = message[:100]
+
+            except Exception as e:
+                logger.error(f"Error adding memory for user {user_id}: {e}")
+                # Add error to trace
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["error"] = str(e)
+                # Don't raise - just log the error so the app continues working
 
     def get_memories(self, user_id: str, limit: int = 10) -> List[Dict[str, Any]]:
         """

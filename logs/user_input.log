@@ -97,3 +97,39 @@
 2025-12-07 02:19:10,566 - user_input - INFO - Loading user history for user 31ef65f5-3cf2-4070-a46c-d927649b7201
 2025-12-07 02:19:10,567 - user_input - INFO - Loaded 11 history items for user 31ef65f5-3cf2-4070-a46c-d927649b7201
 2025-12-07 02:19:10,567 - user_input - INFO - User input: what is my confirmed flight
+2025-12-08 01:26:25,890 - user_input - INFO - Loading user history for user cc250929-6404-442e-9006-c01010b465a1
+2025-12-08 01:26:25,891 - user_input - INFO - Loaded 0 history items for user cc250929-6404-442e-9006-c01010b465a1
+2025-12-08 01:26:25,891 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-08 01:26:42,319 - user_input - INFO - Loading user history for user cc250929-6404-442e-9006-c01010b465a1
+2025-12-08 01:26:42,320 - user_input - INFO - Loaded 1 history items for user cc250929-6404-442e-9006-c01010b465a1
+2025-12-08 01:26:42,320 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-11 01:08:30,817 - user_input - INFO - Loading user history for user 86ccd66e-5ffa-437c-9b47-282099ff359d
+2025-12-11 01:08:30,819 - user_input - INFO - Loaded 0 history items for user 86ccd66e-5ffa-437c-9b47-282099ff359d
+2025-12-11 01:08:30,819 - user_input - INFO - User input: hi
+2025-12-12 12:05:58,303 - user_input - INFO - Loading user history for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:05:58,305 - user_input - INFO - Loaded 0 history items for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:05:58,305 - user_input - INFO - User input: hi
+2025-12-12 12:10:39,082 - user_input - INFO - Loading user history for user test_user_123
+2025-12-12 12:10:39,084 - user_input - INFO - Loaded 0 history items for user test_user_123
+2025-12-12 12:10:39,084 - user_input - INFO - User input: I love beaches
+2025-12-12 12:11:47,721 - user_input - INFO - Loading user history for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:11:47,723 - user_input - INFO - Loaded 0 history items for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:11:47,723 - user_input - INFO - User input: hi
+2025-12-12 12:22:03,129 - user_input - INFO - Loading user history for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:22:03,131 - user_input - INFO - Loaded 0 history items for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:22:03,131 - user_input - INFO - User input: hi hello
+2025-12-12 12:30:06,322 - user_input - INFO - Loading user history for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:30:06,323 - user_input - INFO - Loaded 0 history items for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:30:06,323 - user_input - INFO - User input: give flights
+2025-12-12 12:31:27,742 - user_input - INFO - Loading user history for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:31:27,743 - user_input - INFO - Loaded 0 history items for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:31:27,743 - user_input - INFO - User input: sfo to aus
+2025-12-12 12:41:33,586 - user_input - INFO - Loading user history for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:41:33,587 - user_input - INFO - Loaded 0 history items for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:41:33,587 - user_input - INFO - User input: hi hello give flights
+2025-12-12 12:41:55,523 - user_input - INFO - Loading user history for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:41:55,524 - user_input - INFO - Loaded 0 history items for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:41:55,524 - user_input - INFO - User input: sfo to austing on next week
+2025-12-12 12:42:10,437 - user_input - INFO - Loading user history for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:42:10,438 - user_input - INFO - Loaded 0 history items for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:42:10,438 - user_input - INFO - User input: also give hotels

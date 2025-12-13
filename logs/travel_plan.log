@@ -89,3 +89,66 @@ Here's...
 2025-12-07 02:12:52,104 - travel_plan - INFO - Detected itinerary in conversation history
 2025-12-07 02:12:52,104 - travel_plan - INFO - No confirmation word found in: Option 2 in flights and Option 3 in hotel
 2025-12-07 02:13:24,224 - travel_plan - INFO - Successfully generated travel plan for user 31ef65f5-3cf2-4070-a46c-d927649b7201
+2025-12-12 12:06:19,728 - travel_plan - INFO - Generating travel plan for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:06:19,729 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-12 12:06:19,729 - travel_plan - INFO - Prepared travel request: {'user_id': 'f4b81196-2f2f-47ce-9ac3-43bb13931f62', 'current_input': 'hi', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-12 12:06:19,729 - travel_plan - INFO - Conversation history length: 1
+2025-12-12 12:06:19,729 - travel_plan - INFO - Not enough conversation history
+2025-12-12 12:11:55,436 - travel_plan - INFO - Generating travel plan for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:11:55,437 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-12 12:11:55,438 - travel_plan - INFO - Prepared travel request: {'user_id': 'f4b81196-2f2f-47ce-9ac3-43bb13931f62', 'current_input': 'hi', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-12 12:11:55,438 - travel_plan - INFO - Conversation history length: 3
+2025-12-12 12:11:55,439 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+
+- Destination
+- Travel ...
+2025-12-12 12:11:55,439 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-12 12:22:11,030 - travel_plan - INFO - Generating travel plan for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:22:11,030 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-12 12:22:11,031 - travel_plan - INFO - Prepared travel request: {'user_id': 'f4b81196-2f2f-47ce-9ac3-43bb13931f62', 'current_input': 'hi hello', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-12 12:22:11,031 - travel_plan - INFO - Conversation history length: 5
+2025-12-12 12:22:11,031 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+
+- Destination
+- Travel ...
+2025-12-12 12:22:11,031 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-12 12:30:14,001 - travel_plan - INFO - Generating travel plan for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:30:14,002 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-12 12:30:14,002 - travel_plan - INFO - Prepared travel request: {'user_id': 'f4b81196-2f2f-47ce-9ac3-43bb13931f62', 'current_input': 'give flights', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-12 12:30:14,002 - travel_plan - INFO - Conversation history length: 7
+2025-12-12 12:30:14,002 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+
+- Destination
+- Travel ...
+2025-12-12 12:30:14,002 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-12 12:31:33,279 - travel_plan - INFO - Generating travel plan for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:31:33,279 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-12 12:31:33,279 - travel_plan - INFO - Prepared travel request: {'user_id': 'f4b81196-2f2f-47ce-9ac3-43bb13931f62', 'current_input': 'sfo to aus', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-12 12:31:33,279 - travel_plan - INFO - Conversation history length: 9
+2025-12-12 12:31:33,279 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+
+- Destination
+- Travel ...
+2025-12-12 12:31:33,279 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-12 12:41:40,570 - travel_plan - INFO - Generating travel plan for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:41:40,570 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-12 12:41:40,570 - travel_plan - INFO - Prepared travel request: {'user_id': '2d9dfd3c-083c-45f8-8db0-d0ebe5a68920', 'current_input': 'hi hello give flights', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-12 12:41:40,570 - travel_plan - INFO - Conversation history length: 1
+2025-12-12 12:41:40,570 - travel_plan - INFO - Not enough conversation history
+2025-12-12 12:42:01,047 - travel_plan - INFO - Generating travel plan for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:42:01,048 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-12 12:42:01,048 - travel_plan - INFO - Prepared travel request: {'user_id': '2d9dfd3c-083c-45f8-8db0-d0ebe5a68920', 'current_input': 'sfo to austing on next week', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-12 12:42:01,048 - travel_plan - INFO - Conversation history length: 3
+2025-12-12 12:42:01,048 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+
+- Destination
+- Travel ...
+2025-12-12 12:42:01,048 - travel_plan - INFO - No itinerary detected in last assistant message
+2025-12-12 12:42:16,712 - travel_plan - INFO - Generating travel plan for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:42:16,712 - travel_plan - INFO - Step 1: Preparing travel request...
+2025-12-12 12:42:16,712 - travel_plan - INFO - Prepared travel request: {'user_id': '2d9dfd3c-083c-45f8-8db0-d0ebe5a68920', 'current_input': 'also give hotels', 'destination': None, 'origin': None, 'dates': None, 'start_time': None, 'travelers': None, 'budget': None, 'user_selections': None}
+2025-12-12 12:42:16,712 - travel_plan - INFO - Conversation history length: 5
+2025-12-12 12:42:16,713 - travel_plan - INFO - Last assistant message preview: To create the best travel plan for you, I need some additional information:
+
+- Travel dates (start a...
+2025-12-12 12:42:16,713 - travel_plan - INFO - No itinerary detected in last assistant message

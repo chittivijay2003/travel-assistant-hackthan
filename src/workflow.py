@@ -13,6 +13,11 @@ from src.nodes.user_selection import UserSelectionNode
 from src.utils.mem0_manager import Mem0Manager
 from src.utils.rag_manager import RAGManager
 from src.utils.logger import setup_logger
+from src.utils.langfuse_manager import (
+    LangFuseTracer,
+    is_langfuse_enabled,
+    flush_langfuse,
+)
 
 logger = setup_logger("workflow")
 
@@ -112,7 +117,7 @@ class TravelAssistantGraph:
         workflow = StateGraph(GraphState)
 
         # Add nodes
-        workflow.add_node("user_input", self.user_input_node)
+        workflow.add_node("load_history", self.user_input_node)
         workflow.add_node("intent_classification", self.intent_node)
         workflow.add_node("information", self.information_node)
         workflow.add_node("itinerary", self.itinerary_node)
@@ -120,11 +125,11 @@ class TravelAssistantGraph:
         workflow.add_node("travel_plan", self.travel_plan_node)
         workflow.add_node("support_trip", self.support_trip_node)
 
-        # Set entry point - starts with user_input node
-        workflow.set_entry_point("user_input")
+        # Set entry point - starts with load_history node
+        workflow.set_entry_point("load_history")
 
-        # User input node always goes to intent classification
-        workflow.add_edge("user_input", "intent_classification")
+        # Load history node always goes to intent classification
+        workflow.add_edge("load_history", "intent_classification")
 
         # Add conditional edges from intent classification
         workflow.add_conditional_edges(
@@ -176,41 +181,84 @@ class TravelAssistantGraph:
         Returns:
             Response message
         """
-        try:
-            logger.info(f"Processing message for user {user_id}: {user_input}")
+        # Start LangFuse tracing for the entire pipeline
+        with LangFuseTracer(
+            name="travel_assistant_pipeline",
+            trace_type="trace",
+            metadata={
+                "operation": "full_pipeline",
+                "user_input": user_input[:200],
+                "conversation_length": len(conversation_history)
+                if conversation_history
+                else 0,
+            },
+            user_id=user_id,
+            session_id=user_id,
+        ) as tracer:
+            try:
+                # Log transaction ID for audit trail
+                logger.info(f"[AUDIT] Transaction ID: {tracer.txnid} - User: {user_id}")
+                logger.info(f"Processing message for user {user_id}: {user_input}")
 
-            # Initialize state
-            initial_state = {
-                "user_id": user_id,
-                "user_input": user_input,
-                "intent": None,
-                "user_history": [],
-                "response": "",
-                "itinerary_data": None,
-                "travel_plan_data": None,
-                "user_selections": None,
-                "policy_context": None,
-                "error": None,
-                "metadata": {},
-                "conversation_history": conversation_history or [],
-            }
+                # Initialize state
+                initial_state = {
+                    "user_id": user_id,
+                    "user_input": user_input,
+                    "intent": None,
+                    "user_history": [],
+                    "response": "",
+                    "itinerary_data": None,
+                    "travel_plan_data": None,
+                    "user_selections": None,
+                    "policy_context": None,
+                    "error": None,
+                    "metadata": {"txnid": tracer.txnid},  # Include txnid in metadata
+                    "conversation_history": conversation_history or [],
+                    "txnid": tracer.txnid,  # Include txnid at top level for easy access
+                }
 
-            # Run graph
-            result = self.graph.invoke(initial_state)
+                # Run graph
+                result = self.graph.invoke(initial_state)
 
-            # Extract response
-            response = result.get(
-                "response", "I'm sorry, I couldn't process your request."
-            )
+                # Extract response
+                response = result.get(
+                    "response", "I'm sorry, I couldn't process your request."
+                )
 
-            if result.get("error"):
-                logger.error(f"Error in graph execution: {result['error']}")
+                # Add result metadata to trace
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["intent_classified"] = result.get("intent")
+                    tracer.metadata["response_length"] = len(response)
+                    tracer.metadata["success"] = not result.get("error")
+                    if result.get("itinerary_data"):
+                        tracer.metadata["generated_itinerary"] = True
+                    if result.get("travel_plan_data"):
+                        tracer.metadata["generated_travel_plan"] = True
 
-            return response
+                if result.get("error"):
+                    logger.error(f"Error in graph execution: {result['error']}")
+                    if tracer.trace and is_langfuse_enabled():
+                        tracer.metadata["error"] = result["error"]
 
-        except Exception as e:
-            logger.error(f"Error processing message: {e}")
-            return "I encountered an error processing your message. Please try again."
+                # Flush traces to ensure they're sent
+                flush_langfuse()
+
+                return response
+
+            except Exception as e:
+                logger.error(f"Error processing message: {e}")
+
+                # Add error to trace
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["error"] = str(e)
+                    tracer.metadata["success"] = False
+
+                # Flush traces even on error
+                flush_langfuse()
+
+                return (
+                    "I encountered an error processing your message. Please try again."
+                )
 
     def ingest_policies(self):
         """Ingest policy documents into RAG system"""

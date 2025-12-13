@@ -50,6 +50,7 @@ User Input → Load History → Intent Classification (Gemini) → Route to Node
 - **Google Gemini**: Language model (models/gemini-pro-latest)
 - **all-MiniLM-L6-v2**: Local embeddings for user history and policies
 - **FAISS**: Vector store for policy document retrieval (no Docker needed)
+- **Langfuse**: LLM observability and tracing with transaction ID tracking
 - **Streamlit**: Interactive chat UI
 - **JSON + NumPy**: User history storage (Mem0 alternative)
 
@@ -59,6 +60,7 @@ User Input → Load History → Intent Classification (Gemini) → Route to Node
 - 🔄 **Conversation Context** - Remembers full conversation history
 - 📋 **Policy Compliance** - RAG ensures all plans follow company rules
 - ⚡ **Fast & Efficient** - Local embeddings + Gemini Flash
+- 🔍 **Full Observability** - Track all LLM calls, RAG queries, and operations with Langfuse
 
 ## 📋 Prerequisites
 
@@ -83,10 +85,15 @@ User Input → Load History → Intent Classification (Gemini) → Route to Node
    cp .env.example .env
    ```
    
-   Edit `.env` and add your Google API key:
+   Edit `.env` and add your API keys:
    ```env
    GOOGLE_API_KEY=your_google_api_key_here
    GEMINI_MODEL=models/gemini-pro-latest
+   
+   # Optional: Enable Langfuse for observability
+   LANGFUSE_PUBLIC_KEY=pk-lf-your_public_key_here
+   LANGFUSE_SECRET_KEY=sk-lf-your_secret_key_here
+   LANGFUSE_HOST=https://us.cloud.langfuse.com
    ```
 
 4. **Create and ingest policy document**
@@ -186,7 +193,28 @@ GEMINI_MODEL=models/gemini-pro-latest
 TEMPERATURE=0.7
 LOG_LEVEL=INFO
 USE_REDIS=false
+
+# Langfuse Observability (optional)
+LANGFUSE_PUBLIC_KEY=pk-lf-your_public_key_here
+LANGFUSE_SECRET_KEY=sk-lf-your_secret_key_here
+LANGFUSE_HOST=https://us.cloud.langfuse.com
 ```
+
+### Enable Langfuse Observability (Optional)
+1. Sign up at [Langfuse Cloud](https://cloud.langfuse.com)
+2. Create a new project
+3. Copy your public and secret keys
+4. Add them to `.env` file
+5. Restart the application
+6. View traces at your Langfuse dashboard
+
+**Features:**
+- Track all LLM calls with input/output
+- Monitor RAG policy retrievals
+- Trace memory operations
+- View complete request flow
+- Each request gets unique transaction ID (txnid) for audit trails
+- Search logs by `[AUDIT]` to find transaction IDs
 
 ### Get Google API Key
 1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
@@ -287,15 +315,33 @@ Test different scenarios:
 "Change my hotel to a cheaper option"
 ```
 
-## 📊 Logging
+## 📊 Logging & Observability
 
+### Local Logs
 Logs in `logs/` directory:
-- `workflow.log` - Graph execution
+- `workflow.log` - Graph execution (includes `[AUDIT]` transaction IDs)
 - `intent_classification.log` - Intent decisions
 - `travel_plan.log` - Travel planning
 - `rag_manager.log` - Policy queries
 - `mem0_manager.log` - User history operations
+- `langfuse_manager.log` - Langfuse tracing status
 - `ui.log` - Streamlit UI
+
+### Transaction ID Tracking
+Every request gets a unique transaction ID (txnid) for audit trails:
+```bash
+# View audit logs with transaction IDs
+grep '[AUDIT]' logs/workflow.log
+
+# Example output:
+# [AUDIT] Transaction ID: txn_a1b2c3d4e5f6g7h8 - User: user_123
+```
+
+### Langfuse Dashboard
+- View all traces at: https://cloud.langfuse.com
+- Search by transaction ID (txnid) to see complete request flow
+- Monitor LLM performance, costs, and latency
+- Debug issues by tracing through pipeline execution
 
 ## 🛠️ Troubleshooting
 

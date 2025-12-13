@@ -76,3 +76,36 @@
 2025-12-07 02:12:52,103 - workflow - INFO - Routing to node based on intent: travel_plan
 2025-12-07 02:19:10,563 - workflow - INFO - Processing message for user 31ef65f5-3cf2-4070-a46c-d927649b7201: what is my confirmed flight
 2025-12-07 02:19:16,065 - workflow - INFO - Routing to node based on intent: support_trip
+2025-12-08 01:26:25,886 - workflow - INFO - Processing message for user cc250929-6404-442e-9006-c01010b465a1: I love trekking in the monsoon season
+2025-12-08 01:26:32,277 - workflow - INFO - Routing to node based on intent: information
+2025-12-08 01:26:42,315 - workflow - INFO - Processing message for user cc250929-6404-442e-9006-c01010b465a1: Suggest a 3-day itinerary in Japan
+2025-12-08 01:26:47,956 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-11 01:08:30,809 - workflow - INFO - Processing message for user 86ccd66e-5ffa-437c-9b47-282099ff359d: hi
+2025-12-11 01:08:43,279 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-12 12:05:58,299 - workflow - INFO - [AUDIT] Transaction ID: txn_32a7b159bf0c4dce - User: f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:05:58,301 - workflow - INFO - Processing message for user f4b81196-2f2f-47ce-9ac3-43bb13931f62: hi
+2025-12-12 12:06:19,727 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 12:10:39,080 - workflow - INFO - [AUDIT] Transaction ID: txn_0d92dcf573974ce6 - User: test_user_123
+2025-12-12 12:10:39,081 - workflow - INFO - Processing message for user test_user_123: I love beaches
+2025-12-12 12:10:45,014 - workflow - INFO - Routing to node based on intent: information
+2025-12-12 12:11:47,704 - workflow - INFO - [AUDIT] Transaction ID: txn_4c834af9c7d14276 - User: f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:11:47,712 - workflow - INFO - Processing message for user f4b81196-2f2f-47ce-9ac3-43bb13931f62: hi
+2025-12-12 12:11:55,435 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 12:22:03,122 - workflow - INFO - [AUDIT] Transaction ID: txn_381c72f251934637 - User: f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:22:03,125 - workflow - INFO - Processing message for user f4b81196-2f2f-47ce-9ac3-43bb13931f62: hi hello
+2025-12-12 12:22:11,027 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 12:30:06,315 - workflow - INFO - [AUDIT] Transaction ID: txn_ffd55a2119384fa7 - User: f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:30:06,318 - workflow - INFO - Processing message for user f4b81196-2f2f-47ce-9ac3-43bb13931f62: give flights
+2025-12-12 12:30:14,000 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 12:31:27,733 - workflow - INFO - [AUDIT] Transaction ID: txn_5d3982487807406e - User: f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:31:27,738 - workflow - INFO - Processing message for user f4b81196-2f2f-47ce-9ac3-43bb13931f62: sfo to aus
+2025-12-12 12:31:33,278 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 12:41:33,581 - workflow - INFO - [AUDIT] Transaction ID: txn_8133bc14bf294944 - User: 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:41:33,583 - workflow - INFO - Processing message for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920: hi hello give flights
+2025-12-12 12:41:40,569 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 12:41:55,520 - workflow - INFO - [AUDIT] Transaction ID: txn_4889c16e7fb84238 - User: 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:41:55,522 - workflow - INFO - Processing message for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920: sfo to austing on next week
+2025-12-12 12:42:01,046 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-12 12:42:10,436 - workflow - INFO - [AUDIT] Transaction ID: txn_41518cf18728454e - User: 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:42:10,437 - workflow - INFO - Processing message for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920: also give hotels
+2025-12-12 12:42:16,710 - workflow - INFO - Routing to node based on intent: travel_plan

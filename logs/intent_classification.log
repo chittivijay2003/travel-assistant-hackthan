@@ -64,3 +64,27 @@
 2025-12-07 02:12:52,102 - intent_classification - INFO - Classified intent: travel_plan
 2025-12-07 02:19:10,567 - intent_classification - INFO - Classifying intent for user 31ef65f5-3cf2-4070-a46c-d927649b7201
 2025-12-07 02:19:16,064 - intent_classification - INFO - Classified intent: support_trip
+2025-12-08 01:26:25,899 - intent_classification - INFO - Classifying intent for user cc250929-6404-442e-9006-c01010b465a1
+2025-12-08 01:26:32,276 - intent_classification - INFO - Classified intent: information
+2025-12-08 01:26:42,320 - intent_classification - INFO - Classifying intent for user cc250929-6404-442e-9006-c01010b465a1
+2025-12-08 01:26:47,953 - intent_classification - INFO - Classified intent: itinerary
+2025-12-11 01:08:30,823 - intent_classification - INFO - Classifying intent for user 86ccd66e-5ffa-437c-9b47-282099ff359d
+2025-12-11 01:08:43,277 - intent_classification - INFO - Classified intent: itinerary
+2025-12-12 12:05:58,307 - intent_classification - INFO - Classifying intent for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:06:19,724 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-12 12:10:39,085 - intent_classification - INFO - Classifying intent for user test_user_123
+2025-12-12 12:10:45,010 - intent_classification - INFO - Classified intent: information
+2025-12-12 12:11:47,724 - intent_classification - INFO - Classifying intent for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:11:55,429 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-12 12:22:03,132 - intent_classification - INFO - Classifying intent for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:22:11,023 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-12 12:30:06,324 - intent_classification - INFO - Classifying intent for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:30:13,999 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-12 12:31:27,744 - intent_classification - INFO - Classifying intent for user f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:31:33,277 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-12 12:41:33,589 - intent_classification - INFO - Classifying intent for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:41:40,568 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-12 12:41:55,524 - intent_classification - INFO - Classifying intent for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:42:01,046 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-12 12:42:10,439 - intent_classification - INFO - Classifying intent for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:42:16,708 - intent_classification - INFO - Classified intent: travel_plan

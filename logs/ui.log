@@ -28,3 +28,18 @@
 2025-12-07 01:40:44,393 - ui - INFO - Travel Assistant Graph initialized
 2025-12-07 01:45:24,276 - ui - INFO - New session started: 31ef65f5-3cf2-4070-a46c-d927649b7201
 2025-12-07 01:45:27,533 - ui - INFO - Travel Assistant Graph initialized
+2025-12-08 01:26:13,012 - ui - INFO - New session started: cc250929-6404-442e-9006-c01010b465a1
+2025-12-08 01:26:17,107 - ui - INFO - Travel Assistant Graph initialized
+2025-12-11 00:43:39,629 - ui - INFO - New session started: 6eeeadc6-569a-44f2-a768-5745d3ff1e12
+2025-12-11 00:43:43,182 - ui - ERROR - Error initializing graph: 'user_input' is already being used as a state key
+2025-12-11 00:45:31,707 - ui - INFO - New session started: 660719fe-209a-4826-947d-4b52a1f2c679
+2025-12-11 00:45:34,154 - ui - ERROR - Error initializing graph: 'user_input' is already being used as a state key
+2025-12-11 01:07:02,987 - ui - INFO - New session started: 86ccd66e-5ffa-437c-9b47-282099ff359d
+2025-12-11 01:07:06,013 - ui - INFO - Travel Assistant Graph initialized
+2025-12-12 12:05:33,546 - ui - INFO - New session started: f4b81196-2f2f-47ce-9ac3-43bb13931f62
+2025-12-12 12:05:49,792 - ui - INFO - Travel Assistant Graph initialized
+2025-12-12 12:31:02,798 - ui - INFO - New session started: 1e333cd9-edb6-490d-8bb7-2e47e6865155
+2025-12-12 12:31:20,871 - ui - INFO - New session started: dd6b3531-c38f-4c16-a957-7aaa2426b987
+2025-12-12 12:31:36,085 - ui - INFO - Travel Assistant Graph initialized
+2025-12-12 12:41:03,964 - ui - INFO - New session started: 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 12:41:21,147 - ui - INFO - Travel Assistant Graph initialized

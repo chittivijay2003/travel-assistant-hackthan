@@ -38,6 +38,11 @@ class Config:
     # Mem0
     MEM0_API_KEY = os.getenv("MEM0_API_KEY", None)
 
+    # LangFuse
+    LANGFUSE_PUBLIC_KEY = os.getenv("LANGFUSE_PUBLIC_KEY", None)
+    LANGFUSE_SECRET_KEY = os.getenv("LANGFUSE_SECRET_KEY", None)
+    LANGFUSE_HOST = os.getenv("LANGFUSE_HOST", "https://us.cloud.langfuse.com")
+
     # Logging
     LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
     LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

@@ -76,6 +76,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Keep logs directory structure but ignore contents
+!logs/.gitkeep
+
 # =============================================================================
 # PROJECT-SPECIFIC DATA
 # =============================================================================

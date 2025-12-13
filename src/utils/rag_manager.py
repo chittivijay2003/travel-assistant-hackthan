@@ -10,6 +10,7 @@ from langchain.schema import Document
 from sentence_transformers import SentenceTransformer
 from src.config import Config
 from src.utils.logger import setup_logger
+from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
 import pickle
 
 logger = setup_logger("rag_manager")
@@ -145,19 +146,46 @@ class RAGManager:
         Returns:
             List of relevant documents
         """
-        if self.vector_store is None:
-            logger.warning("Vector store not initialized - no policies ingested yet")
-            return []
+        # Start LangFuse tracing for retrieval
+        with LangFuseTracer(
+            name="policy_retrieval",
+            trace_type="trace",
+            metadata={"operation": "rag_query", "query": query[:200], "top_k": k},
+        ) as tracer:
+            if self.vector_store is None:
+                logger.warning(
+                    "Vector store not initialized - no policies ingested yet"
+                )
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["results_count"] = 0
+                    tracer.metadata["warning"] = "Vector store not initialized"
+                return []
 
-        try:
-            results = self.vector_store.similarity_search(query, k=k)
-            logger.info(
-                f"Found {len(results)} relevant policy chunks for query: {query}"
-            )
-            return results
-        except Exception as e:
-            logger.error(f"Error querying policies: {e}")
-            return []
+            try:
+                results = self.vector_store.similarity_search(query, k=k)
+                logger.info(
+                    f"Found {len(results)} relevant policy chunks for query: {query}"
+                )
+
+                # Add results metadata to trace
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["results_count"] = len(results)
+                    tracer.metadata["success"] = True
+                    if results:
+                        tracer.metadata["first_result_preview"] = results[
+                            0
+                        ].page_content[:100]
+
+                return results
+            except Exception as e:
+                logger.error(f"Error querying policies: {e}")
+
+                # Add error to trace
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["error"] = str(e)
+                    tracer.metadata["results_count"] = 0
+
+                return []
 
     def get_policy_context(self, query: str) -> str:
         """

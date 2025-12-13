@@ -46,3 +46,6 @@ class GraphState(TypedDict):
 
     # Metadata
     metadata: Dict[str, Any]
+
+    # Transaction ID for audit tracking
+    txnid: Optional[str]
