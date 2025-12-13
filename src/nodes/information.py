@@ -145,6 +145,8 @@ Format the response in a clear, day-by-day structure.""",
                         "request": "Updated itinerary with new preferences",
                         "itinerary": updated_itinerary,
                     }
+                    state["response"] = response
+                    state["error"] = None
                 else:
                     # Just save preference without updating itinerary
                     response = (
