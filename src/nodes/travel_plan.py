@@ -45,14 +45,20 @@ Required information for a complete travel plan:
 - Number of travelers
 - Budget preferences
 
-IMPORTANT: 
-- Check BOTH the current request AND the conversation history for all required information
-- The user may have provided information across multiple messages
-- If the conversation shows the destination was mentioned earlier, don't ask for it again
-- If ALL information is available (either in current message or conversation history), respond with "COMPLETE"
+CRITICAL RULES FOR ANALYZING CONTEXT:
+1. ALWAYS check the conversation history FIRST for any previously mentioned destinations
+2. If user says "I want to plan a [X]-day trip" WITHOUT specifying destination:
+   - Look in conversation history for the most recent destination mentioned
+   - REUSE that destination automatically (e.g., if they previously asked about Paris, assume Paris)
+   - DO NOT ask for destination again unless they explicitly mention a different place
+3. If the user is modifying their previous request (e.g., changing from 3-day to 4-day):
+   - Preserve ALL other details from the previous request (destination, preferences, etc.)
+   - Only ask for information that was NOT in the previous request
+4. The user may have provided information across multiple messages - check ALL of them
+5. If ALL information is available (either in current message or conversation history), respond with "COMPLETE"
 
 Based on ALL available context, list ONLY the truly missing information.
-If all information is available, respond with "COMPLETE".""",
+If everything is available, respond with "COMPLETE".""",
                 ),
                 (
                     "user",
@@ -60,6 +66,8 @@ If all information is available, respond with "COMPLETE".""",
             
 Complete Context (History + Recent Conversation):
 {user_history}
+
+REMEMBER: If user previously mentioned a destination (like Paris, Rome, Tokyo, etc.) and now just says "plan a trip" or "X-day trip", REUSE that same destination!
 
 What information is still missing? If everything is available, say "COMPLETE".""",
                 ),
@@ -72,10 +80,13 @@ What information is still missing? If everything is available, say "COMPLETE".""
                     "system",
                     """You are an expert travel planner. Create a comprehensive travel plan with flights and cab options.
 
-IMPORTANT: Analyze the COMPLETE conversation context to understand the full travel request.
-- The destination may have been mentioned in an earlier message
-- The user may have provided details across multiple messages
-- Extract ALL trip information from the entire conversation, not just the current message
+CRITICAL CONTEXT ANALYSIS RULES:
+1. Read the ENTIRE conversation context below carefully
+2. If user says "I want a 4-day trip" but mentioned "Paris" in previous messages, the destination is PARIS
+3. If user is modifying a previous request (e.g., 3-day to 4-day), keep the same destination unless explicitly changed
+4. Extract trip information from ALL messages in the conversation, not just the current one
+5. The most recent travel-related context takes precedence for details like duration
+6. If user previously discussed Paris and now just says "plan my trip", assume Paris
 
 Company Travel Policy:
 {policy_context}

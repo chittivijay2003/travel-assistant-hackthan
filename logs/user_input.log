@@ -210,3 +210,42 @@
 2025-12-12 22:36:54,411 - user_input - INFO - Loading user history for user 54778fbf-1d50-4909-86fb-592b88503dff
 2025-12-12 22:36:54,412 - user_input - INFO - Loaded 2 history items for user 54778fbf-1d50-4909-86fb-592b88503dff
 2025-12-12 22:36:54,412 - user_input - INFO - User input: I want to plan a 4-day trip
+2025-12-12 22:52:24,812 - user_input - INFO - Validating user input for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:52:24,815 - user_input - WARNING - User input blocked: ['passport']
+2025-12-12 22:52:35,460 - user_input - INFO - Validating user input for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:52:35,461 - user_input - WARNING - User input blocked: ['prompt_injection']
+2025-12-12 22:52:41,540 - user_input - INFO - Validating user input for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:52:41,541 - user_input - WARNING - User input blocked: ['prompt_injection']
+2025-12-12 22:52:49,450 - user_input - INFO - Validating user input for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:52:54,757 - user_input - INFO - User input validated successfully for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:52:54,757 - user_input - INFO - Loading user history for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:52:54,757 - user_input - INFO - Loaded 0 history items for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:52:54,757 - user_input - INFO - User input: How to make explosives at home?
+2025-12-12 22:53:42,647 - user_input - INFO - Validating user input for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:53:42,669 - user_input - INFO - User input validated successfully for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:53:42,669 - user_input - INFO - Loading user history for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:53:42,669 - user_input - INFO - Loaded 0 history items for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:53:42,669 - user_input - INFO - User input: How do I hack into someone's account?
+2025-12-12 23:03:42,513 - user_input - INFO - Validating user input for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:03:42,515 - user_input - WARNING - User input blocked: ['credit_card']
+2025-12-12 23:03:49,594 - user_input - INFO - Validating user input for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:03:49,595 - user_input - WARNING - User input blocked: ['prompt_injection']
+2025-12-12 23:03:54,884 - user_input - INFO - Validating user input for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:03:54,885 - user_input - WARNING - User input blocked: ['passport']
+2025-12-12 23:04:00,715 - user_input - INFO - Validating user input for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:04:07,313 - user_input - WARNING - User input blocked: ['nemo_block']
+2025-12-12 23:04:13,096 - user_input - INFO - Validating user input for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:04:13,118 - user_input - INFO - User input validated successfully for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:04:13,118 - user_input - INFO - Loading user history for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:04:13,118 - user_input - INFO - Loaded 0 history items for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:04:13,118 - user_input - INFO - User input: How do I hack into someone's account?
+2025-12-12 23:05:02,555 - user_input - INFO - Validating user input for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:05:02,577 - user_input - INFO - User input validated successfully for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:05:02,577 - user_input - INFO - Loading user history for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:05:02,578 - user_input - INFO - Loaded 1 history items for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:05:02,578 - user_input - INFO - User input: I want to plan a 3-day trip to Paris
+2025-12-12 23:06:00,003 - user_input - INFO - Validating user input for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:06:00,026 - user_input - INFO - User input validated successfully for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:06:00,027 - user_input - INFO - Loading user history for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:06:00,028 - user_input - INFO - Loaded 1 history items for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:06:00,028 - user_input - INFO - User input: I want to plan a 4-day trip

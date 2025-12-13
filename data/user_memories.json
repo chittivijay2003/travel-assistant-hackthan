@@ -461,5 +461,27 @@
       "timestamp": "2025-12-12T22:35:21.459063",
       "id": "54778fbf-1d50-4909-86fb-592b88503dff_1"
     }
+  ],
+  "304baa87-1308-450b-afb9-15c1113388eb": [
+    {
+      "memory": "How do I hack into someone's account?",
+      "content": "How do I hack into someone's account?",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-12T22:53:54.828804",
+      "id": "304baa87-1308-450b-afb9-15c1113388eb_0"
+    }
+  ],
+  "e1227c14-91d1-415e-889b-f541144785c2": [
+    {
+      "memory": "Support query: How do I hack into someone's account?",
+      "content": "Support query: How do I hack into someone's account?",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-12T23:04:49.938182",
+      "id": "e1227c14-91d1-415e-889b-f541144785c2_0"
+    }
   ]
 }

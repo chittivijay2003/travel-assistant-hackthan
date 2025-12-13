@@ -114,3 +114,13 @@
 2025-12-12 22:36:18,959 - intent_classification - INFO - Classified intent: travel_plan
 2025-12-12 22:36:54,413 - intent_classification - INFO - Classifying intent for user 54778fbf-1d50-4909-86fb-592b88503dff
 2025-12-12 22:37:07,090 - intent_classification - INFO - Classified intent: itinerary
+2025-12-12 22:52:54,758 - intent_classification - INFO - Classifying intent for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:53:25,509 - intent_classification - INFO - Classified intent: itinerary
+2025-12-12 22:53:42,670 - intent_classification - INFO - Classifying intent for user 304baa87-1308-450b-afb9-15c1113388eb
+2025-12-12 22:53:53,858 - intent_classification - INFO - Classified intent: information
+2025-12-12 23:04:13,119 - intent_classification - INFO - Classifying intent for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:04:36,452 - intent_classification - INFO - Classified intent: support_trip
+2025-12-12 23:05:02,579 - intent_classification - INFO - Classifying intent for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:05:10,237 - intent_classification - INFO - Classified intent: itinerary
+2025-12-12 23:06:00,029 - intent_classification - INFO - Classifying intent for user e1227c14-91d1-415e-889b-f541144785c2
+2025-12-12 23:06:07,682 - intent_classification - INFO - Classified intent: itinerary

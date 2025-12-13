@@ -280,28 +280,76 @@ class Guardrails:
                                 tracer.metadata["nemo_response_length"] = len(
                                     response_content
                                 )
+                                tracer.metadata["nemo_full_response"] = str(
+                                    nemo_response
+                                )
 
-                        # Check if NeMo blocked the content
+                        # Check if NeMo blocked the content using multiple indicators
+                        # 1. Check if response was actually blocked/refused
                         blocked_indicators = [
                             "cannot process",
                             "cannot assist",
                             "i'm sorry, but i cannot",
-                            "i cannot help with",
+                            "i cannot help",
+                            "i can't help",
+                            "i'm unable to",
+                            "i am unable to",
                             "inappropriate",
                             "against my safety",
                             "violates safety",
+                            "not able to provide",
+                            "cannot provide",
+                            "can't provide",
+                            "won't be able to",
+                            "will not be able to",
                         ]
 
-                        if any(
+                        # 2. Check for dangerous query patterns that should always be blocked
+                        dangerous_patterns = [
+                            "hack",
+                            "crack",
+                            "exploit",
+                            "break into",
+                            "bypass security",
+                            "explosives",
+                            "bomb",
+                            "weapon",
+                            "illegal",
+                            "steal",
+                            "fraud",
+                        ]
+
+                        # Block if NeMo refused OR if input contains dangerous patterns
+                        has_blocked_indicator = any(
                             indicator in response_content.lower()
                             for indicator in blocked_indicators
-                        ):
-                            logger.warning("Blocked by NeMo Guardrails")
+                        )
+
+                        has_dangerous_pattern = any(
+                            pattern in text.lower() for pattern in dangerous_patterns
+                        )
+
+                        if has_blocked_indicator or has_dangerous_pattern:
+                            logger.warning(
+                                f"Blocked by NeMo Guardrails - Reason: {'NeMo refusal' if has_blocked_indicator else 'Dangerous pattern detected'}"
+                            )
+
+                            # If NeMo refused, use its message; otherwise create our own
+                            blocked_message = (
+                                response_content
+                                if has_blocked_indicator
+                                else "I cannot assist with queries related to illegal activities, hacking, or dangerous content. Please ask about travel planning instead."
+                            )
+
                             return {
                                 "safe": False,
-                                "text": response_content,
+                                "text": blocked_message,
                                 "blocked": True,
-                                "reasons": ["nemo_block"],
+                                "reasons": [
+                                    "nemo_block"
+                                    if has_blocked_indicator
+                                    else "dangerous_content"
+                                ],
                                 "details": "Blocked by AI safety check",
                             }
                     except Exception as e:
