@@ -34,10 +34,19 @@ class ItineraryNode:
                     "system",
                     """You are an expert travel planner. Create detailed and personalized travel itineraries.
 
-Consider the user's preferences and history when creating itineraries.
+CRITICAL CONTEXT ANALYSIS RULES:
+1. Read the ENTIRE conversation history carefully to understand the complete context
+2. If user says "I want a 4-day trip" but mentioned "Paris" in previous messages, the destination is PARIS
+3. If user is modifying a previous request (e.g., 3-day to 4-day), keep the SAME destination unless explicitly changed
+4. Extract trip information from ALL messages in the conversation, not just the current one
+5. The most recent travel-related context takes precedence for details like duration
+6. If user previously discussed Paris and now just says "plan my trip", assume Paris
 
 User Preferences:
 {user_preferences}
+
+Conversation Context (contains previous destination mentions):
+{conversation_context}
 
 Generate a comprehensive itinerary that includes:
 - Daily activities and attractions
@@ -75,6 +84,7 @@ Format the response in a clear, day-by-day structure.""",
 
                 user_id = state["user_id"]
                 user_input = state["user_input"]
+                conversation_history = state.get("conversation_history", [])
 
                 # Get user preferences from Mem0
                 memories = self.mem0_manager.get_memories(user_id, limit=10)
@@ -89,15 +99,38 @@ Format the response in a clear, day-by-day structure.""",
                     else "No specific preferences recorded yet."
                 )
 
+                # Build conversation context string
+                conversation_context_str = ""
+                if conversation_history:
+                    conversation_context_str = (
+                        "Recent Conversation (check for destinations mentioned):\n"
+                    )
+                    for msg in conversation_history[-6:]:  # Last 3 exchanges
+                        role = "User" if msg["role"] == "user" else "Assistant"
+                        conversation_context_str += (
+                            f"{role}: {msg['content'][:300]}...\n\n"
+                            if len(msg["content"]) > 300
+                            else f"{role}: {msg['content']}\n\n"
+                        )
+                else:
+                    conversation_context_str = "No previous conversation."
+
                 # Add input to trace
                 if tracer.trace and is_langfuse_enabled():
                     tracer.metadata["user_request"] = user_input[:200]
                     tracer.metadata["preferences_count"] = len(memories)
+                    tracer.metadata["conversation_history_length"] = len(
+                        conversation_history
+                    )
 
                 # Generate itinerary
                 chain = self.prompt | self.llm
                 result = chain.invoke(
-                    {"user_preferences": user_preferences, "user_request": user_input}
+                    {
+                        "user_preferences": user_preferences,
+                        "user_request": user_input,
+                        "conversation_context": conversation_context_str,
+                    }
                 )
 
                 itinerary_response = result.content
