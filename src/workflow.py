@@ -43,6 +43,28 @@ class TravelAssistantGraph:
         # Build graph
         self.graph = self._build_graph()
 
+    def _route_after_validation(
+        self, state: GraphState
+    ) -> Literal["intent_classification", "end"]:
+        """
+        Route after user input validation - check if input was blocked
+
+        Args:
+            state: Current graph state
+
+        Returns:
+            Next node name
+        """
+        # Check if validation blocked the input
+        next_node = state.get("next_node")
+
+        if next_node == "end":
+            logger.warning("Input validation failed - routing to END")
+            return "end"
+
+        logger.info("Input validation passed - routing to intent_classification")
+        return "intent_classification"
+
     def _route_intent(
         self, state: GraphState
     ) -> Literal["information", "itinerary", "travel_plan", "support_trip", "end"]:
@@ -128,8 +150,15 @@ class TravelAssistantGraph:
         # Set entry point - starts with load_history node
         workflow.set_entry_point("load_history")
 
-        # Load history node always goes to intent classification
-        workflow.add_edge("load_history", "intent_classification")
+        # Load history node routes based on validation result
+        workflow.add_conditional_edges(
+            "load_history",
+            self._route_after_validation,
+            {
+                "intent_classification": "intent_classification",
+                "end": END,
+            },
+        )
 
         # Add conditional edges from intent classification
         workflow.add_conditional_edges(

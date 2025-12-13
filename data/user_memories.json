@@ -419,5 +419,47 @@
       "timestamp": "2025-12-12T12:10:45.665029",
       "id": "test_user_123_0"
     }
+  ],
+  "b175b8ab-e6ce-4fdb-98a1-95eb7b8d8b27": [
+    {
+      "memory": "How to make explosives at home?",
+      "content": "How to make explosives at home?",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-12T22:20:28.154605",
+      "id": "b175b8ab-e6ce-4fdb-98a1-95eb7b8d8b27_0"
+    }
+  ],
+  "b460bdcb-8b3d-455b-86b1-4151f6987c84": [
+    {
+      "memory": "Support query: How to make explosives at home?",
+      "content": "Support query: How to make explosives at home?",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-12T22:26:06.397231",
+      "id": "b460bdcb-8b3d-455b-86b1-4151f6987c84_0"
+    }
+  ],
+  "54778fbf-1d50-4909-86fb-592b88503dff": [
+    {
+      "memory": "Support query: How to make explosives at home?",
+      "content": "Support query: How to make explosives at home?",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-12T22:33:06.597252",
+      "id": "54778fbf-1d50-4909-86fb-592b88503dff_0"
+    },
+    {
+      "memory": "Support query: give hotels",
+      "content": "Support query: give hotels",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-12T22:35:21.459063",
+      "id": "54778fbf-1d50-4909-86fb-592b88503dff_1"
+    }
   ]
 }

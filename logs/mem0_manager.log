@@ -181,3 +181,57 @@
 2025-12-12 12:42:10,438 - mem0_manager - INFO - Retrieved 0 memories for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
 2025-12-12 12:42:16,712 - mem0_manager - INFO - Retrieved 0 memories for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
 2025-12-12 12:42:16,713 - mem0_manager - INFO - Retrieved 0 memories for user 2d9dfd3c-083c-45f8-8db0-d0ebe5a68920
+2025-12-12 21:52:12,874 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-12 21:52:15,246 - mem0_manager - INFO - Loaded 25 cached embeddings
+2025-12-12 21:52:15,247 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-12 21:55:02,644 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-12 21:55:04,538 - mem0_manager - INFO - Loaded 25 cached embeddings
+2025-12-12 21:55:04,538 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-12 21:55:31,380 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-12 21:55:32,797 - mem0_manager - INFO - Loaded 25 cached embeddings
+2025-12-12 21:55:32,798 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-12 21:55:50,413 - mem0_manager - INFO - Retrieved 0 memories for user c990e194-f16d-4951-a7f0-c83b5a0faae0
+2025-12-12 21:55:58,015 - mem0_manager - INFO - Retrieved 0 memories for user c990e194-f16d-4951-a7f0-c83b5a0faae0
+2025-12-12 21:57:47,939 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-12 21:57:49,602 - mem0_manager - INFO - Loaded 25 cached embeddings
+2025-12-12 21:57:49,602 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-12 22:04:46,847 - mem0_manager - INFO - Retrieved 0 memories for user a83fc50d-13f4-4d21-b3c9-f2a281fb37ae
+2025-12-12 22:04:58,037 - mem0_manager - INFO - Retrieved 0 memories for user a83fc50d-13f4-4d21-b3c9-f2a281fb37ae
+2025-12-12 22:07:52,441 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-12 22:07:54,055 - mem0_manager - INFO - Loaded 25 cached embeddings
+2025-12-12 22:07:54,055 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-12 22:08:48,848 - mem0_manager - INFO - Retrieved 0 memories for user e5d9eabc-b26c-42a9-a667-ea3cfe6b6366
+2025-12-12 22:08:58,359 - mem0_manager - INFO - Retrieved 0 memories for user e5d9eabc-b26c-42a9-a667-ea3cfe6b6366
+2025-12-12 22:09:56,347 - mem0_manager - INFO - Retrieved 0 memories for user e5d9eabc-b26c-42a9-a667-ea3cfe6b6366
+2025-12-12 22:09:56,347 - mem0_manager - INFO - Retrieved 0 memories for user e5d9eabc-b26c-42a9-a667-ea3cfe6b6366
+2025-12-12 22:10:57,563 - mem0_manager - INFO - Retrieved 0 memories for user e5d9eabc-b26c-42a9-a667-ea3cfe6b6366
+2025-12-12 22:10:57,564 - mem0_manager - INFO - Retrieved 0 memories for user e5d9eabc-b26c-42a9-a667-ea3cfe6b6366
+2025-12-12 22:15:23,986 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-12 22:15:25,622 - mem0_manager - INFO - Loaded 25 cached embeddings
+2025-12-12 22:15:25,623 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-12 22:16:06,626 - mem0_manager - INFO - Retrieved 0 memories for user b175b8ab-e6ce-4fdb-98a1-95eb7b8d8b27
+2025-12-12 22:16:14,084 - mem0_manager - INFO - Retrieved 0 memories for user b175b8ab-e6ce-4fdb-98a1-95eb7b8d8b27
+2025-12-12 22:19:42,756 - mem0_manager - INFO - Retrieved 0 memories for user b175b8ab-e6ce-4fdb-98a1-95eb7b8d8b27
+2025-12-12 22:20:28,157 - mem0_manager - INFO - Added memory for user b175b8ab-e6ce-4fdb-98a1-95eb7b8d8b27 with embedding
+2025-12-12 22:24:48,966 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-12 22:24:50,952 - mem0_manager - INFO - Loaded 26 cached embeddings
+2025-12-12 22:24:50,952 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-12 22:25:30,667 - mem0_manager - INFO - Retrieved 0 memories for user b460bdcb-8b3d-455b-86b1-4151f6987c84
+2025-12-12 22:25:53,987 - mem0_manager - INFO - Retrieved 0 memories for user b460bdcb-8b3d-455b-86b1-4151f6987c84
+2025-12-12 22:26:06,402 - mem0_manager - INFO - Added memory for user b460bdcb-8b3d-455b-86b1-4151f6987c84 with embedding
+2025-12-12 22:28:09,732 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-12 22:28:11,495 - mem0_manager - INFO - Loaded 27 cached embeddings
+2025-12-12 22:28:11,496 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-12 22:32:16,298 - mem0_manager - INFO - Retrieved 0 memories for user 54778fbf-1d50-4909-86fb-592b88503dff
+2025-12-12 22:32:53,030 - mem0_manager - INFO - Retrieved 0 memories for user 54778fbf-1d50-4909-86fb-592b88503dff
+2025-12-12 22:33:06,600 - mem0_manager - INFO - Added memory for user 54778fbf-1d50-4909-86fb-592b88503dff with embedding
+2025-12-12 22:34:14,166 - mem0_manager - INFO - Retrieved 1 memories for user 54778fbf-1d50-4909-86fb-592b88503dff
+2025-12-12 22:34:20,614 - mem0_manager - INFO - Retrieved 1 memories for user 54778fbf-1d50-4909-86fb-592b88503dff
+2025-12-12 22:34:56,758 - mem0_manager - INFO - Retrieved 1 memories for user 54778fbf-1d50-4909-86fb-592b88503dff
+2025-12-12 22:35:03,131 - mem0_manager - INFO - Retrieved 1 memories for user 54778fbf-1d50-4909-86fb-592b88503dff
+2025-12-12 22:35:21,463 - mem0_manager - INFO - Added memory for user 54778fbf-1d50-4909-86fb-592b88503dff with embedding
+2025-12-12 22:36:13,547 - mem0_manager - INFO - Retrieved 2 memories for user 54778fbf-1d50-4909-86fb-592b88503dff
+2025-12-12 22:36:18,961 - mem0_manager - INFO - Retrieved 2 memories for user 54778fbf-1d50-4909-86fb-592b88503dff
+2025-12-12 22:36:18,962 - mem0_manager - INFO - Retrieved 2 memories for user 54778fbf-1d50-4909-86fb-592b88503dff
+2025-12-12 22:36:54,411 - mem0_manager - INFO - Retrieved 2 memories for user 54778fbf-1d50-4909-86fb-592b88503dff
+2025-12-12 22:37:07,092 - mem0_manager - INFO - Retrieved 2 memories for user 54778fbf-1d50-4909-86fb-592b88503dff

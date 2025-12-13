@@ -2,7 +2,9 @@
 
 from src.nodes.state import GraphState
 from src.utils.mem0_manager import Mem0Manager
+from src.utils.guardrails import Guardrails
 from src.utils.logger import setup_logger
+from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
 
 logger = setup_logger("user_input")
 
@@ -31,33 +33,84 @@ class UserInputNode:
         """
         try:
             user_id = state["user_id"]
-            logger.info(f"Loading user history for user {user_id}")
+            txnid = state.get("txnid")
 
-            # Load user history from Mem0
-            memories = self.mem0_manager.get_memories(user_id, limit=20)
+            with LangFuseTracer("user_input_validation", session_id=txnid) as tracer:
+                # Add trace metadata
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["user_id"] = user_id
+                    tracer.metadata["input_length"] = len(state["user_input"])
 
-            # Format user history for easy access
-            user_history = []
-            for mem in memories:
-                history_item = {
-                    "content": mem.get("memory", mem.get("content", "")),
-                    "metadata": mem.get("metadata", {}),
-                    "timestamp": mem.get("created_at", ""),
-                }
-                user_history.append(history_item)
+                # LAYER 1: Validate user input with guardrails (PII + Injection + NeMo)
+                # NeMo response is used ONLY for safety validation, not for final output
+                # If NeMo responds normally → input is safe, continue to workflow
+                # If NeMo refuses → input is unsafe, block and return error
+                logger.info(f"Validating user input for user {user_id}")
+                validation_result = Guardrails.validate(
+                    text=state["user_input"],
+                    use_nemo=True,  # Enable NeMo for testing (set to False in production)
+                    check_injection=True,  # Check for prompt injection patterns
+                )
 
-            state["user_history"] = user_history
+                # Add validation result to trace
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["validation_safe"] = validation_result["safe"]
+                    tracer.metadata["validation_blocked"] = validation_result["blocked"]
+                    tracer.metadata["validation_reasons"] = validation_result["reasons"]
 
-            logger.info(f"Loaded {len(user_history)} history items for user {user_id}")
+                # If input is blocked, set error response and end workflow
+                if not validation_result["safe"]:
+                    logger.warning(
+                        f"User input blocked: {validation_result['reasons']}"
+                    )
+                    state["response"] = validation_result["text"]  # Error message
+                    state["next_node"] = "end"  # Skip to end
+                    state[
+                        "error"
+                    ] = f"Input validation failed: {validation_result['details']}"
 
-            # Log user input
-            logger.info(f"User input: {state['user_input']}")
+                    if tracer.trace and is_langfuse_enabled():
+                        tracer.metadata["blocked_message"] = validation_result["text"]
 
-            state["error"] = None
+                    return state
+
+                # Input is safe - continue with normal flow
+                logger.info(f"User input validated successfully for user {user_id}")
+
+                # Load user history from Mem0
+                logger.info(f"Loading user history for user {user_id}")
+                memories = self.mem0_manager.get_memories(user_id, limit=20)
+
+                # Format user history for easy access
+                user_history = []
+                for mem in memories:
+                    history_item = {
+                        "content": mem.get("memory", mem.get("content", "")),
+                        "metadata": mem.get("metadata", {}),
+                        "timestamp": mem.get("created_at", ""),
+                    }
+                    user_history.append(history_item)
+
+                state["user_history"] = user_history
+
+                logger.info(
+                    f"Loaded {len(user_history)} history items for user {user_id}"
+                )
+
+                # Log user input
+                logger.info(f"User input: {state['user_input']}")
+
+                # Add history count to trace
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["history_count"] = len(user_history)
+
+                state["error"] = None
 
         except Exception as e:
-            logger.error(f"Error loading user history: {e}")
+            logger.error(f"Error in user input node: {e}")
             state["user_history"] = []
-            state["error"] = f"User history loading error: {str(e)}"
+            state["error"] = f"User input processing error: {str(e)}"
+            # On error, allow continuation to avoid breaking the app
+            state["next_node"] = "intent_classification"
 
         return state
