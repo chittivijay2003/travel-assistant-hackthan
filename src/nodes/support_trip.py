@@ -102,7 +102,9 @@ Be specific, practical, and consider the user's preferences and current travel p
                 # Build conversation context
                 conversation_context_str = ""
                 if conversation_history:
-                    conversation_context_str = "Recent Conversation (for trip context):\n"
+                    conversation_context_str = (
+                        "Recent Conversation (for trip context):\n"
+                    )
                     for msg in conversation_history[-6:]:  # Last 3 exchanges
                         role = "User" if msg["role"] == "user" else "Assistant"
                         conversation_context_str += (

@@ -38,24 +38,47 @@ class TravelPlanNode:
                     """You are a travel planning assistant. Analyze the ENTIRE conversation context to identify what information is missing.
 
 Required information for a complete travel plan:
-- Destination
+- Destination (where user wants to go)
 - Travel dates (start and end)
 - Start time of the day
-- Origin/departure city
+- Origin/departure city (where user is traveling from)
 - Number of travelers
 - Budget preferences
 
 CRITICAL RULES FOR ANALYZING CONTEXT:
-1. ALWAYS check the conversation history FIRST for any previously mentioned destinations
-2. If user says "I want to plan a [X]-day trip" WITHOUT specifying destination:
-   - Look in conversation history for the most recent destination mentioned
-   - REUSE that destination automatically (e.g., if they previously asked about Paris, assume Paris)
-   - DO NOT ask for destination again unless they explicitly mention a different place
-3. If the user is modifying their previous request (e.g., changing from 3-day to 4-day):
-   - Preserve ALL other details from the previous request (destination, preferences, etc.)
-   - Only ask for information that was NOT in the previous request
-4. The user may have provided information across multiple messages - check ALL of them
-5. If ALL information is available (either in current message or conversation history), respond with "COMPLETE"
+
+1. **Route Format Recognition** (HIGHEST PRIORITY):
+   - If user provides "city1 to city2" format (e.g., "tokyo to osaka", "paris to london"):
+     * city1 = Origin/departure city
+     * city2 = Destination
+     * This is providing NEW route information, NOT referencing previous destinations
+   - If user provides ONLY ONE city name (e.g., just "ory", "osaka", "paris") after being asked for destination/origin:
+     * This provides PARTIAL route information
+     * If assistant asked for "destination/origin", user might be providing only one of them
+     * MUST ask for the missing part: "You mentioned [city]. Is this your origin or destination? Please also provide the other city."
+     * Example: User says "ory" → Need to ask: "Is 'ory' your origin or destination? What's the other city?"
+   - DO NOT assume a full route is complete if only one city name is provided
+
+2. **Information Extraction from Multiple Messages**:
+   - The user may provide information across multiple messages
+   - Check ALL messages in conversation history, not just the current one
+   - Examples:
+     * Message 1: User provides "2 $1500" (travelers=2, budget=$1500)
+     * Message 2: User provides "tokyo to osaka" (origin=tokyo, destination=osaka)
+   - Combine information from all messages to build complete picture
+
+3. **Context Preservation for Itinerary Modifications**:
+   - ONLY apply this when user is modifying an existing itinerary request
+   - If user says "I want a [X]-day trip" WITHOUT specifying destination:
+     * Look in conversation history for the most recent destination mentioned
+     * REUSE that destination automatically (e.g., if they previously asked about Paris, assume Paris)
+   - If the user is modifying their previous request (e.g., changing from 3-day to 4-day):
+     * Preserve ALL other details from the previous request
+     * Only ask for information that was NOT in the previous request
+
+4. **Completion Check**:
+   - If ALL required information is available (from current + all previous messages), respond with "COMPLETE"
+   - Otherwise, list ONLY the truly missing information
 
 Based on ALL available context, list ONLY the truly missing information.
 If everything is available, respond with "COMPLETE".""",
@@ -67,9 +90,21 @@ If everything is available, respond with "COMPLETE".""",
 Complete Context (History + Recent Conversation):
 {user_history}
 
-REMEMBER: If user previously mentioned a destination (like Paris, Rome, Tokyo, etc.) and now just says "plan a trip" or "X-day trip", REUSE that same destination!
+ANALYZE CAREFULLY:
+1. Does current input contain "city to city" format (e.g., "tokyo to osaka")? 
+   → YES: Extract BOTH origin and destination
+   → NO: Continue to step 2
 
-What information is still missing? If everything is available, say "COMPLETE".""",
+2. Does current input contain ONLY ONE city/location name (e.g., just "ory", "paris", "osaka")?
+   → YES: This is PARTIAL information - Need to ask: "You mentioned [city]. Is this your origin or destination? Please provide the other city as well."
+   → NO: Continue to step 3
+
+3. What information was provided in PREVIOUS messages? → Combine with current
+
+4. What is still missing after analyzing ALL messages?
+
+What information is still missing? If everything is available, say "COMPLETE".
+If only one city is provided, ask for clarification about whether it's origin/destination and request the other city.""",
                 ),
             ]
         )
@@ -80,13 +115,29 @@ What information is still missing? If everything is available, say "COMPLETE".""
                     "system",
                     """You are an expert travel planner. Create a comprehensive travel plan with flights and cab options.
 
-CRITICAL CONTEXT ANALYSIS RULES:
-1. Read the ENTIRE conversation context below carefully
-2. If user says "I want a 4-day trip" but mentioned "Paris" in previous messages, the destination is PARIS
-3. If user is modifying a previous request (e.g., 3-day to 4-day), keep the same destination unless explicitly changed
-4. Extract trip information from ALL messages in the conversation, not just the current one
-5. The most recent travel-related context takes precedence for details like duration
-6. If user previously discussed Paris and now just says "plan my trip", assume Paris
+CRITICAL INFORMATION EXTRACTION RULES (PRIORITY ORDER):
+
+1. **Route Information from "City to City" Format** (HIGHEST PRIORITY):
+   - If conversation contains "city1 to city2" (e.g., "tokyo to osaka", "mumbai to goa"):
+     * Origin/Departure = city1 (e.g., Tokyo, Mumbai)
+     * Destination = city2 (e.g., Osaka, Goa)
+   - This is EXPLICIT route information and takes precedence over any previous destinations
+
+2. **Extract ALL Information from Multiple Messages**:
+   - The conversation may contain information spread across multiple messages:
+     * One message: "2 $1500" → travelers=2, budget=$1500
+     * Next message: "tokyo to osaka" → origin=Tokyo, destination=Osaka
+     * Another message: "jan 5 to 8, morning" → dates + start time
+   - Combine information from ALL messages to build the complete picture
+
+3. **Context Preservation for Itinerary Modifications**:
+   - ONLY when modifying existing itinerary (e.g., "4-day trip" after "3-day Paris trip"):
+     * Keep the same destination (Paris) unless explicitly changed
+   - For NEW travel plan requests, always use the EXPLICITLY provided route/destination
+
+4. **Recent Context Precedence**:
+   - The most recent travel-related information takes precedence
+   - If user says "tokyo to osaka" in the latest messages, use Tokyo→Osaka route even if Paris was mentioned earlier
 
 Company Travel Policy:
 {policy_context}
@@ -97,22 +148,26 @@ User Preferences:
 User Selections:
 {user_selections}
 
-Conversation Context:
+Conversation Context (READ ALL MESSAGES CAREFULLY):
 {conversation_context}
 
 Current Request:
 {user_request}
 
+BEFORE GENERATING THE PLAN:
+1. Identify "city to city" format in conversation → Extract origin and destination
+2. Extract travelers, budget, dates, start time from all messages
+3. Use the EXPLICITLY provided cities, don't assume from unrelated previous context
+
 Create a detailed travel plan that includes:
-1. Flight options (within company budget as per policy)
+1. Flight options from [Origin] to [Destination] (within company budget as per policy)
 2. Cab/transportation options (compliant with policy)
-3. Accommodation recommendations
-4. Daily itinerary
+3. Accommodation recommendations at [Destination]
+4. Daily itinerary at [Destination]
 5. Estimated total costs
 6. Policy compliance notes
 
-Ensure all recommendations fall within the company's travel budget as specified in the policy.
-Make sure you understand the complete trip details from the ENTIRE conversation before generating the plan.""",
+Ensure all recommendations fall within the company's travel budget as specified in the policy.""",
                 ),
                 (
                     "user",
@@ -297,6 +352,100 @@ Make sure you understand the complete trip details from the ENTIRE conversation 
                     context_parts.append(conversation_text)
 
                 full_context = "\n".join(context_parts)
+
+                # Check if user is asking for city suggestions
+                asking_for_suggestions = any(
+                    phrase in user_input.lower()
+                    for phrase in [
+                        "give city names",
+                        "suggest cities",
+                        "which cities",
+                        "what cities",
+                        "city suggestions",
+                        "suggest some cities",
+                        "list cities",
+                        "city options",
+                        "what are the cities",
+                    ]
+                )
+
+                if asking_for_suggestions:
+                    # User is asking for city suggestions - use LLM to intelligently analyze context
+                    logger.info(
+                        "Using LLM to generate smart, context-aware city suggestions"
+                    )
+
+                    city_suggestion_prompt = ChatPromptTemplate.from_messages(
+                        [
+                            (
+                                "system",
+                                """You are a travel assistant. The user is asking for city suggestions for their travel plan.
+
+Analyze the conversation history to identify which destination/region the user has been discussing, then provide relevant city suggestions.
+
+Your response should include:
+1. Cities/districts WITHIN the main destination
+2. Nearby cities for day trips or regional travel (with distances)
+3. Clear guidance on how to specify origin and destination
+
+Format:
+**Cities in/around [Destination] region:**
+
+**Within [Destination]:**
+- List 3-5 areas/districts
+
+**Near [Destination] (for regional travel):**
+- List 4-6 nearby cities with distances
+
+**For your travel plan:**
+- If traveling TO [Destination]: 'Your City to [Destination]'
+- If traveling WITHIN region: '[City1] to [City2]'
+
+Please specify your origin and destination.""",
+                            ),
+                            (
+                                "user",
+                                """Conversation History:
+{conversation_context}
+
+Current Request: {user_request}
+
+Provide city suggestions based on the destination discussed in the conversation.""",
+                            ),
+                        ]
+                    )
+
+                    # Build conversation context
+                    conversation_context_str = ""
+                    if conversation_history:
+                        for msg in conversation_history:
+                            role = "User" if msg["role"] == "user" else "Assistant"
+                            conversation_context_str += f"{role}: {msg['content']}\n\n"
+                    else:
+                        conversation_context_str = "No previous conversation."
+
+                    try:
+                        city_chain = city_suggestion_prompt | self.llm
+                        city_result = city_chain.invoke(
+                            {
+                                "conversation_context": conversation_context_str,
+                                "user_request": user_input,
+                            }
+                        )
+
+                        state["response"] = city_result.content.strip()
+                        state["error"] = None
+                        logger.info("Smart city suggestions generated successfully")
+                        return state
+                    except Exception as e:
+                        logger.error(f"Error generating city suggestions: {e}")
+                        state["response"] = (
+                            "I'd be happy to suggest cities! "
+                            "Could you please specify which destination region you're interested in? "
+                            "For example: 'Cities in Paris region' or 'Cities near Tokyo'"
+                        )
+                        state["error"] = None
+                        return state
 
                 # Check for missing information
                 info_chain = self.info_gathering_prompt | self.llm
