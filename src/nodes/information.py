@@ -7,6 +7,7 @@ from src.utils.mem0_manager import Mem0Manager
 from src.config import Config
 from src.utils.logger import setup_logger
 from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
+from src.utils.multimodel_selector import MultiModelSelector
 
 logger = setup_logger("information_node")
 
@@ -22,11 +23,8 @@ class InformationNode:
             mem0_manager: Mem0 manager instance
         """
         self.mem0_manager = mem0_manager
-        self.llm = ChatGoogleGenerativeAI(
-            model=Config.GEMINI_MODEL,
-            temperature=Config.TEMPERATURE,
-            google_api_key=Config.GOOGLE_API_KEY,
-        )
+        # Use multi-model selector: gemini-2.5-flash for simple information extraction
+        self.llm = MultiModelSelector.get_model_for_information()
 
         self.itinerary_prompt = ChatPromptTemplate.from_messages(
             [

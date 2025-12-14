@@ -31,25 +31,29 @@ if "graph" not in st.session_state:
 
 # App header
 st.title("✈️ AI Travel Assistant")
-st.markdown("""
+st.markdown(
+    """
 Welcome to your intelligent travel companion! I can help you with:
 - 📝 **Save Preferences**: Tell me about your travel preferences
 - 🗺️ **Itinerary Planning**: Get customized travel itineraries
 - 🛫 **Complete Travel Plans**: Book flights, cabs, and accommodations
 - 🆘 **Trip Support**: Get help during your trip (lounges, food, accessories)
-""")
+"""
+)
 
 # Sidebar
 with st.sidebar:
     st.header("ℹ️ About")
-    st.markdown("""
+    st.markdown(
+        """
     This AI-powered travel assistant uses:
     - **LangGraph** for workflow orchestration
     - **LangChain** for LLM interactions
     - **all-MiniLM-L6-v2** for semantic memory search
     - **RAG** for policy compliance (optional)
     - **Google Gemini** for intelligent responses
-    """)
+    """
+    )
 
     st.divider()
 
@@ -64,7 +68,8 @@ with st.sidebar:
     st.divider()
 
     st.header("📚 Examples")
-    st.markdown("""
+    st.markdown(
+        """
     **Preferences:**
     - "I love trekking in the monsoon season"
     - "I prefer vegetarian food"
@@ -78,7 +83,8 @@ with st.sidebar:
     **Support:**
     - "Suggest lounges at Tokyo airport"
     - "Food places for day 1"
-    """)
+    """
+    )
 
 # Display chat messages
 for message in st.session_state.messages:
@@ -103,6 +109,16 @@ if prompt := st.chat_input(
                     user_input=prompt,
                     conversation_history=st.session_state.messages,
                 )
+
+                # DEBUG: Log what we received
+                logger.info(
+                    f"[APP DEBUG] Received response from graph: {response[:100] if response else 'NONE'}..."
+                )
+                logger.info(
+                    f"[APP DEBUG] Response length: {len(response) if response else 0}"
+                )
+                logger.info(f"[APP DEBUG] Response type: {type(response)}")
+
                 st.markdown(response)
                 st.session_state.messages.append(
                     {"role": "assistant", "content": response}

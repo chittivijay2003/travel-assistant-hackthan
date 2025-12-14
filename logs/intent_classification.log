@@ -226,3 +226,275 @@
 2025-12-13 00:39:34,402 - intent_classification - INFO - Classified intent: support_trip
 2025-12-13 00:40:05,268 - intent_classification - INFO - Classifying intent for user e49ef129-9916-4fce-8c63-ef0c535b5306
 2025-12-13 00:40:09,095 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 14:08:35,659 - intent_classification - INFO - Classifying intent for user eee41e87-3e56-41d6-846f-df2e45a412be
+2025-12-13 14:08:42,311 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:08:50,642 - intent_classification - INFO - Classifying intent for user 292eb926-f37f-463a-a2ed-0bfcf8c910dc
+2025-12-13 14:08:54,814 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:09:11,142 - intent_classification - INFO - Classifying intent for user 2ba08309-85c8-4c29-a26a-cc3c23f056e5
+2025-12-13 14:09:13,541 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:09:23,594 - intent_classification - INFO - Classifying intent for user e5759751-22d9-41c8-a82f-766e90093973
+2025-12-13 14:09:27,301 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 14:12:07,935 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:15,422 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:12:17,973 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:26,055 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:12:28,141 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:34,760 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:12:41,176 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:42,532 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:13:01,594 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:06,683 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:13:17,038 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:21,238 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:13:38,823 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:43,654 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:13:52,498 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:59,271 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 14:14:18,122 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:22,903 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:14:30,990 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:36,668 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:14:43,683 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:48,489 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:14:58,994 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:02,627 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:15:15,738 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:17,917 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 14:15:36,863 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:42,848 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:15:50,621 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:56,810 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:16:00,222 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:05,403 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:16:14,419 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:21,010 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:16:22,965 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:31,126 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:16:31,945 - intent_classification - INFO - Classifying intent for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:45,128 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:21:48,600 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:21:52,398 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:21:54,484 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:21:59,390 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:22:00,730 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:18,126 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:22:27,086 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:28,526 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:22:48,930 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:53,871 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:23:04,117 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:09,335 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:23:31,898 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:36,924 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:23:47,790 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:56,685 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 14:24:16,203 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:20,824 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:24:27,777 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:32,262 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:24:39,211 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:44,001 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:24:56,173 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:00,434 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:25:08,302 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:12,951 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:25:21,129 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:23,685 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 14:25:42,091 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:47,032 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:25:54,924 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:59,876 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:26:02,155 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:06,846 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:26:27,382 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:44,043 - intent_classification - INFO - Classified intent: unknown
+2025-12-13 14:26:45,405 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:55,360 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:26:56,690 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:27:03,934 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:27:04,574 - intent_classification - INFO - Classifying intent for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:27:16,956 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:40:43,891 - intent_classification - INFO - Classifying intent for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:40:54,508 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:41:22,444 - intent_classification - INFO - Classifying intent for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:41:26,981 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:42:15,016 - intent_classification - INFO - Classifying intent for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:42:21,081 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:42:50,012 - intent_classification - INFO - Classifying intent for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:42:55,226 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:43:26,949 - intent_classification - INFO - Classifying intent for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:43:33,158 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:44:10,515 - intent_classification - INFO - Classifying intent for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:44:15,145 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:44:33,175 - intent_classification - INFO - Classifying intent for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:44:40,258 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:45:04,019 - intent_classification - INFO - Classifying intent for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:45:10,891 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:45:40,562 - intent_classification - INFO - Classifying intent for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:45:48,685 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:46:08,126 - intent_classification - INFO - Classifying intent for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:46:16,119 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:50:24,621 - intent_classification - INFO - Classifying intent for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:50:32,532 - intent_classification - INFO - Classified intent: information
+2025-12-13 14:50:46,101 - intent_classification - INFO - Classifying intent for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:50:47,591 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 14:51:05,324 - intent_classification - INFO - Classifying intent for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:51:10,182 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:51:37,709 - intent_classification - INFO - Classifying intent for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:51:42,983 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:52:00,527 - intent_classification - INFO - Classifying intent for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:52:07,387 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:52:26,430 - intent_classification - INFO - Classifying intent for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:52:31,594 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 14:54:26,037 - intent_classification - INFO - Classifying intent for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:54:29,381 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 15:05:27,106 - intent_classification - INFO - Classifying intent for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:05:34,636 - intent_classification - INFO - Classified intent: information
+2025-12-13 15:06:29,155 - intent_classification - INFO - Classifying intent for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:06:30,831 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 15:06:45,080 - intent_classification - INFO - Classifying intent for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:06:50,185 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 15:07:28,734 - intent_classification - INFO - Classifying intent for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:07:34,653 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 15:12:17,586 - intent_classification - INFO - Classifying intent for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:12:26,171 - intent_classification - INFO - Classified intent: information
+2025-12-13 15:12:37,472 - intent_classification - INFO - Classifying intent for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:12:39,290 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 15:13:10,289 - intent_classification - INFO - Classifying intent for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:13:16,237 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 15:13:31,604 - intent_classification - INFO - Classifying intent for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:13:37,022 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:18:28,001 - intent_classification - INFO - Classifying intent for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:18:34,065 - intent_classification - INFO - Classified intent: information
+2025-12-13 16:18:38,756 - intent_classification - INFO - Classifying intent for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:18:42,680 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 16:19:14,677 - intent_classification - INFO - Classifying intent for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:19:16,078 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:19:31,655 - intent_classification - INFO - Classifying intent for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:19:37,454 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:20:18,824 - intent_classification - INFO - Classifying intent for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:20:24,313 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:22:52,769 - intent_classification - INFO - Classifying intent for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:22:58,760 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:24:45,322 - intent_classification - INFO - Classifying intent for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:24:50,757 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 16:25:22,824 - intent_classification - INFO - Classifying intent for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:25:28,216 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 16:26:07,517 - intent_classification - INFO - Classifying intent for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:26:09,215 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:26:47,851 - intent_classification - INFO - Classifying intent for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:26:53,649 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:28:03,454 - intent_classification - INFO - Classifying intent for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:28:07,520 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:29:16,459 - intent_classification - INFO - Classifying intent for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:29:20,417 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:30:39,039 - intent_classification - INFO - Classifying intent for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:30:43,479 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 16:31:21,480 - intent_classification - INFO - Classifying intent for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:31:24,293 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 16:32:01,270 - intent_classification - INFO - Classifying intent for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:32:06,398 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 16:36:23,126 - intent_classification - INFO - Classifying intent for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:36:29,292 - intent_classification - INFO - Classified intent: information
+2025-12-13 16:36:31,167 - intent_classification - INFO - Classifying intent for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:36:33,916 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 16:37:14,471 - intent_classification - INFO - Classifying intent for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:37:18,990 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:37:51,018 - intent_classification - INFO - Classifying intent for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:37:57,791 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:39:30,369 - intent_classification - INFO - Classifying intent for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:39:35,150 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:40:41,999 - intent_classification - INFO - Classifying intent for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:40:46,196 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 16:41:39,143 - intent_classification - INFO - Classifying intent for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:41:45,095 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 16:42:14,063 - intent_classification - INFO - Classifying intent for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:42:15,576 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 17:59:41,705 - intent_classification - INFO - Classifying intent for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 17:59:45,699 - intent_classification - INFO - Classified intent: information
+2025-12-13 17:59:50,026 - intent_classification - INFO - Classifying intent for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 17:59:53,124 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 18:01:49,645 - intent_classification - INFO - Classifying intent for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:01:51,642 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:02:24,754 - intent_classification - INFO - Classifying intent for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:02:27,891 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:02:59,194 - intent_classification - INFO - Classifying intent for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:03:01,134 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:05:07,031 - intent_classification - INFO - Classifying intent for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:11,071 - intent_classification - INFO - Classified intent: information
+2025-12-13 18:05:30,076 - intent_classification - INFO - Classifying intent for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:32,588 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 18:05:58,752 - intent_classification - INFO - Classifying intent for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:06:01,522 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:06:51,819 - intent_classification - INFO - Classifying intent for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:06:55,075 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:08:50,489 - intent_classification - INFO - Classifying intent for user test_user_123
+2025-12-13 18:08:54,495 - intent_classification - INFO - Classified intent: information
+2025-12-13 18:09:02,435 - intent_classification - INFO - Classifying intent for user test_user_123
+2025-12-13 18:09:05,316 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 18:09:35,083 - intent_classification - INFO - Classifying intent for user test_user_123
+2025-12-13 18:09:36,049 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:09:48,441 - intent_classification - INFO - Classifying intent for user test_user_123
+2025-12-13 18:09:50,799 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:15:18,869 - intent_classification - INFO - Classifying intent for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:21,184 - intent_classification - INFO - Classifying intent for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:22,856 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 18:15:30,238 - intent_classification - INFO - Classified intent: information
+2025-12-13 18:15:54,305 - intent_classification - INFO - Classifying intent for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:55,136 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:16:30,954 - intent_classification - INFO - Classifying intent for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:16:33,519 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:23:08,583 - intent_classification - INFO - Classifying intent for user test_quick
+2025-12-13 18:23:12,525 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:28:53,341 - intent_classification - INFO - Classifying intent for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:28:58,396 - intent_classification - INFO - Classified intent: information
+2025-12-13 18:29:05,063 - intent_classification - INFO - Classifying intent for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:29:07,412 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 18:29:55,508 - intent_classification - INFO - Classifying intent for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:29:57,544 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:30:08,222 - intent_classification - INFO - Classifying intent for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:30:10,986 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:37:46,249 - intent_classification - INFO - Classifying intent for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:37:51,059 - intent_classification - INFO - Classified intent: information
+2025-12-13 18:37:55,591 - intent_classification - INFO - Classifying intent for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:37:58,302 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 18:38:44,454 - intent_classification - INFO - Classifying intent for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:38:46,176 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:38:53,311 - intent_classification - INFO - Classifying intent for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:38:55,801 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:39:21,511 - intent_classification - INFO - Classifying intent for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:39:23,725 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:42:34,833 - intent_classification - INFO - Classifying intent for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:42:39,509 - intent_classification - INFO - Classified intent: information
+2025-12-13 18:42:42,988 - intent_classification - INFO - Classifying intent for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:42:46,118 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 18:43:11,725 - intent_classification - INFO - Classifying intent for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:43:14,727 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:44:12,487 - intent_classification - INFO - Classifying intent for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:44:15,196 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:46:05,173 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:09,373 - intent_classification - INFO - Classified intent: information
+2025-12-13 18:46:11,141 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:14,265 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 18:46:47,298 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:48,882 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:46:59,834 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:47:02,274 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:48:06,855 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:48:10,190 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:48:53,664 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:48:55,314 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 18:49:14,093 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:49:17,457 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 18:49:31,021 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:49:33,280 - intent_classification - INFO - Classified intent: itinerary
+2025-12-13 18:50:18,985 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:50:19,728 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:50:40,792 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:50:42,739 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:51:47,696 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:51:50,232 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-13 18:52:45,967 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:52:47,694 - intent_classification - INFO - Classified intent: support_trip
+2025-12-13 18:53:12,486 - intent_classification - INFO - Classifying intent for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:53:16,833 - intent_classification - INFO - Classified intent: travel_plan

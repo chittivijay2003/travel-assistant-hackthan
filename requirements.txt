@@ -14,6 +14,7 @@ langgraph>=0.2.0,<0.3.0
 # LLM Provider
 # -----------------------------------------------------------------------------
 google-generativeai>=0.3.0,<1.0.0
+# langchain-openai>=0.1.0,<0.2.0  # Optional - install separately if OpenAI needed
 
 # -----------------------------------------------------------------------------
 # Vector Store & Embeddings

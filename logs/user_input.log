@@ -506,3 +506,689 @@
 2025-12-13 00:40:05,257 - user_input - INFO - Loading user history for user e49ef129-9916-4fce-8c63-ef0c535b5306
 2025-12-13 00:40:05,266 - user_input - INFO - Loaded 2 history items for user e49ef129-9916-4fce-8c63-ef0c535b5306
 2025-12-13 00:40:05,267 - user_input - INFO - User input: Suggest food places for day 1
+2025-12-13 14:08:27,014 - user_input - INFO - Validating user input for user eee41e87-3e56-41d6-846f-df2e45a412be
+2025-12-13 14:08:35,655 - user_input - INFO - User input validated successfully for user eee41e87-3e56-41d6-846f-df2e45a412be
+2025-12-13 14:08:35,656 - user_input - INFO - Loading user history for user eee41e87-3e56-41d6-846f-df2e45a412be
+2025-12-13 14:08:35,656 - user_input - INFO - Loaded 0 history items for user eee41e87-3e56-41d6-846f-df2e45a412be
+2025-12-13 14:08:35,656 - user_input - INFO - User input: My name is John and I love beaches
+2025-12-13 14:08:42,948 - user_input - INFO - Validating user input for user 292eb926-f37f-463a-a2ed-0bfcf8c910dc
+2025-12-13 14:08:50,627 - user_input - INFO - User input validated successfully for user 292eb926-f37f-463a-a2ed-0bfcf8c910dc
+2025-12-13 14:08:50,630 - user_input - INFO - Loading user history for user 292eb926-f37f-463a-a2ed-0bfcf8c910dc
+2025-12-13 14:08:50,630 - user_input - INFO - Loaded 0 history items for user 292eb926-f37f-463a-a2ed-0bfcf8c910dc
+2025-12-13 14:08:50,630 - user_input - INFO - User input: 3-day trip to Paris
+2025-12-13 14:09:02,587 - user_input - INFO - Validating user input for user 2ba08309-85c8-4c29-a26a-cc3c23f056e5
+2025-12-13 14:09:11,140 - user_input - INFO - User input validated successfully for user 2ba08309-85c8-4c29-a26a-cc3c23f056e5
+2025-12-13 14:09:11,140 - user_input - INFO - Loading user history for user 2ba08309-85c8-4c29-a26a-cc3c23f056e5
+2025-12-13 14:09:11,141 - user_input - INFO - Loaded 0 history items for user 2ba08309-85c8-4c29-a26a-cc3c23f056e5
+2025-12-13 14:09:11,141 - user_input - INFO - User input: Complete travel plan from Mumbai to Goa with flights
+2025-12-13 14:09:20,557 - user_input - INFO - Validating user input for user e5759751-22d9-41c8-a82f-766e90093973
+2025-12-13 14:09:23,592 - user_input - INFO - User input validated successfully for user e5759751-22d9-41c8-a82f-766e90093973
+2025-12-13 14:09:23,592 - user_input - INFO - Loading user history for user e5759751-22d9-41c8-a82f-766e90093973
+2025-12-13 14:09:23,593 - user_input - INFO - Loaded 0 history items for user e5759751-22d9-41c8-a82f-766e90093973
+2025-12-13 14:09:23,593 - user_input - INFO - User input: What is the baggage allowance?
+2025-12-13 14:12:00,352 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:07,933 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:07,933 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:07,933 - user_input - INFO - Loaded 0 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:07,933 - user_input - INFO - User input: My name is John Smith and I love beaches and adventure sports
+2025-12-13 14:12:15,847 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:17,971 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:17,971 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:17,971 - user_input - INFO - Loaded 1 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:17,971 - user_input - INFO - User input: I prefer vegetarian food
+2025-12-13 14:12:26,059 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:28,140 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:28,140 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:28,140 - user_input - INFO - Loaded 2 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:28,140 - user_input - INFO - User input: My budget is usually around $2000 per trip
+2025-12-13 14:12:35,125 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:41,174 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:41,175 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:41,175 - user_input - INFO - Loaded 3 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:12:41,175 - user_input - INFO - User input: I need a 3-day trip to Paris
+2025-12-13 14:12:50,940 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:01,592 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:01,593 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:01,593 - user_input - INFO - Loaded 3 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:01,593 - user_input - INFO - User input: Create a detailed 7-day cultural immersion itinerary for Kyoto including ancient temples, traditional tea ceremonies, geisha performances, and authentic kaiseki dining experiences
+2025-12-13 14:13:13,392 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:17,037 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:17,037 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:17,037 - user_input - INFO - Loaded 3 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:17,037 - user_input - INFO - User input: Book a complete travel plan from Mumbai to Goa
+2025-12-13 14:13:29,255 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:38,820 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:38,820 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:38,821 - user_input - INFO - Loaded 3 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:38,821 - user_input - INFO - User input: I need a complete travel plan from Delhi to Dubai for 5 days including flights, luxury hotels, and tourist attractions
+2025-12-13 14:13:48,574 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:52,496 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:52,496 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:52,497 - user_input - INFO - Loaded 3 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:13:52,497 - user_input - INFO - User input: What is the baggage allowance for international flights?
+2025-12-13 14:14:16,522 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:18,120 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:18,120 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:18,120 - user_input - INFO - Loaded 4 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:18,120 - user_input - INFO - User input: I want to visit Paris for 3 days
+2025-12-13 14:14:28,935 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:30,989 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:30,989 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:30,989 - user_input - INFO - Loaded 4 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:30,989 - user_input - INFO - User input: Actually, make it 5 days
+2025-12-13 14:14:42,971 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:43,681 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:43,681 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:43,682 - user_input - INFO - Loaded 4 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:43,682 - user_input - INFO - User input: My name is Alice
+2025-12-13 14:14:48,880 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:58,986 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:58,988 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:58,989 - user_input - INFO - Loaded 5 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:14:58,989 - user_input - INFO - User input: Show me a 4-day itinerary for Tokyo
+2025-12-13 14:15:08,922 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:10,982 - user_input - WARNING - User input blocked: ['nemo_block']
+2025-12-13 14:15:10,984 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:15,737 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:15,737 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:15,737 - user_input - INFO - Loaded 5 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:15,737 - user_input - INFO - User input: What are the check-in procedures?
+2025-12-13 14:15:32,951 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:36,861 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:36,861 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:36,861 - user_input - INFO - Loaded 6 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:36,861 - user_input - INFO - User input: I prefer budget accommodations
+2025-12-13 14:15:43,158 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:50,619 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:50,620 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:50,620 - user_input - INFO - Loaded 7 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:15:50,620 - user_input - INFO - User input: I love adventure sports and beach destinations. I'm vegetarian and prefer budget hotels.
+2025-12-13 14:15:57,134 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:00,221 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:00,221 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:00,222 - user_input - INFO - Loaded 8 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:00,222 - user_input - INFO - User input: Suggest a destination for my next vacation
+2025-12-13 14:16:11,588 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:12,977 - user_input - WARNING - User input blocked: ['nemo_block']
+2025-12-13 14:16:12,978 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:14,417 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:14,417 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:14,418 - user_input - INFO - Loaded 8 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:14,418 - user_input - INFO - User input: asdfghjkl qwerty
+2025-12-13 14:16:21,344 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:22,964 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:22,965 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:22,965 - user_input - INFO - Loaded 9 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:22,965 - user_input - INFO - User input: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-12-13 14:16:31,336 - user_input - INFO - Validating user input for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:31,944 - user_input - INFO - User input validated successfully for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:31,944 - user_input - INFO - Loading user history for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:31,944 - user_input - INFO - Loaded 10 history items for user 833c1d15-70ce-4274-a63f-0ff56567695a
+2025-12-13 14:16:31,944 - user_input - INFO - User input: What is 2+2?
+2025-12-13 14:21:43,558 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:21:48,599 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:21:48,599 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:21:48,599 - user_input - INFO - Loaded 0 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:21:48,599 - user_input - INFO - User input: My name is John Smith and I love beaches and adventure sports
+2025-12-13 14:21:52,403 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:21:54,483 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:21:54,483 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:21:54,483 - user_input - INFO - Loaded 1 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:21:54,483 - user_input - INFO - User input: I prefer vegetarian food
+2025-12-13 14:21:59,395 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:00,729 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:00,729 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:00,730 - user_input - INFO - Loaded 2 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:00,730 - user_input - INFO - User input: My budget is usually around $2000 per trip
+2025-12-13 14:22:18,133 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:27,084 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:27,085 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:27,085 - user_input - INFO - Loaded 3 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:27,085 - user_input - INFO - User input: I need a 3-day trip to Paris
+2025-12-13 14:22:36,904 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:48,928 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:48,928 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:48,929 - user_input - INFO - Loaded 3 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:22:48,929 - user_input - INFO - User input: Create a detailed 7-day cultural immersion itinerary for Kyoto including ancient temples, traditional tea ceremonies, geisha performances, and authentic kaiseki dining experiences
+2025-12-13 14:23:00,105 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:04,116 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:04,116 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:04,116 - user_input - INFO - Loaded 3 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:04,117 - user_input - INFO - User input: Book a complete travel plan from Mumbai to Goa
+2025-12-13 14:23:17,625 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:31,897 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:31,897 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:31,898 - user_input - INFO - Loaded 3 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:31,898 - user_input - INFO - User input: I need a complete travel plan from Delhi to Dubai for 5 days including flights, luxury hotels, and tourist attractions
+2025-12-13 14:23:43,591 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:47,788 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:47,788 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:47,789 - user_input - INFO - Loaded 3 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:23:47,789 - user_input - INFO - User input: What is the baggage allowance for international flights?
+2025-12-13 14:24:14,190 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:16,201 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:16,201 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:16,201 - user_input - INFO - Loaded 4 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:16,201 - user_input - INFO - User input: I want to visit Paris for 3 days
+2025-12-13 14:24:26,563 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:27,776 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:27,776 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:27,776 - user_input - INFO - Loaded 4 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:27,776 - user_input - INFO - User input: Actually, make it 5 days
+2025-12-13 14:24:38,359 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:39,210 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:39,210 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:39,210 - user_input - INFO - Loaded 4 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:39,210 - user_input - INFO - User input: My name is Alice
+2025-12-13 14:24:44,005 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:56,172 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:56,172 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:56,172 - user_input - INFO - Loaded 5 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:24:56,172 - user_input - INFO - User input: Show me a 4-day itinerary for Tokyo
+2025-12-13 14:25:06,257 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:08,301 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:08,302 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:08,302 - user_input - INFO - Loaded 5 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:08,302 - user_input - INFO - User input: Book flights and hotels to Singapore
+2025-12-13 14:25:17,149 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:21,127 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:21,127 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:21,128 - user_input - INFO - Loaded 5 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:21,128 - user_input - INFO - User input: What are the check-in procedures?
+2025-12-13 14:25:37,177 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:42,090 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:42,090 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:42,090 - user_input - INFO - Loaded 6 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:42,090 - user_input - INFO - User input: I prefer budget accommodations
+2025-12-13 14:25:47,036 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:54,922 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:54,922 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:54,923 - user_input - INFO - Loaded 7 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:25:54,923 - user_input - INFO - User input: I love adventure sports and beach destinations. I'm vegetarian and prefer budget hotels.
+2025-12-13 14:25:59,881 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:02,154 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:02,154 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:02,154 - user_input - INFO - Loaded 8 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:02,154 - user_input - INFO - User input: Suggest a destination for my next vacation
+2025-12-13 14:26:26,361 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:27,378 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:27,378 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:27,381 - user_input - INFO - Loaded 8 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:27,381 - user_input - INFO - User input: 
+2025-12-13 14:26:44,044 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:45,403 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:45,403 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:45,404 - user_input - INFO - Loaded 8 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:45,404 - user_input - INFO - User input: asdfghjkl qwerty
+2025-12-13 14:26:55,366 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:56,689 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:56,689 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:56,689 - user_input - INFO - Loaded 9 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:26:56,689 - user_input - INFO - User input: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-12-13 14:27:03,938 - user_input - INFO - Validating user input for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:27:04,573 - user_input - INFO - User input validated successfully for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:27:04,574 - user_input - INFO - Loading user history for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:27:04,574 - user_input - INFO - Loaded 10 history items for user 41d54e22-3384-4348-8ddb-a865b7d86cef
+2025-12-13 14:27:04,574 - user_input - INFO - User input: What is 2+2?
+2025-12-13 14:40:04,691 - user_input - INFO - Validating user input for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:40:17,855 - user_input - WARNING - User input blocked: ['nemo_block']
+2025-12-13 14:40:43,836 - user_input - INFO - Validating user input for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:40:43,889 - user_input - INFO - User input validated successfully for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:40:43,889 - user_input - INFO - Loading user history for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:40:43,890 - user_input - INFO - Loaded 0 history items for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:40:43,890 - user_input - INFO - User input: I prefer 5-star hotels, cultural experiences, and vegetarian food
+2025-12-13 14:41:22,400 - user_input - INFO - Validating user input for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:41:22,443 - user_input - INFO - User input validated successfully for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:41:22,443 - user_input - INFO - Loading user history for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:41:22,443 - user_input - INFO - Loaded 0 history items for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:41:22,443 - user_input - INFO - User input: 3-day itinerary for Goa
+2025-12-13 14:42:14,973 - user_input - INFO - Validating user input for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:42:15,014 - user_input - INFO - User input validated successfully for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:42:15,014 - user_input - INFO - Loading user history for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:42:15,014 - user_input - INFO - Loaded 0 history items for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:42:15,014 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 14:42:49,960 - user_input - INFO - Validating user input for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:42:50,010 - user_input - INFO - User input validated successfully for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:42:50,010 - user_input - INFO - Loading user history for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:42:50,010 - user_input - INFO - Loaded 0 history items for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:42:50,010 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 14:43:26,886 - user_input - INFO - Validating user input for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:43:26,947 - user_input - INFO - User input validated successfully for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:43:26,948 - user_input - INFO - Loading user history for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:43:26,948 - user_input - INFO - Loaded 0 history items for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:43:26,948 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 14:44:10,480 - user_input - INFO - Validating user input for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:44:10,512 - user_input - INFO - User input validated successfully for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:44:10,512 - user_input - INFO - Loading user history for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:44:10,513 - user_input - INFO - Loaded 0 history items for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:44:10,513 - user_input - INFO - User input: feb 10 th to 12th morning 2 $1500
+2025-12-13 14:44:33,151 - user_input - INFO - Validating user input for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:44:33,174 - user_input - INFO - User input validated successfully for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:44:33,174 - user_input - INFO - Loading user history for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:44:33,175 - user_input - INFO - Loaded 0 history items for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:44:33,175 - user_input - INFO - User input: give city names
+2025-12-13 14:45:03,971 - user_input - INFO - Validating user input for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:45:04,017 - user_input - INFO - User input validated successfully for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:45:04,017 - user_input - INFO - Loading user history for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:45:04,018 - user_input - INFO - Loaded 0 history items for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:45:04,018 - user_input - INFO - User input: give city names in my prefered trip
+2025-12-13 14:45:40,530 - user_input - INFO - Validating user input for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:45:40,559 - user_input - INFO - User input validated successfully for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:45:40,559 - user_input - INFO - Loading user history for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:45:40,561 - user_input - INFO - Loaded 0 history items for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:45:40,561 - user_input - INFO - User input: anything is fine
+2025-12-13 14:46:08,110 - user_input - INFO - Validating user input for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:46:08,125 - user_input - INFO - User input validated successfully for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:46:08,125 - user_input - INFO - Loading user history for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:46:08,125 - user_input - INFO - Loaded 0 history items for user e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:46:08,125 - user_input - INFO - User input: give city names in my prefered trip
+2025-12-13 14:50:18,906 - user_input - INFO - Validating user input for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:50:24,615 - user_input - INFO - User input validated successfully for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:50:24,615 - user_input - INFO - Loading user history for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:50:24,615 - user_input - INFO - Loaded 0 history items for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:50:24,615 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 14:50:46,042 - user_input - INFO - Validating user input for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:50:46,100 - user_input - INFO - User input validated successfully for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:50:46,100 - user_input - INFO - Loading user history for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:50:46,101 - user_input - INFO - Loaded 1 history items for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:50:46,101 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 14:51:05,257 - user_input - INFO - Validating user input for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:51:05,321 - user_input - INFO - User input validated successfully for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:51:05,321 - user_input - INFO - Loading user history for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:51:05,322 - user_input - INFO - Loaded 1 history items for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:51:05,322 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 14:51:37,698 - user_input - INFO - Validating user input for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:51:37,708 - user_input - INFO - User input validated successfully for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:51:37,708 - user_input - INFO - Loading user history for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:51:37,708 - user_input - INFO - Loaded 1 history items for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:51:37,709 - user_input - INFO - User input: feb 10th to 12th morning 2 $1500
+2025-12-13 14:52:00,516 - user_input - INFO - Validating user input for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:52:00,526 - user_input - INFO - User input validated successfully for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:52:00,526 - user_input - INFO - Loading user history for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:52:00,526 - user_input - INFO - Loaded 1 history items for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:52:00,526 - user_input - INFO - User input: provide some citi names
+2025-12-13 14:52:26,420 - user_input - INFO - Validating user input for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:52:26,429 - user_input - INFO - User input validated successfully for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:52:26,429 - user_input - INFO - Loading user history for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:52:26,429 - user_input - INFO - Loaded 1 history items for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:52:26,429 - user_input - INFO - User input: tokyo to osaka
+2025-12-13 14:54:26,011 - user_input - INFO - Validating user input for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:54:26,036 - user_input - INFO - User input validated successfully for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:54:26,036 - user_input - INFO - Loading user history for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:54:26,036 - user_input - INFO - Loaded 2 history items for user 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:54:26,036 - user_input - INFO - User input: yes
+2025-12-13 15:05:17,947 - user_input - INFO - Validating user input for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:05:27,104 - user_input - INFO - User input validated successfully for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:05:27,104 - user_input - INFO - Loading user history for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:05:27,105 - user_input - INFO - Loaded 0 history items for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:05:27,105 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 15:06:29,089 - user_input - INFO - Validating user input for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:06:29,153 - user_input - INFO - User input validated successfully for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:06:29,153 - user_input - INFO - Loading user history for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:06:29,154 - user_input - INFO - Loaded 1 history items for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:06:29,154 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 15:06:45,070 - user_input - INFO - Validating user input for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:06:45,079 - user_input - INFO - User input validated successfully for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:06:45,079 - user_input - INFO - Loading user history for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:06:45,079 - user_input - INFO - Loaded 1 history items for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:06:45,079 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 15:07:28,722 - user_input - INFO - Validating user input for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:07:28,733 - user_input - INFO - User input validated successfully for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:07:28,733 - user_input - INFO - Loading user history for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:07:28,733 - user_input - INFO - Loaded 1 history items for user 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:07:28,733 - user_input - INFO - User input: tokyo feb10th to 12th morning osaka 2 $1500
+2025-12-13 15:12:10,688 - user_input - INFO - Validating user input for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:12:17,584 - user_input - INFO - User input validated successfully for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:12:17,584 - user_input - INFO - Loading user history for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:12:17,585 - user_input - INFO - Loaded 0 history items for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:12:17,585 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 15:12:37,434 - user_input - INFO - Validating user input for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:12:37,471 - user_input - INFO - User input validated successfully for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:12:37,471 - user_input - INFO - Loading user history for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:12:37,471 - user_input - INFO - Loaded 1 history items for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:12:37,471 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 15:13:10,260 - user_input - INFO - Validating user input for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:13:10,287 - user_input - INFO - User input validated successfully for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:13:10,287 - user_input - INFO - Loading user history for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:13:10,288 - user_input - INFO - Loaded 1 history items for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:13:10,288 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 15:13:31,592 - user_input - INFO - Validating user input for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:13:31,603 - user_input - INFO - User input validated successfully for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:13:31,603 - user_input - INFO - Loading user history for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:13:31,603 - user_input - INFO - Loaded 1 history items for user 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:13:31,603 - user_input - INFO - User input: tokyo feb11th to 13th morning osaka 2 $1500
+2025-12-13 16:18:21,175 - user_input - INFO - Validating user input for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:18:27,996 - user_input - INFO - User input validated successfully for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:18:27,997 - user_input - INFO - Loading user history for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:18:27,997 - user_input - INFO - Loaded 0 history items for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:18:27,997 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 16:18:38,734 - user_input - INFO - Validating user input for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:18:38,755 - user_input - INFO - User input validated successfully for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:18:38,755 - user_input - INFO - Loading user history for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:18:38,755 - user_input - INFO - Loaded 1 history items for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:18:38,755 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 16:19:14,653 - user_input - INFO - Validating user input for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:19:14,675 - user_input - INFO - User input validated successfully for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:19:14,676 - user_input - INFO - Loading user history for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:19:14,676 - user_input - INFO - Loaded 1 history items for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:19:14,676 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 16:19:31,637 - user_input - INFO - Validating user input for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:19:31,654 - user_input - INFO - User input validated successfully for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:19:31,654 - user_input - INFO - Loading user history for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:19:31,654 - user_input - INFO - Loaded 1 history items for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:19:31,654 - user_input - INFO - User input: tokyo feb11th to 13th morning osaka 2 $1500
+2025-12-13 16:20:18,811 - user_input - INFO - Validating user input for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:20:18,823 - user_input - INFO - User input validated successfully for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:20:18,823 - user_input - INFO - Loading user history for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:20:18,824 - user_input - INFO - Loaded 1 history items for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:20:18,824 - user_input - INFO - User input: morning
+2025-12-13 16:22:52,752 - user_input - INFO - Validating user input for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:22:52,768 - user_input - INFO - User input validated successfully for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:22:52,768 - user_input - INFO - Loading user history for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:22:52,768 - user_input - INFO - Loaded 2 history items for user 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:22:52,768 - user_input - INFO - User input: afternoon
+2025-12-13 16:24:31,928 - user_input - INFO - Validating user input for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:24:45,319 - user_input - INFO - User input validated successfully for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:24:45,319 - user_input - INFO - Loading user history for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:24:45,320 - user_input - INFO - Loaded 0 history items for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:24:45,320 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 16:25:22,789 - user_input - INFO - Validating user input for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:25:22,823 - user_input - INFO - User input validated successfully for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:25:22,823 - user_input - INFO - Loading user history for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:25:22,823 - user_input - INFO - Loaded 0 history items for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:25:22,823 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 16:26:07,491 - user_input - INFO - Validating user input for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:26:07,515 - user_input - INFO - User input validated successfully for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:26:07,515 - user_input - INFO - Loading user history for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:26:07,515 - user_input - INFO - Loaded 0 history items for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:26:07,516 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 16:26:47,839 - user_input - INFO - Validating user input for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:26:47,850 - user_input - INFO - User input validated successfully for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:26:47,850 - user_input - INFO - Loading user history for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:26:47,851 - user_input - INFO - Loaded 0 history items for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:26:47,851 - user_input - INFO - User input: tokyo feb11th to 13th morning osaka 2 $1500 
+2025-12-13 16:28:03,422 - user_input - INFO - Validating user input for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:28:03,453 - user_input - INFO - User input validated successfully for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:28:03,453 - user_input - INFO - Loading user history for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:28:03,453 - user_input - INFO - Loaded 1 history items for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:28:03,453 - user_input - INFO - User input: flight option1 and hotel option2
+2025-12-13 16:29:16,451 - user_input - INFO - Validating user input for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:29:16,458 - user_input - INFO - User input validated successfully for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:29:16,458 - user_input - INFO - Loading user history for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:29:16,458 - user_input - INFO - Loaded 2 history items for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:29:16,458 - user_input - INFO - User input: change to flight option2 and hotel option1
+2025-12-13 16:30:39,024 - user_input - INFO - Validating user input for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:30:39,038 - user_input - INFO - User input validated successfully for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:30:39,038 - user_input - INFO - Loading user history for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:30:39,038 - user_input - INFO - Loaded 3 history items for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:30:39,039 - user_input - INFO - User input: Suggest lounge facilities at the start airport/destination airport
+2025-12-13 16:31:21,471 - user_input - INFO - Validating user input for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:31:21,479 - user_input - INFO - User input validated successfully for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:31:21,479 - user_input - INFO - Loading user history for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:31:21,479 - user_input - INFO - Loaded 4 history items for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:31:21,479 - user_input - INFO - User input: Suggest food places for day 1
+2025-12-13 16:32:01,241 - user_input - INFO - Validating user input for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:32:01,267 - user_input - INFO - User input validated successfully for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:32:01,267 - user_input - INFO - Loading user history for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:32:01,268 - user_input - INFO - Loaded 5 history items for user 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:32:01,268 - user_input - INFO - User input: Suggest a 3-day itinerary in India
+2025-12-13 16:36:13,612 - user_input - INFO - Validating user input for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:36:23,123 - user_input - INFO - User input validated successfully for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:36:23,124 - user_input - INFO - Loading user history for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:36:23,124 - user_input - INFO - Loaded 0 history items for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:36:23,125 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 16:36:31,132 - user_input - INFO - Validating user input for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:36:31,166 - user_input - INFO - User input validated successfully for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:36:31,166 - user_input - INFO - Loading user history for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:36:31,167 - user_input - INFO - Loaded 1 history items for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:36:31,167 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 16:37:14,458 - user_input - INFO - Validating user input for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:37:14,470 - user_input - INFO - User input validated successfully for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:37:14,470 - user_input - INFO - Loading user history for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:37:14,470 - user_input - INFO - Loaded 1 history items for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:37:14,470 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 16:37:50,998 - user_input - INFO - Validating user input for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:37:51,017 - user_input - INFO - User input validated successfully for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:37:51,017 - user_input - INFO - Loading user history for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:37:51,017 - user_input - INFO - Loaded 1 history items for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:37:51,017 - user_input - INFO - User input: tokyo to osaka morning feb5th to 7th 2 $2000
+2025-12-13 16:39:30,350 - user_input - INFO - Validating user input for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:39:30,367 - user_input - INFO - User input validated successfully for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:39:30,367 - user_input - INFO - Loading user history for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:39:30,368 - user_input - INFO - Loaded 2 history items for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:39:30,368 - user_input - INFO - User input: flight and option2 in hotel
+2025-12-13 16:40:41,983 - user_input - INFO - Validating user input for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:40:41,997 - user_input - INFO - User input validated successfully for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:40:41,997 - user_input - INFO - Loading user history for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:40:41,998 - user_input - INFO - Loaded 3 history items for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:40:41,998 - user_input - INFO - User input: option A in flights
+2025-12-13 16:41:39,130 - user_input - INFO - Validating user input for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:41:39,142 - user_input - INFO - User input validated successfully for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:41:39,142 - user_input - INFO - Loading user history for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:41:39,142 - user_input - INFO - Loaded 4 history items for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:41:39,142 - user_input - INFO - User input: Suggest lounge facilities at the start airport/destination airport
+2025-12-13 16:42:14,045 - user_input - INFO - Validating user input for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:42:14,061 - user_input - INFO - User input validated successfully for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:42:14,062 - user_input - INFO - Loading user history for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:42:14,062 - user_input - INFO - Loaded 5 history items for user da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:42:14,062 - user_input - INFO - User input: Suggest a 3-day itinerary in India
+2025-12-13 17:59:35,738 - user_input - INFO - Validating user input for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 17:59:41,703 - user_input - INFO - User input validated successfully for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 17:59:41,703 - user_input - INFO - Loading user history for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 17:59:41,704 - user_input - INFO - Loaded 0 history items for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 17:59:41,704 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 17:59:50,008 - user_input - INFO - Validating user input for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 17:59:50,025 - user_input - INFO - User input validated successfully for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 17:59:50,025 - user_input - INFO - Loading user history for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 17:59:50,026 - user_input - INFO - Loaded 1 history items for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 17:59:50,026 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 18:01:49,629 - user_input - INFO - Validating user input for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:01:49,644 - user_input - INFO - User input validated successfully for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:01:49,644 - user_input - INFO - Loading user history for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:01:49,644 - user_input - INFO - Loaded 1 history items for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:01:49,644 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 18:02:24,738 - user_input - INFO - Validating user input for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:02:24,753 - user_input - INFO - User input validated successfully for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:02:24,753 - user_input - INFO - Loading user history for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:02:24,753 - user_input - INFO - Loaded 1 history items for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:02:24,753 - user_input - INFO - User input: tokyo to okasa feb 11th to 13th morning 2 $1500
+2025-12-13 18:02:59,178 - user_input - INFO - Validating user input for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:02:59,193 - user_input - INFO - User input validated successfully for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:02:59,193 - user_input - INFO - Loading user history for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:02:59,193 - user_input - INFO - Loaded 2 history items for user 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 18:02:59,193 - user_input - INFO - User input: tokyo to okasa feb 11th to 13th morning 2 $1500
+2025-12-13 18:05:00,869 - user_input - INFO - Validating user input for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:07,030 - user_input - INFO - User input validated successfully for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:07,030 - user_input - INFO - Loading user history for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:07,030 - user_input - INFO - Loaded 0 history items for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:07,030 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 18:05:30,009 - user_input - INFO - Validating user input for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:30,071 - user_input - INFO - User input validated successfully for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:30,071 - user_input - INFO - Loading user history for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:30,072 - user_input - INFO - Loaded 1 history items for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:30,072 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 18:05:58,742 - user_input - INFO - Validating user input for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:58,750 - user_input - INFO - User input validated successfully for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:58,750 - user_input - INFO - Loading user history for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:58,750 - user_input - INFO - Loaded 1 history items for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:05:58,750 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 18:06:51,798 - user_input - INFO - Validating user input for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:06:51,818 - user_input - INFO - User input validated successfully for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:06:51,818 - user_input - INFO - Loading user history for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:06:51,818 - user_input - INFO - Loaded 1 history items for user dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:06:51,818 - user_input - INFO - User input: tokyo to osaka march 10th to 12th morning 2 $1500
+2025-12-13 18:08:45,620 - user_input - INFO - Validating user input for user test_user_123
+2025-12-13 18:08:50,488 - user_input - INFO - User input validated successfully for user test_user_123
+2025-12-13 18:08:50,488 - user_input - INFO - Loading user history for user test_user_123
+2025-12-13 18:08:50,488 - user_input - INFO - Loaded 1 history items for user test_user_123
+2025-12-13 18:08:50,488 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 18:08:54,852 - user_input - INFO - Validating user input for user test_user_123
+2025-12-13 18:09:02,433 - user_input - INFO - User input validated successfully for user test_user_123
+2025-12-13 18:09:02,433 - user_input - INFO - Loading user history for user test_user_123
+2025-12-13 18:09:02,434 - user_input - INFO - Loaded 2 history items for user test_user_123
+2025-12-13 18:09:02,434 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 18:09:26,446 - user_input - INFO - Validating user input for user test_user_123
+2025-12-13 18:09:35,082 - user_input - INFO - User input validated successfully for user test_user_123
+2025-12-13 18:09:35,082 - user_input - INFO - Loading user history for user test_user_123
+2025-12-13 18:09:35,082 - user_input - INFO - Loaded 2 history items for user test_user_123
+2025-12-13 18:09:35,082 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 18:09:40,846 - user_input - INFO - Validating user input for user test_user_123
+2025-12-13 18:09:48,440 - user_input - INFO - User input validated successfully for user test_user_123
+2025-12-13 18:09:48,440 - user_input - INFO - Loading user history for user test_user_123
+2025-12-13 18:09:48,440 - user_input - INFO - Loaded 2 history items for user test_user_123
+2025-12-13 18:09:48,440 - user_input - INFO - User input: tokyo to osaka march 10th to 12th morning 2 $1500
+2025-12-13 18:15:14,912 - user_input - INFO - Validating user input for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:18,841 - user_input - INFO - Validating user input for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:18,868 - user_input - INFO - User input validated successfully for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:18,868 - user_input - INFO - Loading user history for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:18,868 - user_input - INFO - Loaded 0 history items for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:18,868 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 18:15:21,183 - user_input - INFO - User input validated successfully for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:21,183 - user_input - INFO - Loading user history for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:21,183 - user_input - INFO - Loaded 0 history items for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:21,183 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 18:15:54,285 - user_input - INFO - Validating user input for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:54,303 - user_input - INFO - User input validated successfully for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:54,304 - user_input - INFO - Loading user history for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:54,304 - user_input - INFO - Loaded 1 history items for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:54,304 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 18:16:30,940 - user_input - INFO - Validating user input for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:16:30,953 - user_input - INFO - User input validated successfully for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:16:30,953 - user_input - INFO - Loading user history for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:16:30,953 - user_input - INFO - Loaded 1 history items for user 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:16:30,953 - user_input - INFO - User input: tokyo to osaka march 10th to 12th morning 2 $1500
+2025-12-13 18:22:56,686 - user_input - INFO - Validating user input for user test_quick
+2025-12-13 18:23:08,580 - user_input - INFO - User input validated successfully for user test_quick
+2025-12-13 18:23:08,580 - user_input - INFO - Loading user history for user test_quick
+2025-12-13 18:23:08,581 - user_input - INFO - Loaded 0 history items for user test_quick
+2025-12-13 18:23:08,581 - user_input - INFO - User input: tokyo to osaka march 10th to 12th morning 2 $1500
+2025-12-13 18:28:47,160 - user_input - INFO - Validating user input for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:28:53,337 - user_input - INFO - User input validated successfully for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:28:53,337 - user_input - INFO - Loading user history for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:28:53,338 - user_input - INFO - Loaded 0 history items for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:28:53,338 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 18:29:05,020 - user_input - INFO - Validating user input for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:29:05,061 - user_input - INFO - User input validated successfully for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:29:05,061 - user_input - INFO - Loading user history for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:29:05,062 - user_input - INFO - Loaded 1 history items for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:29:05,062 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 18:29:55,492 - user_input - INFO - Validating user input for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:29:55,507 - user_input - INFO - User input validated successfully for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:29:55,507 - user_input - INFO - Loading user history for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:29:55,508 - user_input - INFO - Loaded 1 history items for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:29:55,508 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 18:30:08,214 - user_input - INFO - Validating user input for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:30:08,221 - user_input - INFO - User input validated successfully for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:30:08,221 - user_input - INFO - Loading user history for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:30:08,221 - user_input - INFO - Loaded 1 history items for user d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:30:08,221 - user_input - INFO - User input: tokyo feb11th to 13th morning osaka 2 $1500
+2025-12-13 18:37:40,217 - user_input - INFO - Validating user input for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:37:46,247 - user_input - INFO - User input validated successfully for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:37:46,247 - user_input - INFO - Loading user history for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:37:46,247 - user_input - INFO - Loaded 0 history items for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:37:46,248 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 18:37:55,569 - user_input - INFO - Validating user input for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:37:55,590 - user_input - INFO - User input validated successfully for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:37:55,590 - user_input - INFO - Loading user history for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:37:55,591 - user_input - INFO - Loaded 1 history items for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:37:55,591 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 18:38:44,434 - user_input - INFO - Validating user input for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:38:44,453 - user_input - INFO - User input validated successfully for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:38:44,453 - user_input - INFO - Loading user history for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:38:44,453 - user_input - INFO - Loaded 1 history items for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:38:44,453 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 18:38:53,293 - user_input - INFO - Validating user input for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:38:53,309 - user_input - INFO - User input validated successfully for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:38:53,309 - user_input - INFO - Loading user history for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:38:53,310 - user_input - INFO - Loaded 1 history items for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:38:53,310 - user_input - INFO - User input: tokyo feb11th to 13th morning osaka 2 $1500
+2025-12-13 18:39:21,501 - user_input - INFO - Validating user input for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:39:21,510 - user_input - INFO - User input validated successfully for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:39:21,510 - user_input - INFO - Loading user history for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:39:21,510 - user_input - INFO - Loaded 2 history items for user dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:39:21,510 - user_input - INFO - User input: tokyo to osaka feb 11th to 13th morning 2 $1500
+2025-12-13 18:42:26,624 - user_input - INFO - Validating user input for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:42:34,830 - user_input - INFO - User input validated successfully for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:42:34,831 - user_input - INFO - Loading user history for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:42:34,831 - user_input - INFO - Loaded 0 history items for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:42:34,831 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 18:42:42,960 - user_input - INFO - Validating user input for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:42:42,986 - user_input - INFO - User input validated successfully for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:42:42,987 - user_input - INFO - Loading user history for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:42:42,987 - user_input - INFO - Loaded 1 history items for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:42:42,987 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 18:43:11,716 - user_input - INFO - Validating user input for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:43:11,724 - user_input - INFO - User input validated successfully for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:43:11,724 - user_input - INFO - Loading user history for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:43:11,724 - user_input - INFO - Loaded 1 history items for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:43:11,724 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 18:44:12,462 - user_input - INFO - Validating user input for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:44:12,486 - user_input - INFO - User input validated successfully for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:44:12,486 - user_input - INFO - Loading user history for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:44:12,486 - user_input - INFO - Loaded 1 history items for user 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:44:12,486 - user_input - INFO - User input: tokyo feb11th to 13th morning osaka 2 $1500
+2025-12-13 18:45:58,813 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:05,169 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:05,169 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:05,170 - user_input - INFO - Loaded 0 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:05,170 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-13 18:46:11,123 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:11,140 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:11,140 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:11,140 - user_input - INFO - Loaded 1 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:11,140 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-13 18:46:47,289 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:47,296 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:47,297 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:47,297 - user_input - INFO - Loaded 1 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:47,297 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 18:46:59,824 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:59,833 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:59,833 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:59,833 - user_input - INFO - Loaded 1 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:46:59,833 - user_input - INFO - User input: tokyo to osaka feb11th to 13th morning aka 2 $1500
+2025-12-13 18:48:06,839 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:48:06,854 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:48:06,854 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:48:06,854 - user_input - INFO - Loaded 2 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:48:06,854 - user_input - INFO - User input: flight option1 and hotel option2
+2025-12-13 18:48:53,644 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:48:53,663 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:48:53,663 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:48:53,663 - user_input - INFO - Loaded 3 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:48:53,663 - user_input - INFO - User input: Suggest lounge facilities at the start airport/destination airport
+2025-12-13 18:49:14,081 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:49:14,091 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:49:14,092 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:49:14,092 - user_input - INFO - Loaded 4 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:49:14,092 - user_input - INFO - User input: Suggest food places for day 1
+2025-12-13 18:49:31,010 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:49:31,020 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:49:31,020 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:49:31,021 - user_input - INFO - Loaded 5 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:49:31,021 - user_input - INFO - User input: Suggest a 3-day itinerary in India
+2025-12-13 18:50:18,975 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:50:18,983 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:50:18,983 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:50:18,983 - user_input - INFO - Loaded 5 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:50:18,984 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-13 18:50:40,782 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:50:40,791 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:50:40,791 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:50:40,791 - user_input - INFO - Loaded 5 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:50:40,791 - user_input - INFO - User input: mubai to hyd feb11th to 13th morning 2 $1500
+2025-12-13 18:51:47,681 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:51:47,694 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:51:47,695 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:51:47,695 - user_input - INFO - Loaded 6 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:51:47,695 - user_input - INFO - User input: option1 in flights and option 2 in hotels
+2025-12-13 18:52:45,950 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:52:45,965 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:52:45,965 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:52:45,966 - user_input - INFO - Loaded 7 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:52:45,966 - user_input - INFO - User input: Suggest lounge facilities at the start airport/destination airport and Suggest food places for day 1
+2025-12-13 18:53:12,476 - user_input - INFO - Validating user input for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:53:12,484 - user_input - INFO - User input validated successfully for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:53:12,485 - user_input - INFO - Loading user history for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:53:12,485 - user_input - INFO - Loaded 8 history items for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:53:12,485 - user_input - INFO - User input: give me selected japan flight and hotel options

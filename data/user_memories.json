@@ -418,6 +418,24 @@
       },
       "timestamp": "2025-12-12T12:10:45.665029",
       "id": "test_user_123_0"
+    },
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T18:08:54.499233",
+      "id": "test_user_123_1"
+    },
+    {
+      "memory": "Requested travel plan: tokyo to osaka march 10th to 12th morning 2 $1500",
+      "content": "Requested travel plan: tokyo to osaka march 10th to 12th morning 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:10:13.585234",
+      "id": "test_user_123_2"
     }
   ],
   "b175b8ab-e6ce-4fdb-98a1-95eb7b8d8b27": [
@@ -540,6 +558,645 @@
       },
       "timestamp": "2025-12-13T00:40:35.731857",
       "id": "e49ef129-9916-4fce-8c63-ef0c535b5306_3"
+    }
+  ],
+  "eee41e87-3e56-41d6-846f-df2e45a412be": [
+    {
+      "memory": "My name is John and I love beaches",
+      "content": "My name is John and I love beaches",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:08:42.939933",
+      "id": "eee41e87-3e56-41d6-846f-df2e45a412be_0"
+    }
+  ],
+  "e5759751-22d9-41c8-a82f-766e90093973": [
+    {
+      "memory": "Support query: What is the baggage allowance?",
+      "content": "Support query: What is the baggage allowance?",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T14:09:42.675796",
+      "id": "e5759751-22d9-41c8-a82f-766e90093973_0"
+    }
+  ],
+  "833c1d15-70ce-4274-a63f-0ff56567695a": [
+    {
+      "memory": "My name is John Smith and I love beaches and adventure sports",
+      "content": "My name is John Smith and I love beaches and adventure sports",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:12:15.838702",
+      "id": "833c1d15-70ce-4274-a63f-0ff56567695a_0"
+    },
+    {
+      "memory": "I prefer vegetarian food",
+      "content": "I prefer vegetarian food",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:12:26.057122",
+      "id": "833c1d15-70ce-4274-a63f-0ff56567695a_1"
+    },
+    {
+      "memory": "My budget is usually around $2000 per trip",
+      "content": "My budget is usually around $2000 per trip",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:12:35.118650",
+      "id": "833c1d15-70ce-4274-a63f-0ff56567695a_2"
+    },
+    {
+      "memory": "Support query: What is the baggage allowance for international flights?",
+      "content": "Support query: What is the baggage allowance for international flights?",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T14:14:16.488284",
+      "id": "833c1d15-70ce-4274-a63f-0ff56567695a_3"
+    },
+    {
+      "memory": "My name is Alice",
+      "content": "My name is Alice",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:14:48.862658",
+      "id": "833c1d15-70ce-4274-a63f-0ff56567695a_4"
+    },
+    {
+      "memory": "Support query: What are the check-in procedures?",
+      "content": "Support query: What are the check-in procedures?",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T14:15:32.914565",
+      "id": "833c1d15-70ce-4274-a63f-0ff56567695a_5"
+    },
+    {
+      "memory": "I prefer budget accommodations",
+      "content": "I prefer budget accommodations",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:15:43.140744",
+      "id": "833c1d15-70ce-4274-a63f-0ff56567695a_6"
+    },
+    {
+      "memory": "I love adventure sports and beach destinations. I'm vegetarian and prefer budget hotels.",
+      "content": "I love adventure sports and beach destinations. I'm vegetarian and prefer budget hotels.",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:15:57.118562",
+      "id": "833c1d15-70ce-4274-a63f-0ff56567695a_7"
+    },
+    {
+      "memory": "asdfghjkl qwerty",
+      "content": "asdfghjkl qwerty",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:16:21.341618",
+      "id": "833c1d15-70ce-4274-a63f-0ff56567695a_8"
+    },
+    {
+      "memory": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "content": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:16:31.331083",
+      "id": "833c1d15-70ce-4274-a63f-0ff56567695a_9"
+    },
+    {
+      "memory": "What is 2+2?",
+      "content": "What is 2+2?",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:16:45.508818",
+      "id": "833c1d15-70ce-4274-a63f-0ff56567695a_10"
+    }
+  ],
+  "41d54e22-3384-4348-8ddb-a865b7d86cef": [
+    {
+      "memory": "My name is John Smith and I love beaches and adventure sports",
+      "content": "My name is John Smith and I love beaches and adventure sports",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:21:52.399853",
+      "id": "41d54e22-3384-4348-8ddb-a865b7d86cef_0"
+    },
+    {
+      "memory": "I prefer vegetarian food",
+      "content": "I prefer vegetarian food",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:21:59.392316",
+      "id": "41d54e22-3384-4348-8ddb-a865b7d86cef_1"
+    },
+    {
+      "memory": "My budget is usually around $2000 per trip",
+      "content": "My budget is usually around $2000 per trip",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:22:18.129941",
+      "id": "41d54e22-3384-4348-8ddb-a865b7d86cef_2"
+    },
+    {
+      "memory": "Support query: What is the baggage allowance for international flights?",
+      "content": "Support query: What is the baggage allowance for international flights?",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T14:24:14.182020",
+      "id": "41d54e22-3384-4348-8ddb-a865b7d86cef_3"
+    },
+    {
+      "memory": "My name is Alice",
+      "content": "My name is Alice",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:24:44.003073",
+      "id": "41d54e22-3384-4348-8ddb-a865b7d86cef_4"
+    },
+    {
+      "memory": "Support query: What are the check-in procedures?",
+      "content": "Support query: What are the check-in procedures?",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T14:25:37.173118",
+      "id": "41d54e22-3384-4348-8ddb-a865b7d86cef_5"
+    },
+    {
+      "memory": "I prefer budget accommodations",
+      "content": "I prefer budget accommodations",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:25:47.033316",
+      "id": "41d54e22-3384-4348-8ddb-a865b7d86cef_6"
+    },
+    {
+      "memory": "I love adventure sports and beach destinations. I'm vegetarian and prefer budget hotels.",
+      "content": "I love adventure sports and beach destinations. I'm vegetarian and prefer budget hotels.",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:25:59.878667",
+      "id": "41d54e22-3384-4348-8ddb-a865b7d86cef_7"
+    },
+    {
+      "memory": "asdfghjkl qwerty",
+      "content": "asdfghjkl qwerty",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:26:55.362687",
+      "id": "41d54e22-3384-4348-8ddb-a865b7d86cef_8"
+    },
+    {
+      "memory": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "content": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:27:03.935910",
+      "id": "41d54e22-3384-4348-8ddb-a865b7d86cef_9"
+    },
+    {
+      "memory": "What is 2+2?",
+      "content": "What is 2+2?",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:27:16.957699",
+      "id": "41d54e22-3384-4348-8ddb-a865b7d86cef_10"
+    }
+  ],
+  "36935f8e-314b-4f66-88d4-3d59564ddb5b": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T14:50:32.536915",
+      "id": "36935f8e-314b-4f66-88d4-3d59564ddb5b_0"
+    },
+    {
+      "memory": "Requested travel plan: tokyo to osaka",
+      "content": "Requested travel plan: tokyo to osaka",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T14:53:26.711915",
+      "id": "36935f8e-314b-4f66-88d4-3d59564ddb5b_1"
+    }
+  ],
+  "1171951c-1e5b-4cd8-967b-134d3acd0c5a": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T15:05:34.638727",
+      "id": "1171951c-1e5b-4cd8-967b-134d3acd0c5a_0"
+    },
+    {
+      "memory": "Requested travel plan: tokyo feb10th to 12th morning osaka 2 $1500",
+      "content": "Requested travel plan: tokyo feb10th to 12th morning osaka 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T15:08:33.435222",
+      "id": "1171951c-1e5b-4cd8-967b-134d3acd0c5a_1"
+    }
+  ],
+  "2e1cd6b4-cd05-436c-9301-9cbf4979dda2": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T15:12:26.173957",
+      "id": "2e1cd6b4-cd05-436c-9301-9cbf4979dda2_0"
+    },
+    {
+      "memory": "Requested travel plan: tokyo feb11th to 13th morning osaka 2 $1500",
+      "content": "Requested travel plan: tokyo feb11th to 13th morning osaka 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T15:14:33.807450",
+      "id": "2e1cd6b4-cd05-436c-9301-9cbf4979dda2_1"
+    }
+  ],
+  "62f1c2d5-5533-4280-9ddb-be5a176dc627": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T16:18:34.070804",
+      "id": "62f1c2d5-5533-4280-9ddb-be5a176dc627_0"
+    },
+    {
+      "memory": "Requested travel plan: morning",
+      "content": "Requested travel plan: morning",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T16:21:06.585803",
+      "id": "62f1c2d5-5533-4280-9ddb-be5a176dc627_1"
+    },
+    {
+      "memory": "Requested travel plan: afternoon",
+      "content": "Requested travel plan: afternoon",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T16:23:37.130609",
+      "id": "62f1c2d5-5533-4280-9ddb-be5a176dc627_2"
+    }
+  ],
+  "007efac8-aaba-4c24-9cd6-96cf3ab6aba6": [
+    {
+      "memory": "Requested travel plan: tokyo feb11th to 13th morning osaka 2 $1500 ",
+      "content": "Requested travel plan: tokyo feb11th to 13th morning osaka 2 $1500 ",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T16:27:33.313136",
+      "id": "007efac8-aaba-4c24-9cd6-96cf3ab6aba6_0"
+    },
+    {
+      "memory": "Requested travel plan: flight option1 and hotel option2",
+      "content": "Requested travel plan: flight option1 and hotel option2",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T16:28:37.875338",
+      "id": "007efac8-aaba-4c24-9cd6-96cf3ab6aba6_1"
+    },
+    {
+      "memory": "Requested travel plan: change to flight option2 and hotel option1",
+      "content": "Requested travel plan: change to flight option2 and hotel option1",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T16:29:54.535992",
+      "id": "007efac8-aaba-4c24-9cd6-96cf3ab6aba6_2"
+    },
+    {
+      "memory": "Support query: Suggest lounge facilities at the start airport/destination airport",
+      "content": "Support query: Suggest lounge facilities at the start airport/destination airport",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T16:31:07.244280",
+      "id": "007efac8-aaba-4c24-9cd6-96cf3ab6aba6_3"
+    },
+    {
+      "memory": "Support query: Suggest food places for day 1",
+      "content": "Support query: Suggest food places for day 1",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T16:31:43.839150",
+      "id": "007efac8-aaba-4c24-9cd6-96cf3ab6aba6_4"
+    }
+  ],
+  "da90136b-79ae-4d53-92f5-ca30c06a1b59": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T16:36:29.297974",
+      "id": "da90136b-79ae-4d53-92f5-ca30c06a1b59_0"
+    },
+    {
+      "memory": "Requested travel plan: tokyo to osaka morning feb5th to 7th 2 $2000",
+      "content": "Requested travel plan: tokyo to osaka morning feb5th to 7th 2 $2000",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T16:38:33.854227",
+      "id": "da90136b-79ae-4d53-92f5-ca30c06a1b59_1"
+    },
+    {
+      "memory": "Requested travel plan: flight and option2 in hotel",
+      "content": "Requested travel plan: flight and option2 in hotel",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T16:40:11.940430",
+      "id": "da90136b-79ae-4d53-92f5-ca30c06a1b59_2"
+    },
+    {
+      "memory": "Requested travel plan: option A in flights",
+      "content": "Requested travel plan: option A in flights",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T16:41:18.558883",
+      "id": "da90136b-79ae-4d53-92f5-ca30c06a1b59_3"
+    },
+    {
+      "memory": "Support query: Suggest lounge facilities at the start airport/destination airport",
+      "content": "Support query: Suggest lounge facilities at the start airport/destination airport",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T16:42:05.960866",
+      "id": "da90136b-79ae-4d53-92f5-ca30c06a1b59_4"
+    }
+  ],
+  "5b906ad6-9a01-418e-ad06-2090817aa9ec": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T17:59:45.703453",
+      "id": "5b906ad6-9a01-418e-ad06-2090817aa9ec_0"
+    },
+    {
+      "memory": "Requested travel plan: tokyo to okasa feb 11th to 13th morning 2 $1500",
+      "content": "Requested travel plan: tokyo to okasa feb 11th to 13th morning 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:02:48.443815",
+      "id": "5b906ad6-9a01-418e-ad06-2090817aa9ec_1"
+    },
+    {
+      "memory": "Requested travel plan: tokyo to okasa feb 11th to 13th morning 2 $1500",
+      "content": "Requested travel plan: tokyo to okasa feb 11th to 13th morning 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:03:24.214283",
+      "id": "5b906ad6-9a01-418e-ad06-2090817aa9ec_2"
+    }
+  ],
+  "dcfbb3dd-642b-40e6-bbbd-219162ac69d3": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T18:05:11.076604",
+      "id": "dcfbb3dd-642b-40e6-bbbd-219162ac69d3_0"
+    },
+    {
+      "memory": "Requested travel plan: tokyo to osaka march 10th to 12th morning 2 $1500",
+      "content": "Requested travel plan: tokyo to osaka march 10th to 12th morning 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:07:18.574361",
+      "id": "dcfbb3dd-642b-40e6-bbbd-219162ac69d3_1"
+    }
+  ],
+  "293bbb53-8972-427d-9de2-92d9191094e0": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T18:15:30.243765",
+      "id": "293bbb53-8972-427d-9de2-92d9191094e0_0"
+    },
+    {
+      "memory": "Requested travel plan: tokyo to osaka march 10th to 12th morning 2 $1500",
+      "content": "Requested travel plan: tokyo to osaka march 10th to 12th morning 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:16:54.387760",
+      "id": "293bbb53-8972-427d-9de2-92d9191094e0_1"
+    }
+  ],
+  "test_quick": [
+    {
+      "memory": "Requested travel plan: tokyo to osaka march 10th to 12th morning 2 $1500",
+      "content": "Requested travel plan: tokyo to osaka march 10th to 12th morning 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:23:35.404552",
+      "id": "test_quick_0"
+    }
+  ],
+  "d11bf1d4-b67d-4f6f-907b-b59742443695": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T18:28:58.401955",
+      "id": "d11bf1d4-b67d-4f6f-907b-b59742443695_0"
+    },
+    {
+      "memory": "Requested travel plan: tokyo feb11th to 13th morning osaka 2 $1500",
+      "content": "Requested travel plan: tokyo feb11th to 13th morning osaka 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:30:33.744352",
+      "id": "d11bf1d4-b67d-4f6f-907b-b59742443695_1"
+    }
+  ],
+  "dec0657a-6a82-4cb9-bbc5-44ca1731e331": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T18:37:51.062366",
+      "id": "dec0657a-6a82-4cb9-bbc5-44ca1731e331_0"
+    },
+    {
+      "memory": "Requested travel plan: tokyo feb11th to 13th morning osaka 2 $1500",
+      "content": "Requested travel plan: tokyo feb11th to 13th morning osaka 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:39:17.817588",
+      "id": "dec0657a-6a82-4cb9-bbc5-44ca1731e331_1"
+    },
+    {
+      "memory": "Requested travel plan: tokyo to osaka feb 11th to 13th morning 2 $1500",
+      "content": "Requested travel plan: tokyo to osaka feb 11th to 13th morning 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:39:46.795742",
+      "id": "dec0657a-6a82-4cb9-bbc5-44ca1731e331_2"
+    }
+  ],
+  "67e10d97-560c-4e59-b99e-55d87ddd4a79": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T18:42:39.512631",
+      "id": "67e10d97-560c-4e59-b99e-55d87ddd4a79_0"
+    },
+    {
+      "memory": "Requested travel plan: tokyo feb11th to 13th morning osaka 2 $1500",
+      "content": "Requested travel plan: tokyo feb11th to 13th morning osaka 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:44:36.082462",
+      "id": "67e10d97-560c-4e59-b99e-55d87ddd4a79_1"
+    }
+  ],
+  "2f7bb850-b48d-42cd-bba0-7bebb846b25f": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-13T18:46:09.379409",
+      "id": "2f7bb850-b48d-42cd-bba0-7bebb846b25f_0"
+    },
+    {
+      "memory": "Requested travel plan: tokyo to osaka feb11th to 13th morning aka 2 $1500",
+      "content": "Requested travel plan: tokyo to osaka feb11th to 13th morning aka 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:47:42.998696",
+      "id": "2f7bb850-b48d-42cd-bba0-7bebb846b25f_1"
+    },
+    {
+      "memory": "Requested travel plan: flight option1 and hotel option2",
+      "content": "Requested travel plan: flight option1 and hotel option2",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:48:39.589580",
+      "id": "2f7bb850-b48d-42cd-bba0-7bebb846b25f_2"
+    },
+    {
+      "memory": "Support query: Suggest lounge facilities at the start airport/destination airport",
+      "content": "Support query: Suggest lounge facilities at the start airport/destination airport",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T18:49:08.242202",
+      "id": "2f7bb850-b48d-42cd-bba0-7bebb846b25f_3"
+    },
+    {
+      "memory": "Support query: Suggest food places for day 1",
+      "content": "Support query: Suggest food places for day 1",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T18:49:23.855714",
+      "id": "2f7bb850-b48d-42cd-bba0-7bebb846b25f_4"
+    },
+    {
+      "memory": "Requested travel plan: mubai to hyd feb11th to 13th morning 2 $1500",
+      "content": "Requested travel plan: mubai to hyd feb11th to 13th morning 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:51:17.533408",
+      "id": "2f7bb850-b48d-42cd-bba0-7bebb846b25f_5"
+    },
+    {
+      "memory": "Requested travel plan: option1 in flights and option 2 in hotels",
+      "content": "Requested travel plan: option1 in flights and option 2 in hotels",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:52:23.843646",
+      "id": "2f7bb850-b48d-42cd-bba0-7bebb846b25f_6"
+    },
+    {
+      "memory": "Support query: Suggest lounge facilities at the start airport/destination airport and Suggest food places for day 1",
+      "content": "Support query: Suggest lounge facilities at the start airport/destination airport and Suggest food places for day 1",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-13T18:52:56.349157",
+      "id": "2f7bb850-b48d-42cd-bba0-7bebb846b25f_7"
+    },
+    {
+      "memory": "Requested travel plan: give me selected japan flight and hotel options",
+      "content": "Requested travel plan: give me selected japan flight and hotel options",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-13T18:53:47.556319",
+      "id": "2f7bb850-b48d-42cd-bba0-7bebb846b25f_8"
     }
   ]
 }

@@ -7,6 +7,7 @@ from src.utils.mem0_manager import Mem0Manager
 from src.config import Config
 from src.utils.logger import setup_logger
 from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
+from src.utils.multimodel_selector import MultiModelSelector
 
 logger = setup_logger("itinerary_node")
 
@@ -22,11 +23,8 @@ class ItineraryNode:
             mem0_manager: Mem0 manager instance
         """
         self.mem0_manager = mem0_manager
-        self.llm = ChatGoogleGenerativeAI(
-            model=Config.GEMINI_MODEL,
-            temperature=Config.TEMPERATURE,
-            google_api_key=Config.GOOGLE_API_KEY,
-        )
+        # Use multi-model selector: gemini-2.5-pro for creative itinerary generation
+        self.llm = MultiModelSelector.get_model_for_itinerary()
 
         self.prompt = ChatPromptTemplate.from_messages(
             [
@@ -34,54 +32,55 @@ class ItineraryNode:
                     "system",
                     """You are an expert travel planner. Create detailed and personalized travel itineraries.
 
-CRITICAL CONTEXT ANALYSIS (HIGHEST PRIORITY):
-1. **Analyze conversation history FIRST**: Before generating any itinerary, carefully review all previous messages
-2. **Extract destination from history**: Look for any location names mentioned in previous user messages (cities, countries, regions)
-3. **Destination persistence rule**: Once a destination is mentioned, it remains the active destination UNLESS:
-   - User explicitly names a different destination ("I want to go to Rome instead")
-   - User says "change destination" or "somewhere else"
-   - This is the very first conversation with no previous context
+**CRITICAL: USER PREFERENCES ARE MANDATORY** - If user preferences exist, they MUST be incorporated into the itinerary.
 
-UNDERSTANDING USER INTENT:
-4. **Duration changes preserve destination**: 
-   - If history shows "Paris" and user now says "4-day trip" → Still Paris, just different duration
-   - The destination doesn't change when only trip duration/length is modified
-
-5. **Activity preferences preserve destination**:
-   - If history shows a destination was discussed, and user now expresses preferences/interests/activities
-   - Interpret as: User wants to experience those activities AT THE PREVIOUSLY MENTIONED DESTINATION
-   - Adapt the itinerary to incorporate those activities within/around the existing destination
-   - Example semantic patterns to recognize:
-     * "I love [activity]" → Add [activity] to existing destination
-     * "I prefer [interest]" → Incorporate [interest] into existing destination's itinerary
-     * "I enjoy [hobby]" → Find [hobby] opportunities at existing destination
-     * "I'm interested in [theme]" → Theme the existing destination's itinerary around this
-
-6. **Flexible activity adaptation**:
-   - Be creative in finding ways to incorporate user's interests at the current destination
-   - Every destination has nature/hiking spots, cultural activities, adventure options nearby
-   - Don't suggest new destinations just because an activity seems uncommon for the location
-   - Research and include day trips, nearby areas, or creative alternatives
-
-DECISION LOGIC:
-- Has destination been mentioned in history? → YES: Keep that destination, adapt activities
-- Has destination been mentioned in history? → NO: User is free to suggest destinations or activities for new trip planning
-
-User Preferences:
+STEP 1 - ANALYZE USER PREFERENCES (HIGHEST PRIORITY):
+Review the "User Preferences" section below carefully:
 {user_preferences}
 
-Conversation Context:
+IF preferences mention activities (trekking, food preferences, etc.):
+→ Your itinerary MUST center around those activities
+→ Example: If "trekking" or "mountains" mentioned → Include hiking trails, mountain destinations, scenic viewpoints
+→ Example: If "vegetarian food" mentioned → Highlight vegetarian restaurants and food options
+→ Example: If "beaches" mentioned → Focus on coastal areas and water activities
+→ Example: If "cultural" mentioned → Include museums, historical sites, local experiences
+
+STEP 2 - DESTINATION CONTEXT ANALYSIS:
+1. **Analyze conversation history**: Review all previous messages for location names
+2. **Extract destination from history**: Look for cities, countries, regions mentioned earlier
+3. **Destination persistence rule**: Once mentioned, destination stays active UNLESS:
+   - User explicitly names a different destination
+   - User says "change destination" or "somewhere else"
+
+STEP 3 - UNDERSTANDING USER INTENT:
+4. **Duration changes preserve destination**: 
+   - History shows "Paris" + user says "4-day trip" → Still Paris, just different duration
+
+5. **Activity preferences preserve destination**:
+   - History shows destination + user expresses interests/activities
+   - Interpret as: User wants those activities AT THE DESTINATION
+   - Adapt the itinerary to incorporate activities within/around the existing destination
+
+6. **Flexible activity adaptation**:
+   - Be creative finding ways to incorporate interests at the destination
+   - Research nearby areas, day trips, creative alternatives
+
+Conversation Context (check for previously mentioned destinations):
 {conversation_context}
 
-OUTPUT FORMAT:
+**MANDATORY OUTPUT REQUIREMENTS**:
+1. **If user preferences exist**: Your itinerary MUST reflect them prominently
+2. **Match destination to preferences**: Choose destinations/activities that align with user's stated interests
+3. **Be specific**: Don't give generic itineraries - personalize based on what you know about the user
+
 Generate a comprehensive itinerary including:
-- Daily activities matching user's interests
+- Daily activities **matching user's stated preferences**
 - Suggested timings
-- Food recommendations
+- Food recommendations (**aligned with dietary preferences if mentioned**)
 - Travel tips
 - Estimated costs (if applicable)
 
-Use clear day-by-day structure.""",
+Use clear day-by-day structure with **preference-aligned activities**.""",
                 ),
                 ("user", "{user_request}"),
             ]
@@ -133,10 +132,11 @@ Use clear day-by-day structure.""",
                     )
                     for msg in conversation_history[-6:]:  # Last 3 exchanges
                         role = "User" if msg["role"] == "user" else "Assistant"
+                        content = msg["content"]
                         conversation_context_str += (
-                            f"{role}: {msg['content'][:300]}...\n\n"
-                            if len(msg["content"]) > 300
-                            else f"{role}: {msg['content']}\n\n"
+                            f"{role}: {content[:300]}...\n\n"
+                            if len(content) > 300
+                            else f"{role}: {content}\n\n"
                         )
                 else:
                     conversation_context_str = "No previous conversation."
@@ -149,7 +149,7 @@ Use clear day-by-day structure.""",
                         conversation_history
                     )
 
-                # Generate itinerary
+                # Generate itinerary using LangChain chain (preserves context)
                 chain = self.prompt | self.llm
                 result = chain.invoke(
                     {

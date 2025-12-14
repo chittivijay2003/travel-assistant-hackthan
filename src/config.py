@@ -23,6 +23,9 @@ class Config:
     GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
     TEMPERATURE = float(os.getenv("TEMPERATURE", "0.7"))
 
+    # Multi-Model Orchestration
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", None)
+
     # Redis
     REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
     REDIS_PORT = int(os.getenv("REDIS_PORT", "6379"))

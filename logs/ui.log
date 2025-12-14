@@ -88,3 +88,123 @@
 2025-12-13 00:30:28,366 - ui - INFO - Travel Assistant Graph initialized
 2025-12-13 00:33:09,196 - ui - INFO - New session started: e49ef129-9916-4fce-8c63-ef0c535b5306
 2025-12-13 00:33:12,583 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 11:45:25,319 - ui - INFO - New session started: 54d7eab1-6b61-4139-ab23-0bf4903254fe
+2025-12-13 11:45:28,512 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 11:45:42,665 - ui - INFO - New session started: 603c1a72-d3c3-4428-bed5-a1c04263651f
+2025-12-13 11:45:45,382 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 14:39:02,706 - ui - INFO - New session started: e9ec00f9-148b-4e35-b325-02a44d79b879
+2025-12-13 14:39:05,592 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 14:50:11,077 - ui - INFO - New session started: 36935f8e-314b-4f66-88d4-3d59564ddb5b
+2025-12-13 14:50:14,594 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 15:03:31,765 - ui - INFO - New session started: 1171951c-1e5b-4cd8-967b-134d3acd0c5a
+2025-12-13 15:03:34,832 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 15:11:47,911 - ui - INFO - New session started: 2e1cd6b4-cd05-436c-9301-9cbf4979dda2
+2025-12-13 15:11:50,742 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 15:17:38,956 - ui - INFO - New session started: 65c59377-f4af-4be9-8f27-1c87263158ff
+2025-12-13 15:17:41,688 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 16:14:03,755 - ui - INFO - New session started: 62f1c2d5-5533-4280-9ddb-be5a176dc627
+2025-12-13 16:14:06,708 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 16:24:03,227 - ui - INFO - New session started: c1705852-11c3-458d-8a15-5b2cd6ae72dc
+2025-12-13 16:24:22,592 - ui - INFO - New session started: 007efac8-aaba-4c24-9cd6-96cf3ab6aba6
+2025-12-13 16:24:25,258 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 16:35:31,920 - ui - INFO - New session started: da90136b-79ae-4d53-92f5-ca30c06a1b59
+2025-12-13 16:35:34,808 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 17:59:12,420 - ui - INFO - New session started: 5b906ad6-9a01-418e-ad06-2090817aa9ec
+2025-12-13 17:59:15,843 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 18:04:32,132 - ui - INFO - New session started: dcfbb3dd-642b-40e6-bbbd-219162ac69d3
+2025-12-13 18:04:34,749 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 18:15:07,100 - ui - INFO - New session started: 293bbb53-8972-427d-9de2-92d9191094e0
+2025-12-13 18:15:09,656 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 18:28:31,940 - ui - INFO - New session started: d11bf1d4-b67d-4f6f-907b-b59742443695
+2025-12-13 18:28:35,074 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 18:37:31,967 - ui - INFO - New session started: dec0657a-6a82-4cb9-bbc5-44ca1731e331
+2025-12-13 18:37:34,690 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 18:37:51,333 - ui - INFO - [APP DEBUG] Received response from graph: Thank you for sharing! I've noted that: I love trekking in the monsoon season
+
+This information will...
+2025-12-13 18:37:51,333 - ui - INFO - [APP DEBUG] Response length: 234
+2025-12-13 18:37:51,333 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:38:19,868 - ui - INFO - [APP DEBUG] Received response from graph: Of course! Based on your love for **trekking in the monsoon season**, I have designed a 3-day itiner...
+2025-12-13 18:38:19,869 - ui - INFO - [APP DEBUG] Response length: 3241
+2025-12-13 18:38:19,869 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:38:50,253 - ui - INFO - [APP DEBUG] Received response from graph: To create the best travel plan for you, I need some additional information:
+
+- Travel dates
+- Start ...
+2025-12-13 18:38:50,254 - ui - INFO - [APP DEBUG] Response length: 238
+2025-12-13 18:38:50,254 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:39:18,181 - ui - INFO - [APP DEBUG] Received response from graph: NONE...
+2025-12-13 18:39:18,182 - ui - INFO - [APP DEBUG] Response length: 0
+2025-12-13 18:39:18,182 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:39:47,466 - ui - INFO - [APP DEBUG] Received response from graph: NONE...
+2025-12-13 18:39:47,467 - ui - INFO - [APP DEBUG] Response length: 0
+2025-12-13 18:39:47,467 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:41:33,954 - ui - INFO - New session started: 67e10d97-560c-4e59-b99e-55d87ddd4a79
+2025-12-13 18:41:36,366 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 18:42:40,157 - ui - INFO - [APP DEBUG] Received response from graph: Thank you for sharing! I've noted that: I love trekking in the monsoon season
+
+This information will...
+2025-12-13 18:42:40,158 - ui - INFO - [APP DEBUG] Response length: 234
+2025-12-13 18:42:40,158 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:43:08,150 - ui - INFO - [APP DEBUG] Received response from graph: Of course! Based on your love for trekking in the monsoon season, I have crafted a specialized 3-day...
+2025-12-13 18:43:08,151 - ui - INFO - [APP DEBUG] Response length: 3599
+2025-12-13 18:43:08,151 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:43:20,493 - ui - INFO - [APP DEBUG] Received response from graph: To create the best travel plan for you, I need some additional information:
+
+- Travel dates
+- Start ...
+2025-12-13 18:43:20,493 - ui - INFO - [APP DEBUG] Response length: 238
+2025-12-13 18:43:20,493 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:44:36,890 - ui - INFO - [APP DEBUG] Received response from graph: NONE...
+2025-12-13 18:44:36,890 - ui - INFO - [APP DEBUG] Response length: 0
+2025-12-13 18:44:36,890 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:45:53,308 - ui - INFO - New session started: 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:45:56,048 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 18:46:09,859 - ui - INFO - [APP DEBUG] Received response from graph: Thank you for sharing! I've noted that: I love trekking in the monsoon season
+
+This information will...
+2025-12-13 18:46:09,860 - ui - INFO - [APP DEBUG] Response length: 234
+2025-12-13 18:46:09,860 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:46:16,234 - ui - INFO - New session started: e3712659-55e3-4dc1-ae2d-53143d2e2681
+2025-12-13 18:46:18,883 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 18:46:44,828 - ui - INFO - [APP DEBUG] Received response from graph: Of course! Based on your love for **trekking in the monsoon season**, I have crafted a specialized 3...
+2025-12-13 18:46:44,829 - ui - INFO - [APP DEBUG] Response length: 6764
+2025-12-13 18:46:44,829 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:46:55,953 - ui - INFO - [APP DEBUG] Received response from graph: To create the best travel plan for you, I need some additional information:
+
+- Travel dates (start a...
+2025-12-13 18:46:55,954 - ui - INFO - [APP DEBUG] Response length: 254
+2025-12-13 18:46:55,954 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:47:43,723 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on the complete conversation, here is a comprehensive travel plan for a 3-day trip ...
+2025-12-13 18:47:43,723 - ui - INFO - [APP DEBUG] Response length: 7101
+2025-12-13 18:47:43,723 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:48:39,999 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your selections from our conversation, here is the finalized and comprehensive t...
+2025-12-13 18:48:40,000 - ui - INFO - [APP DEBUG] Response length: 6285
+2025-12-13 18:48:40,000 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:49:09,019 - ui - INFO - [APP DEBUG] Received response from graph: Certainly! Since you've selected Japan Airlines (JAL) for your flight from Tokyo to Osaka, I'll reco...
+2025-12-13 18:49:09,020 - ui - INFO - [APP DEBUG] Response length: 4016
+2025-12-13 18:49:09,020 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:49:24,439 - ui - INFO - [APP DEBUG] Received response from graph: Certainly! Let's get you some fantastic food recommendations for Day 1 in Osaka, which is **February...
+2025-12-13 18:49:24,439 - ui - INFO - [APP DEBUG] Response length: 3149
+2025-12-13 18:49:24,439 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:49:57,464 - ui - INFO - [APP DEBUG] Received response from graph: Of course! Based on your love for **trekking in the monsoon season**, I have designed a spectacular ...
+2025-12-13 18:49:57,465 - ui - INFO - [APP DEBUG] Response length: 5682
+2025-12-13 18:49:57,465 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:50:26,280 - ui - INFO - [APP DEBUG] Received response from graph: To create the best travel plan for you, I need some additional information:
+
+- Destination
+- Travel ...
+2025-12-13 18:50:26,281 - ui - INFO - [APP DEBUG] Response length: 252
+2025-12-13 18:50:26,281 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:51:17,885 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on the complete conversation, here is a comprehensive travel plan for a 3-day trip ...
+2025-12-13 18:51:17,886 - ui - INFO - [APP DEBUG] Response length: 7253
+2025-12-13 18:51:17,886 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:52:24,200 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your final selections from our conversation, here is the finalized and comprehen...
+2025-12-13 18:52:24,200 - ui - INFO - [APP DEBUG] Response length: 6346
+2025-12-13 18:52:24,200 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:52:56,970 - ui - INFO - [APP DEBUG] Received response from graph: Certainly! I can help you with lounge facilities at the airports and food recommendations for Day 1 ...
+2025-12-13 18:52:56,971 - ui - INFO - [APP DEBUG] Response length: 3833
+2025-12-13 18:52:56,971 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:53:48,372 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your selections from our conversation, here is the finalized and comprehensive t...
+2025-12-13 18:53:48,372 - ui - INFO - [APP DEBUG] Response length: 6292
+2025-12-13 18:53:48,372 - ui - INFO - [APP DEBUG] Response type: <class 'str'>

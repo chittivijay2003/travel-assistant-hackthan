@@ -6,6 +6,7 @@ from src.nodes.state import GraphState, IntentType
 from src.config import Config
 from src.utils.logger import setup_logger
 from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
+from src.utils.multimodel_selector import MultiModelSelector
 
 logger = setup_logger("intent_classification")
 
@@ -15,11 +16,8 @@ class IntentClassificationNode:
 
     def __init__(self):
         """Initialize the intent classification node"""
-        self.llm = ChatGoogleGenerativeAI(
-            model=Config.GEMINI_MODEL,
-            temperature=0.3,  # Lower temperature for consistent classification
-            google_api_key=Config.GOOGLE_API_KEY,
-        )
+        # Use multi-model selector: gemini-2.5-flash for fast intent classification
+        self.llm = MultiModelSelector.get_model_for_intent_classification()
 
         self.prompt = ChatPromptTemplate.from_messages(
             [
@@ -137,7 +135,7 @@ Respond with ONLY the category name: information, itinerary, travel_plan, or sup
                     tracer.metadata["user_input"] = state["user_input"][:200]
                     tracer.metadata["history_length"] = len(conversation_history)
 
-                # Get classification from LLM
+                # Get classification from LLM using LangChain chain (preserves context)
                 chain = self.prompt | self.llm
                 result = chain.invoke(
                     {
@@ -147,9 +145,8 @@ Respond with ONLY the category name: information, itinerary, travel_plan, or sup
                 )
 
                 # Extract intent from response
-                intent_text = result.content.strip().lower()
-
-                # Map to IntentType
+                result_text = result.content
+                intent_text = result_text.strip().lower()  # Map to IntentType
                 intent_mapping = {
                     "information": IntentType.INFORMATION,
                     "itinerary": IntentType.ITINERARY,

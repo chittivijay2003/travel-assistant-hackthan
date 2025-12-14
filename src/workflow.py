@@ -254,6 +254,15 @@ class TravelAssistantGraph:
                     "response", "I'm sorry, I couldn't process your request."
                 )
 
+                # DEBUG: Log what we're returning
+                logger.info(
+                    f"[DEBUG] Response extracted from state: {response[:100] if response else 'NONE'}..."
+                )
+                logger.info(
+                    f"[DEBUG] Response length: {len(response) if response else 0}"
+                )
+                logger.info(f"[DEBUG] Result keys: {list(result.keys())}")
+
                 # Add result metadata to trace
                 if tracer.trace and is_langfuse_enabled():
                     tracer.metadata["intent_classified"] = result.get("intent")

@@ -1,4 +1,4 @@
-"""Support Trip Ancillaries Node - Handles in-trip support queries"""
+"""Support Trip Node - Handles in-trip support queries"""
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
@@ -8,6 +8,7 @@ from src.utils.rag_manager import RAGManager
 from src.config import Config
 from src.utils.logger import setup_logger
 from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
+from src.utils.multimodel_selector import MultiModelSelector
 
 logger = setup_logger("support_trip")
 
@@ -25,11 +26,8 @@ class SupportTripNode:
         """
         self.mem0_manager = mem0_manager
         self.rag_manager = rag_manager
-        self.llm = ChatGoogleGenerativeAI(
-            model=Config.GEMINI_MODEL,
-            temperature=Config.TEMPERATURE,
-            google_api_key=Config.GOOGLE_API_KEY,
-        )
+        # Use multi-model selector: gemini-2.5-flash for fast support queries
+        self.llm = MultiModelSelector.get_model_for_support_trip()
 
         self.prompt = ChatPromptTemplate.from_messages(
             [
@@ -170,7 +168,7 @@ Be specific, practical, and consider the user's preferences and current travel p
                     else "No selections available."
                 )
 
-                # Generate support response
+                # Generate support response using Router pattern (fast)
                 chain = self.prompt | self.llm
                 result = chain.invoke(
                     {
