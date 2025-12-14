@@ -1,76 +1,36 @@
-# =============================================================================
-# TRAVEL ASSISTANT - CORE DEPENDENCIES
-# =============================================================================
+# Travel Assistant - Dependencies
 
-# -----------------------------------------------------------------------------
-# LangChain Ecosystem
-# -----------------------------------------------------------------------------
-langchain>=0.3.0,<0.4.0
-langchain-google-genai>=2.0.0,<3.0.0
-langchain-community>=0.3.0,<0.4.0
-langgraph>=0.2.0,<0.3.0
+# Core Framework
+langgraph==0.2.60
+langchain==0.3.16
+langchain-google-genai==2.0.8
+langchain-community==0.3.16
+google-generativeai==0.8.3
 
-# -----------------------------------------------------------------------------
-# LLM Provider
-# -----------------------------------------------------------------------------
-google-generativeai>=0.3.0,<1.0.0
-# langchain-openai>=0.1.0,<0.2.0  # Optional - install separately if OpenAI needed
-
-# -----------------------------------------------------------------------------
 # Vector Store & Embeddings
-# -----------------------------------------------------------------------------
-# FAISS for vector similarity search
-faiss-cpu>=1.7.4,<2.0.0
+faiss-cpu==1.9.0.post1
+sentence-transformers==3.3.1
 
-# Sentence transformers for all-MiniLM-L6-v2 embeddings
-sentence-transformers>=2.2.0,<3.0.0
-
-# -----------------------------------------------------------------------------
 # Document Processing
-# -----------------------------------------------------------------------------
-# PDF loading for policy documents
-pypdf>=4.0.0,<5.0.0
+pypdf==5.1.0
 
-# PDF generation (optional, for reports)
-reportlab>=4.0.0,<5.0.0
-
-# -----------------------------------------------------------------------------
 # User Interface
-# -----------------------------------------------------------------------------
-streamlit>=1.39.0,<2.0.0
+streamlit==1.41.1
 
-# -----------------------------------------------------------------------------
-# Data Storage & Caching
-# -----------------------------------------------------------------------------
-# Redis client (optional - for faster user history storage)
-redis>=5.0.0,<6.0.0
+# Observability
+langfuse==2.58.4
 
-# -----------------------------------------------------------------------------
-# Observability & Monitoring
-# -----------------------------------------------------------------------------
-# LangFuse for LLM tracing and observability
-langfuse>=2.0.0,<3.0.0
-
-# -----------------------------------------------------------------------------
 # Safety & Guardrails
-# -----------------------------------------------------------------------------
-# NeMo Guardrails for LLM safety validation
-nemoguardrails>=0.9.0,<1.0.0
+nemoguardrails==0.10.4
 
-# -----------------------------------------------------------------------------
-# Core Utilities
-# -----------------------------------------------------------------------------
-# Environment variable management
-python-dotenv>=1.0.0,<2.0.0
+# Utilities
+python-dotenv==1.0.1
+pydantic==2.10.4
+numpy==2.2.1
 
-# Data validation
-pydantic>=2.0.0,<3.0.0
+# Voice Agent (LiveKit Integration)
+livekit-agents==0.12.6
+livekit==0.19.4
 
-# Numerical computing
-numpy>=1.24.0,<2.0.0
-
-# -----------------------------------------------------------------------------
-# Python Version Requirement
-# -----------------------------------------------------------------------------
-# Requires Python 3.10 or higher
-# Install with: pip install -r requirements.txt
+# Optional: Redis for caching
+redis==5.2.1

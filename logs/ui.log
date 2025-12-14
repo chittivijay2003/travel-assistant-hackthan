@@ -208,3 +208,128 @@ This information will...
 2025-12-13 18:53:48,372 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your selections from our conversation, here is the finalized and comprehensive t...
 2025-12-13 18:53:48,372 - ui - INFO - [APP DEBUG] Response length: 6292
 2025-12-13 18:53:48,372 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:58:40,915 - ui - INFO - New session started: ba876842-281a-4d3b-bb1b-e331c43369da
+2025-12-13 18:58:43,663 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 18:59:00,600 - ui - INFO - [APP DEBUG] Received response from graph: I cannot provide information or assistance with hacking or any other illegal activities. My purpose ...
+2025-12-13 18:59:00,600 - ui - INFO - [APP DEBUG] Response length: 318
+2025-12-13 18:59:00,601 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 18:59:32,407 - ui - INFO - [APP DEBUG] Received response from graph: To create the best travel plan for you, I need some additional information:
+
+- Destination
+- Travel ...
+2025-12-13 18:59:32,407 - ui - INFO - [APP DEBUG] Response length: 252
+2025-12-13 18:59:32,408 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 19:00:05,693 - ui - INFO - [APP DEBUG] Received response from graph: Of course! A monsoon trek is an incredible experience—the lush greenery, misty mountains, and gushin...
+2025-12-13 19:00:05,694 - ui - INFO - [APP DEBUG] Response length: 6368
+2025-12-13 19:00:05,694 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 19:00:31,299 - ui - INFO - [APP DEBUG] Received response from graph: To create the best travel plan for you, I need some additional information:
+
+Start time of the day
+
+...
+2025-12-13 19:00:31,300 - ui - INFO - [APP DEBUG] Response length: 154
+2025-12-13 19:00:31,300 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 20:48:14,277 - ui - INFO - New session started: 82eb7f33-5e35-4a8c-b7c4-90880b5064a1
+2025-12-13 20:48:17,033 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 20:50:39,240 - ui - INFO - New session started: 14b51ed5-905d-4649-a0a3-1b0e4287c69a
+2025-12-13 20:50:42,254 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 21:26:58,475 - ui - INFO - New session started: 9d62925a-cb5d-43b1-88ab-c719e57df88d
+2025-12-13 21:27:01,719 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 21:28:47,127 - ui - INFO - [APP DEBUG] Received response from graph: Thank you for sharing! I've noted that: hi
+
+This information will help me provide better recommendat...
+2025-12-13 21:28:47,127 - ui - INFO - [APP DEBUG] Response length: 199
+2025-12-13 21:28:47,127 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 21:34:44,841 - ui - INFO - New session started: 8013e6b6-1a03-41da-9907-b5809eedb4f2
+2025-12-13 21:34:47,481 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 22:30:36,542 - ui - INFO - New session started: 551bfb4d-38d0-42ce-9b36-c3df9fea196d
+2025-12-13 22:30:36,542 - ui - INFO - New session started: 9e7f7223-d88f-4546-9bac-3db065aaacb5
+2025-12-13 22:30:38,885 - ui - ERROR - Error initializing graph: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-12-13 22:30:39,336 - ui - ERROR - Error initializing graph: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-12-13 22:37:10,697 - ui - INFO - New session started: 1b5e5523-e9fb-4325-949c-04ed36a39bf2
+2025-12-13 22:37:12,735 - ui - ERROR - Error initializing graph: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-12-13 22:37:23,634 - ui - INFO - New session started: 0df1a079-1f30-4374-9d9e-db7b890b84e3
+2025-12-13 22:37:25,673 - ui - ERROR - Error initializing graph: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-12-13 22:41:03,558 - ui - INFO - New session started: 5db69cc3-8f8f-4d2b-86c2-91cc59c708fb
+2025-12-13 22:41:03,558 - ui - INFO - New session started: 75aa9e6a-9358-4a55-a3f5-8aae7f38551d
+2025-12-13 22:41:06,464 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 22:41:07,242 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 22:52:19,461 - ui - INFO - New session started: 5f6c8c31-2704-481d-9f70-7732549b4d3e
+2025-12-13 22:52:22,393 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 22:54:47,257 - ui - INFO - New session started: de12d067-3064-4190-bd1d-ed56889aeae1
+2025-12-13 22:54:50,408 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 23:00:29,764 - ui - INFO - [APP DEBUG] Received response from graph: Of course! Since you haven't specified any particular interests, I've designed a classic 3-day itine...
+2025-12-13 23:00:29,764 - ui - INFO - [APP DEBUG] Response length: 7648
+2025-12-13 23:00:29,764 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:03:21,306 - ui - INFO - New session started: 96fe5cc2-703d-4071-816a-12d4b89f710d
+2025-12-13 23:03:23,852 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 23:08:41,128 - ui - INFO - New session started: 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:08:44,196 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 23:15:11,048 - ui - INFO - [APP DEBUG] Received response from graph: Of course! Since this is a very short trip, this itinerary focuses on **Tokyo** to give you a rich, ...
+2025-12-13 23:15:11,048 - ui - INFO - [APP DEBUG] Response length: 6839
+2025-12-13 23:15:11,048 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:15:53,395 - ui - INFO - [APP DEBUG] Received response from graph: Of course! A love for trekking in the monsoon season is a fantastic preference. The rain and mist ca...
+2025-12-13 23:15:53,395 - ui - INFO - [APP DEBUG] Response length: 6757
+2025-12-13 23:15:53,395 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:16:23,048 - ui - INFO - [APP DEBUG] Received response from graph: To create the best travel plan for you, I need some additional information:
+
+- Travel dates
+- Start ...
+2025-12-13 23:16:23,048 - ui - INFO - [APP DEBUG] Response length: 214
+2025-12-13 23:16:23,048 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:17:49,555 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Here is a comprehensive travel plan for your 3-day trip from Tokyo to Osaka, incorporatin...
+2025-12-13 23:17:49,555 - ui - INFO - [APP DEBUG] Response length: 7295
+2025-12-13 23:17:49,555 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:19:39,871 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your selection of "Option 1" from our previous conversation, here is the complet...
+2025-12-13 23:19:39,871 - ui - INFO - [APP DEBUG] Response length: 6683
+2025-12-13 23:19:39,871 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:20:33,490 - ui - INFO - [APP DEBUG] Received response from graph: Certainly! Let's get you some fantastic food recommendations for Day 1 of your trip to Osaka.
+
+Based...
+2025-12-13 23:20:33,490 - ui - INFO - [APP DEBUG] Response length: 2902
+2025-12-13 23:20:33,490 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:21:09,507 - ui - INFO - [APP DEBUG] Received response from graph: Thank you for asking!
+
+Based on your confirmed travel plan from Tokyo to Osaka, your journey involve...
+2025-12-13 23:21:09,507 - ui - INFO - [APP DEBUG] Response length: 914
+2025-12-13 23:21:09,507 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:22:03,957 - ui - INFO - [APP DEBUG] Received response from graph: Of course! Shifting our focus from Japan to India, a 3-day trip is a fantastic way to get a taste of...
+2025-12-13 23:22:03,957 - ui - INFO - [APP DEBUG] Response length: 5742
+2025-12-13 23:22:03,957 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:23:27,633 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Here is the personalized 3-day itinerary for your trip from Tokyo to Osaka, based on your...
+2025-12-13 23:23:27,633 - ui - INFO - [APP DEBUG] Response length: 5309
+2025-12-13 23:23:27,633 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:41:46,028 - ui - INFO - New session started: 0f709198-7970-4b8d-b8d6-949c072ec6e1
+2025-12-13 23:41:48,849 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 23:43:52,080 - ui - INFO - New session started: 087d316c-cb2d-42f3-ad15-b35b12651daa
+2025-12-13 23:43:54,908 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 23:46:34,792 - ui - INFO - [APP DEBUG] Received response from graph: Of course! Since this is a short 3-day trip and no specific preferences were mentioned, I've designe...
+2025-12-13 23:46:34,793 - ui - INFO - [APP DEBUG] Response length: 6781
+2025-12-13 23:46:34,793 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:47:09,911 - ui - INFO - New session started: 89b66389-2398-421f-af69-5cd570f4ad23
+2025-12-13 23:47:12,422 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 23:57:42,059 - ui - INFO - New session started: a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:57:45,086 - ui - INFO - Travel Assistant Graph initialized
+2025-12-13 23:59:09,767 - ui - INFO - [APP DEBUG] Received response from graph: Of course! Since you have a limited time of 3 days, focusing on one city is the best way to experien...
+2025-12-13 23:59:09,768 - ui - INFO - [APP DEBUG] Response length: 6845
+2025-12-13 23:59:09,768 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-13 23:59:49,046 - ui - INFO - [APP DEBUG] Received response from graph: Of course! That's a fantastic preference. Trekking during the monsoon season transforms landscapes i...
+2025-12-13 23:59:49,046 - ui - INFO - [APP DEBUG] Response length: 6373
+2025-12-13 23:59:49,046 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 00:00:06,285 - ui - INFO - [APP DEBUG] Received response from graph: To create the best travel plan for you, I need some additional information:
+
+- Travel dates (start a...
+2025-12-14 00:00:06,294 - ui - INFO - [APP DEBUG] Response length: 230
+2025-12-14 00:00:06,294 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 00:01:11,662 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on the complete conversation, your core interest is a 3-day trekking trip in Japan,...
+2025-12-14 00:01:11,663 - ui - INFO - [APP DEBUG] Response length: 8295
+2025-12-14 00:01:11,663 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 00:02:33,185 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your selections from the previous proposal, here is the finalized, comprehensive...
+2025-12-14 00:02:33,186 - ui - INFO - [APP DEBUG] Response length: 7008
+2025-12-14 00:02:33,186 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 00:03:24,361 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your previously expressed interest in a trekking-focused trip, I have designed a...
+2025-12-14 00:03:24,362 - ui - INFO - [APP DEBUG] Response length: 5499
+2025-12-14 00:03:24,362 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 00:03:57,950 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Here is the comprehensive travel plan for your 3-day winter trekking trip to Yakushima Is...
+2025-12-14 00:03:57,951 - ui - INFO - [APP DEBUG] Response length: 5336
+2025-12-14 00:03:57,952 - ui - INFO - [APP DEBUG] Response type: <class 'str'>

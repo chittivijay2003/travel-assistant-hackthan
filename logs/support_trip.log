@@ -64,3 +64,21 @@
 2025-12-13 18:52:47,697 - support_trip - INFO - Processing support query for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
 2025-12-13 18:52:47,699 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
 2025-12-13 18:52:56,352 - support_trip - INFO - Successfully handled support query for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 23:16:41,393 - support_trip - INFO - Processing support query for user voice_travel-demo-room
+2025-12-13 23:16:41,394 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-13 23:16:41,393 - support_trip - INFO - Processing support query for user voice_travel-demo-room
+2025-12-13 23:16:41,394 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-13 23:16:50,084 - support_trip - INFO - Successfully handled support query for user voice_travel-demo-room
+2025-12-13 23:16:50,084 - support_trip - INFO - Successfully handled support query for user voice_travel-demo-room
+2025-12-13 23:17:24,183 - support_trip - INFO - Processing support query for user voice_travel-demo-room
+2025-12-13 23:17:24,184 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-13 23:17:24,183 - support_trip - INFO - Processing support query for user voice_travel-demo-room
+2025-12-13 23:17:24,184 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-13 23:17:30,357 - support_trip - INFO - Successfully handled support query for user voice_travel-demo-room
+2025-12-13 23:17:30,357 - support_trip - INFO - Successfully handled support query for user voice_travel-demo-room
+2025-12-13 23:20:24,329 - support_trip - INFO - Processing support query for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:20:24,331 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-13 23:20:33,489 - support_trip - INFO - Successfully handled support query for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:21:05,699 - support_trip - INFO - Processing support query for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:21:05,700 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-13 23:21:09,507 - support_trip - INFO - Successfully handled support query for user 54c4c6cf-e508-48f9-9132-a79721719ca7

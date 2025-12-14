@@ -391,3 +391,178 @@
 2025-12-13 18:50:46,765 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy mubai to hyd feb11th to 13th morning 2 $1500
 2025-12-13 18:51:58,286 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy option1 in flights and option 2 in hotels
 2025-12-13 18:53:23,983 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy give me selected japan flight and hotel options
+2025-12-13 18:58:42,600 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 18:58:43,620 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 18:58:43,620 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 18:58:43,620 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 18:58:43,658 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 20:48:15,855 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 20:48:16,872 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 20:48:16,873 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 20:48:16,873 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 20:48:17,024 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 20:50:41,005 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 20:50:41,953 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 20:50:41,953 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 20:50:41,953 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 20:50:42,035 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 20:50:53,370 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 20:50:53,370 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 20:50:54,359 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 20:50:54,360 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 20:50:54,359 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 20:50:54,360 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 20:50:54,360 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 20:50:54,360 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 20:50:54,393 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 20:50:54,393 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 21:27:00,269 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 21:27:01,421 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 21:27:01,421 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 21:27:01,422 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 21:27:01,489 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 21:32:10,915 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 21:32:10,915 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 21:32:12,008 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 21:32:12,008 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 21:32:12,008 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 21:32:12,009 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 21:32:12,008 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 21:32:12,009 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 21:32:12,062 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 21:32:12,062 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 21:34:46,313 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 21:34:47,281 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 21:34:47,281 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 21:34:47,281 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 21:34:47,325 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:30:37,916 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:30:38,263 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:35:28,967 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:35:28,967 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:35:30,072 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:35:30,073 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:35:30,072 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:35:30,073 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:35:30,073 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:35:30,073 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:35:30,226 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:35:30,226 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:37:11,786 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:37:24,703 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:38:35,933 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:38:35,933 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:38:36,824 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:38:36,824 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:38:36,824 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:38:36,824 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:38:36,824 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:38:36,824 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:38:36,865 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:38:36,865 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:38:58,832 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:38:58,832 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:38:59,776 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:38:59,776 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:38:59,776 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:38:59,776 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:38:59,776 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:38:59,812 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:38:59,776 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:38:59,812 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:41:05,142 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:41:05,142 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:41:06,136 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:41:06,136 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:41:06,137 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:41:06,441 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:41:07,217 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:41:07,217 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:41:07,217 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:41:07,219 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:52:21,099 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:52:22,172 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:52:22,173 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:52:22,173 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:52:22,219 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:54:49,147 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:54:50,186 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:54:50,186 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:54:50,187 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:54:50,229 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:55:13,408 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:55:13,408 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 22:55:14,431 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:55:14,431 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:55:14,431 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 22:55:14,432 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:55:14,431 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 22:55:14,432 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 22:55:14,466 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 22:55:14,466 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 23:00:36,927 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy $1500
+2025-12-13 23:00:36,927 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy $1500
+2025-12-13 23:03:14,088 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy I'll see you all in a couple days.
+2025-12-13 23:03:14,088 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy I'll see you all in a couple days.
+2025-12-13 23:03:22,749 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 23:03:23,805 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 23:03:23,805 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 23:03:23,806 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 23:03:23,816 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 23:08:42,725 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 23:08:43,958 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 23:08:43,958 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 23:08:43,959 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 23:08:44,016 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 23:09:08,144 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 23:09:08,144 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 23:09:09,100 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 23:09:09,100 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 23:09:09,100 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 23:09:09,100 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 23:09:09,100 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 23:09:09,100 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 23:09:09,144 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 23:09:09,144 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 23:13:00,297 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy two travelers
+2025-12-13 23:13:00,297 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy two travelers
+2025-12-13 23:13:50,491 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy under $1,500.
+2025-12-13 23:13:50,491 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy under $1,500.
+2025-12-13 23:15:39,274 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy I want option 1.
+2025-12-13 23:15:39,274 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy I want option 1.
+2025-12-13 23:17:11,428 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy tokyo to okasa Feb 10th to 12th evening 2 $1500
+2025-12-13 23:19:09,153 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy option 1
+2025-12-13 23:41:47,529 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 23:41:48,576 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 23:41:48,576 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 23:41:48,577 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 23:41:48,621 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 23:43:53,698 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 23:43:54,708 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 23:43:54,708 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 23:43:54,708 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 23:43:54,748 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 23:47:11,367 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 23:47:12,373 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 23:47:12,373 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 23:47:12,373 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 23:47:12,413 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 23:57:43,864 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 23:57:44,849 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 23:57:44,849 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 23:57:44,850 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 23:57:44,898 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 23:58:07,923 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 23:58:07,923 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-13 23:58:08,928 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 23:58:08,928 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 23:58:08,928 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-13 23:58:08,929 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 23:58:08,928 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-13 23:58:08,929 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-13 23:58:08,965 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-13 23:58:08,965 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-14 00:00:33,268 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy feb 10th to 12th tokyo to okasa 2 morning $1500
+2025-12-14 00:01:39,595 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy tomorrow morning around $1500
+2025-12-14 00:01:39,595 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy tomorrow morning around $1500
+2025-12-14 00:01:59,091 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy option1 in flights and option2 in hotels

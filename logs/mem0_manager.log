@@ -852,3 +852,370 @@
 2025-12-13 18:53:16,836 - mem0_manager - INFO - Retrieved 8 memories for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
 2025-12-13 18:53:16,837 - mem0_manager - INFO - Retrieved 8 memories for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
 2025-12-13 18:53:47,561 - mem0_manager - INFO - Added memory for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f with embedding
+2025-12-13 18:58:40,916 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 18:58:42,599 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 18:58:42,600 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 18:59:17,601 - mem0_manager - INFO - Retrieved 0 memories for user ba876842-281a-4d3b-bb1b-e331c43369da
+2025-12-13 18:59:26,585 - mem0_manager - INFO - Retrieved 0 memories for user ba876842-281a-4d3b-bb1b-e331c43369da
+2025-12-13 18:59:26,586 - mem0_manager - INFO - Retrieved 0 memories for user ba876842-281a-4d3b-bb1b-e331c43369da
+2025-12-13 18:59:34,118 - mem0_manager - INFO - Retrieved 0 memories for user ba876842-281a-4d3b-bb1b-e331c43369da
+2025-12-13 18:59:38,567 - mem0_manager - INFO - Retrieved 0 memories for user ba876842-281a-4d3b-bb1b-e331c43369da
+2025-12-13 19:00:24,553 - mem0_manager - INFO - Retrieved 0 memories for user ba876842-281a-4d3b-bb1b-e331c43369da
+2025-12-13 19:00:27,772 - mem0_manager - INFO - Retrieved 0 memories for user ba876842-281a-4d3b-bb1b-e331c43369da
+2025-12-13 19:00:27,772 - mem0_manager - INFO - Retrieved 0 memories for user ba876842-281a-4d3b-bb1b-e331c43369da
+2025-12-13 20:48:14,279 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 20:48:15,854 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 20:48:15,855 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 20:50:39,244 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 20:50:41,005 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 20:50:41,005 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 20:50:51,672 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 20:50:51,672 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 20:50:53,370 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 20:50:53,370 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 20:50:53,370 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 20:50:53,370 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 21:26:58,476 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 21:27:00,269 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 21:27:00,269 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 21:28:38,162 - mem0_manager - INFO - Retrieved 0 memories for user 9d62925a-cb5d-43b1-88ab-c719e57df88d
+2025-12-13 21:28:47,122 - mem0_manager - ERROR - Error generating embedding: [Errno 32] Broken pipe
+2025-12-13 21:28:47,126 - mem0_manager - INFO - Added memory for user 9d62925a-cb5d-43b1-88ab-c719e57df88d with embedding
+2025-12-13 21:32:08,947 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 21:32:08,947 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 21:32:10,914 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 21:32:10,914 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 21:32:10,914 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 21:32:10,914 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 21:34:44,841 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 21:34:46,312 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 21:34:46,312 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:30:36,543 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:30:36,543 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:30:37,894 - mem0_manager - ERROR - Failed to initialize memory manager: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-12-13 22:30:38,263 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 22:30:38,263 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:35:27,059 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:35:27,059 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:35:28,965 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 22:35:28,967 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:35:28,965 - mem0_manager - INFO - Loaded 63 cached embeddings
+2025-12-13 22:35:28,967 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:35:42,170 - mem0_manager - INFO - Retrieved 0 memories for user voice_travel-demo-room
+2025-12-13 22:35:42,170 - mem0_manager - INFO - Retrieved 0 memories for user voice_travel-demo-room
+2025-12-13 22:35:52,653 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 22:35:52,653 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 22:36:36,527 - mem0_manager - INFO - Retrieved 1 memories for user voice_travel-demo-room
+2025-12-13 22:36:36,527 - mem0_manager - INFO - Retrieved 1 memories for user voice_travel-demo-room
+2025-12-13 22:36:38,127 - mem0_manager - INFO - Retrieved 1 memories for user voice_travel-demo-room
+2025-12-13 22:36:38,127 - mem0_manager - INFO - Retrieved 1 memories for user voice_travel-demo-room
+2025-12-13 22:37:10,700 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:37:11,785 - mem0_manager - ERROR - Failed to initialize memory manager: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-12-13 22:37:23,636 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:37:24,702 - mem0_manager - ERROR - Failed to initialize memory manager: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-12-13 22:37:47,507 - mem0_manager - INFO - Retrieved 1 memories for user voice_travel-demo-room
+2025-12-13 22:37:47,507 - mem0_manager - INFO - Retrieved 1 memories for user voice_travel-demo-room
+2025-12-13 22:37:50,098 - mem0_manager - INFO - Retrieved 1 memories for user voice_travel-demo-room
+2025-12-13 22:37:50,098 - mem0_manager - INFO - Retrieved 1 memories for user voice_travel-demo-room
+2025-12-13 22:38:34,620 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:38:34,620 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:38:35,932 - mem0_manager - INFO - Loaded 64 cached embeddings
+2025-12-13 22:38:35,933 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:38:35,932 - mem0_manager - INFO - Loaded 64 cached embeddings
+2025-12-13 22:38:35,933 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:38:57,594 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:38:57,594 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:38:58,832 - mem0_manager - INFO - Loaded 64 cached embeddings
+2025-12-13 22:38:58,832 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:38:58,832 - mem0_manager - INFO - Loaded 64 cached embeddings
+2025-12-13 22:38:58,832 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:41:03,559 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:41:03,559 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:41:05,141 - mem0_manager - INFO - Loaded 64 cached embeddings
+2025-12-13 22:41:05,141 - mem0_manager - INFO - Loaded 64 cached embeddings
+2025-12-13 22:41:05,142 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:41:05,142 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:52:19,462 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:52:21,098 - mem0_manager - INFO - Loaded 64 cached embeddings
+2025-12-13 22:52:21,099 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:54:47,258 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:54:49,147 - mem0_manager - INFO - Loaded 64 cached embeddings
+2025-12-13 22:54:49,147 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:55:11,825 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:55:11,825 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 22:55:13,407 - mem0_manager - INFO - Loaded 64 cached embeddings
+2025-12-13 22:55:13,408 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:55:13,407 - mem0_manager - INFO - Loaded 64 cached embeddings
+2025-12-13 22:55:13,408 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 22:56:00,180 - mem0_manager - INFO - Retrieved 1 memories for user voice_travel-demo-room
+2025-12-13 22:56:00,180 - mem0_manager - INFO - Retrieved 1 memories for user voice_travel-demo-room
+2025-12-13 22:56:08,337 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 22:56:08,337 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 22:56:26,228 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:56:26,228 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:56:26,907 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:56:26,907 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:57:34,932 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:57:34,932 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:57:37,773 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:57:37,773 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:58:47,599 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:58:47,599 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:58:48,355 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:58:48,356 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:58:48,355 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:58:48,356 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:13,834 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:13,834 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:15,568 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:15,571 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:15,568 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:15,571 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:25,749 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:25,749 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:28,524 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:28,525 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:28,524 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:28,525 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:39,052 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:39,052 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:40,776 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:40,776 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:40,776 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:40,776 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:49,076 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:49,076 - mem0_manager - INFO - Retrieved 2 memories for user voice_travel-demo-room
+2025-12-13 22:59:54,488 - mem0_manager - INFO - Retrieved 0 memories for user de12d067-3064-4190-bd1d-ed56889aeae1
+2025-12-13 22:59:57,353 - mem0_manager - INFO - Retrieved 0 memories for user de12d067-3064-4190-bd1d-ed56889aeae1
+2025-12-13 22:59:59,337 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 22:59:59,337 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:00:02,585 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:00:02,585 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:00:03,585 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:00:03,586 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:00:03,585 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:00:03,586 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:00:29,262 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:00:29,262 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:00:30,342 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:00:30,343 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:00:30,342 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:00:30,343 - mem0_manager - INFO - Retrieved 3 memories for user voice_travel-demo-room
+2025-12-13 23:01:12,930 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:01:12,930 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:03:01,378 - mem0_manager - INFO - Retrieved 4 memories for user voice_travel-demo-room
+2025-12-13 23:03:01,378 - mem0_manager - INFO - Retrieved 4 memories for user voice_travel-demo-room
+2025-12-13 23:03:08,232 - mem0_manager - INFO - Retrieved 4 memories for user voice_travel-demo-room
+2025-12-13 23:03:08,233 - mem0_manager - INFO - Retrieved 4 memories for user voice_travel-demo-room
+2025-12-13 23:03:08,232 - mem0_manager - INFO - Retrieved 4 memories for user voice_travel-demo-room
+2025-12-13 23:03:08,233 - mem0_manager - INFO - Retrieved 4 memories for user voice_travel-demo-room
+2025-12-13 23:03:21,307 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 23:03:22,748 - mem0_manager - INFO - Loaded 66 cached embeddings
+2025-12-13 23:03:22,749 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 23:03:49,871 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:03:49,871 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:08:41,129 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 23:08:42,725 - mem0_manager - INFO - Loaded 67 cached embeddings
+2025-12-13 23:08:42,725 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 23:09:06,176 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 23:09:06,176 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 23:09:08,140 - mem0_manager - INFO - Loaded 67 cached embeddings
+2025-12-13 23:09:08,143 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 23:09:08,140 - mem0_manager - INFO - Loaded 67 cached embeddings
+2025-12-13 23:09:08,143 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 23:09:32,180 - mem0_manager - INFO - Retrieved 5 memories for user voice_travel-demo-room
+2025-12-13 23:09:32,180 - mem0_manager - INFO - Retrieved 5 memories for user voice_travel-demo-room
+2025-12-13 23:09:41,724 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:09:41,724 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:10:03,746 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:10:03,746 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:10:04,841 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:10:04,841 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:10:53,933 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:10:53,933 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:10:56,821 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:10:56,821 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:11:48,895 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:11:48,895 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:11:49,534 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:11:49,535 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:11:49,534 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:11:49,535 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:16,623 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:16,623 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:17,969 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:17,969 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:17,969 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:17,969 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:27,509 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:27,509 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:29,942 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:29,943 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:29,942 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:29,943 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:38,434 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:38,434 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:41,705 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:41,706 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:41,705 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:41,706 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:49,831 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:49,831 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:50,647 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:50,648 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:50,647 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:12:50,648 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:13:37,619 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:13:37,619 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:13:41,122 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:13:41,122 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:13:43,851 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:13:43,852 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:13:43,851 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:13:43,852 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:14:24,943 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:14:24,943 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:14:41,419 - mem0_manager - INFO - Retrieved 0 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:14:45,196 - mem0_manager - INFO - Retrieved 0 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:15:21,695 - mem0_manager - INFO - Retrieved 0 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:15:24,149 - mem0_manager - INFO - Retrieved 0 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:15:30,766 - mem0_manager - INFO - Retrieved 8 memories for user voice_travel-demo-room
+2025-12-13 23:15:30,766 - mem0_manager - INFO - Retrieved 8 memories for user voice_travel-demo-room
+2025-12-13 23:15:32,980 - mem0_manager - INFO - Retrieved 8 memories for user voice_travel-demo-room
+2025-12-13 23:15:32,980 - mem0_manager - INFO - Retrieved 8 memories for user voice_travel-demo-room
+2025-12-13 23:15:32,980 - mem0_manager - INFO - Retrieved 8 memories for user voice_travel-demo-room
+2025-12-13 23:15:32,980 - mem0_manager - INFO - Retrieved 8 memories for user voice_travel-demo-room
+2025-12-13 23:16:05,371 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:16:05,371 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:16:16,280 - mem0_manager - INFO - Retrieved 0 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:16:18,058 - mem0_manager - INFO - Retrieved 0 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:16:18,058 - mem0_manager - INFO - Retrieved 0 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:16:39,627 - mem0_manager - INFO - Retrieved 9 memories for user voice_travel-demo-room
+2025-12-13 23:16:39,627 - mem0_manager - INFO - Retrieved 9 memories for user voice_travel-demo-room
+2025-12-13 23:16:41,394 - mem0_manager - INFO - Retrieved 9 memories for user voice_travel-demo-room
+2025-12-13 23:16:41,394 - mem0_manager - INFO - Retrieved 9 memories for user voice_travel-demo-room
+2025-12-13 23:16:50,083 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:16:50,083 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:17:04,029 - mem0_manager - INFO - Retrieved 0 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:17:06,160 - mem0_manager - INFO - Retrieved 0 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:17:06,161 - mem0_manager - INFO - Retrieved 0 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:17:23,042 - mem0_manager - INFO - Retrieved 10 memories for user voice_travel-demo-room
+2025-12-13 23:17:23,042 - mem0_manager - INFO - Retrieved 10 memories for user voice_travel-demo-room
+2025-12-13 23:17:24,184 - mem0_manager - INFO - Retrieved 10 memories for user voice_travel-demo-room
+2025-12-13 23:17:24,184 - mem0_manager - INFO - Retrieved 10 memories for user voice_travel-demo-room
+2025-12-13 23:17:30,357 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:17:30,357 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:17:49,548 - mem0_manager - INFO - Added memory for user 54c4c6cf-e508-48f9-9132-a79721719ca7 with embedding
+2025-12-13 23:18:16,472 - mem0_manager - INFO - Retrieved 11 memories for user voice_travel-demo-room
+2025-12-13 23:18:16,472 - mem0_manager - INFO - Retrieved 11 memories for user voice_travel-demo-room
+2025-12-13 23:18:59,908 - mem0_manager - INFO - Retrieved 1 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:19:01,304 - mem0_manager - INFO - Retrieved 1 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:19:01,305 - mem0_manager - INFO - Retrieved 1 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:19:07,477 - mem0_manager - INFO - Retrieved 11 memories for user voice_travel-demo-room
+2025-12-13 23:19:07,477 - mem0_manager - INFO - Retrieved 11 memories for user voice_travel-demo-room
+2025-12-13 23:19:16,553 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:19:16,553 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:19:27,141 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:19:27,141 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:19:29,076 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:19:29,076 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:19:39,868 - mem0_manager - INFO - Added memory for user 54c4c6cf-e508-48f9-9132-a79721719ca7 with embedding
+2025-12-13 23:20:22,434 - mem0_manager - INFO - Retrieved 2 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:20:24,331 - mem0_manager - INFO - Retrieved 2 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:20:33,488 - mem0_manager - INFO - Added memory for user 54c4c6cf-e508-48f9-9132-a79721719ca7 with embedding
+2025-12-13 23:20:42,502 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:20:42,502 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:20:50,694 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:20:50,694 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:21:03,956 - mem0_manager - INFO - Retrieved 3 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:21:05,700 - mem0_manager - INFO - Retrieved 3 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:21:09,507 - mem0_manager - INFO - Added memory for user 54c4c6cf-e508-48f9-9132-a79721719ca7 with embedding
+2025-12-13 23:21:39,095 - mem0_manager - INFO - Retrieved 4 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:21:41,306 - mem0_manager - INFO - Retrieved 4 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:22:08,249 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:22:08,249 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:22:23,229 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:22:23,230 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:22:23,229 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:22:23,230 - mem0_manager - INFO - Retrieved 12 memories for user voice_travel-demo-room
+2025-12-13 23:23:04,197 - mem0_manager - INFO - Retrieved 4 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:23:04,947 - mem0_manager - INFO - Retrieved 4 memories for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:41:46,029 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 23:41:47,529 - mem0_manager - INFO - Loaded 69 cached embeddings
+2025-12-13 23:41:47,529 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 23:43:52,081 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 23:43:53,697 - mem0_manager - INFO - Loaded 69 cached embeddings
+2025-12-13 23:43:53,698 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 23:46:01,720 - mem0_manager - INFO - Retrieved 0 memories for user 087d316c-cb2d-42f3-ad15-b35b12651daa
+2025-12-13 23:46:05,127 - mem0_manager - INFO - Retrieved 0 memories for user 087d316c-cb2d-42f3-ad15-b35b12651daa
+2025-12-13 23:47:09,912 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 23:47:11,366 - mem0_manager - INFO - Loaded 69 cached embeddings
+2025-12-13 23:47:11,366 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 23:57:42,060 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 23:57:43,862 - mem0_manager - INFO - Loaded 69 cached embeddings
+2025-12-13 23:57:43,863 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 23:58:06,063 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 23:58:06,063 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-13 23:58:07,922 - mem0_manager - INFO - Loaded 69 cached embeddings
+2025-12-13 23:58:07,923 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 23:58:07,922 - mem0_manager - INFO - Loaded 69 cached embeddings
+2025-12-13 23:58:07,923 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-13 23:58:24,109 - mem0_manager - INFO - Retrieved 5 memories for user voice_travel-demo-room
+2025-12-13 23:58:24,109 - mem0_manager - INFO - Retrieved 5 memories for user voice_travel-demo-room
+2025-12-13 23:58:38,698 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:58:38,698 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:58:40,810 - mem0_manager - INFO - Retrieved 0 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:58:43,693 - mem0_manager - INFO - Retrieved 0 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:58:49,464 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:58:49,464 - mem0_manager - INFO - Retrieved 6 memories for user voice_travel-demo-room
+2025-12-13 23:58:53,932 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:58:53,932 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-13 23:59:10,900 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:59:10,900 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:59:11,572 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:59:11,572 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:59:17,401 - mem0_manager - INFO - Retrieved 0 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:59:20,413 - mem0_manager - INFO - Retrieved 0 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:59:56,965 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:59:56,965 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:59:57,619 - mem0_manager - INFO - Retrieved 0 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:59:58,997 - mem0_manager - INFO - Retrieved 0 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:59:58,998 - mem0_manager - INFO - Retrieved 0 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:59:59,379 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-13 23:59:59,379 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:00:27,147 - mem0_manager - INFO - Retrieved 0 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:00:28,969 - mem0_manager - INFO - Retrieved 0 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:00:28,969 - mem0_manager - INFO - Retrieved 0 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:00:44,004 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:00:44,004 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:00:44,713 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:00:44,714 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:00:44,713 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:00:44,714 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:11,659 - mem0_manager - INFO - Added memory for user a6753bfd-642c-453f-b516-9f9ee4b6528b with embedding
+2025-12-14 00:01:19,074 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:19,074 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:21,670 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:21,670 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:21,670 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:21,670 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:32,328 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:32,328 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:33,167 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:33,168 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:33,167 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:33,168 - mem0_manager - INFO - Retrieved 7 memories for user voice_travel-demo-room
+2025-12-14 00:01:50,485 - mem0_manager - INFO - Retrieved 1 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:01:53,841 - mem0_manager - INFO - Retrieved 1 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:01:53,842 - mem0_manager - INFO - Retrieved 1 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:02:19,763 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-14 00:02:19,763 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-14 00:02:33,182 - mem0_manager - INFO - Added memory for user a6753bfd-642c-453f-b516-9f9ee4b6528b with embedding
+2025-12-14 00:02:51,288 - mem0_manager - INFO - Retrieved 2 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:02:55,430 - mem0_manager - INFO - Retrieved 2 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:03:23,538 - mem0_manager - INFO - Retrieved 8 memories for user voice_travel-demo-room
+2025-12-14 00:03:23,538 - mem0_manager - INFO - Retrieved 8 memories for user voice_travel-demo-room
+2025-12-14 00:03:29,350 - mem0_manager - INFO - Retrieved 2 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:03:34,922 - mem0_manager - INFO - Retrieved 2 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:03:38,953 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-14 00:03:38,953 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding

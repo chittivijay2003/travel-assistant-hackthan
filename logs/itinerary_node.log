@@ -160,3 +160,64 @@
 2025-12-13 18:46:44,194 - itinerary_node - INFO - Successfully generated itinerary for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
 2025-12-13 18:49:33,283 - itinerary_node - INFO - Generating itinerary for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
 2025-12-13 18:49:56,957 - itinerary_node - INFO - Successfully generated itinerary for user 2f7bb850-b48d-42cd-bba0-7bebb846b25f
+2025-12-13 18:59:38,566 - itinerary_node - INFO - Generating itinerary for user ba876842-281a-4d3b-bb1b-e331c43369da
+2025-12-13 19:00:04,954 - itinerary_node - INFO - Successfully generated itinerary for user ba876842-281a-4d3b-bb1b-e331c43369da
+2025-12-13 22:36:38,127 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 22:36:38,127 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 22:37:12,744 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 22:37:12,744 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 22:37:50,097 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 22:37:50,097 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 22:38:16,220 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 22:56:26,906 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 22:56:26,906 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 22:56:56,214 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 22:56:56,214 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 22:57:37,772 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 22:57:37,772 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 22:58:06,941 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 22:58:06,941 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 22:59:57,353 - itinerary_node - INFO - Generating itinerary for user de12d067-3064-4190-bd1d-ed56889aeae1
+2025-12-13 23:00:29,761 - itinerary_node - INFO - Successfully generated itinerary for user de12d067-3064-4190-bd1d-ed56889aeae1
+2025-12-13 23:10:04,840 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 23:10:04,840 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 23:10:34,812 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 23:10:34,812 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 23:10:56,820 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 23:10:56,820 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 23:11:25,198 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 23:11:25,198 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 23:14:45,195 - itinerary_node - INFO - Generating itinerary for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:15:11,046 - itinerary_node - INFO - Successfully generated itinerary for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:15:24,149 - itinerary_node - INFO - Generating itinerary for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:15:53,391 - itinerary_node - INFO - Successfully generated itinerary for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:19:29,075 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 23:19:29,075 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 23:20:05,651 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 23:20:05,651 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 23:20:50,693 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 23:20:50,693 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 23:21:20,860 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 23:21:20,860 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 23:21:41,305 - itinerary_node - INFO - Generating itinerary for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:22:03,955 - itinerary_node - INFO - Successfully generated itinerary for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:23:04,947 - itinerary_node - INFO - Generating itinerary for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:23:27,631 - itinerary_node - INFO - Successfully generated itinerary for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-13 23:46:05,127 - itinerary_node - INFO - Generating itinerary for user 087d316c-cb2d-42f3-ad15-b35b12651daa
+2025-12-13 23:46:34,789 - itinerary_node - INFO - Successfully generated itinerary for user 087d316c-cb2d-42f3-ad15-b35b12651daa
+2025-12-13 23:58:43,693 - itinerary_node - INFO - Generating itinerary for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:59:09,764 - itinerary_node - INFO - Successfully generated itinerary for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:59:11,572 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 23:59:11,572 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 23:59:20,413 - itinerary_node - INFO - Generating itinerary for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:59:40,781 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 23:59:40,781 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-13 23:59:49,041 - itinerary_node - INFO - Successfully generated itinerary for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-13 23:59:59,378 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-13 23:59:59,378 - itinerary_node - INFO - Generating itinerary for user voice_travel-demo-room
+2025-12-14 00:00:24,801 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-14 00:00:24,801 - itinerary_node - INFO - Successfully generated itinerary for user voice_travel-demo-room
+2025-12-14 00:02:55,430 - itinerary_node - INFO - Generating itinerary for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:03:24,358 - itinerary_node - INFO - Successfully generated itinerary for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:03:34,921 - itinerary_node - INFO - Generating itinerary for user a6753bfd-642c-453f-b516-9f9ee4b6528b
+2025-12-14 00:03:57,947 - itinerary_node - INFO - Successfully generated itinerary for user a6753bfd-642c-453f-b516-9f9ee4b6528b
