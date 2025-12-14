@@ -49,8 +49,11 @@ with st.sidebar:
     This AI-powered travel assistant uses:
     - **LangGraph** for workflow orchestration
     - **LangChain** for LLM interactions
-    - **all-MiniLM-L6-v2** for semantic memory search
-    - **RAG** for policy compliance (optional)
+    - **Multi-Model Orchestration** (Gemini 2.5 Flash/Pro)
+    - **LangFuse** for LLM observability & tracing
+    - **NeMo Guardrails** for input validation & safety
+    - **Mem0** with all-MiniLM-L6-v2 for semantic memory
+    - **RAG (FAISS)** for policy compliance retrieval
     - **Google Gemini** for intelligent responses
     """
     )
@@ -136,7 +139,8 @@ st.divider()
 st.markdown(
     """
     <div style='text-align: center'>
-        <p>Built with LangGraph, LangChain, and Streamlit | Powered by Google Gemini</p>
+        <p><strong>Built with:</strong> LangGraph • LangChain • Streamlit • LangFuse • NeMo Guardrails • Mem0 • FAISS</p>
+        <p><strong>Powered by:</strong> Google Gemini 2.5 (Multi-Model Orchestration)</p>
     </div>
     """,
     unsafe_allow_html=True,
