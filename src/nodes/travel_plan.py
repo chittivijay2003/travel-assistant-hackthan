@@ -8,6 +8,10 @@ from src.utils.rag_manager import RAGManager
 from src.config import Config
 from src.utils.logger import setup_logger
 from src.utils.multimodel_selector import MultiModelSelector
+from src.utils.langfuse_manager import (
+    get_langfuse_callback_handler,
+    is_langfuse_enabled,
+)
 
 logger = setup_logger("travel_plan")
 
@@ -351,13 +355,31 @@ Provide city suggestions based on the destination discussed in the conversation.
                     conversation_context_str = "No previous conversation."
 
                 try:
-                    city_chain = city_suggestion_prompt | self.llm
-                    city_result = city_chain.invoke(
-                        {
-                            "conversation_context": conversation_context_str,
-                            "user_request": user_input,
-                        }
+                    # Get LangFuse callback handler for token tracking
+                    langfuse_handler = get_langfuse_callback_handler(
+                        trace_name=f"travel_plan_city_suggestions_{state.get('user_id', 'unknown')}",
+                        user_id=state.get("user_id"),
+                        session_id=state.get("user_id"),
                     )
+
+                    city_chain = city_suggestion_prompt | self.llm
+                    if langfuse_handler:
+                        city_result = city_chain.invoke(
+                            {
+                                "conversation_context": conversation_context_str,
+                                "user_request": user_input,
+                            },
+                            config={"callbacks": [langfuse_handler]},
+                        )
+                        # Flush to ensure trace is sent
+                        langfuse_handler.flush()
+                    else:
+                        city_result = city_chain.invoke(
+                            {
+                                "conversation_context": conversation_context_str,
+                                "user_request": user_input,
+                            }
+                        )
 
                     state["response"] = city_result.content.strip()
                     state["error"] = None
@@ -385,10 +407,25 @@ Provide city suggestions based on the destination discussed in the conversation.
             logger.info(f"Combined user inputs for analysis: {combined_user_input}")
 
             # Check for missing information
-            info_chain = self.info_gathering_prompt | self.llm
-            info_result = info_chain.invoke(
-                {"user_request": combined_user_input, "user_history": full_context}
+            # Get LangFuse callback handler for token tracking
+            langfuse_handler = get_langfuse_callback_handler(
+                trace_name=f"travel_plan_info_gathering_{state.get('user_id', 'unknown')}",
+                user_id=state.get("user_id"),
+                session_id=state.get("user_id"),
             )
+
+            info_chain = self.info_gathering_prompt | self.llm
+            if langfuse_handler:
+                info_result = info_chain.invoke(
+                    {"user_request": combined_user_input, "user_history": full_context},
+                    config={"callbacks": [langfuse_handler]},
+                )
+                # Flush to ensure trace is sent
+                langfuse_handler.flush()
+            else:
+                info_result = info_chain.invoke(
+                    {"user_request": combined_user_input, "user_history": full_context}
+                )
 
             missing_info = info_result.content.strip()
 
@@ -457,16 +494,37 @@ Provide city suggestions based on the destination discussed in the conversation.
                 conversation_context_str = "No previous conversation."
 
             # Generate travel plan
-            plan_chain = self.travel_plan_prompt | self.llm
-            plan_result = plan_chain.invoke(
-                {
-                    "policy_context": policy_context,
-                    "user_preferences": user_preferences,
-                    "user_selections": user_selections,
-                    "conversation_context": conversation_context_str,
-                    "user_request": user_input,
-                }
+            # Get LangFuse callback handler for token tracking
+            langfuse_handler = get_langfuse_callback_handler(
+                trace_name=f"travel_plan_generation_{state.get('user_id', 'unknown')}",
+                user_id=state.get("user_id"),
+                session_id=state.get("user_id"),
             )
+
+            plan_chain = self.travel_plan_prompt | self.llm
+            if langfuse_handler:
+                plan_result = plan_chain.invoke(
+                    {
+                        "policy_context": policy_context,
+                        "user_preferences": user_preferences,
+                        "user_selections": user_selections,
+                        "conversation_context": conversation_context_str,
+                        "user_request": user_input,
+                    },
+                    config={"callbacks": [langfuse_handler]},
+                )
+                # Flush to ensure trace is sent
+                langfuse_handler.flush()
+            else:
+                plan_result = plan_chain.invoke(
+                    {
+                        "policy_context": policy_context,
+                        "user_preferences": user_preferences,
+                        "user_selections": user_selections,
+                        "conversation_context": conversation_context_str,
+                        "user_request": user_input,
+                    }
+                )
 
             # DEBUG: Check what LLM returned
             logger.info(f"[DEBUG] plan_result type: {type(plan_result)}")

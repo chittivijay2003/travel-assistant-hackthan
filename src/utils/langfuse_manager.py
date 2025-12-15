@@ -75,6 +75,55 @@ def is_langfuse_enabled() -> bool:
     return _langfuse_enabled
 
 
+def get_langfuse_callback_handler(
+    trace_name: str = None, user_id: str = None, session_id: str = None
+):
+    """
+    Get LangFuse callback handler for LangChain
+
+    This automatically tracks:
+    - Token counts (input/output)
+    - Latency
+    - Model parameters
+    - Costs
+
+    Usage:
+        from langchain.callbacks import CallbackManager
+        handler = get_langfuse_callback_handler("operation_name")
+        result = chain.invoke(input, config={"callbacks": [handler]})
+    """
+    # Ensure LangFuse is initialized first
+    if _langfuse_client is None:
+        initialize_langfuse()
+
+    if not is_langfuse_enabled():
+        return None
+
+    try:
+        from langfuse.callback import CallbackHandler
+
+        # Create handler with model pricing metadata
+        # Gemini pricing (as of Dec 2024):
+        # gemini-2.5-flash: $0.075 per 1M input, $0.30 per 1M output
+        # gemini-2.5-pro: $1.25 per 1M input, $5.00 per 1M output
+        handler = CallbackHandler(
+            trace_name=trace_name,
+            user_id=user_id,
+            session_id=session_id,
+            public_key=Config.LANGFUSE_PUBLIC_KEY,
+            secret_key=Config.LANGFUSE_SECRET_KEY,
+            host=Config.LANGFUSE_HOST,
+        )
+        logger.debug(f"Created LangFuse callback handler: {trace_name}")
+        return handler
+    except ImportError:
+        logger.warning("langfuse.callback.CallbackHandler not available")
+        return None
+    except Exception as e:
+        logger.warning(f"Failed to create LangFuse callback handler: {e}")
+        return None
+
+
 class LangFuseTracer:
     """Context manager for LangFuse tracing"""
 

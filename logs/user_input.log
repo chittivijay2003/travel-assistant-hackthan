@@ -1718,3 +1718,48 @@
 2025-12-14 00:03:29,350 - user_input - INFO - Loading user history for user a6753bfd-642c-453f-b516-9f9ee4b6528b
 2025-12-14 00:03:29,350 - user_input - INFO - Loaded 2 history items for user a6753bfd-642c-453f-b516-9f9ee4b6528b
 2025-12-14 00:03:29,350 - user_input - INFO - User input: what was my japan itinerary give it back
+2025-12-14 20:56:59,783 - user_input - INFO - Validating user input for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 20:57:06,647 - user_input - INFO - User input validated successfully for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 20:57:06,647 - user_input - INFO - Loading user history for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 20:57:06,647 - user_input - INFO - Loaded 0 history items for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 20:57:06,647 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-14 20:58:08,659 - user_input - INFO - Validating user input for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 20:58:08,709 - user_input - INFO - User input validated successfully for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 20:58:08,709 - user_input - INFO - Loading user history for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 20:58:08,710 - user_input - INFO - Loaded 1 history items for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 20:58:08,710 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-14 21:12:59,480 - user_input - INFO - Validating user input for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:13:05,447 - user_input - INFO - User input validated successfully for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:13:05,448 - user_input - INFO - Loading user history for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:13:05,448 - user_input - INFO - Loaded 0 history items for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:13:05,448 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-14 21:13:13,031 - user_input - INFO - Validating user input for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:13:13,050 - user_input - INFO - User input validated successfully for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:13:13,050 - user_input - INFO - Loading user history for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:13:13,050 - user_input - INFO - Loaded 1 history items for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:13:13,050 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-14 21:15:04,156 - user_input - INFO - Validating user input for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:15:04,195 - user_input - INFO - User input validated successfully for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:15:04,195 - user_input - INFO - Loading user history for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:15:04,196 - user_input - INFO - Loaded 1 history items for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:15:04,196 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-14 21:16:11,014 - user_input - INFO - Validating user input for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:16:11,030 - user_input - INFO - User input validated successfully for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:16:11,030 - user_input - INFO - Loading user history for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:16:11,031 - user_input - INFO - Loaded 1 history items for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:16:11,031 - user_input - INFO - User input: feb 10th to 12th morning tokyo to okasa 2 $1500
+2025-12-14 21:17:28,471 - user_input - INFO - Validating user input for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:17:28,490 - user_input - INFO - User input validated successfully for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:17:28,490 - user_input - INFO - Loading user history for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:17:28,491 - user_input - INFO - Loaded 2 history items for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:17:28,491 - user_input - INFO - User input: optionA in flights and option2 in hotels
+2025-12-14 21:18:24,328 - user_input - INFO - Validating user input for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:18:24,337 - user_input - INFO - User input validated successfully for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:18:24,337 - user_input - INFO - Loading user history for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:18:24,337 - user_input - INFO - Loaded 3 history items for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:18:24,337 - user_input - INFO - User input: Suggest a 3-day itinerary in India
+2025-12-14 21:20:07,652 - user_input - INFO - Validating user input for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:20:07,669 - user_input - INFO - User input validated successfully for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:20:07,669 - user_input - INFO - Loading user history for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:20:07,669 - user_input - INFO - Loaded 3 history items for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:20:07,669 - user_input - INFO - User input: give my japan itinerary which i selected

@@ -1219,3 +1219,37 @@
 2025-12-14 00:03:34,922 - mem0_manager - INFO - Retrieved 2 memories for user a6753bfd-642c-453f-b516-9f9ee4b6528b
 2025-12-14 00:03:38,953 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
 2025-12-14 00:03:38,953 - mem0_manager - INFO - Added memory for user voice_travel-demo-room with embedding
+2025-12-14 20:19:28,162 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-14 20:19:30,928 - mem0_manager - INFO - Loaded 73 cached embeddings
+2025-12-14 20:19:30,928 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-14 20:56:29,708 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-14 20:56:33,913 - mem0_manager - INFO - Loaded 73 cached embeddings
+2025-12-14 20:56:33,914 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-14 20:57:06,647 - mem0_manager - INFO - Retrieved 0 memories for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 20:57:10,017 - mem0_manager - INFO - Added memory for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a with embedding
+2025-12-14 20:58:08,709 - mem0_manager - INFO - Retrieved 1 memories for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 20:58:12,633 - mem0_manager - INFO - Retrieved 1 memories for user f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 21:12:47,687 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-14 21:12:52,280 - mem0_manager - INFO - Loaded 73 cached embeddings
+2025-12-14 21:12:52,281 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-14 21:13:05,448 - mem0_manager - INFO - Retrieved 0 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:13:09,510 - mem0_manager - INFO - Added memory for user c609ebef-b849-4fd3-be90-caf33ac179e3 with embedding
+2025-12-14 21:13:13,050 - mem0_manager - INFO - Retrieved 1 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:13:17,107 - mem0_manager - INFO - Retrieved 1 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:15:04,195 - mem0_manager - INFO - Retrieved 1 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:15:06,784 - mem0_manager - INFO - Retrieved 1 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:15:06,784 - mem0_manager - INFO - Retrieved 1 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:16:11,030 - mem0_manager - INFO - Retrieved 1 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:16:14,538 - mem0_manager - INFO - Retrieved 1 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:16:14,538 - mem0_manager - INFO - Retrieved 1 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:16:59,767 - mem0_manager - INFO - Added memory for user c609ebef-b849-4fd3-be90-caf33ac179e3 with embedding
+2025-12-14 21:17:28,490 - mem0_manager - INFO - Retrieved 2 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:17:31,346 - mem0_manager - INFO - Retrieved 2 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:17:31,346 - mem0_manager - INFO - Retrieved 2 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:18:11,385 - mem0_manager - INFO - Added memory for user c609ebef-b849-4fd3-be90-caf33ac179e3 with embedding
+2025-12-14 21:18:24,337 - mem0_manager - INFO - Retrieved 3 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:18:28,000 - mem0_manager - INFO - Retrieved 3 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:20:07,669 - mem0_manager - INFO - Retrieved 3 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:20:14,830 - mem0_manager - INFO - Retrieved 3 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:20:14,830 - mem0_manager - INFO - Retrieved 3 memories for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:20:55,721 - mem0_manager - INFO - Added memory for user c609ebef-b849-4fd3-be90-caf33ac179e3 with embedding

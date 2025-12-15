@@ -1330,5 +1330,54 @@
       "timestamp": "2025-12-13T23:21:09.502451",
       "id": "54c4c6cf-e508-48f9-9132-a79721719ca7_3"
     }
+  ],
+  "f4b5d1ae-0469-4d1a-b780-d3259c4ee84a": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-14T20:57:10.014762",
+      "id": "f4b5d1ae-0469-4d1a-b780-d3259c4ee84a_0"
+    }
+  ],
+  "c609ebef-b849-4fd3-be90-caf33ac179e3": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-14T21:13:09.505331",
+      "id": "c609ebef-b849-4fd3-be90-caf33ac179e3_0"
+    },
+    {
+      "memory": "Requested travel plan: feb 10th to 12th morning tokyo to okasa 2 $1500",
+      "content": "Requested travel plan: feb 10th to 12th morning tokyo to okasa 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-14T21:16:59.759134",
+      "id": "c609ebef-b849-4fd3-be90-caf33ac179e3_1"
+    },
+    {
+      "memory": "Requested travel plan: optionA in flights and option2 in hotels",
+      "content": "Requested travel plan: optionA in flights and option2 in hotels",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-14T21:18:11.377919",
+      "id": "c609ebef-b849-4fd3-be90-caf33ac179e3_2"
+    },
+    {
+      "memory": "Requested travel plan: give my japan itinerary which i selected",
+      "content": "Requested travel plan: give my japan itinerary which i selected",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-14T21:20:55.717349",
+      "id": "c609ebef-b849-4fd3-be90-caf33ac179e3_3"
+    }
   ]
 }

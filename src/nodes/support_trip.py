@@ -7,7 +7,11 @@ from src.utils.mem0_manager import Mem0Manager
 from src.utils.rag_manager import RAGManager
 from src.config import Config
 from src.utils.logger import setup_logger
-from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
+from src.utils.langfuse_manager import (
+    LangFuseTracer,
+    is_langfuse_enabled,
+    get_langfuse_callback_handler,
+)
 from src.utils.multimodel_selector import MultiModelSelector
 
 logger = setup_logger("support_trip")
@@ -168,19 +172,59 @@ Be specific, practical, and consider the user's preferences and current travel p
                     else "No selections available."
                 )
 
-                # Generate support response using Router pattern (fast)
-                chain = self.prompt | self.llm
-                result = chain.invoke(
-                    {
-                        "policy_context": policy_context,
-                        "user_travel_history": user_travel_history,
-                        "user_selections": user_selections,
-                        "conversation_context": conversation_context_str,
-                        "user_query": user_input,
-                    }
+                # Get LangFuse callback handler for token tracking
+                langfuse_handler = get_langfuse_callback_handler(
+                    trace_name=f"support_trip_{state.get('user_id', 'unknown')}",
+                    user_id=state.get("user_id"),
+                    session_id=state.get("user_id"),
                 )
 
+                # Generate support response using Router pattern (fast)
+                chain = self.prompt | self.llm
+
+                if langfuse_handler:
+                    result = chain.invoke(
+                        {
+                            "policy_context": policy_context,
+                            "user_travel_history": user_travel_history,
+                            "user_selections": user_selections,
+                            "conversation_context": conversation_context_str,
+                            "user_query": user_input,
+                        },
+                        config={"callbacks": [langfuse_handler]},
+                    )
+                    # Flush to ensure trace is sent
+                    langfuse_handler.flush()
+                else:
+                    result = chain.invoke(
+                        {
+                            "policy_context": policy_context,
+                            "user_travel_history": user_travel_history,
+                            "user_selections": user_selections,
+                            "conversation_context": conversation_context_str,
+                            "user_query": user_input,
+                        }
+                    )
+
                 support_response = result.content
+
+                # Extract token usage from response metadata (if available)
+                if tracer.trace and is_langfuse_enabled():
+                    if (
+                        hasattr(result, "response_metadata")
+                        and result.response_metadata
+                    ):
+                        usage = result.response_metadata.get("usage_metadata", {})
+                        if usage:
+                            tracer.metadata["input_tokens"] = usage.get(
+                                "prompt_token_count", 0
+                            )
+                            tracer.metadata["output_tokens"] = usage.get(
+                                "candidates_token_count", 0
+                            )
+                            tracer.metadata["total_tokens"] = usage.get(
+                                "total_token_count", 0
+                            )
 
                 state["response"] = support_response
                 state["error"] = None

@@ -5,7 +5,11 @@ from langchain.prompts import ChatPromptTemplate
 from src.nodes.state import GraphState, IntentType
 from src.config import Config
 from src.utils.logger import setup_logger
-from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
+from src.utils.langfuse_manager import (
+    LangFuseTracer,
+    is_langfuse_enabled,
+    get_langfuse_callback_handler,
+)
 from src.utils.multimodel_selector import MultiModelSelector
 
 logger = setup_logger("intent_classification")
@@ -135,14 +139,34 @@ Respond with ONLY the category name: information, itinerary, travel_plan, or sup
                     tracer.metadata["user_input"] = state["user_input"][:200]
                     tracer.metadata["history_length"] = len(conversation_history)
 
+                # Get LangFuse callback handler for automatic token tracking
+                langfuse_handler = get_langfuse_callback_handler(
+                    trace_name=f"intent_classification_{state.get('user_id', 'unknown')}",
+                    user_id=state.get("user_id"),
+                    session_id=state.get("user_id"),
+                )
+
                 # Get classification from LLM using LangChain chain (preserves context)
                 chain = self.prompt | self.llm
-                result = chain.invoke(
-                    {
-                        "user_input": state["user_input"],
-                        "conversation_history": history_text,
-                    }
-                )
+
+                # Invoke with callback handler to track tokens automatically
+                if langfuse_handler:
+                    result = chain.invoke(
+                        {
+                            "user_input": state["user_input"],
+                            "conversation_history": history_text,
+                        },
+                        config={"callbacks": [langfuse_handler]},
+                    )
+                    # Flush to ensure trace is sent
+                    langfuse_handler.flush()
+                else:
+                    result = chain.invoke(
+                        {
+                            "user_input": state["user_input"],
+                            "conversation_history": history_text,
+                        }
+                    )
 
                 # Extract intent from response
                 result_text = result.content
@@ -162,6 +186,23 @@ Respond with ONLY the category name: information, itinerary, travel_plan, or sup
                 if tracer.trace and is_langfuse_enabled():
                     tracer.metadata["classified_intent"] = intent.value
                     tracer.metadata["raw_response"] = intent_text
+
+                    # Try to extract token usage from response metadata (if available)
+                    if (
+                        hasattr(result, "response_metadata")
+                        and result.response_metadata
+                    ):
+                        usage = result.response_metadata.get("usage_metadata", {})
+                        if usage:
+                            tracer.metadata["input_tokens"] = usage.get(
+                                "prompt_token_count", 0
+                            )
+                            tracer.metadata["output_tokens"] = usage.get(
+                                "candidates_token_count", 0
+                            )
+                            tracer.metadata["total_tokens"] = usage.get(
+                                "total_token_count", 0
+                            )
 
                 state["intent"] = intent.value
                 state["error"] = None

@@ -6,7 +6,11 @@ from src.nodes.state import GraphState
 from src.utils.mem0_manager import Mem0Manager
 from src.config import Config
 from src.utils.logger import setup_logger
-from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
+from src.utils.langfuse_manager import (
+    LangFuseTracer,
+    is_langfuse_enabled,
+    get_langfuse_callback_handler,
+)
 from src.utils.multimodel_selector import MultiModelSelector
 
 logger = setup_logger("information_node")
@@ -122,14 +126,35 @@ Format the response in a clear, day-by-day structure.""",
 
                     # Regenerate itinerary with new preferences
                     chain = self.itinerary_prompt | self.llm
-                    result = chain.invoke(
-                        {
-                            "previous_itinerary": previous_itinerary,
-                            "new_preferences": user_input,
-                            "all_preferences": all_preferences,
-                            "user_input": user_input,
-                        }
+
+                    # Get LangFuse callback handler for token tracking
+                    langfuse_handler = get_langfuse_callback_handler(
+                        trace_name=f"information_update_itinerary_{user_id}",
+                        user_id=user_id,
+                        session_id=user_id,
                     )
+
+                    if langfuse_handler:
+                        result = chain.invoke(
+                            {
+                                "previous_itinerary": previous_itinerary,
+                                "new_preferences": user_input,
+                                "all_preferences": all_preferences,
+                                "user_input": user_input,
+                            },
+                            config={"callbacks": [langfuse_handler]},
+                        )
+                        # Flush to ensure trace is sent
+                        langfuse_handler.flush()
+                    else:
+                        result = chain.invoke(
+                            {
+                                "previous_itinerary": previous_itinerary,
+                                "new_preferences": user_input,
+                                "all_preferences": all_preferences,
+                                "user_input": user_input,
+                            }
+                        )
 
                     updated_itinerary = result.content
 

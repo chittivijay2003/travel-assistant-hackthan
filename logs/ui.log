@@ -333,3 +333,43 @@ Based on your confirmed travel plan from Tokyo to Osaka, your journey involve...
 2025-12-14 00:03:57,950 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Here is the comprehensive travel plan for your 3-day winter trekking trip to Yakushima Is...
 2025-12-14 00:03:57,951 - ui - INFO - [APP DEBUG] Response length: 5336
 2025-12-14 00:03:57,952 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 20:19:28,156 - ui - INFO - New session started: 8cc98cfb-7306-4ec4-87fa-babaf2095678
+2025-12-14 20:19:32,119 - ui - INFO - Travel Assistant Graph initialized
+2025-12-14 20:56:29,705 - ui - INFO - New session started: f4b5d1ae-0469-4d1a-b780-d3259c4ee84a
+2025-12-14 20:56:39,071 - ui - INFO - Travel Assistant Graph initialized
+2025-12-14 20:57:10,018 - ui - INFO - [APP DEBUG] Received response from graph: Thank you for sharing! I've noted that: I love trekking in the monsoon season
+
+This information will...
+2025-12-14 20:57:10,018 - ui - INFO - [APP DEBUG] Response length: 234
+2025-12-14 20:57:10,018 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 20:58:37,257 - ui - INFO - [APP DEBUG] Received response from graph: Of course! Based on your love for **trekking in the monsoon season**, I have crafted a specialized 3...
+2025-12-14 20:58:37,258 - ui - INFO - [APP DEBUG] Response length: 6001
+2025-12-14 20:58:37,258 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:12:47,686 - ui - INFO - New session started: c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:12:56,648 - ui - INFO - Travel Assistant Graph initialized
+2025-12-14 21:13:10,540 - ui - INFO - [APP DEBUG] Received response from graph: Thank you for sharing! I've noted that: I love trekking in the monsoon season
+
+This information will...
+2025-12-14 21:13:10,540 - ui - INFO - [APP DEBUG] Response length: 234
+2025-12-14 21:13:10,541 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:13:48,306 - ui - INFO - [APP DEBUG] Received response from graph: Of course! Based on your love for **trekking in the monsoon season**, I have designed a perfect 3-da...
+2025-12-14 21:13:48,307 - ui - INFO - [APP DEBUG] Response length: 5854
+2025-12-14 21:13:48,307 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:15:11,474 - ui - INFO - [APP DEBUG] Received response from graph: To create the best travel plan for you, I need some additional information:
+
+- Travel dates
+- Origin...
+2025-12-14 21:15:11,475 - ui - INFO - [APP DEBUG] Response length: 214
+2025-12-14 21:15:11,475 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:17:01,266 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on the complete conversation history, here is a comprehensive travel plan for a 3-d...
+2025-12-14 21:17:01,266 - ui - INFO - [APP DEBUG] Response length: 8193
+2025-12-14 21:17:01,266 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:18:12,724 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your selections and our conversation history, here is the finalized, comprehensi...
+2025-12-14 21:18:12,725 - ui - INFO - [APP DEBUG] Response length: 7311
+2025-12-14 21:18:12,725 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:18:52,615 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your love for trekking in the monsoon season, I have crafted a specialized 3-day...
+2025-12-14 21:18:52,616 - ui - INFO - [APP DEBUG] Response length: 5780
+2025-12-14 21:18:52,616 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:20:56,850 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your selections and our conversation history, here is the finalized, comprehensi...
+2025-12-14 21:20:56,850 - ui - INFO - [APP DEBUG] Response length: 7709
+2025-12-14 21:20:56,850 - ui - INFO - [APP DEBUG] Response type: <class 'str'>

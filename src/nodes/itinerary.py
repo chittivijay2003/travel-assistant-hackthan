@@ -6,7 +6,11 @@ from src.nodes.state import GraphState
 from src.utils.mem0_manager import Mem0Manager
 from src.config import Config
 from src.utils.logger import setup_logger
-from src.utils.langfuse_manager import LangFuseTracer, is_langfuse_enabled
+from src.utils.langfuse_manager import (
+    LangFuseTracer,
+    is_langfuse_enabled,
+    get_langfuse_callback_handler,
+)
 from src.utils.multimodel_selector import MultiModelSelector
 
 logger = setup_logger("itinerary_node")
@@ -149,17 +153,55 @@ Use clear day-by-day structure with **preference-aligned activities**.""",
                         conversation_history
                     )
 
-                # Generate itinerary using LangChain chain (preserves context)
-                chain = self.prompt | self.llm
-                result = chain.invoke(
-                    {
-                        "user_preferences": user_preferences,
-                        "user_request": user_input,
-                        "conversation_context": conversation_context_str,
-                    }
+                # Get LangFuse callback handler for token tracking
+                langfuse_handler = get_langfuse_callback_handler(
+                    trace_name=f"itinerary_{state.get('user_id', 'unknown')}",
+                    user_id=state.get("user_id"),
+                    session_id=state.get("user_id"),
                 )
 
+                # Generate itinerary using LangChain chain (preserves context)
+                chain = self.prompt | self.llm
+
+                if langfuse_handler:
+                    result = chain.invoke(
+                        {
+                            "user_preferences": user_preferences,
+                            "user_request": user_input,
+                            "conversation_context": conversation_context_str,
+                        },
+                        config={"callbacks": [langfuse_handler]},
+                    )
+                    # Flush to ensure trace is sent
+                    langfuse_handler.flush()
+                else:
+                    result = chain.invoke(
+                        {
+                            "user_preferences": user_preferences,
+                            "user_request": user_input,
+                            "conversation_context": conversation_context_str,
+                        }
+                    )
+
                 itinerary_response = result.content
+
+                # Extract token usage from response metadata (if available)
+                if tracer.trace and is_langfuse_enabled():
+                    if (
+                        hasattr(result, "response_metadata")
+                        and result.response_metadata
+                    ):
+                        usage = result.response_metadata.get("usage_metadata", {})
+                        if usage:
+                            tracer.metadata["input_tokens"] = usage.get(
+                                "prompt_token_count", 0
+                            )
+                            tracer.metadata["output_tokens"] = usage.get(
+                                "candidates_token_count", 0
+                            )
+                            tracer.metadata["total_tokens"] = usage.get(
+                                "total_token_count", 0
+                            )
 
                 state["response"] = itinerary_response
                 state["itinerary_data"] = {
