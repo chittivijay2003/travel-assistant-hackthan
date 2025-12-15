@@ -82,3 +82,13 @@
 2025-12-13 23:21:05,699 - support_trip - INFO - Processing support query for user 54c4c6cf-e508-48f9-9132-a79721719ca7
 2025-12-13 23:21:05,700 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
 2025-12-13 23:21:09,507 - support_trip - INFO - Successfully handled support query for user 54c4c6cf-e508-48f9-9132-a79721719ca7
+2025-12-14 22:32:36,637 - support_trip - INFO - Processing support query for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:32:36,638 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-14 22:32:42,763 - support_trip - INFO - Cheap model response sufficient (2446 chars), no fallback needed
+2025-12-14 22:32:42,764 - support_trip - INFO - Support query answered using: gemini-2.0-flash
+2025-12-14 22:32:42,769 - support_trip - INFO - Successfully handled support query for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:33:59,948 - support_trip - INFO - Processing support query for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:33:59,950 - support_trip - WARNING - Could not retrieve policy context: 'RAGManager' object has no attribute 'query'
+2025-12-14 22:34:07,017 - support_trip - INFO - Cheap model response sufficient (3170 chars), no fallback needed
+2025-12-14 22:34:07,018 - support_trip - INFO - Support query answered using: gemini-2.0-flash
+2025-12-14 22:34:07,032 - support_trip - INFO - Successfully handled support query for user 870843a8-e8c6-489a-9215-201dab98f654

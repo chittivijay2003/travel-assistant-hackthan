@@ -730,3 +730,35 @@
 2025-12-14 21:53:02,404 - intent_classification - INFO - Classified intent: itinerary
 2025-12-14 21:54:03,098 - intent_classification - INFO - Classifying intent for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
 2025-12-14 21:54:08,275 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-14 22:24:48,708 - intent_classification - INFO - Classifying intent for user 2037926d-75d6-4911-8255-80e841371156
+2025-12-14 22:24:48,748 - intent_classification - ERROR - Error in intent classification: 'ChatGoogleGenerativeAI' object has no attribute 'model_name'
+2025-12-14 22:27:04,300 - intent_classification - INFO - Classifying intent for user d882ec3c-d4a6-45af-9738-97e6456fb941
+2025-12-14 22:27:04,362 - intent_classification - INFO - Intent classification using model: models/gemini-2.5-flash
+2025-12-14 22:27:07,959 - intent_classification - INFO - Classified intent: information
+2025-12-14 22:29:06,899 - intent_classification - INFO - Classifying intent for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:06,942 - intent_classification - INFO - Intent classification using model: models/gemini-2.5-flash
+2025-12-14 22:29:13,919 - intent_classification - INFO - Classified intent: information
+2025-12-14 22:29:22,289 - intent_classification - INFO - Classifying intent for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:22,323 - intent_classification - INFO - Intent classification using model: models/gemini-2.5-flash
+2025-12-14 22:29:26,338 - intent_classification - INFO - Classified intent: itinerary
+2025-12-14 22:30:18,502 - intent_classification - INFO - Classifying intent for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:18,537 - intent_classification - INFO - Intent classification using model: models/gemini-2.5-flash
+2025-12-14 22:30:20,659 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-14 22:30:40,447 - intent_classification - INFO - Classifying intent for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:40,477 - intent_classification - INFO - Intent classification using model: models/gemini-2.5-flash
+2025-12-14 22:30:43,166 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-14 22:31:43,223 - intent_classification - INFO - Classifying intent for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:31:43,277 - intent_classification - INFO - Intent classification using model: models/gemini-2.5-flash
+2025-12-14 22:31:45,287 - intent_classification - INFO - Classified intent: travel_plan
+2025-12-14 22:32:32,991 - intent_classification - INFO - Classifying intent for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:32:33,053 - intent_classification - INFO - Intent classification using model: models/gemini-2.5-flash
+2025-12-14 22:32:36,634 - intent_classification - INFO - Classified intent: support_trip
+2025-12-14 22:33:57,844 - intent_classification - INFO - Classifying intent for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:33:57,890 - intent_classification - INFO - Intent classification using model: models/gemini-2.5-flash
+2025-12-14 22:33:59,947 - intent_classification - INFO - Classified intent: support_trip
+2025-12-14 22:34:10,991 - intent_classification - INFO - Classifying intent for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:34:11,027 - intent_classification - INFO - Intent classification using model: models/gemini-2.5-flash
+2025-12-14 22:34:13,111 - intent_classification - INFO - Classified intent: itinerary
+2025-12-14 22:35:14,609 - intent_classification - INFO - Classifying intent for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:35:14,659 - intent_classification - INFO - Intent classification using model: models/gemini-2.5-flash
+2025-12-14 22:35:16,719 - intent_classification - INFO - Classified intent: travel_plan

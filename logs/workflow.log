@@ -2033,3 +2033,88 @@ This information will...
 2025-12-14 21:54:42,001 - workflow - INFO - [DEBUG] Response extracted from state: Of course. Based on the complete conversation history and your specific selections, here is the fina...
 2025-12-14 21:54:42,001 - workflow - INFO - [DEBUG] Response length: 6976
 2025-12-14 21:54:42,001 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']
+2025-12-14 22:24:43,031 - workflow - INFO - [AUDIT] Transaction ID: txn_e1b3bd60c6e744b5 - User: 2037926d-75d6-4911-8255-80e841371156
+2025-12-14 22:24:43,034 - workflow - INFO - Processing message for user 2037926d-75d6-4911-8255-80e841371156: I love trekking in the monsoon season
+2025-12-14 22:24:48,708 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-14 22:24:48,749 - workflow - INFO - Routing to node based on intent: unknown
+2025-12-14 22:24:48,749 - workflow - INFO - [DEBUG] Response extracted from state: NONE...
+2025-12-14 22:24:48,749 - workflow - INFO - [DEBUG] Response length: 0
+2025-12-14 22:24:48,749 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']
+2025-12-14 22:24:48,749 - workflow - ERROR - Error in graph execution: Intent classification error: 'ChatGoogleGenerativeAI' object has no attribute 'model_name'
+2025-12-14 22:26:55,897 - workflow - INFO - [AUDIT] Transaction ID: txn_560d7477bc9040d7 - User: d882ec3c-d4a6-45af-9738-97e6456fb941
+2025-12-14 22:26:55,901 - workflow - INFO - Processing message for user d882ec3c-d4a6-45af-9738-97e6456fb941: I love trekking in the monsoon season
+2025-12-14 22:27:04,298 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-14 22:27:07,960 - workflow - INFO - Routing to node based on intent: information
+2025-12-14 22:27:07,965 - workflow - INFO - [DEBUG] Response extracted from state: Thank you for sharing! I've noted that: I love trekking in the monsoon season
+
+This information will...
+2025-12-14 22:27:07,965 - workflow - INFO - [DEBUG] Response length: 234
+2025-12-14 22:27:07,966 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']
+2025-12-14 22:29:00,045 - workflow - INFO - [AUDIT] Transaction ID: txn_6ed8a529c8814d12 - User: 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:00,048 - workflow - INFO - Processing message for user 870843a8-e8c6-489a-9215-201dab98f654: I love trekking in the monsoon season
+2025-12-14 22:29:06,891 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-14 22:29:13,922 - workflow - INFO - Routing to node based on intent: information
+2025-12-14 22:29:13,929 - workflow - INFO - [DEBUG] Response extracted from state: Thank you for sharing! I've noted that: I love trekking in the monsoon season
+
+This information will...
+2025-12-14 22:29:13,929 - workflow - INFO - [DEBUG] Response length: 234
+2025-12-14 22:29:13,929 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']
+2025-12-14 22:29:22,248 - workflow - INFO - [AUDIT] Transaction ID: txn_8e1abb30e89d44c8 - User: 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:22,249 - workflow - INFO - Processing message for user 870843a8-e8c6-489a-9215-201dab98f654: Suggest a 3-day itinerary in Japan
+2025-12-14 22:29:22,289 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-14 22:29:26,340 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-14 22:30:14,848 - workflow - INFO - [DEBUG] Response extracted from state: Okay, this is an exciting challenge! You love trekking in the monsoon season, and Japan offers some ...
+2025-12-14 22:30:14,849 - workflow - INFO - [DEBUG] Response length: 8682
+2025-12-14 22:30:14,849 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']
+2025-12-14 22:30:18,486 - workflow - INFO - [AUDIT] Transaction ID: txn_93fa73a00bc94b26 - User: 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:18,487 - workflow - INFO - Processing message for user 870843a8-e8c6-489a-9215-201dab98f654: Suggest a travel plan with options for cabs and flights
+2025-12-14 22:30:18,502 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-14 22:30:20,660 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-14 22:30:27,800 - workflow - INFO - [DEBUG] Response extracted from state: To create the best travel plan for you, I need some additional information:
+
+- Travel dates
+- Start ...
+2025-12-14 22:30:27,800 - workflow - INFO - [DEBUG] Response length: 238
+2025-12-14 22:30:27,800 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']
+2025-12-14 22:30:40,432 - workflow - INFO - [AUDIT] Transaction ID: txn_7cbdb2106a5b447f - User: 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:40,433 - workflow - INFO - Processing message for user 870843a8-e8c6-489a-9215-201dab98f654: feb 10th to 12th morning tokyo to okasa 2 $1500
+2025-12-14 22:30:40,446 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-14 22:30:43,170 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-14 22:31:28,395 - workflow - INFO - [DEBUG] Response extracted from state: Of course. Based on the complete conversation history and your latest request, here is a comprehensi...
+2025-12-14 22:31:28,395 - workflow - INFO - [DEBUG] Response length: 8730
+2025-12-14 22:31:28,395 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']
+2025-12-14 22:31:43,202 - workflow - INFO - [AUDIT] Transaction ID: txn_fd3ee091800a4dfd - User: 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:31:43,203 - workflow - INFO - Processing message for user 870843a8-e8c6-489a-9215-201dab98f654: option1 in flights and option2 in hotels
+2025-12-14 22:31:43,222 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-14 22:31:45,288 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-14 22:32:23,173 - workflow - INFO - [DEBUG] Response extracted from state: Of course. Based on your selections and the full conversation history, here is the finalized, compre...
+2025-12-14 22:32:23,173 - workflow - INFO - [DEBUG] Response length: 7571
+2025-12-14 22:32:23,173 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']
+2025-12-14 22:32:32,953 - workflow - INFO - [AUDIT] Transaction ID: txn_f3c4820d9a2e416a - User: 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:32:32,956 - workflow - INFO - Processing message for user 870843a8-e8c6-489a-9215-201dab98f654: Suggest lounge facilities at the start airport/destination airport
+2025-12-14 22:32:32,990 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-14 22:32:36,636 - workflow - INFO - Routing to node based on intent: support_trip
+2025-12-14 22:32:42,773 - workflow - INFO - [DEBUG] Response extracted from state: Okay, based on your trip from Tokyo to Osaka from February 10th to 12th, here are some lounge option...
+2025-12-14 22:32:42,774 - workflow - INFO - [DEBUG] Response length: 2446
+2025-12-14 22:32:42,774 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']
+2025-12-14 22:33:57,719 - workflow - INFO - [AUDIT] Transaction ID: txn_20cf12ad92014c72 - User: 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:33:57,721 - workflow - INFO - Processing message for user 870843a8-e8c6-489a-9215-201dab98f654: Suggest food places for day 1
+2025-12-14 22:33:57,843 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-14 22:33:59,947 - workflow - INFO - Routing to node based on intent: support_trip
+2025-12-14 22:34:07,051 - workflow - INFO - [DEBUG] Response extracted from state: Okay, considering you'll be arriving in Osaka from Tokyo on February 10th (Day 1), here are some foo...
+2025-12-14 22:34:07,053 - workflow - INFO - [DEBUG] Response length: 3170
+2025-12-14 22:34:07,053 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']
+2025-12-14 22:34:10,976 - workflow - INFO - [AUDIT] Transaction ID: txn_77d57bc03dc44a49 - User: 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:34:10,977 - workflow - INFO - Processing message for user 870843a8-e8c6-489a-9215-201dab98f654: Suggest a 3-day itinerary in India
+2025-12-14 22:34:10,990 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-14 22:34:13,112 - workflow - INFO - Routing to node based on intent: itinerary
+2025-12-14 22:35:04,043 - workflow - INFO - [DEBUG] Response extracted from state: Okay, this is a fantastic request! Given your strong preference for **trekking in the monsoon season...
+2025-12-14 22:35:04,045 - workflow - INFO - [DEBUG] Response length: 9935
+2025-12-14 22:35:04,045 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']
+2025-12-14 22:35:14,587 - workflow - INFO - [AUDIT] Transaction ID: txn_e80d353a742a4ad2 - User: 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:35:14,589 - workflow - INFO - Processing message for user 870843a8-e8c6-489a-9215-201dab98f654: give my japan itinerary which i selected
+2025-12-14 22:35:14,609 - workflow - INFO - Input validation passed - routing to intent_classification
+2025-12-14 22:35:16,720 - workflow - INFO - Routing to node based on intent: travel_plan
+2025-12-14 22:35:49,844 - workflow - INFO - [DEBUG] Response extracted from state: Of course. Based on your selections from our previous conversation, here is the finalized and compre...
+2025-12-14 22:35:49,845 - workflow - INFO - [DEBUG] Response length: 7578
+2025-12-14 22:35:49,845 - workflow - INFO - [DEBUG] Result keys: ['user_id', 'user_input', 'intent', 'user_history', 'conversation_history', 'response', 'itinerary_data', 'travel_plan_data', 'user_selections', 'policy_context', 'error', 'metadata', 'txnid']

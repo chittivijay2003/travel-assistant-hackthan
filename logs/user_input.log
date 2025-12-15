@@ -1798,3 +1798,58 @@
 2025-12-14 21:54:03,097 - user_input - INFO - Loading user history for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
 2025-12-14 21:54:03,097 - user_input - INFO - Loaded 3 history items for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
 2025-12-14 21:54:03,097 - user_input - INFO - User input: give my japan itinerary which i selected
+2025-12-14 22:24:43,044 - user_input - INFO - Validating user input for user 2037926d-75d6-4911-8255-80e841371156
+2025-12-14 22:24:48,707 - user_input - INFO - User input validated successfully for user 2037926d-75d6-4911-8255-80e841371156
+2025-12-14 22:24:48,707 - user_input - INFO - Loading user history for user 2037926d-75d6-4911-8255-80e841371156
+2025-12-14 22:24:48,707 - user_input - INFO - Loaded 0 history items for user 2037926d-75d6-4911-8255-80e841371156
+2025-12-14 22:24:48,708 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-14 22:26:55,904 - user_input - INFO - Validating user input for user d882ec3c-d4a6-45af-9738-97e6456fb941
+2025-12-14 22:27:04,296 - user_input - INFO - User input validated successfully for user d882ec3c-d4a6-45af-9738-97e6456fb941
+2025-12-14 22:27:04,297 - user_input - INFO - Loading user history for user d882ec3c-d4a6-45af-9738-97e6456fb941
+2025-12-14 22:27:04,297 - user_input - INFO - Loaded 0 history items for user d882ec3c-d4a6-45af-9738-97e6456fb941
+2025-12-14 22:27:04,297 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-14 22:29:00,054 - user_input - INFO - Validating user input for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:06,889 - user_input - INFO - User input validated successfully for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:06,889 - user_input - INFO - Loading user history for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:06,890 - user_input - INFO - Loaded 0 history items for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:06,890 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-14 22:29:22,251 - user_input - INFO - Validating user input for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:22,288 - user_input - INFO - User input validated successfully for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:22,288 - user_input - INFO - Loading user history for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:22,289 - user_input - INFO - Loaded 1 history items for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:22,289 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-14 22:30:18,488 - user_input - INFO - Validating user input for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:18,501 - user_input - INFO - User input validated successfully for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:18,501 - user_input - INFO - Loading user history for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:18,501 - user_input - INFO - Loaded 1 history items for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:18,501 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-14 22:30:40,435 - user_input - INFO - Validating user input for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:40,446 - user_input - INFO - User input validated successfully for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:40,446 - user_input - INFO - Loading user history for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:40,446 - user_input - INFO - Loaded 1 history items for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:40,446 - user_input - INFO - User input: feb 10th to 12th morning tokyo to okasa 2 $1500
+2025-12-14 22:31:43,206 - user_input - INFO - Validating user input for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:31:43,221 - user_input - INFO - User input validated successfully for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:31:43,221 - user_input - INFO - Loading user history for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:31:43,222 - user_input - INFO - Loaded 2 history items for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:31:43,222 - user_input - INFO - User input: option1 in flights and option2 in hotels
+2025-12-14 22:32:32,959 - user_input - INFO - Validating user input for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:32:32,989 - user_input - INFO - User input validated successfully for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:32:32,989 - user_input - INFO - Loading user history for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:32:32,989 - user_input - INFO - Loaded 3 history items for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:32:32,989 - user_input - INFO - User input: Suggest lounge facilities at the start airport/destination airport
+2025-12-14 22:33:57,723 - user_input - INFO - Validating user input for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:33:57,842 - user_input - INFO - User input validated successfully for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:33:57,842 - user_input - INFO - Loading user history for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:33:57,842 - user_input - INFO - Loaded 4 history items for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:33:57,842 - user_input - INFO - User input: Suggest food places for day 1
+2025-12-14 22:34:10,978 - user_input - INFO - Validating user input for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:34:10,990 - user_input - INFO - User input validated successfully for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:34:10,990 - user_input - INFO - Loading user history for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:34:10,990 - user_input - INFO - Loaded 5 history items for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:34:10,990 - user_input - INFO - User input: Suggest a 3-day itinerary in India
+2025-12-14 22:35:14,591 - user_input - INFO - Validating user input for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:35:14,608 - user_input - INFO - User input validated successfully for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:35:14,608 - user_input - INFO - Loading user history for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:35:14,608 - user_input - INFO - Loaded 5 history items for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:35:14,608 - user_input - INFO - User input: give my japan itinerary which i selected

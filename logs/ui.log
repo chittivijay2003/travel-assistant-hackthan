@@ -401,3 +401,49 @@ This information will...
 2025-12-14 21:54:42,967 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on the complete conversation history and your specific selections, here is the fina...
 2025-12-14 21:54:42,968 - ui - INFO - [APP DEBUG] Response length: 6976
 2025-12-14 21:54:42,968 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 22:24:14,392 - ui - INFO - New session started: 2037926d-75d6-4911-8255-80e841371156
+2025-12-14 22:24:24,153 - ui - INFO - Travel Assistant Graph initialized
+2025-12-14 22:24:49,851 - ui - INFO - [APP DEBUG] Received response from graph: NONE...
+2025-12-14 22:24:49,852 - ui - INFO - [APP DEBUG] Response length: 0
+2025-12-14 22:24:49,852 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 22:26:39,627 - ui - INFO - New session started: d882ec3c-d4a6-45af-9738-97e6456fb941
+2025-12-14 22:26:48,652 - ui - INFO - Travel Assistant Graph initialized
+2025-12-14 22:27:08,777 - ui - INFO - [APP DEBUG] Received response from graph: Thank you for sharing! I've noted that: I love trekking in the monsoon season
+
+This information will...
+2025-12-14 22:27:08,778 - ui - INFO - [APP DEBUG] Response length: 234
+2025-12-14 22:27:08,778 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 22:28:42,372 - ui - INFO - New session started: 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:28:56,925 - ui - INFO - Travel Assistant Graph initialized
+2025-12-14 22:29:14,656 - ui - INFO - [APP DEBUG] Received response from graph: Thank you for sharing! I've noted that: I love trekking in the monsoon season
+
+This information will...
+2025-12-14 22:29:14,656 - ui - INFO - [APP DEBUG] Response length: 234
+2025-12-14 22:29:14,656 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 22:30:15,890 - ui - INFO - [APP DEBUG] Received response from graph: Okay, this is an exciting challenge! You love trekking in the monsoon season, and Japan offers some ...
+2025-12-14 22:30:15,890 - ui - INFO - [APP DEBUG] Response length: 8682
+2025-12-14 22:30:15,890 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 22:30:27,801 - ui - INFO - [APP DEBUG] Received response from graph: To create the best travel plan for you, I need some additional information:
+
+- Travel dates
+- Start ...
+2025-12-14 22:30:27,801 - ui - INFO - [APP DEBUG] Response length: 238
+2025-12-14 22:30:27,801 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 22:31:29,026 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on the complete conversation history and your latest request, here is a comprehensi...
+2025-12-14 22:31:29,027 - ui - INFO - [APP DEBUG] Response length: 8730
+2025-12-14 22:31:29,027 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 22:32:24,142 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your selections and the full conversation history, here is the finalized, compre...
+2025-12-14 22:32:24,143 - ui - INFO - [APP DEBUG] Response length: 7571
+2025-12-14 22:32:24,143 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 22:32:43,731 - ui - INFO - [APP DEBUG] Received response from graph: Okay, based on your trip from Tokyo to Osaka from February 10th to 12th, here are some lounge option...
+2025-12-14 22:32:43,731 - ui - INFO - [APP DEBUG] Response length: 2446
+2025-12-14 22:32:43,731 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 22:34:08,161 - ui - INFO - [APP DEBUG] Received response from graph: Okay, considering you'll be arriving in Osaka from Tokyo on February 10th (Day 1), here are some foo...
+2025-12-14 22:34:08,161 - ui - INFO - [APP DEBUG] Response length: 3170
+2025-12-14 22:34:08,161 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 22:35:05,052 - ui - INFO - [APP DEBUG] Received response from graph: Okay, this is a fantastic request! Given your strong preference for **trekking in the monsoon season...
+2025-12-14 22:35:05,052 - ui - INFO - [APP DEBUG] Response length: 9935
+2025-12-14 22:35:05,052 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 22:35:50,924 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your selections from our previous conversation, here is the finalized and compre...
+2025-12-14 22:35:50,924 - ui - INFO - [APP DEBUG] Response length: 7578
+2025-12-14 22:35:50,924 - ui - INFO - [APP DEBUG] Response type: <class 'str'>

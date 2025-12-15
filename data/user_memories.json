@@ -1417,5 +1417,72 @@
       "timestamp": "2025-12-14T21:54:41.995571",
       "id": "c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b_3"
     }
+  ],
+  "d882ec3c-d4a6-45af-9738-97e6456fb941": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-14T22:27:07.961908",
+      "id": "d882ec3c-d4a6-45af-9738-97e6456fb941_0"
+    }
+  ],
+  "870843a8-e8c6-489a-9215-201dab98f654": [
+    {
+      "memory": "I love trekking in the monsoon season",
+      "content": "I love trekking in the monsoon season",
+      "metadata": {
+        "type": "preference"
+      },
+      "timestamp": "2025-12-14T22:29:13.924015",
+      "id": "870843a8-e8c6-489a-9215-201dab98f654_0"
+    },
+    {
+      "memory": "Requested travel plan: feb 10th to 12th morning tokyo to okasa 2 $1500",
+      "content": "Requested travel plan: feb 10th to 12th morning tokyo to okasa 2 $1500",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-14T22:31:28.389505",
+      "id": "870843a8-e8c6-489a-9215-201dab98f654_1"
+    },
+    {
+      "memory": "Requested travel plan: option1 in flights and option2 in hotels",
+      "content": "Requested travel plan: option1 in flights and option2 in hotels",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-14T22:32:23.165566",
+      "id": "870843a8-e8c6-489a-9215-201dab98f654_2"
+    },
+    {
+      "memory": "Support query: Suggest lounge facilities at the start airport/destination airport",
+      "content": "Support query: Suggest lounge facilities at the start airport/destination airport",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-14T22:32:42.765262",
+      "id": "870843a8-e8c6-489a-9215-201dab98f654_3"
+    },
+    {
+      "memory": "Support query: Suggest food places for day 1",
+      "content": "Support query: Suggest food places for day 1",
+      "metadata": {
+        "type": "support_query"
+      },
+      "timestamp": "2025-12-14T22:34:07.018885",
+      "id": "870843a8-e8c6-489a-9215-201dab98f654_4"
+    },
+    {
+      "memory": "Requested travel plan: give my japan itinerary which i selected",
+      "content": "Requested travel plan: give my japan itinerary which i selected",
+      "metadata": {
+        "type": "travel_plan_request"
+      },
+      "timestamp": "2025-12-14T22:35:49.839373",
+      "id": "870843a8-e8c6-489a-9215-201dab98f654_5"
+    }
   ]
 }

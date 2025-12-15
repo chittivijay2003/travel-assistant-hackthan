@@ -20,9 +20,8 @@ class IntentClassificationNode:
 
     def __init__(self):
         """Initialize the intent classification node"""
-        # Use multi-model selector: gemini-2.5-flash for fast intent classification
-        self.llm = MultiModelSelector.get_model_for_intent_classification()
-
+        # Model selection will be dynamic based on query complexity
+        # (set per request in __call__ method)
         self.prompt = ChatPromptTemplate.from_messages(
             [
                 (
@@ -146,8 +145,14 @@ Respond with ONLY the category name: information, itinerary, travel_plan, or sup
                     session_id=state.get("user_id"),
                 )
 
+                # Get model dynamically based on query complexity
+                llm = MultiModelSelector.get_model_for_intent_classification(
+                    state["user_input"]
+                )
+                logger.info(f"Intent classification using model: {llm.model}")
+
                 # Get classification from LLM using LangChain chain (preserves context)
-                chain = self.prompt | self.llm
+                chain = self.prompt | llm
 
                 # Invoke with callback handler to track tokens automatically
                 if langfuse_handler:

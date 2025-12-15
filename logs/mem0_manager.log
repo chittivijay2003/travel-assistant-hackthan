@@ -1277,3 +1277,48 @@
 2025-12-14 21:54:08,277 - mem0_manager - INFO - Retrieved 3 memories for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
 2025-12-14 21:54:08,278 - mem0_manager - INFO - Retrieved 3 memories for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
 2025-12-14 21:54:41,998 - mem0_manager - INFO - Added memory for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b with embedding
+2025-12-14 22:24:14,393 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-14 22:24:19,611 - mem0_manager - INFO - Loaded 77 cached embeddings
+2025-12-14 22:24:19,611 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-14 22:24:48,707 - mem0_manager - INFO - Retrieved 0 memories for user 2037926d-75d6-4911-8255-80e841371156
+2025-12-14 22:26:39,629 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-14 22:26:44,509 - mem0_manager - INFO - Loaded 77 cached embeddings
+2025-12-14 22:26:44,510 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-14 22:27:04,297 - mem0_manager - INFO - Retrieved 0 memories for user d882ec3c-d4a6-45af-9738-97e6456fb941
+2025-12-14 22:27:07,964 - mem0_manager - INFO - Added memory for user d882ec3c-d4a6-45af-9738-97e6456fb941 with embedding
+2025-12-14 22:28:42,375 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-14 22:28:51,743 - mem0_manager - INFO - Loaded 77 cached embeddings
+2025-12-14 22:28:51,744 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-14 22:29:06,890 - mem0_manager - INFO - Retrieved 0 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:08,597 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-14 22:29:08,597 - mem0_manager - INFO - Loading all-MiniLM-L6-v2 embedding model...
+2025-12-14 22:29:13,250 - mem0_manager - INFO - Loaded 77 cached embeddings
+2025-12-14 22:29:13,251 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-14 22:29:13,250 - mem0_manager - INFO - Loaded 77 cached embeddings
+2025-12-14 22:29:13,251 - mem0_manager - INFO - Memory manager initialized with all-MiniLM-L6-v2 embeddings (JSON file storage)
+2025-12-14 22:29:13,928 - mem0_manager - INFO - Added memory for user 870843a8-e8c6-489a-9215-201dab98f654 with embedding
+2025-12-14 22:29:22,288 - mem0_manager - INFO - Retrieved 1 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:29:26,344 - mem0_manager - INFO - Retrieved 1 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:18,501 - mem0_manager - INFO - Retrieved 1 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:20,662 - mem0_manager - INFO - Retrieved 1 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:20,662 - mem0_manager - INFO - Retrieved 1 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:40,446 - mem0_manager - INFO - Retrieved 1 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:43,174 - mem0_manager - INFO - Retrieved 1 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:30:43,174 - mem0_manager - INFO - Retrieved 1 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:31:28,392 - mem0_manager - INFO - Added memory for user 870843a8-e8c6-489a-9215-201dab98f654 with embedding
+2025-12-14 22:31:43,222 - mem0_manager - INFO - Retrieved 2 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:31:45,289 - mem0_manager - INFO - Retrieved 2 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:31:45,290 - mem0_manager - INFO - Retrieved 2 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:32:23,170 - mem0_manager - INFO - Added memory for user 870843a8-e8c6-489a-9215-201dab98f654 with embedding
+2025-12-14 22:32:32,989 - mem0_manager - INFO - Retrieved 3 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:32:36,639 - mem0_manager - INFO - Retrieved 3 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:32:42,769 - mem0_manager - INFO - Added memory for user 870843a8-e8c6-489a-9215-201dab98f654 with embedding
+2025-12-14 22:33:57,842 - mem0_manager - INFO - Retrieved 4 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:33:59,950 - mem0_manager - INFO - Retrieved 4 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:34:07,031 - mem0_manager - INFO - Added memory for user 870843a8-e8c6-489a-9215-201dab98f654 with embedding
+2025-12-14 22:34:10,990 - mem0_manager - INFO - Retrieved 5 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:34:13,113 - mem0_manager - INFO - Retrieved 5 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:35:14,608 - mem0_manager - INFO - Retrieved 5 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:35:16,722 - mem0_manager - INFO - Retrieved 5 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:35:16,722 - mem0_manager - INFO - Retrieved 5 memories for user 870843a8-e8c6-489a-9215-201dab98f654
+2025-12-14 22:35:49,843 - mem0_manager - INFO - Added memory for user 870843a8-e8c6-489a-9215-201dab98f654 with embedding

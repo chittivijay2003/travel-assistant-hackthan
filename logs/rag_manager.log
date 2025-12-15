@@ -592,3 +592,31 @@
 2025-12-14 21:50:53,362 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy feb 10th to 12th morning tokyo to okasa 2 $1500
 2025-12-14 21:52:05,544 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy option1 in flights and option2 in hotels
 2025-12-14 21:54:15,145 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy give my japan itinerary which i selected
+2025-12-14 22:24:19,611 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-14 22:24:24,068 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-14 22:24:24,069 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-14 22:24:24,069 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-14 22:24:24,146 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-14 22:26:44,510 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-14 22:26:48,565 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-14 22:26:48,566 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-14 22:26:48,567 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-14 22:26:48,641 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-14 22:28:51,744 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-14 22:28:56,854 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-14 22:28:56,855 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-14 22:28:56,856 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-14 22:28:56,916 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-14 22:29:13,252 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-14 22:29:13,252 - rag_manager - INFO - Loading local embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-12-14 22:29:17,942 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-14 22:29:17,942 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-14 22:29:17,942 - rag_manager - INFO - Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+2025-12-14 22:29:17,942 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-14 22:29:17,942 - rag_manager - INFO - RAG system initialized with local all-MiniLM-L6-v2 embeddings
+2025-12-14 22:29:17,942 - rag_manager - INFO - Loading existing FAISS index from /Users/chittivijay/Documents/PythonAssignments/PythonAssignment_Hackthan2/travel-assistant-hackthan/data/vector_store/faiss_index
+2025-12-14 22:29:17,978 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-14 22:29:17,978 - rag_manager - INFO - FAISS index loaded successfully
+2025-12-14 22:30:50,235 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy feb 10th to 12th morning tokyo to okasa 2 $1500
+2025-12-14 22:31:51,583 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy option1 in flights and option2 in hotels
+2025-12-14 22:35:24,289 - rag_manager - INFO - Found 3 relevant policy chunks for query: travel budget cab flight policy give my japan itinerary which i selected
