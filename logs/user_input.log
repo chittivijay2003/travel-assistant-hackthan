@@ -1763,3 +1763,38 @@
 2025-12-14 21:20:07,669 - user_input - INFO - Loading user history for user c609ebef-b849-4fd3-be90-caf33ac179e3
 2025-12-14 21:20:07,669 - user_input - INFO - Loaded 3 history items for user c609ebef-b849-4fd3-be90-caf33ac179e3
 2025-12-14 21:20:07,669 - user_input - INFO - User input: give my japan itinerary which i selected
+2025-12-14 21:49:04,661 - user_input - INFO - Validating user input for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:49:09,541 - user_input - INFO - User input validated successfully for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:49:09,541 - user_input - INFO - Loading user history for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:49:09,542 - user_input - INFO - Loaded 0 history items for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:49:09,542 - user_input - INFO - User input: I love trekking in the monsoon season
+2025-12-14 21:49:27,549 - user_input - INFO - Validating user input for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:49:27,607 - user_input - INFO - User input validated successfully for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:49:27,607 - user_input - INFO - Loading user history for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:49:27,607 - user_input - INFO - Loaded 1 history items for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:49:27,607 - user_input - INFO - User input: Suggest a 3-day itinerary in Japan
+2025-12-14 21:50:22,567 - user_input - INFO - Validating user input for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:50:22,575 - user_input - INFO - User input validated successfully for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:50:22,575 - user_input - INFO - Loading user history for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:50:22,575 - user_input - INFO - Loaded 1 history items for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:50:22,575 - user_input - INFO - User input: Suggest a travel plan with options for cabs and flights
+2025-12-14 21:50:43,708 - user_input - INFO - Validating user input for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:50:43,733 - user_input - INFO - User input validated successfully for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:50:43,733 - user_input - INFO - Loading user history for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:50:43,734 - user_input - INFO - Loaded 1 history items for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:50:43,734 - user_input - INFO - User input: feb 10th to 12th morning tokyo to okasa 2 $1500
+2025-12-14 21:51:57,200 - user_input - INFO - Validating user input for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:51:57,213 - user_input - INFO - User input validated successfully for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:51:57,213 - user_input - INFO - Loading user history for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:51:57,213 - user_input - INFO - Loaded 2 history items for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:51:57,213 - user_input - INFO - User input: option1 in flights and option2 in hotels
+2025-12-14 21:52:58,603 - user_input - INFO - Validating user input for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:52:58,617 - user_input - INFO - User input validated successfully for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:52:58,618 - user_input - INFO - Loading user history for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:52:58,618 - user_input - INFO - Loaded 3 history items for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:52:58,618 - user_input - INFO - User input: Suggest a 3-day itinerary in India
+2025-12-14 21:54:03,052 - user_input - INFO - Validating user input for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:54:03,096 - user_input - INFO - User input validated successfully for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:54:03,097 - user_input - INFO - Loading user history for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:54:03,097 - user_input - INFO - Loaded 3 history items for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:54:03,097 - user_input - INFO - User input: give my japan itinerary which i selected

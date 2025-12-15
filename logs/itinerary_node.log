@@ -227,3 +227,15 @@
 2025-12-14 21:13:47,259 - itinerary_node - INFO - Successfully generated itinerary for user c609ebef-b849-4fd3-be90-caf33ac179e3
 2025-12-14 21:18:28,000 - itinerary_node - INFO - Generating itinerary for user c609ebef-b849-4fd3-be90-caf33ac179e3
 2025-12-14 21:18:51,585 - itinerary_node - INFO - Successfully generated itinerary for user c609ebef-b849-4fd3-be90-caf33ac179e3
+2025-12-14 21:49:31,325 - itinerary_node - INFO - Generating itinerary for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:49:31,359 - itinerary_node - INFO - Getting response from ensemble model 1/2: gemini-2.5-flash
+2025-12-14 21:49:49,014 - itinerary_node - INFO - Getting response from ensemble model 2/2: gemini-2.5-pro
+2025-12-14 21:50:19,287 - itinerary_node - INFO - Selected itinerary from gemini-2.5-flash (7268 chars)
+2025-12-14 21:50:19,288 - itinerary_node - INFO - All ensemble responses: ['gemini-2.5-flash: 7268 chars', 'gemini-2.5-pro: 6498 chars']
+2025-12-14 21:50:19,288 - itinerary_node - INFO - Successfully generated itinerary for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:53:02,408 - itinerary_node - INFO - Generating itinerary for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:53:02,442 - itinerary_node - INFO - Getting response from ensemble model 1/2: gemini-2.5-flash
+2025-12-14 21:53:18,619 - itinerary_node - INFO - Getting response from ensemble model 2/2: gemini-2.5-pro
+2025-12-14 21:53:43,906 - itinerary_node - INFO - Selected itinerary from gemini-2.5-flash (5613 chars)
+2025-12-14 21:53:43,908 - itinerary_node - INFO - All ensemble responses: ['gemini-2.5-flash: 5613 chars', 'gemini-2.5-pro: 5573 chars']
+2025-12-14 21:53:43,908 - itinerary_node - INFO - Successfully generated itinerary for user c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b

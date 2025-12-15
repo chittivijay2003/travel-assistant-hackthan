@@ -1,6 +1,5 @@
 """Itinerary Node - Generates travel itineraries using LLM"""
 
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
 from src.nodes.state import GraphState
 from src.utils.mem0_manager import Mem0Manager
@@ -160,30 +159,65 @@ Use clear day-by-day structure with **preference-aligned activities**.""",
                     session_id=state.get("user_id"),
                 )
 
-                # Generate itinerary using LangChain chain (preserves context)
-                chain = self.prompt | self.llm
+                # Generate itinerary using ENSEMBLE pattern (highest quality)
+                # Get responses from multiple models and select the best one
+                ensemble_models = MultiModelSelector.get_ensemble_models()
 
-                if langfuse_handler:
-                    result = chain.invoke(
-                        {
-                            "user_preferences": user_preferences,
-                            "user_request": user_input,
-                            "conversation_context": conversation_context_str,
-                        },
-                        config={"callbacks": [langfuse_handler]},
+                responses = []
+                for idx, model in enumerate(ensemble_models):
+                    model_name = "gemini-2.5-flash" if idx == 0 else "gemini-2.5-pro"
+                    logger.info(
+                        f"Getting response from ensemble model {idx+1}/{len(ensemble_models)}: {model_name}"
                     )
-                    # Flush to ensure trace is sent
-                    langfuse_handler.flush()
-                else:
-                    result = chain.invoke(
+
+                    chain = self.prompt | model
+
+                    if langfuse_handler:
+                        result = chain.invoke(
+                            {
+                                "user_preferences": user_preferences,
+                                "user_request": user_input,
+                                "conversation_context": conversation_context_str,
+                            },
+                            config={"callbacks": [langfuse_handler]},
+                        )
+                        langfuse_handler.flush()
+                    else:
+                        result = chain.invoke(
+                            {
+                                "user_preferences": user_preferences,
+                                "user_request": user_input,
+                                "conversation_context": conversation_context_str,
+                            }
+                        )
+
+                    responses.append(
                         {
-                            "user_preferences": user_preferences,
-                            "user_request": user_input,
-                            "conversation_context": conversation_context_str,
+                            "content": result.content,
+                            "model": model_name,
+                            "length": len(result.content),
                         }
                     )
 
-                itinerary_response = result.content
+                # Select best response (using length as a simple heuristic - more detailed is better)
+                best_response = max(responses, key=lambda x: x["length"])
+                itinerary_response = best_response["content"]
+
+                logger.info(
+                    f"Selected itinerary from {best_response['model']} ({best_response['length']} chars)"
+                )
+                ensemble_summary = [
+                    f"{r['model']}: {r['length']} chars" for r in responses
+                ]
+                logger.info(f"All ensemble responses: {ensemble_summary}")
+
+                # Add ensemble metadata to trace
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["ensemble_models"] = [r["model"] for r in responses]
+                    tracer.metadata["selected_model"] = best_response["model"]
+                    tracer.metadata["response_lengths"] = [
+                        r["length"] for r in responses
+                    ]
 
                 # Extract token usage from response metadata (if available)
                 if tracer.trace and is_langfuse_enabled():

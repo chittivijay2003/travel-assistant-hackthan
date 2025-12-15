@@ -1,6 +1,5 @@
 """Support Trip Node - Handles in-trip support queries"""
 
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
 from src.nodes.state import GraphState
 from src.utils.mem0_manager import Mem0Manager
@@ -179,34 +178,116 @@ Be specific, practical, and consider the user's preferences and current travel p
                     session_id=state.get("user_id"),
                 )
 
-                # Generate support response using Router pattern (fast)
-                chain = self.prompt | self.llm
+                # Generate support response using CASCADE pattern (cost optimization)
+                # Try cheap model first, fallback to powerful if response is insufficient
+                cheap_model, powerful_model = MultiModelSelector.get_cascade_models()
 
-                if langfuse_handler:
-                    result = chain.invoke(
-                        {
-                            "policy_context": policy_context,
-                            "user_travel_history": user_travel_history,
-                            "user_selections": user_selections,
-                            "conversation_context": conversation_context_str,
-                            "user_query": user_input,
-                        },
-                        config={"callbacks": [langfuse_handler]},
-                    )
-                    # Flush to ensure trace is sent
-                    langfuse_handler.flush()
-                else:
-                    result = chain.invoke(
-                        {
-                            "policy_context": policy_context,
-                            "user_travel_history": user_travel_history,
-                            "user_selections": user_selections,
-                            "conversation_context": conversation_context_str,
-                            "user_query": user_input,
-                        }
-                    )
+                # Track which model was used
+                model_used = "gemini-2.0-flash"  # Default to cheap
 
-                support_response = result.content
+                try:
+                    # Try cheap model first
+                    chain_cheap = self.prompt | cheap_model
+
+                    if langfuse_handler:
+                        result = chain_cheap.invoke(
+                            {
+                                "policy_context": policy_context,
+                                "user_travel_history": user_travel_history,
+                                "user_selections": user_selections,
+                                "conversation_context": conversation_context_str,
+                                "user_query": user_input,
+                            },
+                            config={"callbacks": [langfuse_handler]},
+                        )
+                        langfuse_handler.flush()
+                    else:
+                        result = chain_cheap.invoke(
+                            {
+                                "policy_context": policy_context,
+                                "user_travel_history": user_travel_history,
+                                "user_selections": user_selections,
+                                "conversation_context": conversation_context_str,
+                                "user_query": user_input,
+                            }
+                        )
+
+                    support_response = result.content
+
+                    # Check if response is insufficient (too short or generic)
+                    if len(support_response) < 100:
+                        logger.info(
+                            "Cheap model response insufficient, falling back to powerful model"
+                        )
+
+                        # Fallback to powerful model
+                        chain_powerful = self.prompt | powerful_model
+                        model_used = "gemini-2.5-pro"  # Update to powerful
+
+                        if langfuse_handler:
+                            result = chain_powerful.invoke(
+                                {
+                                    "policy_context": policy_context,
+                                    "user_travel_history": user_travel_history,
+                                    "user_selections": user_selections,
+                                    "conversation_context": conversation_context_str,
+                                    "user_query": user_input,
+                                },
+                                config={"callbacks": [langfuse_handler]},
+                            )
+                            langfuse_handler.flush()
+                        else:
+                            result = chain_powerful.invoke(
+                                {
+                                    "policy_context": policy_context,
+                                    "user_travel_history": user_travel_history,
+                                    "user_selections": user_selections,
+                                    "conversation_context": conversation_context_str,
+                                    "user_query": user_input,
+                                }
+                            )
+
+                        support_response = result.content
+                    else:
+                        logger.info(
+                            f"Cheap model response sufficient ({len(support_response)} chars), no fallback needed"
+                        )
+
+                except Exception as e:
+                    logger.warning(f"Error with cheap model, falling back: {e}")
+                    # Fallback to powerful model on error
+                    chain_powerful = self.prompt | powerful_model
+                    model_used = "gemini-2.5-pro"  # Update to powerful
+
+                    if langfuse_handler:
+                        result = chain_powerful.invoke(
+                            {
+                                "policy_context": policy_context,
+                                "user_travel_history": user_travel_history,
+                                "user_selections": user_selections,
+                                "conversation_context": conversation_context_str,
+                                "user_query": user_input,
+                            },
+                            config={"callbacks": [langfuse_handler]},
+                        )
+                        langfuse_handler.flush()
+                    else:
+                        result = chain_powerful.invoke(
+                            {
+                                "policy_context": policy_context,
+                                "user_travel_history": user_travel_history,
+                                "user_selections": user_selections,
+                                "conversation_context": conversation_context_str,
+                                "user_query": user_input,
+                            }
+                        )
+
+                    support_response = result.content
+
+                # Log which model was used for tracking
+                logger.info(f"Support query answered using: {model_used}")
+                if tracer.trace and is_langfuse_enabled():
+                    tracer.metadata["model_used"] = model_used
 
                 # Extract token usage from response metadata (if available)
                 if tracer.trace and is_langfuse_enabled():

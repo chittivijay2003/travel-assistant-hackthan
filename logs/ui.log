@@ -373,3 +373,31 @@ This information will...
 2025-12-14 21:20:56,850 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your selections and our conversation history, here is the finalized, comprehensi...
 2025-12-14 21:20:56,850 - ui - INFO - [APP DEBUG] Response length: 7709
 2025-12-14 21:20:56,850 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:48:53,385 - ui - INFO - New session started: c95d0fa7-0bd0-4ff6-9aa7-e4e3145b126b
+2025-12-14 21:49:02,068 - ui - INFO - Travel Assistant Graph initialized
+2025-12-14 21:49:14,047 - ui - INFO - [APP DEBUG] Received response from graph: Thank you for sharing! I've noted that: I love trekking in the monsoon season
+
+This information will...
+2025-12-14 21:49:14,048 - ui - INFO - [APP DEBUG] Response length: 234
+2025-12-14 21:49:14,048 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:50:19,950 - ui - INFO - [APP DEBUG] Received response from graph: Thank you for sharing your preference for trekking in the monsoon season! Japan offers some incredib...
+2025-12-14 21:50:19,950 - ui - INFO - [APP DEBUG] Response length: 7268
+2025-12-14 21:50:19,950 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:50:31,932 - ui - INFO - [APP DEBUG] Received response from graph: To create the best travel plan for you, I need some additional information:
+
+- Travel dates
+- Start ...
+2025-12-14 21:50:31,932 - ui - INFO - [APP DEBUG] Response length: 238
+2025-12-14 21:50:31,932 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:51:31,978 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on the complete conversation history and your latest request, here is a comprehensi...
+2025-12-14 21:51:31,979 - ui - INFO - [APP DEBUG] Response length: 7780
+2025-12-14 21:51:31,979 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:52:40,809 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on your selections and the full conversation history, here is your finalized, compr...
+2025-12-14 21:52:40,809 - ui - INFO - [APP DEBUG] Response length: 6906
+2025-12-14 21:52:40,809 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:53:44,625 - ui - INFO - [APP DEBUG] Received response from graph: Given your strong preference for **trekking in the monsoon season**, I've crafted a 3-day itinerary ...
+2025-12-14 21:53:44,625 - ui - INFO - [APP DEBUG] Response length: 5613
+2025-12-14 21:53:44,625 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
+2025-12-14 21:54:42,967 - ui - INFO - [APP DEBUG] Received response from graph: Of course. Based on the complete conversation history and your specific selections, here is the fina...
+2025-12-14 21:54:42,968 - ui - INFO - [APP DEBUG] Response length: 6976
+2025-12-14 21:54:42,968 - ui - INFO - [APP DEBUG] Response type: <class 'str'>
