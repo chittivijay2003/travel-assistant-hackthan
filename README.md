@@ -84,14 +84,18 @@ User Input → Load History → Intent Classification (Gemini) → Route to Node
   - Automatic routing based on query complexity
 
 **💾 Memory & Retrieval:**
-- **Mem0**: Semantic memory management with persistent storage (64 cached embeddings)
+- **Mem0**: Semantic memory management with persistent storage (64 cached embeddings, local JSON)
 - **all-MiniLM-L6-v2**: Local embeddings (384 dimensions) for user history and policies
 - **FAISS**: Vector store for policy document retrieval (no external database needed)
 - **RAG Pipeline**: Policy compliance with semantic search and chunking
 
 **🔒 Safety & Observability:**
 - **NeMo Guardrails**: Input validation and safety checks
-- **Langfuse**: Complete observability with 20+ trace points, transaction ID tracking
+- **Langfuse**: LLM observability platform tracking tokens, costs, latency, and performance
+  - 20+ trace points across all workflow nodes
+  - Automatic token/cost tracking via LangChain callbacks
+  - Transaction ID audit trails for compliance
+  - Real-time dashboard at https://cloud.langfuse.com
 - **Structured Logging**: Audit trails with transaction IDs for compliance
 
 **🎤 User Interfaces:**
@@ -146,13 +150,17 @@ User Input → Load History → Intent Classification (Gemini) → Route to Node
    GOOGLE_API_KEY=your_google_api_key_here
    GEMINI_MODEL=models/gemini-pro-latest
    
+   # Optional: Cloud Memory (leave empty for local JSON storage)
+   MEM0_API_KEY=
+   
    # Optional: Voice Agent
    LIVEKIT_URL=wss://your-project.livekit.cloud
    LIVEKIT_API_KEY=your_livekit_api_key
    LIVEKIT_API_SECRET=your_livekit_api_secret
    OPENAI_API_KEY=your_openai_api_key_here
    
-   # Optional: Observability
+   # Optional: LLM Observability (tracks tokens, costs, latency)
+   # Sign up free at https://cloud.langfuse.com
    LANGFUSE_PUBLIC_KEY=pk-lf-your_public_key_here
    LANGFUSE_SECRET_KEY=sk-lf-your_secret_key_here
    LANGFUSE_HOST=https://us.cloud.langfuse.com
@@ -368,6 +376,12 @@ GOOGLE_API_KEY=your_google_api_key_here
 GEMINI_MODEL=models/gemini-pro-latest
 
 # =============================================================================
+# MEM0 MEMORY (OPTIONAL - for Cloud Memory)
+# =============================================================================
+# Leave empty to use local JSON storage (default)
+MEM0_API_KEY=
+
+# =============================================================================
 # LIVEKIT VOICE AGENT (REQUIRED for Voice)
 # =============================================================================
 LIVEKIT_URL=wss://your-project.livekit.cloud
@@ -376,8 +390,10 @@ LIVEKIT_API_SECRET=your_livekit_api_secret
 OPENAI_API_KEY=your_openai_api_key_here
 
 # =============================================================================
-# LANGFUSE (OPTIONAL - for Tracing)
+# LANGFUSE (OPTIONAL - LLM Observability & Tracing)
 # =============================================================================
+# Tracks: Token usage, costs, latency, model performance, user sessions
+# Get free account at: https://cloud.langfuse.com
 LANGFUSE_PUBLIC_KEY=pk-lf-your_public_key_here
 LANGFUSE_SECRET_KEY=sk-lf-your_secret_key_here
 LANGFUSE_HOST=https://us.cloud.langfuse.com

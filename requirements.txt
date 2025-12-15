@@ -17,7 +17,10 @@ pypdf==5.1.0
 # User Interface
 streamlit==1.41.1
 
-# Observability
+# Memory Management
+mem0ai==0.1.30
+
+# Observability & Tracing
 langfuse==2.58.4
 
 # Safety & Guardrails
