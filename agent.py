@@ -242,18 +242,29 @@ class LangGraphLLMAdapter(llm.LLM):
             {"role": "assistant", "content": backend_response}
         )
 
-        if len(self.conversation_history) > 20:
-            self.conversation_history = self.conversation_history[-20:]
+        # Keep only last 10 messages (5 turns) to reduce memory usage
+        if len(self.conversation_history) > 10:
+            self.conversation_history = self.conversation_history[-10:]
 
         return SimpleLLMStream(backend_response, self, chat_ctx, tools, conn_options)
 
 
+# Global graph instance to avoid recreating heavy models
+_global_graph = None
+
+
 def create_graph():
-    """Initialize Travel Assistant backend (multi-model, LangFuse, Mem0, RAG)."""
-    print("🔧 Initializing Travel Assistant backend...")
-    graph = TravelAssistantGraph()
-    print("✅ Travel Assistant backend ready")
-    return graph
+    """Initialize Travel Assistant backend (multi-model, LangFuse, Mem0, RAG) as singleton."""
+    global _global_graph
+
+    if _global_graph is None:
+        print("🔧 Initializing Travel Assistant backend (first time)...")
+        _global_graph = TravelAssistantGraph()
+        print("✅ Travel Assistant backend ready")
+    else:
+        print("♻️  Reusing existing Travel Assistant backend")
+
+    return _global_graph
 
 
 def create_langgraph_adapter(user_id: str = "voice_user"):
@@ -327,8 +338,17 @@ async def entrypoint(ctx: JobContext):
 
     session = AgentSession()
     print("🚀 Starting session...")
+
+    # Start session and send welcome note
     await session.start(assistant, room=ctx.room)
     print("✓ Session started")
+
+    # Send welcome message to the user
+    await session.say(
+        "Hello! I'm your AI travel assistant. I can help you plan trips, create itineraries, "
+        "answer travel questions, and provide recommendations. How can I assist you today?",
+        allow_interruptions=True,
+    )
 
 
 if __name__ == "__main__":
